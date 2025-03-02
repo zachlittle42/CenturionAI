@@ -1,0 +1,404 @@
+<!-- Attempt: Enhanced Copy & Styling for Core Services and Business Benefits -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Centurion AI - Accelerate Your Growth</title>
+  <style>
+    /* Basic Reset & Font Setup */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: #000;
+      background: #ffffff;
+      line-height: 1.6;
+    }
+
+    header, section, footer {
+      width: 90%;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem 0;
+    }
+
+    :root {
+      --accent-blue: #1E90FF;
+      --black: #000;
+      --white: #fff;
+      --light-bg: #f5f9ff;
+      --dark-text: #333;
+      --shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 5rem 0 4rem 0;
+      background: var(--light-bg);
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      font-weight: bold;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      max-width: 700px;
+      margin: 0 auto;
+      color: var(--dark-text);
+      line-height: 1.5;
+    }
+    .hero .cta-btn {
+      text-decoration: none;
+      background: var(--accent-blue);
+      color: var(--white);
+      padding: 0.9rem 1.7rem;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+      font-weight: bold;
+    }
+    .hero .cta-btn:hover {
+      background: #0070dc;
+    }
+
+    /* Two-Column Intro Section */
+    .two-col-intro {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    @media (min-width: 768px) {
+      .two-col-intro {
+        flex-direction: row;
+      }
+    }
+
+    .intro-col {
+      flex: 1;
+      background: #fff;
+      border-radius: 5px;
+      padding: 1.5rem;
+      box-shadow: var(--shadow);
+    }
+
+    .intro-col h2 {
+      font-size: 1.4rem;
+      margin-bottom: 0.75rem;
+      font-weight: bold;
+      color: var(--black);
+    }
+
+    .intro-col p {
+      font-size: 1rem;
+      line-height: 1.5;
+      color: var(--dark-text);
+    }
+
+    /* Consulting Overview */
+    .consulting-overview {
+      text-align: center;
+      margin-top: 3rem;
+    }
+    .consulting-overview h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+    .consulting-overview p {
+      max-width: 700px;
+      margin: 0.5rem auto 1.5rem auto;
+      font-size: 1rem;
+      line-height: 1.5;
+      color: var(--dark-text);
+    }
+
+    /* Services Section */
+    .services {
+      margin-top: 2rem;
+    }
+    .services h2 {
+      text-align: center;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+    .services p {
+      font-size: 1rem;
+      max-width: 700px;
+      margin: 0.5rem auto 1.5rem auto;
+      color: var(--dark-text);
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    /* Service Cards */
+    .service-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      max-width: 900px;
+      margin: 0 auto;
+      margin-top: 2rem;
+    }
+
+    @media (min-width: 768px) {
+      .service-list {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .service-card {
+      background: #fff;
+      border-radius: 5px;
+      box-shadow: var(--shadow);
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .service-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+      color: var(--black);
+    }
+
+    .service-card p {
+      font-size: 0.95rem;
+      color: var(--dark-text);
+      line-height: 1.4;
+      margin-bottom: 1rem;
+    }
+
+    .service-benefits {
+      list-style: disc;
+      margin-left: 1.2rem;
+      font-size: 0.95rem;
+      line-height: 1.4;
+      color: var(--dark-text);
+    }
+
+    .service-benefits li {
+      margin-bottom: 0.5rem;
+    }
+
+    /* Contact & Calendly Section */
+    .contact-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+      margin-top: 3rem;
+      text-align: center;
+    }
+
+    .contact-form {
+      background: #fefefe;
+      padding: 2rem;
+      border-radius: 8px;
+      width: 100%;
+      max-width: 500px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    }
+    .contact-form h3 {
+      margin-bottom: 1rem;
+      font-size: 1.3rem;
+      font-weight: bold;
+    }
+    .contact-form p.small-print {
+      margin: 0.5rem 0 1rem 0;
+      font-size: 0.9rem;
+      color: #666;
+    }
+    .contact-form form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+    .contact-form button {
+      border: none;
+      padding: 1rem;
+      background: var(--accent-blue);
+      color: var(--white);
+      font-size: 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      font-weight: bold;
+    }
+    .contact-form button:hover {
+      background: #0070dc;
+    }
+
+    /* Calendly Embed */
+    .calendly-section {
+      width: 100%;
+      max-width: 700px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+      padding: 1rem;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #555;
+      padding-bottom: 3rem;
+      margin-top: 3rem;
+    }
+    footer p {
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- Hero -->
+  <header class="hero">
+    <h1>Centurion AI: Where Strategy Meets Real-World Impact</h1>
+    <p>We’re a full-service AI consultancy and development team committed to driving tangible business results. At Centurion AI, we go beyond concepts—we implement systems, deliver measurable ROI, and pave a clear path to scalable growth.</p>
+    <a href="#contact" class="cta-btn">Schedule Your Free Consultation</a>
+  </header>
+
+  <!-- Two-Col Intro -->
+  <section class="two-col-intro">
+    <div class="intro-col">
+      <h2>AI Strategy & Roadmapping</h2>
+      <p>We dive deep into your current operations and data to pinpoint the highest-impact AI opportunities. Our thorough roadmapping ensures every project has clear objectives, realistic timelines, and a direct line to revenue or efficiency gains.</p>
+    </div>
+    <div class="intro-col">
+      <h2>Hands-On Implementation</h2>
+      <p>We don’t just advise—we build. Our team handles all phases of AI deployment, from automation workflows to advanced analytics integration. We prioritize quick wins that pay off fast, while laying a strong foundation for future AI expansions.</p>
+    </div>
+  </section>
+
+  <!-- Consulting Overview -->
+  <section class="consulting-overview">
+    <h2>Why Our Consulting Stands Out</h2>
+    <p>Centurion AI pairs technical excellence with genuine business insight. We learn your unique challenges, test viable solutions, and measure ROI every step of the way. That means less risk, faster results, and a roadmap that adapts as you grow.</p>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services">
+    <h2>Our Core Services</h2>
+    <p>Every service we offer targets a specific business challenge—improving the jobs your team already does, boosting efficiency, and growing revenue. Check out how we turn AI into real-world benefits:</p>
+
+    <div class="service-list">
+      <!-- AI Consulting & Strategy -->
+      <div class="service-card">
+        <h3>AI Consulting & Strategy</h3>
+        <p>We uncover untapped potential for AI within your organization, setting a clear plan for development and adoption.</p>
+        <ul class="service-benefits">
+          <li>Reduce guesswork with data-backed prioritization.</li>
+          <li>Align AI initiatives with core business goals.</li>
+          <li>Confidently estimate ROI and resource needs.</li>
+        </ul>
+      </div>
+
+      <!-- CRM (No-Code) Setup -->
+      <div class="service-card">
+        <h3>CRM (No-Code) Setup</h3>
+        <p>Get a tailored, user-friendly CRM without the complexity of traditional platforms. Capture leads, schedule follow-ups, and keep teams in sync.</p>
+        <ul class="service-benefits">
+          <li>Eliminate busywork with automated data entry.</li>
+          <li>Centralize client communications for seamless collaboration.</li>
+          <li>Scale workflows instantly, no coding required.</li>
+        </ul>
+      </div>
+
+      <!-- Cold Email Infrastructure -->
+      <div class="service-card">
+        <h3>Cold Email Infrastructure</h3>
+        <p>We build high-deliverability mailboxes, incorporate GPT-driven personalization, and automate outreach sequences to fill your sales pipeline.</p>
+        <ul class="service-benefits">
+          <li>Attract steady, qualified leads.</li>
+          <li>Maximize conversion with relevant, AI-personalized messages.</li>
+          <li>Monitor deliverability and optimize continuously.</li>
+        </ul>
+      </div>
+
+      <!-- Automated Proposals & Onboarding -->
+      <div class="service-card">
+        <h3>Automated Proposals & Onboarding</h3>
+        <p>Streamline the entire client journey from pitch to contract signing. Our GPT integrations draft proposals in minutes, while automated onboarding cuts admin overhead.</p>
+        <ul class="service-benefits">
+          <li>Close deals faster with professional, consistent proposals.</li>
+          <li>Centralize onboarding tasks and client documentation.</li>
+          <li>Free up your team to nurture relationships, not paperwork.</li>
+        </ul>
+      </div>
+
+      <!-- AI Voice Receptionist & Internal GPT -->
+      <div class="service-card">
+        <h3>AI Voice Receptionist & Internal GPT</h3>
+        <p>Replace missed calls and repetitive Q&amp;A with an AI-driven receptionist. Internally, GPT handles team knowledge, FAQs, and resource-sharing on demand.</p>
+        <ul class="service-benefits">
+          <li>Capture every lead call—even off-hours.</li>
+          <li>Reduce repetitive support queries and free up staff bandwidth.</li>
+          <li>Empower your team with instant, AI-powered insights.</li>
+        </ul>
+      </div>
+
+      <!-- Modern Data Stack -->
+      <div class="service-card">
+        <h3>Modern Data Stack</h3>
+        <p>For organizations ready to scale, we implement robust pipelines, governance, and analytics. Gain real-time visibility, train advanced AI models, and future-proof your data infrastructure.</p>
+        <ul class="service-benefits">
+          <li>Break down data silos for unified reporting.</li>
+          <li>Enable predictive analytics and machine learning at scale.</li>
+          <li>Strengthen compliance and data governance practices.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Calendly -->
+  <section id="contact" class="contact-section">
+    <div class="contact-form">
+      <h3>Ready to Elevate Your Business?</h3>
+      <p class="small-print">Tell us about your challenges or growth goals—our team at Centurion AI will tailor solutions to fit your needs.</p>
+      <form action="https://formspree.io/f/YOUR_FORMSPREE_ENDPOINT" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="_replyto" placeholder="Your Email" required />
+        <textarea name="message" rows="4" placeholder="Share a brief overview of your business..."></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <p class="small-print">We'll respond within 24 hours.</p>
+    </div>
+
+    <div class="calendly-section">
+      <!-- Calendly inline widget code -->
+      <div 
+        class="calendly-inline-widget" 
+        data-url="https://calendly.com/YOUR_CALENDLY_URL" 
+        style="min-width:320px; height:630px;">
+      </div>
+      <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Centurion AI. All Rights Reserved.</p>
+    <p>Build your AI-driven business with confidence and clarity.</p>
+  </footer>
+</body>
+</html>
