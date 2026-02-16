@@ -65,7 +65,8 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8">
             {/* Strategy Audit */}
             <div className="bg-white rounded-2xl border border-slate-200/60 p-8 hover:shadow-lg hover:border-blue-200 transition-all">
-              <div className="rounded-lg bg-blue-50 p-3 w-fit mb-5">
+              <span className="bg-slate-100 text-slate-600 text-xs font-semibold px-3 py-1 rounded-full">Minimum Package</span>
+              <div className="rounded-lg bg-blue-50 p-3 w-fit mb-5 mt-4">
                 <Search className="h-7 w-7 text-blue-500" />
               </div>
               <h3 className="text-2xl font-bold mb-2" style={{color: "#0F172A"}}>Strategy Audit</h3>
@@ -99,44 +100,45 @@ export default function Home() {
             </div>
 
             {/* AI Transformation */}
-            <div className="bg-white rounded-2xl border border-slate-200/60 p-8 hover:shadow-lg hover:border-blue-200 transition-all">
-              <div className="rounded-lg bg-blue-50 p-3 w-fit mb-5">
-                <Users className="h-7 w-7 text-blue-500" />
+            <div className="bg-blue-600 rounded-2xl p-8 transition-all hover:shadow-lg hover:shadow-blue-500/20 relative">
+              <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-white text-blue-600 text-xs font-bold px-4 py-1 rounded-full shadow-md uppercase tracking-wide">Most Popular</span>
+              <div className="rounded-lg bg-blue-500/30 p-3 w-fit mb-5">
+                <Users className="h-7 w-7 text-white" />
               </div>
-              <h3 className="text-2xl font-bold mb-2" style={{color: "#0F172A"}}>AI Transformation</h3>
-              <p className="text-blue-500 font-medium mb-4">We make your team AI-powered.</p>
-              <p className="mb-6 leading-relaxed" style={{color: "#64748B"}}>
+              <h3 className="text-2xl font-bold text-white mb-2">AI Transformation</h3>
+              <p className="text-blue-200 font-medium mb-4">We make your team AI-powered.</p>
+              <p className="mb-6 leading-relaxed text-blue-100/80">
                 Platform setup, connector integrations, role-based prompt packs, team training,
                 custom workflows, and managed AI infrastructure.
               </p>
 
               <div className="space-y-4 mb-8">
                 <div className="flex items-start gap-3">
-                  <div className="rounded bg-slate-100 px-2 py-0.5 text-xs font-semibold mt-0.5 shrink-0" style={{color: "#0F172A"}}>T1</div>
+                  <div className="rounded bg-blue-500/30 text-white px-2 py-0.5 text-xs font-semibold mt-0.5 shrink-0">T1</div>
                   <div>
-                    <span className="font-medium" style={{color: "#0F172A"}}>AI Foundations</span>
-                    <span className="text-sm" style={{color: "#94A3B8"}}> — Platform setup + training from $1,500</span>
+                    <span className="font-medium text-white">AI Foundations</span>
+                    <span className="text-sm text-blue-200"> — Platform setup + training from $1,500</span>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <div className="rounded bg-slate-100 px-2 py-0.5 text-xs font-semibold mt-0.5 shrink-0" style={{color: "#0F172A"}}>T2</div>
+                  <div className="rounded bg-blue-500/30 text-white px-2 py-0.5 text-xs font-semibold mt-0.5 shrink-0">T2</div>
                   <div>
-                    <span className="font-medium" style={{color: "#0F172A"}}>Custom Workflows</span>
-                    <span className="text-sm" style={{color: "#94A3B8"}}> — Claude Code + agent automation from $3,500</span>
+                    <span className="font-medium text-white">Custom Workflows</span>
+                    <span className="text-sm text-blue-200"> — Claude Code + agent automation from $3,500</span>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <div className="rounded bg-slate-100 px-2 py-0.5 text-xs font-semibold mt-0.5 shrink-0" style={{color: "#0F172A"}}>T3</div>
+                  <div className="rounded bg-blue-500/30 text-white px-2 py-0.5 text-xs font-semibold mt-0.5 shrink-0">T3</div>
                   <div>
-                    <span className="font-medium" style={{color: "#0F172A"}}>Managed Infrastructure</span>
-                    <span className="text-sm" style={{color: "#94A3B8"}}> — OpenClaw hosted agents from $3,500</span>
+                    <span className="font-medium text-white">Managed Infrastructure</span>
+                    <span className="text-sm text-blue-200"> — OpenClaw hosted agents from $3,500</span>
                   </div>
                 </div>
               </div>
 
               <Link
                 href="/ai-transformation"
-                className="inline-flex items-center font-medium text-blue-500 group"
+                className="inline-flex items-center font-medium text-white hover:text-blue-200 group"
               >
                 See all tiers and pricing
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -145,7 +147,8 @@ export default function Home() {
 
             {/* AI Engineering */}
             <div className="rounded-2xl border p-8 transition-all hover:shadow-lg" style={{backgroundColor: "#1E293B", borderColor: "rgba(96,165,250,0.15)"}}>
-              <div className="rounded-lg p-3 w-fit mb-5" style={{backgroundColor: "#0F172A"}}>
+              <span className="bg-blue-400/20 text-blue-300 text-xs font-semibold px-3 py-1 rounded-full">Most Valuable</span>
+              <div className="rounded-lg p-3 w-fit mb-5 mt-4" style={{backgroundColor: "#0F172A"}}>
                 <Code className="h-7 w-7 text-blue-400" />
               </div>
               <h3 className="text-2xl font-bold text-white mb-2">AI Engineering</h3>
@@ -184,19 +187,22 @@ export default function Home() {
       {/* ================================================================ */}
       {/* HOW IT WORKS — QUICK PROCESS                                     */}
       {/* ================================================================ */}
-      <section className="py-20 px-4" style={{backgroundColor: "#F8FAFC"}}>
-        <div className="container mx-auto max-w-5xl">
+      <section className="py-20 px-4 relative overflow-hidden" style={{backgroundColor: "#0F172A"}}>
+        <div className="absolute inset-0 opacity-[0.03]" style={{backgroundImage: "linear-gradient(rgba(148,163,184,1) 1px, transparent 1px), linear-gradient(90deg, rgba(148,163,184,1) 1px, transparent 1px)", backgroundSize: "60px 60px"}} />
+        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-400/30 to-transparent" />
+
+        <div className="container relative z-10 mx-auto max-w-5xl">
           <div className="text-center mb-16">
-            <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4" style={{color: "#0F172A"}}>
+            <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4 text-white">
               How every engagement starts.
             </h2>
-            <p className="text-lg max-w-2xl mx-auto" style={{color: "#64748B"}}>
+            <p className="text-lg max-w-2xl mx-auto" style={{color: "#94A3B8"}}>
               Whether you need transformation, engineering, or both — the first step is the same.
             </p>
           </div>
 
           <div className="grid md:grid-cols-4 gap-8 relative">
-            <div className="hidden md:block absolute top-10 left-[15%] right-[15%] h-0.5 bg-gradient-to-r from-blue-300 via-blue-400 to-blue-300" />
+            <div className="hidden md:block absolute top-10 left-[15%] right-[15%] h-0.5 bg-gradient-to-r from-blue-400/30 via-blue-400/30 to-blue-400/30" />
 
             {[
               { num: "01", title: "Call", desc: "30-minute conversation about your business, your tools, and what you're trying to accomplish." },
@@ -208,8 +214,8 @@ export default function Home() {
                 <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-blue-500 text-white font-display font-bold text-lg mb-5 relative z-10">
                   {step.num}
                 </div>
-                <h3 className="text-lg font-bold mb-2" style={{color: "#0F172A"}}>{step.title}</h3>
-                <p className="text-sm leading-relaxed" style={{color: "#64748B"}}>{step.desc}</p>
+                <h3 className="text-lg font-bold mb-2 text-white">{step.title}</h3>
+                <p className="text-sm leading-relaxed" style={{color: "#94A3B8"}}>{step.desc}</p>
               </div>
             ))}
           </div>

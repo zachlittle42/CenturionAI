@@ -5,6 +5,7 @@ import "./globals.css"
 import { Toaster } from "@/components/ui/toaster"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
+import StickyCta from "@/components/sticky-cta"
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
@@ -33,6 +34,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+        <StickyCta />
         <Toaster />
       </body>
     </html>
