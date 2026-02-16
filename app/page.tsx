@@ -138,7 +138,7 @@ export default function Home() {
                 <h3 className="text-2xl font-bold text-white mb-2">AI Engineering</h3>
                 <p className="text-amber-400 font-medium mb-4">Our AI team builds for you.</p>
                 <p className="text-brand-200 mb-6 leading-relaxed">
-                  AI-augmented engineering teams that ship working software in biweekly sprints.
+                  Submit tickets, we build them. AI-augmented engineering teams at $150/hr.
                   3x faster than traditional agencies. You own all the code.
                 </p>
 
@@ -146,8 +146,8 @@ export default function Home() {
                   {[
                     "Full-stack apps, internal tools, APIs",
                     "AI/ML features and data pipelines",
-                    "Biweekly delivery with daily standups",
-                    "Projects from $15k, sprints from $8k",
+                    "Submit tickets, we work on them",
+                    "10, 20, or 40 hrs/week from $6k/mo",
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-2">
                       <Check className="h-5 w-5 text-amber-400 flex-shrink-0 mt-0.5" />

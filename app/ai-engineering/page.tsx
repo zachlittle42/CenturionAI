@@ -135,48 +135,48 @@ const comparisonRows = [
 
 const pricingTiers = [
   {
-    name: "Single Project",
-    price: "$15,000-$40,000",
-    priceLabel: "fixed price",
+    name: "10 Hours / Week",
+    price: "$6,000",
+    priceLabel: "per month",
     popular: false,
-    team: "1 TPM + 2 engineers",
-    timeline: "4-8 week delivery",
-    idealFor: "MVPs, proof of concepts, one-off builds",
+    team: "10 hrs/week at $150/hr",
+    timeline: "Month-to-month, cancel anytime",
+    idealFor: "Steady progress on a focused backlog",
     features: [
-      "Fixed scope, fixed price",
-      "Requirements doc & architecture",
-      "Development & testing",
-      "Deployment",
+      "Submit tickets, we build them",
+      "Dedicated Slack channel",
+      "Weekly progress updates",
+      "You own all code, day one",
       "30-day bug fix warranty",
     ],
   },
   {
-    name: "Ongoing Sprints",
-    price: "$8,000-$15,000",
-    priceLabel: "per sprint",
+    name: "20 Hours / Week",
+    price: "$12,000",
+    priceLabel: "per month",
     popular: true,
-    team: "1 TPM + 2-3 engineers",
-    timeline: "Minimum 3-sprint engagement",
-    idealFor: "Feature development, continuous product work",
+    team: "20 hrs/week at $150/hr",
+    timeline: "Month-to-month, cancel anytime",
+    idealFor: "Continuous product development and feature velocity",
     features: [
-      "Biweekly sprint commitment",
-      "Sprint planning & daily standups",
-      "Demo + retrospective each sprint",
-      "Dedicated Slack channel",
-      "Priority queue for requests",
+      "Everything in 10 hrs/week",
+      "Priority ticket queue",
+      "Daily standups available",
+      "Sprint planning & retrospectives",
+      "Dedicated project manager",
     ],
   },
   {
-    name: "Dedicated Team",
-    price: "$20,000-$35,000",
+    name: "40 Hours / Week",
+    price: "$24,000",
     priceLabel: "per month",
     popular: false,
-    team: "1 TPM + 3-5 engineers",
-    timeline: "Month-to-month after 3-month minimum",
-    idealFor: "Long-term product development, scaling engineering capacity",
+    team: "40 hrs/week at $150/hr",
+    timeline: "Month-to-month, cancel anytime",
+    idealFor: "Full-time embedded engineering capacity",
     features: [
-      "Full-time embedded team",
-      "Everything in Ongoing Sprints",
+      "Everything in 20 hrs/week",
+      "Full-time dedicated team",
       "Weekly strategy call",
       "On-call support",
       "Dedicated Slack workspace",
@@ -425,10 +425,10 @@ export default function AIEngineeringPage() {
         <div className="container mx-auto max-w-6xl px-4">
           <div className="text-center mb-16">
             <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4 text-gray-900">
-              Engagement models.
+              Simple, transparent pricing.
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Transparent pricing. Pick the model that fits your needs.
+              $150/hr. You submit tickets, we build them. Pick your weekly hours.
             </p>
           </div>
 
