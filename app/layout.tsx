@@ -6,6 +6,7 @@ import { Toaster } from "@/components/ui/toaster"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import StickyCta from "@/components/sticky-cta"
+import { Analytics } from "@vercel/analytics/next"
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
@@ -36,6 +37,7 @@ export default function RootLayout({
         <Footer />
         <StickyCta />
         <Toaster />
+        <Analytics />
       </body>
     </html>
   )
