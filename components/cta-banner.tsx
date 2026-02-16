@@ -16,29 +16,25 @@ export default function CtaBanner({
   buttonHref = "/get-started",
 }: CtaBannerProps) {
   return (
-    <section className="grain py-20 px-4 relative overflow-hidden">
-      {/* Gradient Background */}
-      <div className="absolute inset-0 bg-gradient-to-r from-brand-600 to-brand-800 z-0"></div>
-      <div className="absolute -top-24 -right-24 w-72 h-72 bg-brand-400 rounded-full opacity-10 blur-3xl"></div>
-      <div className="absolute -bottom-24 -left-24 w-72 h-72 bg-brand-900 rounded-full opacity-10 blur-3xl"></div>
+    <section className="py-20 px-4 relative overflow-hidden" style={{ backgroundColor: "#1E293B" }}>
+      {/* Top accent line */}
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-400/20 to-transparent" />
 
-      {/* Floating geometric decorations */}
-      <div className="absolute top-12 left-[15%] w-4 h-4 rounded-sm bg-amber-500/20 animate-float" />
-      <div className="absolute bottom-16 right-[10%] w-6 h-6 rounded-full bg-brand-400/15 animate-float stagger-3" />
-      <div className="absolute top-1/2 right-[20%] w-3 h-3 rounded-sm bg-amber-400/20 animate-float stagger-5" />
+      {/* Blue glow blob */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl" />
 
       <div className="container relative z-10 mx-auto max-w-3xl text-center">
         <h2 className="font-display text-balance text-3xl md:text-4xl font-bold text-white mb-4 opacity-0 animate-reveal">
           {title}
         </h2>
-        <p className="text-lg text-brand-100 mb-8 max-w-2xl mx-auto leading-relaxed opacity-0 animate-reveal stagger-1">
+        <p className="text-lg mb-8 max-w-2xl mx-auto leading-relaxed opacity-0 animate-reveal stagger-1" style={{ color: "#94A3B8" }}>
           {subtitle}
         </p>
         <div className="opacity-0 animate-reveal stagger-2">
           <Button
             asChild
             size="lg"
-            className="text-base px-8 py-6 font-medium bg-amber-500 hover:bg-amber-600 text-gray-900 shadow-lg group"
+            className="text-base px-8 py-6 font-medium bg-blue-500 hover:bg-blue-400 text-white shadow-lg shadow-blue-500/20 group"
           >
             <Link href={buttonHref} className="flex items-center">
               {buttonText}

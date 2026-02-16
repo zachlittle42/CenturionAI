@@ -260,30 +260,30 @@ function PricingCard({
     <Card
       className={
         popular
-          ? "relative gradient-border shadow-lg shadow-brand-100/50"
+          ? "relative gradient-border shadow-lg shadow-blue-100/50"
           : "relative shadow-md card-hover"
       }
     >
       {popular && (
-        <Badge className="absolute -top-3 left-1/2 -translate-x-1/2 bg-amber-500 hover:bg-amber-500 text-gray-900 px-3 py-1 text-xs">
+        <Badge className="absolute -top-3 left-1/2 -translate-x-1/2 bg-blue-500 hover:bg-blue-500 text-white px-3 py-1 text-xs">
           MOST POPULAR
         </Badge>
       )}
-      <div className="h-1 rounded-t-lg bg-gradient-to-r from-brand-500 to-amber-500" />
+      <div className="h-1 rounded-t-lg bg-gradient-to-r from-blue-500 to-blue-400" />
       <CardHeader className="pb-4">
         <CardTitle className="text-xl">{name}</CardTitle>
         <div className="mt-2">
           <span className="text-3xl font-bold text-gray-900">{setup}</span>
           <span className="text-gray-500 text-sm ml-1">setup</span>
         </div>
-        <div className="text-brand-600 font-semibold text-lg">+ {monthly}</div>
+        <div className="text-blue-600 font-semibold text-lg">+ {monthly}</div>
       </CardHeader>
       <CardContent className="flex-1">
         <ul className="space-y-3">
           {features.map((feature) => (
             <li key={feature} className="flex items-start gap-2">
-              <Check className="h-5 w-5 text-brand-600 flex-shrink-0 mt-0.5" />
-              <span className="text-gray-700 text-sm">{feature}</span>
+              <Check className="h-5 w-5 text-blue-600 flex-shrink-0 mt-0.5" />
+              <span style={{color: "#64748B"}} className="text-sm">{feature}</span>
             </li>
           ))}
         </ul>
@@ -293,7 +293,7 @@ function PricingCard({
           asChild
           className={
             popular
-              ? "w-full bg-amber-500 hover:bg-amber-600 text-gray-900"
+              ? "w-full bg-blue-500 hover:bg-blue-400 text-white"
               : "w-full bg-gray-900 hover:bg-gray-800"
           }
         >
@@ -314,25 +314,24 @@ export default function AITransformationPage() {
       {/* ============================================================ */}
       {/* HERO                                                         */}
       {/* ============================================================ */}
-      <section className="relative pt-24 pb-20 md:pt-32 md:pb-28 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-brand-50 to-white z-0" />
-        <div className="absolute inset-0 dot-grid z-0" />
-        <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-brand-400 via-brand-600 to-brand-800" />
-        <div className="absolute -top-24 -right-24 w-96 h-96 bg-brand-100 rounded-full opacity-20 blur-3xl" />
-        <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-brand-200 rounded-full opacity-20 blur-3xl" />
+      <section className="relative pt-24 pb-20 md:pt-32 md:pb-28 overflow-hidden" style={{backgroundColor: "#0F172A"}}>
+        <div className="absolute inset-0 opacity-[0.03]" style={{backgroundImage: "linear-gradient(rgba(148,163,184,1) 1px, transparent 1px), linear-gradient(90deg, rgba(148,163,184,1) 1px, transparent 1px)", backgroundSize: "60px 60px"}} />
+        <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-400/50 via-blue-400/50 to-transparent" />
+        <div className="absolute -top-24 -right-24 w-96 h-96 bg-blue-500 rounded-full opacity-10 blur-3xl" />
+        <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-blue-600 rounded-full opacity-10 blur-3xl" />
 
         <div className="container relative z-10 mx-auto max-w-5xl px-4 text-center">
-          <div className="inline-block mb-4 px-4 py-1.5 bg-brand-50 rounded-full border border-brand-100">
-            <span className="text-brand-700 font-medium text-sm">
+          <div className="inline-block mb-4 px-4 py-1.5 bg-blue-900/50 rounded-full border border-blue-700/50">
+            <span className="text-blue-300 font-medium text-sm">
               AI Transformation
             </span>
           </div>
 
-          <h1 className="font-display text-balance text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-gray-900 via-brand-800 to-amber-700 opacity-0 animate-reveal">
+          <h1 className="font-display text-balance text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-white opacity-0 animate-reveal">
             Go from AI-curious to AI-native.
           </h1>
 
-          <p className="text-xl text-gray-700 mb-10 max-w-3xl mx-auto leading-relaxed opacity-0 animate-reveal stagger-2">
+          <p className="text-xl mb-10 max-w-3xl mx-auto leading-relaxed opacity-0 animate-reveal stagger-2" style={{color: "#94A3B8"}}>
             Most companies buy AI seats and hope for the best. We set up the
             platforms, connect your tools, train your team, and build the
             workflows that make AI actually useful.
@@ -341,7 +340,7 @@ export default function AITransformationPage() {
           <Button
             asChild
             size="lg"
-            className="text-base px-8 py-6 font-medium bg-brand-600 hover:bg-brand-700 shadow-lg shadow-brand-100/50 group opacity-0 animate-reveal stagger-3"
+            className="text-base px-8 py-6 font-medium bg-blue-500 hover:bg-blue-400 text-white shadow-lg shadow-blue-500/20 group opacity-0 animate-reveal stagger-3"
           >
             <Link href="/get-started" className="flex items-center">
               Start with an AI Audit
@@ -354,17 +353,15 @@ export default function AITransformationPage() {
       {/* ============================================================ */}
       {/* THE GAP (dark section)                                       */}
       {/* ============================================================ */}
-      <section className="py-20 px-4 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-brand-900 to-black z-0" />
+      <section className="py-20 px-4 relative overflow-hidden" style={{backgroundColor: "#0F172A"}}>
+        <div className="absolute inset-0 opacity-[0.03]" style={{backgroundImage: "linear-gradient(rgba(148,163,184,1) 1px, transparent 1px), linear-gradient(90deg, rgba(148,163,184,1) 1px, transparent 1px)", backgroundSize: "60px 60px"}} />
         <div className="absolute inset-0 grain z-0" />
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-brand-700 rounded-full opacity-10 blur-3xl" />
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-brand-800 rounded-full opacity-10 blur-3xl" />
 
         <div className="container relative z-10 mx-auto max-w-5xl text-center">
           <h2 className="font-display text-3xl md:text-4xl font-bold mb-6 text-white">
             Having ChatGPT seats isn&apos;t a strategy.
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-transparent via-amber-500 to-transparent mx-auto mb-12" />
+          <div className="w-16 h-0.5 bg-blue-400 mx-auto mb-12" />
 
           <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
             {[
@@ -375,10 +372,10 @@ export default function AITransformationPage() {
             ].map((item, i) => (
               <div
                 key={i}
-                className="flex items-start gap-3 bg-white/10 backdrop-blur-sm p-5 rounded-lg text-left animate-fade-in"
+                className="flex items-start gap-3 bg-white/5 backdrop-blur-sm p-5 rounded-lg text-left animate-fade-in"
                 style={{ animationDelay: `${i * 100}ms` }}
               >
-                <XCircle className="h-6 w-6 text-amber-400 flex-shrink-0 mt-0.5" />
+                <XCircle className="h-6 w-6 text-blue-400 flex-shrink-0 mt-0.5" />
                 <span className="text-white text-base">{item}</span>
               </div>
             ))}
@@ -389,21 +386,21 @@ export default function AITransformationPage() {
       {/* ============================================================ */}
       {/* TIER 1: AI FOUNDATIONS                                        */}
       {/* ============================================================ */}
-      <section className="section-padding px-4 bg-gray-50 relative">
-        <div className="absolute inset-0 dot-grid" />
+      <section className="section-padding px-4 relative" style={{backgroundColor: "#F8FAFC"}}>
+        <div className="absolute inset-0 opacity-[0.03]" style={{backgroundImage: "linear-gradient(rgba(148,163,184,1) 1px, transparent 1px), linear-gradient(90deg, rgba(148,163,184,1) 1px, transparent 1px)", backgroundSize: "60px 60px"}} />
         <div className="container mx-auto max-w-6xl relative">
           {/* Tier header */}
           <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 mb-4 px-4 py-1.5 bg-brand-50 rounded-full border border-brand-100">
-              <Layers className="h-4 w-4 text-amber-500" />
-              <span className="text-brand-700 font-medium text-sm">
+            <div className="inline-flex items-center gap-2 mb-4 px-4 py-1.5 bg-blue-50 rounded-full border border-blue-100">
+              <Layers className="h-4 w-4 text-blue-400" />
+              <span className="text-blue-700 font-medium text-sm">
                 Tier 1
               </span>
             </div>
-            <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4">
+            <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4" style={{color: "#0F172A"}}>
               AI Foundations
             </h2>
-            <p className="text-lg text-gray-700 max-w-2xl mx-auto">
+            <p className="text-lg max-w-2xl mx-auto" style={{color: "#64748B"}}>
               Platform setup, connector integration, role-based prompt packs,
               and team training. Everything your team needs to start using AI
               effectively.
@@ -412,12 +409,12 @@ export default function AITransformationPage() {
 
           {/* Platform comparison table */}
           <div className="mb-16">
-            <h3 className="text-2xl font-bold mb-6">Platform comparison</h3>
+            <h3 className="text-2xl font-bold mb-6" style={{color: "#0F172A"}}>Platform comparison</h3>
             <Card className="overflow-hidden">
               <div className="overflow-x-auto">
               <Table>
                 <TableHeader>
-                  <TableRow className="bg-gray-50 border-b-2 border-amber-200">
+                  <TableRow className="bg-slate-50 border-b-2 border-blue-200">
                     <TableHead className="font-bold text-gray-900">Platform</TableHead>
                     <TableHead className="font-bold text-gray-900">Per Seat Cost</TableHead>
                     <TableHead className="font-bold text-gray-900">Min Seats</TableHead>
@@ -426,7 +423,7 @@ export default function AITransformationPage() {
                 </TableHeader>
                 <TableBody>
                   {platforms.map((p) => (
-                    <TableRow key={p.name} className="hover:bg-brand-50/50">
+                    <TableRow key={p.name} className="hover:bg-blue-50/50">
                       <TableCell className="font-medium">{p.name}</TableCell>
                       <TableCell>{p.cost}</TableCell>
                       <TableCell>{p.minSeats}</TableCell>
@@ -441,7 +438,7 @@ export default function AITransformationPage() {
 
           {/* What's Included */}
           <div className="mb-16">
-            <h3 className="text-2xl font-bold mb-6">What&apos;s included</h3>
+            <h3 className="text-2xl font-bold mb-6" style={{color: "#0F172A"}}>What&apos;s included</h3>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
                 {
@@ -461,15 +458,15 @@ export default function AITransformationPage() {
                   desc: "Hands-on session with your team, recorded for future reference.",
                 },
               ].map((item) => (
-                <Card key={item.title} className="card-hover">
-                  <div className="h-1 rounded-t-lg bg-gradient-to-r from-brand-400 to-brand-600" />
+                <Card key={item.title} className="bg-white card-hover">
+                  <div className="h-1 rounded-t-lg bg-gradient-to-r from-blue-500 to-blue-600" />
                   <CardHeader className="pb-2">
-                    <CardTitle className="text-base font-semibold">
+                    <CardTitle className="text-base font-semibold" style={{color: "#0F172A"}}>
                       {item.title}
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-sm text-gray-600">{item.desc}</p>
+                    <p className="text-sm" style={{color: "#64748B"}}>{item.desc}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -492,20 +489,20 @@ export default function AITransformationPage() {
       {/* ============================================================ */}
       {/* TIER 2: CUSTOM WORKFLOWS                                     */}
       {/* ============================================================ */}
-      <section className="section-padding px-4">
+      <section className="section-padding px-4 bg-white">
         <div className="container mx-auto max-w-6xl">
           {/* Tier header */}
           <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 mb-4 px-4 py-1.5 bg-brand-50 rounded-full border border-brand-100">
-              <Workflow className="h-4 w-4 text-amber-500" />
-              <span className="text-brand-700 font-medium text-sm">
+            <div className="inline-flex items-center gap-2 mb-4 px-4 py-1.5 bg-blue-50 rounded-full border border-blue-100">
+              <Workflow className="h-4 w-4 text-blue-400" />
+              <span className="text-blue-700 font-medium text-sm">
                 Tier 2
               </span>
             </div>
-            <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4">
+            <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4" style={{color: "#0F172A"}}>
               Custom Workflows
             </h2>
-            <p className="text-lg text-gray-700 max-w-2xl mx-auto">
+            <p className="text-lg max-w-2xl mx-auto" style={{color: "#64748B"}}>
               Move from &ldquo;everyone has chat access&rdquo; to automated
               workflows that run multi-step processes. Less manual work, more
               consistent output.
@@ -514,7 +511,7 @@ export default function AITransformationPage() {
 
           {/* What's Included */}
           <div className="mb-16">
-            <h3 className="text-2xl font-bold mb-6">What&apos;s included</h3>
+            <h3 className="text-2xl font-bold mb-6" style={{color: "#0F172A"}}>What&apos;s included</h3>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
                 {
@@ -538,15 +535,15 @@ export default function AITransformationPage() {
                   desc: "Every workflow documented so your team can maintain and extend them.",
                 },
               ].map((item) => (
-                <Card key={item.title} className="card-hover">
-                  <div className="h-1 rounded-t-lg bg-gradient-to-r from-brand-500 to-amber-500" />
+                <Card key={item.title} className="bg-white card-hover">
+                  <div className="h-1 rounded-t-lg bg-gradient-to-r from-blue-500 to-blue-600" />
                   <CardHeader className="pb-2">
-                    <CardTitle className="text-base font-semibold">
+                    <CardTitle className="text-base font-semibold" style={{color: "#0F172A"}}>
                       {item.title}
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-sm text-gray-600">{item.desc}</p>
+                    <p className="text-sm" style={{color: "#64748B"}}>{item.desc}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -565,21 +562,21 @@ export default function AITransformationPage() {
       {/* ============================================================ */}
       {/* TIER 3: MANAGED AI INFRASTRUCTURE                            */}
       {/* ============================================================ */}
-      <section className="section-padding px-4 bg-gray-50 relative">
-        <div className="absolute inset-0 dot-grid" />
+      <section className="section-padding px-4 relative" style={{backgroundColor: "#F8FAFC"}}>
+        <div className="absolute inset-0 opacity-[0.03]" style={{backgroundImage: "linear-gradient(rgba(148,163,184,1) 1px, transparent 1px), linear-gradient(90deg, rgba(148,163,184,1) 1px, transparent 1px)", backgroundSize: "60px 60px"}} />
         <div className="container mx-auto max-w-6xl relative">
           {/* Tier header */}
           <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 mb-4 px-4 py-1.5 bg-brand-50 rounded-full border border-brand-100">
-              <Server className="h-4 w-4 text-amber-500" />
-              <span className="text-brand-700 font-medium text-sm">
+            <div className="inline-flex items-center gap-2 mb-4 px-4 py-1.5 bg-blue-50 rounded-full border border-blue-100">
+              <Server className="h-4 w-4 text-blue-400" />
+              <span className="text-blue-700 font-medium text-sm">
                 Tier 3
               </span>
             </div>
-            <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4">
+            <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4" style={{color: "#0F172A"}}>
               Managed AI Infrastructure
             </h2>
-            <p className="text-lg text-gray-700 max-w-2xl mx-auto">
+            <p className="text-lg max-w-2xl mx-auto" style={{color: "#64748B"}}>
               Always-on AI agents running on your infrastructure, hosted and
               managed by us. You bring the use cases, we handle the ops.
             </p>
@@ -587,7 +584,7 @@ export default function AITransformationPage() {
 
           {/* What's Included */}
           <div className="mb-16">
-            <h3 className="text-2xl font-bold mb-6">What&apos;s included</h3>
+            <h3 className="text-2xl font-bold mb-6" style={{color: "#0F172A"}}>What&apos;s included</h3>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
                 {
@@ -607,15 +604,15 @@ export default function AITransformationPage() {
                   desc: "Usage dashboards, cost tracking, and performance metrics.",
                 },
               ].map((item) => (
-                <Card key={item.title} className="card-hover">
-                  <div className="h-1 rounded-t-lg bg-gradient-to-r from-amber-500 to-brand-700" />
+                <Card key={item.title} className="bg-white card-hover">
+                  <div className="h-1 rounded-t-lg bg-gradient-to-r from-blue-500 to-blue-600" />
                   <CardHeader className="pb-2">
-                    <CardTitle className="text-base font-semibold">
+                    <CardTitle className="text-base font-semibold" style={{color: "#0F172A"}}>
                       {item.title}
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-sm text-gray-600">{item.desc}</p>
+                    <p className="text-sm" style={{color: "#64748B"}}>{item.desc}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -637,28 +634,28 @@ export default function AITransformationPage() {
       <section className="section-padding px-4">
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-16">
-            <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4">
+            <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4" style={{color: "#0F172A"}}>
               How it works
             </h2>
-            <p className="text-lg text-gray-700 max-w-2xl mx-auto">
+            <p className="text-lg max-w-2xl mx-auto" style={{color: "#64748B"}}>
               Three phases. Clear deliverables at each step.
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 relative">
             {/* Connecting line (desktop only) */}
-            <div className="hidden md:block absolute top-16 left-[20%] right-[20%] h-0.5 bg-gradient-to-r from-amber-300 to-brand-300" />
+            <div className="hidden md:block absolute top-16 left-[20%] right-[20%] h-0.5 bg-gradient-to-r from-blue-300 to-blue-400" />
 
             {steps.map((step) => (
               <div key={step.number} className="text-center relative">
-                <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-amber-500 text-gray-900 font-display font-bold text-lg mb-6 relative z-10">
+                <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-blue-500 text-white font-display font-bold text-lg mb-6 relative z-10">
                   {step.number}
                 </div>
-                <div className="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-brand-50 mb-4">
-                  <step.icon className="h-5 w-5 text-brand-600" />
+                <div className="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-blue-50 mb-4">
+                  <step.icon className="h-5 w-5 text-blue-600" />
                 </div>
-                <h3 className="text-xl font-bold mb-3">{step.title}</h3>
-                <p className="text-gray-600">{step.description}</p>
+                <h3 className="text-xl font-bold mb-3" style={{color: "#0F172A"}}>{step.title}</h3>
+                <p style={{color: "#64748B"}}>{step.description}</p>
               </div>
             ))}
           </div>
@@ -668,10 +665,10 @@ export default function AITransformationPage() {
       {/* ============================================================ */}
       {/* FAQ                                                          */}
       {/* ============================================================ */}
-      <section className="section-padding px-4 bg-gray-50">
+      <section className="section-padding px-4" style={{backgroundColor: "#F8FAFC"}}>
         <div className="container mx-auto max-w-3xl">
           <div className="text-center mb-12">
-            <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4">
+            <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4" style={{color: "#0F172A"}}>
               Frequently asked questions
             </h2>
           </div>
@@ -694,24 +691,23 @@ export default function AITransformationPage() {
       {/* ============================================================ */}
       {/* CTA BANNER                                                   */}
       {/* ============================================================ */}
-      <section className="py-20 px-4 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-brand-900 to-black z-0" />
+      <section className="py-20 px-4 relative overflow-hidden" style={{backgroundColor: "#0F172A"}}>
         <div className="absolute inset-0 grain z-0" />
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-brand-700 rounded-full opacity-10 blur-3xl" />
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-brand-800 rounded-full opacity-10 blur-3xl" />
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-500 rounded-full opacity-10 blur-3xl" />
+        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-blue-600 rounded-full opacity-10 blur-3xl" />
 
         <div className="container relative z-10 mx-auto max-w-3xl text-center">
           <h2 className="font-display text-3xl md:text-4xl font-bold mb-6 text-white">
             Ready to transform how your team works with AI?
           </h2>
-          <p className="text-lg text-brand-100 mb-10 max-w-2xl mx-auto">
+          <p className="text-lg mb-10 max-w-2xl mx-auto" style={{color: "#94A3B8"}}>
             Start with an audit. We&apos;ll assess your tools, your team, and
             your workflows - then give you a concrete plan to move forward.
           </p>
           <Button
             asChild
             size="lg"
-            className="text-base px-8 py-6 font-medium bg-amber-500 hover:bg-amber-600 text-gray-900 shadow-lg group"
+            className="text-base px-8 py-6 font-medium bg-blue-500 hover:bg-blue-400 text-white shadow-lg group"
           >
             <Link href="/get-started" className="flex items-center">
               Book Your AI Audit
