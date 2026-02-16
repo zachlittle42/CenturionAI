@@ -358,8 +358,7 @@ export default function AITransformationPage() {
           </div>
 
           <p className="text-sm text-center" style={{color: "#64748B"}}>
-            All tiers are available month-to-month. No lock-in. Audit fees
-            credited toward Tier 1.
+            All tiers are available month-to-month. No lock-in.
           </p>
         </div>
       </section>

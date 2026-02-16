@@ -12,6 +12,7 @@ import {
   Phone,
   FileText,
   Layout,
+  Bot,
 } from "lucide-react"
 import CtaBanner from "@/components/cta-banner"
 
@@ -83,7 +84,7 @@ export default function Home() {
                   "AI readiness assessment",
                   "Prioritized opportunity matrix",
                   "Platform recommendation",
-                  "Starting at $1,500 (credited toward Tier 1)",
+                  "Starting at $1,500",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-2">
                     <Check className="h-5 w-5 text-blue-500 flex-shrink-0 mt-0.5" />
@@ -94,9 +95,9 @@ export default function Home() {
 
               <Link
                 href="/services/strategy-audit"
-                className="inline-flex items-center font-medium text-blue-500 group"
+                className="inline-flex items-center justify-center w-full px-6 py-3 rounded-lg bg-blue-500 hover:bg-blue-400 text-white font-medium transition-colors shadow-md shadow-blue-500/20 group"
               >
-                Learn about the audit
+                Learn About the Audit
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Link>
             </div>
@@ -142,9 +143,9 @@ export default function Home() {
 
               <Link
                 href="/ai-transformation"
-                className="inline-flex items-center font-medium text-white hover:text-blue-200 group"
+                className="inline-flex items-center justify-center w-full px-6 py-3 rounded-lg bg-white hover:bg-blue-50 text-blue-600 font-medium transition-colors shadow-md group"
               >
-                See all tiers and pricing
+                See All Tiers & Pricing
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Link>
             </div>
@@ -180,9 +181,9 @@ export default function Home() {
 
               <Link
                 href="/ai-engineering"
-                className="inline-flex items-center font-medium text-blue-400 group"
+                className="inline-flex items-center justify-center w-full px-6 py-3 rounded-lg bg-blue-500 hover:bg-blue-400 text-white font-medium transition-colors shadow-md shadow-blue-500/20 group"
               >
-                See capabilities and pricing
+                See Capabilities & Pricing
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Link>
             </div>
@@ -224,6 +225,101 @@ export default function Home() {
                 <p className="text-sm leading-relaxed" style={{color: "#94A3B8"}}>{step.desc}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ================================================================ */}
+      {/* PRODUCT SPOTLIGHT                                                */}
+      {/* ================================================================ */}
+      <section className="py-20 px-4" style={{backgroundColor: "#F8FAFC"}}>
+        <div className="container mx-auto max-w-5xl">
+          <div className="text-center mb-14">
+            <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4" style={{color: "#0F172A"}}>
+              Built for every stage of AI adoption.
+            </h2>
+            <p className="text-lg max-w-2xl mx-auto" style={{color: "#64748B"}}>
+              From hosted AI agents to team transformation to full-stack engineering — pick what you need.
+            </p>
+          </div>
+
+          <div className="space-y-6">
+            {/* OpenClaw AI Agents */}
+            <div className="rounded-2xl border p-8 md:p-10 relative overflow-hidden" style={{backgroundColor: "#0F172A", borderColor: "rgba(96,165,250,0.2)"}}>
+              <div className="absolute top-0 right-0 w-60 h-60 bg-blue-500/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4" />
+              <div className="relative z-10 flex flex-col md:flex-row md:items-center gap-6">
+                <div className="flex-1">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="rounded-lg bg-blue-500/20 p-3">
+                      <Bot className="h-7 w-7 text-blue-400" />
+                    </div>
+                    <h3 className="text-2xl font-bold text-white">OpenClaw AI Agents</h3>
+                  </div>
+                  <p className="leading-relaxed mb-1" style={{color: "#94A3B8"}}>
+                    Self-hosted AI agents that run your workflows 24/7. Voice agents, knowledge bots,
+                    CRM automation, cold email — deployed on your infrastructure, owned by you.
+                  </p>
+                </div>
+                <Link
+                  href="/use-cases"
+                  className="inline-flex items-center justify-center px-7 py-3 rounded-lg bg-blue-500 hover:bg-blue-400 text-white font-medium transition-colors shadow-lg shadow-blue-500/25 group shrink-0"
+                >
+                  Explore Agents
+                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </Link>
+              </div>
+            </div>
+
+            {/* AI Transformation */}
+            <div className="rounded-2xl border border-slate-200/60 bg-white p-8 md:p-10">
+              <div className="flex flex-col md:flex-row md:items-center gap-6">
+                <div className="flex-1">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="rounded-lg bg-blue-50 p-3">
+                      <Users className="h-7 w-7 text-blue-500" />
+                    </div>
+                    <h3 className="text-2xl font-bold" style={{color: "#0F172A"}}>AI Transformation</h3>
+                  </div>
+                  <p className="leading-relaxed mb-1" style={{color: "#64748B"}}>
+                    Platform setup, team training, prompt packs, and custom workflows.
+                    We make your existing team AI-powered — from day-one tooling to advanced automation.
+                  </p>
+                </div>
+                <Link
+                  href="/ai-transformation"
+                  className="inline-flex items-center justify-center px-7 py-3 rounded-lg bg-blue-500 hover:bg-blue-400 text-white font-medium transition-colors shadow-lg shadow-blue-500/25 group shrink-0"
+                >
+                  See Tiers
+                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </Link>
+              </div>
+            </div>
+
+            {/* AI Engineering */}
+            <div className="rounded-2xl border p-8 md:p-10 relative overflow-hidden" style={{backgroundColor: "#1E293B", borderColor: "rgba(96,165,250,0.15)"}}>
+              <div className="absolute bottom-0 left-0 w-60 h-60 bg-blue-500/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/4" />
+              <div className="relative z-10 flex flex-col md:flex-row md:items-center gap-6">
+                <div className="flex-1">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="rounded-lg p-3" style={{backgroundColor: "#0F172A"}}>
+                      <Code className="h-7 w-7 text-blue-400" />
+                    </div>
+                    <h3 className="text-2xl font-bold text-white">AI Engineering</h3>
+                  </div>
+                  <p className="leading-relaxed mb-1" style={{color: "#94A3B8"}}>
+                    AI-augmented engineering teams that build your software. Submit tickets, we ship code.
+                    Full-stack apps, APIs, internal tools — at $150/hr.
+                  </p>
+                </div>
+                <Link
+                  href="/ai-engineering"
+                  className="inline-flex items-center justify-center px-7 py-3 rounded-lg bg-blue-500 hover:bg-blue-400 text-white font-medium transition-colors shadow-lg shadow-blue-500/25 group shrink-0"
+                >
+                  See Plans
+                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>

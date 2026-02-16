@@ -292,8 +292,7 @@ export default function StrategyAuditPage() {
           </div>
 
           <p className="text-center text-sm text-gray-500 mt-8 max-w-xl mx-auto">
-            Audit fees are credited toward any Tier 1 or Tier 2 engagement.
-            Think of it as a risk-free first step.
+            The audit is a standalone engagement with no obligation to continue.
           </p>
         </div>
       </section>
