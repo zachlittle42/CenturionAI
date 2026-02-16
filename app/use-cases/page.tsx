@@ -41,45 +41,83 @@ export default function UseCasesPage() {
         <div className="absolute -top-24 -right-24 w-96 h-96 bg-blue-900 rounded-full opacity-20 blur-3xl" />
         <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-blue-950 rounded-full opacity-20 blur-3xl" />
 
-        <div className="container relative z-10 mx-auto max-w-5xl px-4 text-center">
-          <div className="inline-block mb-4 px-4 py-1.5 bg-blue-900/50 rounded-full border border-blue-700/50">
-            <span className="text-blue-300 font-medium text-sm">
-              Powered by OpenClaw
-            </span>
-          </div>
+        <div className="container relative z-10 mx-auto max-w-6xl px-4">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            {/* Left: Copy */}
+            <div className="text-center md:text-left">
+              <div className="inline-block mb-4 px-4 py-1.5 bg-blue-900/50 rounded-full border border-blue-700/50">
+                <span className="text-blue-300 font-medium text-sm">
+                  Powered by OpenClaw
+                </span>
+              </div>
 
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-white font-display text-balance opacity-0 animate-reveal">
-            AI agents that run your business.{" "}
-            <span className="text-blue-400">24/7.</span>
-          </h1>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-white font-display text-balance opacity-0 animate-reveal">
+                AI agents that run your business.{" "}
+                <span className="text-blue-400">24/7.</span>
+              </h1>
 
-          <p className="text-xl mb-10 max-w-3xl mx-auto leading-relaxed opacity-0 animate-reveal stagger-1" style={{ color: "#94A3B8" }}>
-            OpenClaw is our open-source AI agent platform. Self-hosted or cloud-managed,
-            it gives your business always-on AI agents with full tool access, security sandboxing,
-            and complete control over what they can do.
-          </p>
+              <p className="text-xl mb-10 max-w-3xl mx-auto md:mx-0 leading-relaxed opacity-0 animate-reveal stagger-1" style={{ color: "#94A3B8" }}>
+                OpenClaw is our open-source AI agent platform. Self-hosted or cloud-managed,
+                it gives your business always-on AI agents with full tool access, security sandboxing,
+                and complete control over what they can do.
+              </p>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 opacity-0 animate-reveal stagger-2">
-            <Button
-              asChild
-              size="lg"
-              className="text-base px-8 py-6 font-medium bg-blue-500 hover:bg-blue-400 text-white shadow-lg shadow-blue-500/20 group"
-            >
-              <Link href="/get-started" className="flex items-center">
-                Deploy OpenClaw
-                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </Link>
-            </Button>
-            <Button
-              asChild
-              variant="outline"
-              size="lg"
-              className="text-base px-8 py-6 font-medium border-blue-400/30 text-blue-300 hover:bg-white/5"
-            >
-              <Link href="/ai-transformation" className="flex items-center">
-                See Infrastructure Pricing
-              </Link>
-            </Button>
+              <div className="flex flex-col sm:flex-row items-center md:items-start justify-center md:justify-start gap-4 opacity-0 animate-reveal stagger-2">
+                <Button
+                  asChild
+                  size="lg"
+                  className="text-base px-8 py-6 font-medium bg-blue-500 hover:bg-blue-400 text-white shadow-lg shadow-blue-500/20 group"
+                >
+                  <Link href="/get-started" className="flex items-center">
+                    Deploy OpenClaw
+                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </Link>
+                </Button>
+                <Button
+                  asChild
+                  variant="outline"
+                  size="lg"
+                  className="text-base px-8 py-6 font-medium border-blue-400/30 text-blue-300 hover:bg-white/5"
+                >
+                  <Link href="/ai-transformation" className="flex items-center">
+                    See Infrastructure Pricing
+                  </Link>
+                </Button>
+              </div>
+            </div>
+
+            {/* Right: Agent Dashboard Mockup */}
+            <div className="hidden md:block opacity-0 animate-reveal stagger-3">
+              <div className="rounded-xl border border-blue-400/15 bg-[#0B1222] p-5 shadow-2xl">
+                <div className="flex items-center gap-2 mb-4">
+                  <div className="w-2.5 h-2.5 rounded-full bg-red-400/60" />
+                  <div className="w-2.5 h-2.5 rounded-full bg-yellow-400/60" />
+                  <div className="w-2.5 h-2.5 rounded-full bg-green-400/60" />
+                  <span className="ml-2 text-xs text-slate-500 font-mono">OpenClaw Agent Manager</span>
+                </div>
+                <div className="space-y-2.5">
+                  {[
+                    { name: "Lead Qualifier", status: "Active", metric: "38 scored today", color: "bg-green-400" },
+                    { name: "Support Agent — Tier 1", status: "Active", metric: "124 tickets/wk", color: "bg-green-400" },
+                    { name: "Email Outreach — Q1", status: "Active", metric: "1.2k sent", color: "bg-green-400" },
+                    { name: "Voice — Inbound Calls", status: "Active", metric: "67 calls today", color: "bg-green-400" },
+                    { name: "Report Gen — Weekly", status: "Scheduled", metric: "Next: Mon 8am", color: "bg-yellow-400" },
+                  ].map((agent) => (
+                    <div key={agent.name} className="flex items-center justify-between rounded-lg bg-slate-800/50 border border-slate-700/40 px-4 py-3">
+                      <div className="flex items-center gap-3">
+                        <div className={`w-2 h-2 rounded-full ${agent.color}`} />
+                        <span className="text-sm text-slate-300 font-mono">{agent.name}</span>
+                      </div>
+                      <span className="text-xs text-slate-500 font-mono">{agent.metric}</span>
+                    </div>
+                  ))}
+                </div>
+                <div className="mt-4 pt-3 border-t border-slate-700/40 flex items-center justify-between">
+                  <span className="text-xs text-slate-500 font-mono">5 agents deployed</span>
+                  <span className="text-xs text-green-400 font-mono">All systems nominal</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -144,19 +182,69 @@ export default function UseCasesPage() {
               </Card>
             ))}
           </div>
+
+          {/* Architecture Mockup */}
+          <div className="mt-16">
+            <div className="rounded-xl border border-blue-400/15 bg-[#0B1222] p-6 shadow-2xl max-w-4xl mx-auto">
+              <div className="flex items-center gap-2 mb-5">
+                <div className="w-2.5 h-2.5 rounded-full bg-red-400/60" />
+                <div className="w-2.5 h-2.5 rounded-full bg-yellow-400/60" />
+                <div className="w-2.5 h-2.5 rounded-full bg-green-400/60" />
+                <span className="ml-2 text-xs text-slate-500 font-mono">OpenClaw Architecture</span>
+              </div>
+
+              <div className="grid grid-cols-3 gap-4 mb-4">
+                <div className="col-span-3 rounded-lg bg-slate-800/50 border border-slate-700/40 px-4 py-3 text-center">
+                  <span className="text-xs text-blue-400 font-mono font-semibold uppercase tracking-wider">Your Infrastructure</span>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-3 gap-3 mb-4">
+                {[
+                  { label: "Agent Runtime", detail: "Docker / K8s" },
+                  { label: "Tool Registry", detail: "MCP Servers" },
+                  { label: "Security Layer", detail: "Sandboxed" },
+                ].map((item) => (
+                  <div key={item.label} className="rounded-lg bg-blue-500/10 border border-blue-400/15 px-3 py-3 text-center">
+                    <p className="text-sm text-white font-mono font-medium">{item.label}</p>
+                    <p className="text-xs text-slate-500 font-mono mt-1">{item.detail}</p>
+                  </div>
+                ))}
+              </div>
+
+              <div className="flex items-center justify-center gap-2 my-3">
+                <div className="h-px flex-1 bg-slate-700/50" />
+                <span className="text-xs text-slate-600 font-mono">API / Webhooks</span>
+                <div className="h-px flex-1 bg-slate-700/50" />
+              </div>
+
+              <div className="grid grid-cols-4 gap-3">
+                {["CRM", "Email", "Slack", "Custom APIs"].map((svc) => (
+                  <div key={svc} className="rounded-lg bg-slate-800/30 border border-slate-700/30 px-3 py-2.5 text-center">
+                    <span className="text-xs text-slate-400 font-mono">{svc}</span>
+                  </div>
+                ))}
+              </div>
+
+              <div className="mt-4 pt-3 border-t border-slate-700/40 flex items-center justify-between">
+                <span className="text-xs text-slate-500 font-mono">Self-hosted on your servers</span>
+                <span className="text-xs text-blue-400 font-mono">BYOK supported</span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* ============================================================ */}
       {/* OPENCLAW AGENT EXAMPLES                                      */}
       {/* ============================================================ */}
-      <section className="py-20 px-4" style={{ backgroundColor: "#F8FAFC" }}>
+      <section className="py-20 px-4" style={{ backgroundColor: "#0F172A" }}>
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4 font-display" style={{ color: "#0F172A" }}>
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4 font-display text-white">
               Agents we deploy.
             </h2>
-            <p className="text-lg max-w-2xl mx-auto" style={{ color: "#64748B" }}>
+            <p className="text-lg max-w-2xl mx-auto" style={{ color: "#94A3B8" }}>
               These are real agent configurations we build and manage for clients using OpenClaw.
             </p>
           </div>
@@ -167,61 +255,135 @@ export default function UseCasesPage() {
                 title: "Lead Qualification Agent",
                 description: "Monitors your CRM for new leads. Researches each company via web scraping and LinkedIn. Scores them based on your ICP criteria. Routes qualified leads to the right sales rep with a pre-drafted outreach email.",
                 tools: ["CRM API", "Web scraping", "Email", "Slack notifications"],
+                mockup: {
+                  lines: [
+                    { label: "New lead: Acme Corp", value: "Score: 87/100", status: "bg-green-400" },
+                    { label: "New lead: Beta Inc", value: "Score: 42/100", status: "bg-yellow-400" },
+                    { label: "Routed: Acme Corp → Sarah K.", value: "Email drafted", status: "bg-green-400" },
+                  ],
+                  footer: { left: "12 leads scored today", right: "3 qualified" },
+                },
               },
               {
                 title: "Customer Support Agent",
                 description: "Ingests your knowledge base, product docs, and past tickets. Handles Tier 1 support via chat or email. Escalates complex issues to humans with full context summary. Learns from resolved tickets.",
                 tools: ["Knowledge base", "Email", "Chat widget", "Ticketing system"],
+                mockup: {
+                  lines: [
+                    { label: "Ticket #1042 — Password reset", value: "Auto-resolved", status: "bg-green-400" },
+                    { label: "Ticket #1043 — Billing question", value: "Auto-resolved", status: "bg-green-400" },
+                    { label: "Ticket #1044 — API integration", value: "Escalated", status: "bg-yellow-400" },
+                  ],
+                  footer: { left: "87% auto-resolved", right: "Avg 12s response" },
+                },
               },
               {
                 title: "Report Generation Agent",
                 description: "Pulls data from your analytics, CRM, and financial systems every Monday morning. Generates a formatted weekly report with charts and key metrics. Sends to your exec team via email and Slack.",
                 tools: ["Database queries", "Analytics APIs", "Email", "Slack"],
+                mockup: {
+                  lines: [
+                    { label: "Weekly Revenue Report", value: "Sent Mon 8:01am", status: "bg-green-400" },
+                    { label: "Pipeline Summary", value: "Sent Mon 8:02am", status: "bg-green-400" },
+                    { label: "Support Metrics Brief", value: "Queued", status: "bg-yellow-400" },
+                  ],
+                  footer: { left: "3 reports configured", right: "Next run: Mon" },
+                },
               },
               {
                 title: "Code Review Agent",
                 description: "Monitors your GitHub repos for new PRs. Reviews code for bugs, security issues, and style violations. Posts inline comments and an overall summary. Learns your team's patterns over time.",
                 tools: ["GitHub API", "Code analysis", "Comment posting"],
+                mockup: {
+                  lines: [
+                    { label: "PR #247 — Auth refactor", value: "2 issues found", status: "bg-yellow-400" },
+                    { label: "PR #248 — Add API tests", value: "Approved", status: "bg-green-400" },
+                    { label: "PR #249 — DB migration", value: "Reviewing...", status: "bg-blue-400" },
+                  ],
+                  footer: { left: "142 PRs reviewed", right: "Avg 3min review" },
+                },
               },
               {
                 title: "Onboarding Agent",
                 description: "Triggers when a new client signs a contract. Creates project channels, sends welcome emails, generates onboarding docs, schedules kickoff meetings, and tracks completion of setup tasks.",
                 tools: ["CRM", "Slack", "Calendar", "Email", "Doc generation"],
+                mockup: {
+                  lines: [
+                    { label: "Client: Nova Labs — Channel created", value: "Done", status: "bg-green-400" },
+                    { label: "Welcome email sent", value: "Done", status: "bg-green-400" },
+                    { label: "Kickoff meeting — scheduling", value: "Pending", status: "bg-yellow-400" },
+                  ],
+                  footer: { left: "8 clients onboarded", right: "Avg 2hr setup" },
+                },
               },
               {
                 title: "Competitive Intel Agent",
                 description: "Monitors competitor websites, social media, and job postings daily. Flags new product launches, pricing changes, or hiring patterns. Delivers a weekly competitive brief to your team.",
                 tools: ["Web scraping", "RSS feeds", "Email", "Slack"],
+                mockup: {
+                  lines: [
+                    { label: "Competitor A — New pricing page", value: "Flagged", status: "bg-yellow-400" },
+                    { label: "Competitor B — 3 new job posts", value: "Logged", status: "bg-green-400" },
+                    { label: "Weekly brief — generated", value: "Sent Fri", status: "bg-green-400" },
+                  ],
+                  footer: { left: "5 competitors tracked", right: "24 alerts/wk" },
+                },
               },
-            ].map((agent, index) => {
-              const botColors = ["bg-blue-600", "bg-blue-500", "bg-blue-700", "bg-blue-600", "bg-blue-500", "bg-blue-700"]
-              return (
-                <div
-                  key={agent.title}
-                  className="bg-white rounded-xl shadow-md border border-slate-200/60 p-8 hover-glow"
-                >
+            ].map((agent) => (
+              <div
+                key={agent.title}
+                className="rounded-xl overflow-hidden border border-blue-400/10"
+                style={{ backgroundColor: "#1E293B" }}
+              >
+                {/* Mini agent dashboard mockup */}
+                <div className="bg-[#0B1222] px-5 pt-4 pb-4 border-b border-slate-700/40">
+                  <div className="flex items-center gap-2 mb-3">
+                    <div className="w-2 h-2 rounded-full bg-red-400/60" />
+                    <div className="w-2 h-2 rounded-full bg-yellow-400/60" />
+                    <div className="w-2 h-2 rounded-full bg-green-400/60" />
+                    <span className="ml-2 text-xs text-slate-500 font-mono">{agent.title}</span>
+                  </div>
+                  <div className="space-y-1.5">
+                    {agent.mockup.lines.map((line) => (
+                      <div key={line.label} className="flex items-center justify-between rounded bg-slate-800/50 border border-slate-700/30 px-3 py-2">
+                        <div className="flex items-center gap-2">
+                          <div className={`w-1.5 h-1.5 rounded-full ${line.status}`} />
+                          <span className="text-xs text-slate-400 font-mono">{line.label}</span>
+                        </div>
+                        <span className="text-xs text-slate-500 font-mono">{line.value}</span>
+                      </div>
+                    ))}
+                  </div>
+                  <div className="mt-3 pt-2 border-t border-slate-700/30 flex items-center justify-between">
+                    <span className="text-xs text-slate-600 font-mono">{agent.mockup.footer.left}</span>
+                    <span className="text-xs text-blue-400/70 font-mono">{agent.mockup.footer.right}</span>
+                  </div>
+                </div>
+
+                {/* Card content */}
+                <div className="p-6">
                   <div className="flex items-start gap-4 mb-4">
-                    <div className={`w-10 h-10 rounded-lg ${botColors[index]} flex items-center justify-center shrink-0`}>
-                      <Bot className="h-5 w-5 text-white" />
+                    <div className="w-10 h-10 rounded-lg bg-blue-500/20 border border-blue-400/15 flex items-center justify-center shrink-0">
+                      <Bot className="h-5 w-5 text-blue-400" />
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold" style={{ color: "#0F172A" }}>{agent.title}</h3>
+                      <h3 className="text-xl font-bold text-white">{agent.title}</h3>
                     </div>
                   </div>
-                  <p className="leading-relaxed mb-4" style={{ color: "#64748B" }}>{agent.description}</p>
+                  <p className="leading-relaxed mb-4 text-sm" style={{ color: "#94A3B8" }}>{agent.description}</p>
                   <div className="flex flex-wrap gap-2">
                     {agent.tools.map((tool) => (
                       <span
                         key={tool}
-                        className="inline-block px-3 py-1 rounded-lg text-xs font-medium border bg-blue-50 text-blue-800 border-blue-100"
+                        className="inline-block px-3 py-1 rounded-lg text-xs font-medium border bg-blue-500/10 text-blue-300 border-blue-400/15"
                       >
                         {tool}
                       </span>
                     ))}
                   </div>
                 </div>
-              )
-            })}
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -253,6 +415,8 @@ export default function UseCasesPage() {
                   "AI-scored pipeline with priority routing",
                   "Centralized client communications",
                 ],
+                badges: ["Built on OpenClaw", "Self-hosted"],
+                preview: { metric: "89 leads scored", status: "Active" },
               },
               {
                 icon: Mail,
@@ -264,6 +428,8 @@ export default function UseCasesPage() {
                   "AI-personalized email sequences",
                   "Continuous A/B testing and analytics",
                 ],
+                badges: ["Built on OpenClaw", "SMTP integration"],
+                preview: { metric: "62% open rate", status: "Sending" },
               },
               {
                 icon: FileText,
@@ -275,6 +441,8 @@ export default function UseCasesPage() {
                   "Automated onboarding task management",
                   "Consistent formatting and branding",
                 ],
+                badges: ["Built on OpenClaw", "CRM connected"],
+                preview: { metric: "14 proposals/wk", status: "Active" },
               },
               {
                 icon: Phone,
@@ -286,6 +454,8 @@ export default function UseCasesPage() {
                   "Lead qualification and appointment booking",
                   "Call summaries and CRM integration",
                 ],
+                badges: ["Built on OpenClaw", "Telephony API"],
+                preview: { metric: "142 calls/day", status: "Active" },
               },
               {
                 icon: MessagesSquare,
@@ -297,6 +467,8 @@ export default function UseCasesPage() {
                   "Slack or web-based interface",
                   "Answers sourced with citations",
                 ],
+                badges: ["Built on OpenClaw", "RAG pipeline"],
+                preview: { metric: "2.4k queries/wk", status: "Active" },
               },
               {
                 icon: LineChart,
@@ -308,11 +480,22 @@ export default function UseCasesPage() {
                   "Real-time reporting dashboards",
                   "ML-ready data infrastructure",
                 ],
+                badges: ["Built on OpenClaw", "PostgreSQL"],
+                preview: { metric: "5 pipelines", status: "Streaming" },
               },
             ].map((useCase, index) => (
               <Card key={useCase.title} className="border-0 shadow-md hover:shadow-lg transition-shadow overflow-hidden bg-white card-hover">
                 <div className={`h-1 bg-gradient-to-r ${index % 2 === 0 ? "from-blue-500 to-blue-700" : "from-blue-400 to-blue-600"}`} />
                 <CardContent className="p-6">
+                  {/* Status bar */}
+                  <div className="flex items-center justify-between mb-4 rounded-lg bg-slate-50 border border-slate-100 px-3 py-2">
+                    <div className="flex items-center gap-2">
+                      <div className={`w-2 h-2 rounded-full ${useCase.preview.status === "Active" || useCase.preview.status === "Sending" || useCase.preview.status === "Streaming" ? "bg-green-400" : "bg-yellow-400"}`} />
+                      <span className="text-xs font-mono text-slate-500">{useCase.preview.status}</span>
+                    </div>
+                    <span className="text-xs font-mono text-blue-500 font-medium">{useCase.preview.metric}</span>
+                  </div>
+
                   <div className="flex items-center gap-3 mb-4">
                     <div className="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center">
                       <useCase.icon className="h-5 w-5 text-blue-600" />
@@ -320,7 +503,7 @@ export default function UseCasesPage() {
                     <h3 className="text-xl font-bold" style={{ color: "#0F172A" }}>{useCase.title}</h3>
                   </div>
                   <p className="mb-5 leading-relaxed text-sm" style={{ color: "#64748B" }}>{useCase.description}</p>
-                  <ul className="space-y-2">
+                  <ul className="space-y-2 mb-4">
                     {useCase.benefits.map((benefit) => (
                       <li key={benefit} className="flex items-start gap-2">
                         <Check className="h-4 w-4 text-blue-500 flex-shrink-0 mt-0.5" />
@@ -328,6 +511,18 @@ export default function UseCasesPage() {
                       </li>
                     ))}
                   </ul>
+
+                  {/* Platform badges */}
+                  <div className="flex flex-wrap gap-2 pt-3 border-t border-slate-100">
+                    {useCase.badges.map((badge) => (
+                      <span
+                        key={badge}
+                        className="inline-block px-2.5 py-1 rounded-full text-xs font-medium bg-slate-100 text-slate-500"
+                      >
+                        {badge}
+                      </span>
+                    ))}
+                  </div>
                 </CardContent>
               </Card>
             ))}
