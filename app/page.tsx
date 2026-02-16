@@ -64,12 +64,14 @@ export default function Home() {
 
           <div className="grid md:grid-cols-3 gap-8">
             {/* Strategy Audit */}
-            <div className="bg-white rounded-2xl border border-slate-200/60 p-8 hover:shadow-lg hover:border-blue-200 transition-all">
-              <span className="bg-slate-100 text-slate-600 text-xs font-semibold px-3 py-1 rounded-full">Minimum Package</span>
-              <div className="rounded-lg bg-blue-50 p-3 w-fit mb-5 mt-4">
-                <Search className="h-7 w-7 text-blue-500" />
+            <div className="bg-white rounded-2xl border border-slate-200/60 p-8 hover:shadow-lg hover:border-blue-200 transition-all relative">
+              <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-slate-800 text-white text-sm font-bold px-5 py-1.5 rounded-full shadow-lg uppercase tracking-wide whitespace-nowrap">Minimum Package</span>
+              <div className="flex items-center gap-3 mb-2 mt-2">
+                <div className="rounded-lg bg-blue-50 p-3 shrink-0">
+                  <Search className="h-7 w-7 text-blue-500" />
+                </div>
+                <h3 className="text-2xl font-bold" style={{color: "#0F172A"}}>Strategy Audit</h3>
               </div>
-              <h3 className="text-2xl font-bold mb-2" style={{color: "#0F172A"}}>Strategy Audit</h3>
               <p className="text-blue-500 font-medium mb-4">Know exactly where AI fits.</p>
               <p className="mb-6 leading-relaxed" style={{color: "#64748B"}}>
                 A focused 30-60-90 day audit that maps your AI opportunities, estimates ROI,
@@ -101,11 +103,13 @@ export default function Home() {
 
             {/* AI Transformation */}
             <div className="bg-blue-600 rounded-2xl p-8 transition-all hover:shadow-lg hover:shadow-blue-500/20 relative">
-              <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-white text-blue-600 text-xs font-bold px-4 py-1 rounded-full shadow-md uppercase tracking-wide">Most Popular</span>
-              <div className="rounded-lg bg-blue-500/30 p-3 w-fit mb-5">
-                <Users className="h-7 w-7 text-white" />
+              <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-white text-blue-600 text-sm font-bold px-5 py-1.5 rounded-full shadow-lg uppercase tracking-wide whitespace-nowrap">Most Popular</span>
+              <div className="flex items-center gap-3 mb-2 mt-2">
+                <div className="rounded-lg bg-blue-500/30 p-3 shrink-0">
+                  <Users className="h-7 w-7 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold text-white">AI Transformation</h3>
               </div>
-              <h3 className="text-2xl font-bold text-white mb-2">AI Transformation</h3>
               <p className="text-blue-200 font-medium mb-4">We make your team AI-powered.</p>
               <p className="mb-6 leading-relaxed text-blue-100/80">
                 Platform setup, connector integrations, role-based prompt packs, team training,
@@ -146,12 +150,14 @@ export default function Home() {
             </div>
 
             {/* AI Engineering */}
-            <div className="rounded-2xl border p-8 transition-all hover:shadow-lg" style={{backgroundColor: "#1E293B", borderColor: "rgba(96,165,250,0.15)"}}>
-              <span className="bg-blue-400/20 text-blue-300 text-xs font-semibold px-3 py-1 rounded-full">Most Valuable</span>
-              <div className="rounded-lg p-3 w-fit mb-5 mt-4" style={{backgroundColor: "#0F172A"}}>
-                <Code className="h-7 w-7 text-blue-400" />
+            <div className="rounded-2xl border p-8 transition-all hover:shadow-lg relative" style={{backgroundColor: "#1E293B", borderColor: "rgba(96,165,250,0.15)"}}>
+              <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-blue-400 text-slate-900 text-sm font-bold px-5 py-1.5 rounded-full shadow-lg uppercase tracking-wide whitespace-nowrap">Most Valuable</span>
+              <div className="flex items-center gap-3 mb-2 mt-2">
+                <div className="rounded-lg p-3 shrink-0" style={{backgroundColor: "#0F172A"}}>
+                  <Code className="h-7 w-7 text-blue-400" />
+                </div>
+                <h3 className="text-2xl font-bold text-white">AI Engineering</h3>
               </div>
-              <h3 className="text-2xl font-bold text-white mb-2">AI Engineering</h3>
               <p className="text-blue-400 font-medium mb-4">Our AI team builds for you.</p>
               <p className="mb-6 leading-relaxed" style={{color: "#94A3B8"}}>
                 Submit tickets, we build them. AI-augmented engineering teams at $150/hr.
