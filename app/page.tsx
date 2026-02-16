@@ -232,94 +232,290 @@ export default function Home() {
       {/* ================================================================ */}
       {/* PRODUCT SPOTLIGHT                                                */}
       {/* ================================================================ */}
-      <section className="py-20 px-4" style={{backgroundColor: "#F8FAFC"}}>
-        <div className="container mx-auto max-w-5xl">
+      <section className="py-20 px-4" style={{backgroundColor: "#0B1120"}}>
+        <div className="absolute inset-0 opacity-[0.02]" style={{backgroundImage: "linear-gradient(rgba(148,163,184,1) 1px, transparent 1px), linear-gradient(90deg, rgba(148,163,184,1) 1px, transparent 1px)", backgroundSize: "60px 60px"}} />
+        <div className="container mx-auto max-w-6xl relative z-10">
           <div className="text-center mb-14">
-            <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4" style={{color: "#0F172A"}}>
+            <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4 text-white">
               Built for every stage of AI adoption.
             </h2>
-            <p className="text-lg max-w-2xl mx-auto" style={{color: "#64748B"}}>
+            <p className="text-lg max-w-2xl mx-auto" style={{color: "#94A3B8"}}>
               From hosted AI agents to team transformation to full-stack engineering — pick what you need.
             </p>
           </div>
 
-          <div className="space-y-6">
-            {/* OpenClaw AI Agents */}
-            <div className="rounded-2xl border p-8 md:p-10 relative overflow-hidden" style={{backgroundColor: "#0F172A", borderColor: "rgba(96,165,250,0.2)"}}>
-              <div className="absolute top-0 right-0 w-60 h-60 bg-blue-500/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4" />
-              <div className="relative z-10 flex flex-col md:flex-row md:items-center gap-6">
-                <div className="flex-1">
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="rounded-lg bg-blue-500/20 p-3">
-                      <Bot className="h-7 w-7 text-blue-400" />
+          <div className="space-y-8">
+
+            {/* ── OpenClaw AI Agents ── */}
+            <div className="rounded-2xl overflow-hidden relative" style={{background: "linear-gradient(135deg, #1e3a5f 0%, #0f172a 100%)"}}>
+              <div className="absolute top-0 right-0 w-80 h-80 bg-blue-500/8 rounded-full blur-3xl -translate-y-1/3 translate-x-1/4" />
+              <div className="relative z-10 p-8 md:p-12 grid md:grid-cols-2 gap-10 items-start">
+                <div>
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="rounded-lg bg-blue-500/20 p-3 border border-blue-400/20">
+                      <Bot className="h-8 w-8 text-blue-400" />
                     </div>
-                    <h3 className="text-2xl font-bold text-white">OpenClaw AI Agents</h3>
+                    <div>
+                      <h3 className="text-2xl md:text-3xl font-bold text-white">OpenClaw AI Agents</h3>
+                      <p className="text-blue-300 text-sm">Self-hosted. Yours to own.</p>
+                    </div>
                   </div>
-                  <p className="leading-relaxed mb-1" style={{color: "#94A3B8"}}>
-                    Self-hosted AI agents that run your workflows 24/7. Voice agents, knowledge bots,
-                    CRM automation, cold email — deployed on your infrastructure, owned by you.
+                  <p className="text-lg leading-relaxed mb-6" style={{color: "#CBD5E1"}}>
+                    Deploy AI agents that run your business workflows 24/7 — on your infrastructure,
+                    with your data, under your control.
                   </p>
+
+                  <div className="grid grid-cols-2 gap-3 mb-8">
+                    {[
+                      { icon: Phone, label: "Voice Agents", detail: "Answer every call" },
+                      { icon: Mail, label: "Email Outreach", detail: "Personalized at scale" },
+                      { icon: Brain, label: "Knowledge Bots", detail: "Instant answers from your docs" },
+                      { icon: Database, label: "CRM Automation", detail: "Smart lead scoring" },
+                    ].map((agent) => (
+                      <div key={agent.label} className="flex items-start gap-2.5 rounded-lg bg-blue-500/10 border border-blue-400/10 px-3 py-2.5">
+                        <agent.icon className="h-4 w-4 text-blue-400 shrink-0 mt-0.5" />
+                        <div>
+                          <p className="text-sm font-medium text-white leading-tight">{agent.label}</p>
+                          <p className="text-xs text-blue-300/60">{agent.detail}</p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+
+                  <Link
+                    href="/use-cases"
+                    className="inline-flex items-center px-7 py-3 rounded-lg bg-blue-500 hover:bg-blue-400 text-white font-medium transition-colors shadow-lg shadow-blue-500/25 group"
+                  >
+                    Explore OpenClaw Agents
+                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </Link>
                 </div>
-                <Link
-                  href="/use-cases"
-                  className="inline-flex items-center justify-center px-7 py-3 rounded-lg bg-blue-500 hover:bg-blue-400 text-white font-medium transition-colors shadow-lg shadow-blue-500/25 group shrink-0"
-                >
-                  Explore Agents
-                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                </Link>
+
+                {/* Visual: Agent dashboard mockup */}
+                <div className="hidden md:block">
+                  <div className="rounded-xl border border-blue-400/15 bg-[#0B1222] p-5 shadow-2xl">
+                    <div className="flex items-center gap-2 mb-4">
+                      <div className="w-2.5 h-2.5 rounded-full bg-red-400/60" />
+                      <div className="w-2.5 h-2.5 rounded-full bg-yellow-400/60" />
+                      <div className="w-2.5 h-2.5 rounded-full bg-green-400/60" />
+                      <span className="ml-2 text-xs text-slate-500 font-mono">OpenClaw Dashboard</span>
+                    </div>
+                    <div className="space-y-2.5">
+                      {[
+                        { name: "Voice Agent — Inbound", status: "Active", metric: "142 calls today", color: "bg-green-400" },
+                        { name: "Email Outreach — Q1 Campaign", status: "Active", metric: "847 sent", color: "bg-green-400" },
+                        { name: "Knowledge Base — Internal Docs", status: "Active", metric: "2.4k queries/wk", color: "bg-green-400" },
+                        { name: "CRM Agent — Lead Scoring", status: "Processing", metric: "89 new leads", color: "bg-yellow-400" },
+                      ].map((agent) => (
+                        <div key={agent.name} className="flex items-center justify-between rounded-lg bg-slate-800/50 border border-slate-700/40 px-4 py-3">
+                          <div className="flex items-center gap-3">
+                            <div className={`w-2 h-2 rounded-full ${agent.color}`} />
+                            <span className="text-sm text-slate-300 font-mono">{agent.name}</span>
+                          </div>
+                          <span className="text-xs text-slate-500 font-mono">{agent.metric}</span>
+                        </div>
+                      ))}
+                    </div>
+                    <div className="mt-4 pt-3 border-t border-slate-700/40 flex items-center justify-between">
+                      <span className="text-xs text-slate-500 font-mono">4 agents deployed</span>
+                      <span className="text-xs text-green-400 font-mono">All systems nominal</span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
-            {/* AI Transformation */}
-            <div className="rounded-2xl border border-slate-200/60 bg-white p-8 md:p-10">
-              <div className="flex flex-col md:flex-row md:items-center gap-6">
-                <div className="flex-1">
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="rounded-lg bg-blue-50 p-3">
-                      <Users className="h-7 w-7 text-blue-500" />
+            {/* ── AI Transformation ── */}
+            <div className="rounded-2xl overflow-hidden" style={{background: "linear-gradient(135deg, #2563eb 0%, #1d4ed8 50%, #1e40af 100%)"}}>
+              <div className="p-8 md:p-12 grid md:grid-cols-2 gap-10 items-start">
+                <div>
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="rounded-lg bg-white/10 p-3 border border-white/10">
+                      <Users className="h-8 w-8 text-white" />
                     </div>
-                    <h3 className="text-2xl font-bold" style={{color: "#0F172A"}}>AI Transformation</h3>
+                    <div>
+                      <h3 className="text-2xl md:text-3xl font-bold text-white">AI Transformation</h3>
+                      <p className="text-blue-200 text-sm">Make your team AI-powered.</p>
+                    </div>
                   </div>
-                  <p className="leading-relaxed mb-1" style={{color: "#64748B"}}>
-                    Platform setup, team training, prompt packs, and custom workflows.
-                    We make your existing team AI-powered — from day-one tooling to advanced automation.
+                  <p className="text-lg leading-relaxed mb-6 text-blue-100/90">
+                    Platform setup, team training, prompt packs, custom workflows, and managed
+                    infrastructure. We bring your team from zero to AI-native.
                   </p>
+
+                  <div className="mb-6">
+                    <p className="text-xs uppercase tracking-wider text-blue-200/50 font-semibold mb-3">We set up & train your team on</p>
+                    <div className="flex flex-wrap gap-2">
+                      {["Anthropic Claude", "OpenAI ChatGPT", "Google Gemini", "Microsoft Copilot", "Cursor", "Custom Agents"].map((platform) => (
+                        <span key={platform} className="text-sm font-medium bg-white/15 text-white px-3 py-1.5 rounded-full border border-white/10">
+                          {platform}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div className="space-y-2.5 mb-8">
+                    {[
+                      { tier: "T1", label: "AI Foundations", detail: "Platform setup + training from $1,500" },
+                      { tier: "T2", label: "Custom Workflows", detail: "Claude Code + agent automation from $3,500" },
+                      { tier: "T3", label: "Managed Infrastructure", detail: "OpenClaw hosted agents from $3,500" },
+                    ].map((t) => (
+                      <div key={t.tier} className="flex items-start gap-3">
+                        <span className="rounded bg-white/20 text-white text-xs font-bold px-2 py-0.5 shrink-0 mt-0.5">{t.tier}</span>
+                        <div>
+                          <span className="text-white font-medium">{t.label}</span>
+                          <span className="text-sm text-blue-200/70"> — {t.detail}</span>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+
+                  <Link
+                    href="/ai-transformation"
+                    className="inline-flex items-center px-7 py-3 rounded-lg bg-white hover:bg-blue-50 text-blue-600 font-medium transition-colors shadow-lg group"
+                  >
+                    See All Tiers & Pricing
+                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </Link>
                 </div>
-                <Link
-                  href="/ai-transformation"
-                  className="inline-flex items-center justify-center px-7 py-3 rounded-lg bg-blue-500 hover:bg-blue-400 text-white font-medium transition-colors shadow-lg shadow-blue-500/25 group shrink-0"
-                >
-                  See Tiers
-                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                </Link>
+
+                {/* Visual: Platform setup checklist */}
+                <div className="hidden md:block">
+                  <div className="rounded-xl border border-white/10 bg-white/5 backdrop-blur p-5 shadow-2xl">
+                    <p className="text-sm font-semibold text-white mb-4">Platform Setup Progress</p>
+                    <div className="space-y-2.5">
+                      {[
+                        { label: "Anthropic Claude — Enterprise workspace", done: true },
+                        { label: "OpenAI ChatGPT — Team accounts provisioned", done: true },
+                        { label: "Google Gemini — API keys configured", done: true },
+                        { label: "Microsoft Copilot — M365 integration", done: true },
+                        { label: "Custom prompt library — 24 role-based packs", done: true },
+                        { label: "Team training sessions — 3 of 4 complete", done: false },
+                      ].map((item) => (
+                        <div key={item.label} className="flex items-center gap-3 rounded-lg bg-white/5 border border-white/5 px-4 py-3">
+                          <div className={`w-5 h-5 rounded-full flex items-center justify-center shrink-0 ${item.done ? "bg-green-400/20" : "bg-blue-300/20"}`}>
+                            {item.done ? (
+                              <Check className="h-3 w-3 text-green-400" />
+                            ) : (
+                              <div className="w-2 h-2 rounded-full bg-blue-300 animate-pulse" />
+                            )}
+                          </div>
+                          <span className="text-sm text-blue-100/80">{item.label}</span>
+                        </div>
+                      ))}
+                    </div>
+                    <div className="mt-4 pt-3 border-t border-white/10 flex items-center justify-between">
+                      <span className="text-xs text-blue-200/50">5 of 6 tasks complete</span>
+                      <span className="text-xs text-blue-200/50">Est. 2 days remaining</span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
-            {/* AI Engineering */}
-            <div className="rounded-2xl border p-8 md:p-10 relative overflow-hidden" style={{backgroundColor: "#1E293B", borderColor: "rgba(96,165,250,0.15)"}}>
-              <div className="absolute bottom-0 left-0 w-60 h-60 bg-blue-500/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/4" />
-              <div className="relative z-10 flex flex-col md:flex-row md:items-center gap-6">
-                <div className="flex-1">
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="rounded-lg p-3" style={{backgroundColor: "#0F172A"}}>
-                      <Code className="h-7 w-7 text-blue-400" />
+            {/* ── AI Engineering ── */}
+            <div className="rounded-2xl overflow-hidden relative" style={{background: "linear-gradient(135deg, #1e293b 0%, #0f172a 100%)"}}>
+              <div className="absolute bottom-0 left-0 w-80 h-80 bg-blue-500/8 rounded-full blur-3xl translate-y-1/3 -translate-x-1/4" />
+              <div className="relative z-10 p-8 md:p-12 grid md:grid-cols-2 gap-10 items-start">
+                <div>
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="rounded-lg bg-blue-500/15 p-3 border border-blue-400/15">
+                      <Code className="h-8 w-8 text-blue-400" />
                     </div>
-                    <h3 className="text-2xl font-bold text-white">AI Engineering</h3>
+                    <div>
+                      <h3 className="text-2xl md:text-3xl font-bold text-white">AI Engineering</h3>
+                      <p className="text-blue-300 text-sm">Our AI team builds for you.</p>
+                    </div>
                   </div>
-                  <p className="leading-relaxed mb-1" style={{color: "#94A3B8"}}>
-                    AI-augmented engineering teams that build your software. Submit tickets, we ship code.
-                    Full-stack apps, APIs, internal tools — at $150/hr.
+                  <p className="text-lg leading-relaxed mb-6" style={{color: "#CBD5E1"}}>
+                    Submit tickets, we ship code. AI-augmented engineering teams that build 3x faster
+                    than traditional agencies. Full-stack apps, APIs, internal tools — you own everything.
                   </p>
+
+                  <div className="mb-6">
+                    <p className="text-xs uppercase tracking-wider text-slate-400 font-semibold mb-3">We build with</p>
+                    <div className="flex flex-wrap gap-2">
+                      {["React / Next.js", "Node.js", "Python", "TypeScript", "PostgreSQL", "Claude Code", "Cursor AI"].map((tech) => (
+                        <span key={tech} className="text-sm font-medium bg-slate-700/50 text-slate-300 px-3 py-1.5 rounded-full border border-slate-600/30">
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div className="grid grid-cols-3 gap-3 mb-8">
+                    {[
+                      { hours: "10", price: "$6k", label: "hrs/week" },
+                      { hours: "20", price: "$12k", label: "hrs/week" },
+                      { hours: "40", price: "$22k", label: "hrs/week" },
+                    ].map((plan) => (
+                      <div key={plan.hours} className="rounded-lg bg-blue-500/10 border border-blue-400/10 p-3 text-center">
+                        <p className="text-2xl font-bold text-white">{plan.hours}</p>
+                        <p className="text-xs text-slate-400">{plan.label}</p>
+                        <p className="text-sm font-semibold text-blue-400 mt-1">{plan.price}/mo</p>
+                      </div>
+                    ))}
+                  </div>
+
+                  <Link
+                    href="/ai-engineering"
+                    className="inline-flex items-center px-7 py-3 rounded-lg bg-blue-500 hover:bg-blue-400 text-white font-medium transition-colors shadow-lg shadow-blue-500/25 group"
+                  >
+                    See Engineering Plans
+                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </Link>
                 </div>
-                <Link
-                  href="/ai-engineering"
-                  className="inline-flex items-center justify-center px-7 py-3 rounded-lg bg-blue-500 hover:bg-blue-400 text-white font-medium transition-colors shadow-lg shadow-blue-500/25 group shrink-0"
-                >
-                  See Plans
-                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                </Link>
+
+                {/* Visual: Sprint board mockup */}
+                <div className="hidden md:block">
+                  <div className="rounded-xl border border-blue-400/10 bg-[#0B1222] p-5 shadow-2xl">
+                    <div className="flex items-center gap-2 mb-4">
+                      <div className="w-2.5 h-2.5 rounded-full bg-red-400/60" />
+                      <div className="w-2.5 h-2.5 rounded-full bg-yellow-400/60" />
+                      <div className="w-2.5 h-2.5 rounded-full bg-green-400/60" />
+                      <span className="ml-2 text-xs text-slate-500 font-mono">Sprint Board — Acme Corp</span>
+                    </div>
+                    <div className="grid grid-cols-3 gap-3">
+                      <div>
+                        <p className="text-xs font-semibold text-slate-400 uppercase tracking-wide mb-2">To Do</p>
+                        <div className="space-y-2">
+                          {["API v2 endpoints", "Mobile responsive"].map((t) => (
+                            <div key={t} className="rounded bg-slate-800/80 border border-slate-700/50 p-2.5">
+                              <p className="text-xs text-slate-300">{t}</p>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                      <div>
+                        <p className="text-xs font-semibold text-blue-400 uppercase tracking-wide mb-2">In Progress</p>
+                        <div className="space-y-2">
+                          {["Auth system", "Dashboard UI", "Webhook integration"].map((t) => (
+                            <div key={t} className="rounded bg-blue-500/10 border border-blue-400/20 p-2.5">
+                              <p className="text-xs text-blue-200">{t}</p>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                      <div>
+                        <p className="text-xs font-semibold text-green-400 uppercase tracking-wide mb-2">Done</p>
+                        <div className="space-y-2">
+                          {["DB schema", "CI/CD pipeline", "User roles", "Stripe billing"].map((t) => (
+                            <div key={t} className="rounded bg-green-500/10 border border-green-400/15 p-2.5">
+                              <p className="text-xs text-green-300/70">{t}</p>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                    <div className="mt-4 pt-3 border-t border-slate-700/40 flex items-center justify-between">
+                      <span className="text-xs text-slate-500 font-mono">Sprint 4 of 6</span>
+                      <span className="text-xs text-blue-400 font-mono">$150/hr — 20 hrs/wk</span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
+
           </div>
         </div>
       </section>
