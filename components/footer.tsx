@@ -48,6 +48,12 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/use-cases" className="text-gray-300 hover:text-white transition-colors flex items-center">
+                  <span className="w-1.5 h-1.5 bg-brand-500 rounded-full mr-2"></span>
+                  Use Cases
+                </Link>
+              </li>
+              <li>
                 <Link href="/services/strategy-audit" className="text-gray-300 hover:text-white transition-colors flex items-center">
                   <span className="w-1.5 h-1.5 bg-brand-500 rounded-full mr-2"></span>
                   Strategy Audit
