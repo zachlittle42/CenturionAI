@@ -1,34 +1,20 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
+const navLinks = [
+  { href: "/ai-transformation", label: "AI Transformation" },
+  { href: "/ai-engineering", label: "AI Engineering" },
+  { href: "/services/strategy-audit", label: "Strategy Audit" },
+]
+
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [activeSection, setActiveSection] = useState("home")
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const sections = ["home", "about", "services", "contact"]
-      const scrollPosition = window.scrollY + 100 // Offset for navbar height
-
-      sections.forEach((section) => {
-        const element = document.getElementById(section)
-        if (element) {
-          const top = element.offsetTop
-          const height = element.offsetHeight
-          if (scrollPosition >= top && scrollPosition < top + height) {
-            setActiveSection(section)
-          }
-        }
-      })
-    }
-
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+  const pathname = usePathname()
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 shadow-sm">
@@ -43,37 +29,28 @@ export default function Navbar() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link
-              href="#services"
-              className={`text-gray-700 hover:text-brand-600 font-medium transition-colors ${
-                activeSection === "services" ? "text-brand-600" : ""
-              }`}
-            >
-              Services
-            </Link>
-            <Link
-              href="#about"
-              className={`text-gray-700 hover:text-brand-600 font-medium transition-colors ${
-                activeSection === "about" ? "text-brand-600" : ""
-              }`}
-            >
-              About
-            </Link>
-            <Link
-              href="#contact"
-              className={`text-gray-700 hover:text-brand-600 font-medium transition-colors ${
-                activeSection === "contact" ? "text-brand-600" : ""
-              }`}
-            >
-              Contact
-            </Link>
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={`text-gray-700 hover:text-brand-600 font-medium transition-colors ${
+                  pathname === link.href ? "text-brand-600" : ""
+                }`}
+              >
+                {link.label}
+              </Link>
+            ))}
             <Button asChild size="sm" className="bg-brand-600 hover:bg-brand-700">
-              <Link href="#contact">Get Started</Link>
+              <Link href="/get-started">Get Started</Link>
             </Button>
           </div>
 
           {/* Mobile Menu Button */}
-          <button className="md:hidden text-gray-700" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+          <button
+            className="md:hidden text-gray-700"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
@@ -82,40 +59,25 @@ export default function Navbar() {
         {isMenuOpen && (
           <div className="md:hidden py-4 animate-fade-in">
             <div className="flex flex-col space-y-4">
-              <Link
-                href="#services"
-                className={`text-gray-700 hover:text-brand-600 font-medium transition-colors py-2 ${
-                  activeSection === "services" ? "text-brand-600" : ""
-                }`}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Services
-              </Link>
-              <Link
-                href="#about"
-                className={`text-gray-700 hover:text-brand-600 font-medium transition-colors py-2 ${
-                  activeSection === "about" ? "text-brand-600" : ""
-                }`}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                About
-              </Link>
-              <Link
-                href="#contact"
-                className={`text-gray-700 hover:text-brand-600 font-medium transition-colors py-2 ${
-                  activeSection === "contact" ? "text-brand-600" : ""
-                }`}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Contact
-              </Link>
+              {navLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className={`text-gray-700 hover:text-brand-600 font-medium transition-colors py-2 ${
+                    pathname === link.href ? "text-brand-600" : ""
+                  }`}
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {link.label}
+                </Link>
+              ))}
               <Button
                 asChild
                 size="sm"
                 className="bg-brand-600 hover:bg-brand-700 w-full"
                 onClick={() => setIsMenuOpen(false)}
               >
-                <Link href="#contact">Get Started</Link>
+                <Link href="/get-started">Get Started</Link>
               </Button>
             </div>
           </div>
@@ -124,4 +86,3 @@ export default function Navbar() {
     </nav>
   )
 }
-
