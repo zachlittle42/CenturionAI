@@ -147,20 +147,20 @@ export default function StrategyAuditPage() {
     <main className="min-h-screen">
       {/* Hero */}
       <section className="relative overflow-hidden py-20 md:py-28 px-4">
-        <div className="absolute inset-0 bg-gradient-to-b from-brand-50 to-white z-0" />
+        <div className="absolute inset-0 bg-gradient-to-b from-brand-50 to-white z-0 dot-grid" />
         <div className="absolute -top-40 -right-40 w-96 h-96 bg-brand-100 rounded-full opacity-30 blur-3xl" />
 
         <div className="relative z-10 max-w-4xl mx-auto text-center">
           <Badge
             variant="secondary"
-            className="mb-6 bg-brand-50 text-brand-700 border-brand-200 px-4 py-1.5 text-sm"
+            className="mb-6 bg-amber-50 text-amber-700 border-amber-200 px-4 py-1.5 text-sm opacity-0 animate-reveal"
           >
             Entry-point engagement
           </Badge>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-gray-900 mb-6">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-gray-900 mb-6 font-display text-balance opacity-0 animate-reveal stagger-1">
             Know exactly where AI fits in your business.
           </h1>
-          <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-8">
+          <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-8 opacity-0 animate-reveal stagger-2">
             A focused audit that maps your AI opportunities, estimates ROI, and
             gives you a concrete implementation plan. Not a 200-slide deck - a
             clear answer.
@@ -168,7 +168,7 @@ export default function StrategyAuditPage() {
           <Button
             asChild
             size="lg"
-            className="bg-brand-600 hover:bg-brand-700 text-white px-8 py-6 text-base"
+            className="bg-amber-500 hover:bg-amber-600 text-gray-900 px-8 py-6 text-base opacity-0 animate-reveal stagger-3"
           >
             <Link href="/get-started">
               Book Your Audit
@@ -182,7 +182,7 @@ export default function StrategyAuditPage() {
       <section className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 font-display">
               What you get
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -192,13 +192,13 @@ export default function StrategyAuditPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {deliverables.map((item) => (
+            {deliverables.map((item, index) => (
               <Card
                 key={item.title}
                 className="border-0 shadow-md card-hover bg-white"
               >
                 <CardContent className="p-6">
-                  <div className="w-12 h-12 rounded-lg bg-brand-50 flex items-center justify-center mb-4">
+                  <div className={`w-12 h-12 rounded-lg ${index % 2 === 0 ? "bg-brand-50" : "bg-amber-50"} flex items-center justify-center mb-4`}>
                     <item.icon className="h-6 w-6 text-brand-600" />
                   </div>
                   <h3 className="text-lg font-bold text-gray-900 mb-2">
@@ -218,7 +218,7 @@ export default function StrategyAuditPage() {
       <section className="py-20 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 font-display">
               The process
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -232,19 +232,19 @@ export default function StrategyAuditPage() {
                 key={tier.name}
                 className={`relative border-0 bg-white overflow-hidden ${
                   tier.recommended
-                    ? "ring-2 ring-brand-500 shadow-lg"
-                    : "shadow-md"
+                    ? "ring-2 ring-brand-500 shadow-lg gradient-border"
+                    : "shadow-md card-hover"
                 }`}
               >
                 {tier.recommended && (
                   <div className="absolute top-0 left-0 right-0">
-                    <div className="bg-brand-600 text-white text-center text-xs font-semibold py-1.5 uppercase tracking-wide">
+                    <div className="bg-amber-500 text-gray-900 text-center text-xs font-semibold py-1.5 uppercase tracking-wide">
                       Recommended
                     </div>
                   </div>
                 )}
                 <div
-                  className={`h-1 bg-gradient-to-r from-brand-500 to-brand-700 ${
+                  className={`h-1 bg-gradient-to-r from-brand-500 to-amber-500 ${
                     tier.recommended ? "hidden" : ""
                   }`}
                 />
@@ -279,7 +279,7 @@ export default function StrategyAuditPage() {
                     asChild
                     className={`w-full ${
                       tier.recommended
-                        ? "bg-brand-600 hover:bg-brand-700 text-white"
+                        ? "bg-amber-500 hover:bg-amber-600 text-gray-900"
                         : "bg-white border border-brand-600 text-brand-600 hover:bg-brand-50"
                     }`}
                   >
@@ -301,7 +301,7 @@ export default function StrategyAuditPage() {
       <section className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 font-display">
               What we assess
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -311,9 +311,9 @@ export default function StrategyAuditPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {assessmentItems.map((item) => (
+            {assessmentItems.map((item, index) => (
               <div key={item.title} className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-lg bg-brand-50 flex items-center justify-center shrink-0">
+                <div className={`w-10 h-10 rounded-lg ${index % 2 === 0 ? "bg-brand-50" : "bg-amber-50"} flex items-center justify-center shrink-0`}>
                   <item.icon className="h-5 w-5 text-brand-600" />
                 </div>
                 <div>
@@ -332,13 +332,13 @@ export default function StrategyAuditPage() {
 
       {/* CTA Banner */}
       <section className="py-20 px-4 bg-gradient-to-br from-brand-900 to-brand-950 relative overflow-hidden">
-        <div className="absolute inset-0">
+        <div className="absolute inset-0 grain">
           <div className="absolute top-1/2 left-1/4 w-64 h-64 bg-brand-800 rounded-full opacity-20 blur-3xl" />
           <div className="absolute bottom-0 right-1/4 w-48 h-48 bg-brand-700 rounded-full opacity-20 blur-3xl" />
         </div>
 
         <div className="relative z-10 max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 font-display">
             The audit pays for itself. Usually in the first week.
           </h2>
           <p className="text-brand-200 text-lg mb-8 max-w-xl mx-auto">
@@ -347,7 +347,7 @@ export default function StrategyAuditPage() {
           <Button
             asChild
             size="lg"
-            className="bg-white text-brand-700 hover:bg-brand-50 px-8 py-6 text-base font-semibold"
+            className="bg-amber-500 hover:bg-amber-600 text-gray-900 px-8 py-6 text-base font-semibold"
           >
             <Link href="/get-started">
               Book Your Audit

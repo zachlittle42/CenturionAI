@@ -250,6 +250,7 @@ export default function AIEngineeringPage() {
       {/* Hero Section */}
       <section className="relative pt-24 pb-20 md:pt-32 md:pb-28 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-brand-950 via-brand-900 to-brand-800 z-0" />
+        <div className="absolute inset-0 grain z-0" />
         <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-brand-400 via-brand-600 to-brand-800" />
         <div className="absolute -top-24 -right-24 w-96 h-96 bg-brand-700 rounded-full opacity-20 blur-3xl" />
         <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-brand-800 rounded-full opacity-20 blur-3xl" />
@@ -261,12 +262,12 @@ export default function AIEngineeringPage() {
             </span>
           </div>
 
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-white">
+          <h1 className="font-display text-balance text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-white opacity-0 animate-reveal">
             Ship faster. Spend less.{" "}
-            <span className="text-brand-300">Skip the hiring.</span>
+            <span className="text-amber-400">Skip the hiring.</span>
           </h1>
 
-          <p className="text-xl text-brand-100/80 mb-10 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-brand-100/80 mb-10 max-w-3xl mx-auto leading-relaxed opacity-0 animate-reveal stagger-2">
             Our AI-augmented engineering teams deliver working software in
             biweekly sprints. We use Claude Code, Cursor, and custom agent
             workflows to build at 3x the speed of traditional agencies — and
@@ -276,7 +277,7 @@ export default function AIEngineeringPage() {
           <Button
             asChild
             size="lg"
-            className="text-base px-8 py-6 font-medium bg-white text-brand-900 hover:bg-brand-50 shadow-lg group"
+            className="text-base px-8 py-6 font-medium bg-white text-brand-900 hover:bg-brand-50 shadow-lg group opacity-0 animate-reveal stagger-3"
           >
             <Link href="/get-started" className="flex items-center">
               Scope Your Project
@@ -290,7 +291,7 @@ export default function AIEngineeringPage() {
       <section className="section-padding bg-white">
         <div className="container mx-auto max-w-6xl px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4 text-gray-900">
+            <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4 text-gray-900">
               What we build.
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -299,14 +300,14 @@ export default function AIEngineeringPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {capabilities.map((cap) => (
+            {capabilities.map((cap, index) => (
               <div
                 key={cap.title}
                 className="bg-white rounded-xl shadow-md card-hover overflow-hidden border border-gray-100"
               >
-                <div className="h-1 bg-gradient-to-r from-brand-600 to-brand-800" />
+                <div className={`h-1 bg-gradient-to-r ${index % 2 === 0 ? "from-brand-600 to-brand-800" : "from-brand-500 to-amber-500"}`} />
                 <div className="p-6">
-                  <div className="w-12 h-12 rounded-lg bg-brand-50 flex items-center justify-center mb-4">
+                  <div className={`w-12 h-12 rounded-lg ${index % 2 === 0 ? "bg-brand-50" : "bg-amber-50"} flex items-center justify-center mb-4`}>
                     <cap.icon className="h-6 w-6 text-brand-600" />
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">
@@ -326,7 +327,7 @@ export default function AIEngineeringPage() {
       <section className="section-padding bg-gray-50">
         <div className="container mx-auto max-w-6xl px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4 text-gray-900">
+            <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4 text-gray-900">
               How we work.
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -341,7 +342,7 @@ export default function AIEngineeringPage() {
                   <div className="hidden lg:block absolute top-8 left-[calc(50%+2rem)] right-[calc(-50%+2rem)] h-0.5 bg-brand-200" />
                 )}
                 <div className="text-center">
-                  <div className="relative inline-flex items-center justify-center w-16 h-16 rounded-full bg-brand-700 text-white font-bold text-lg mb-4 z-10">
+                  <div className="relative inline-flex items-center justify-center w-16 h-16 rounded-full bg-amber-500 text-gray-900 font-display font-bold text-lg mb-4 z-10">
                     {step.step}
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-1">
@@ -364,7 +365,7 @@ export default function AIEngineeringPage() {
       <section className="section-padding bg-white">
         <div className="container mx-auto max-w-5xl px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4 text-gray-900">
+            <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4 text-gray-900">
               Why us vs. traditional agencies.
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -383,7 +384,7 @@ export default function AIEngineeringPage() {
                   <th className="py-4 px-6 text-sm font-semibold text-gray-400 uppercase tracking-wider w-2/5">
                     Traditional Agency
                   </th>
-                  <th className="py-4 px-6 text-sm font-semibold text-brand-700 uppercase tracking-wider w-2/5">
+                  <th className="py-4 px-6 text-sm font-semibold text-amber-600 uppercase tracking-wider w-2/5">
                     Centurion AI Engineering
                   </th>
                 </tr>
@@ -407,7 +408,7 @@ export default function AIEngineeringPage() {
                     </td>
                     <td className="py-4 px-6 text-gray-900 text-sm font-medium">
                       <span className="flex items-start gap-2">
-                        <Check className="h-4 w-4 text-green-500 mt-0.5 shrink-0" />
+                        <Check className="h-4 w-4 text-amber-500 mt-0.5 shrink-0" />
                         {row.centurion}
                       </span>
                     </td>
@@ -423,7 +424,7 @@ export default function AIEngineeringPage() {
       <section className="section-padding bg-gray-50">
         <div className="container mx-auto max-w-6xl px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4 text-gray-900">
+            <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4 text-gray-900">
               Engagement models.
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -437,13 +438,13 @@ export default function AIEngineeringPage() {
                 key={tier.name}
                 className={`relative bg-white rounded-xl p-8 flex flex-col ${
                   tier.popular
-                    ? "ring-2 ring-brand-500 shadow-lg shadow-brand-100/50"
-                    : "shadow-md border border-gray-100"
+                    ? "gradient-border shadow-lg shadow-brand-100/50"
+                    : "shadow-md border border-gray-100 card-hover"
                 }`}
               >
                 {tier.popular && (
                   <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                    <Badge className="bg-brand-600 text-white hover:bg-brand-600 px-3 py-1 text-xs">
+                    <Badge className="bg-amber-500 text-gray-900 hover:bg-amber-500 px-3 py-1 text-xs">
                       <Star className="h-3 w-3 mr-1" />
                       MOST POPULAR
                     </Badge>
@@ -505,7 +506,7 @@ export default function AIEngineeringPage() {
                   variant={tier.popular ? "default" : "outline"}
                   className={`w-full ${
                     tier.popular
-                      ? "bg-brand-600 hover:bg-brand-700"
+                      ? "bg-amber-500 hover:bg-amber-600 text-gray-900"
                       : "border-brand-200 text-brand-700 hover:bg-brand-50"
                   }`}
                 >
@@ -521,7 +522,7 @@ export default function AIEngineeringPage() {
       <section className="section-padding bg-white">
         <div className="container mx-auto max-w-5xl px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4 text-gray-900">
+            <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4 text-gray-900">
               Our stack.
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -539,7 +540,7 @@ export default function AIEngineeringPage() {
                   {group.tools.map((tool) => (
                     <span
                       key={tool}
-                      className="inline-block px-3 py-1.5 rounded-lg bg-brand-50 text-brand-800 text-sm font-medium border border-brand-100"
+                      className="inline-block px-3 py-1.5 rounded-lg bg-brand-50 text-brand-800 text-sm font-medium border border-amber-100"
                     >
                       {tool}
                     </span>
@@ -555,7 +556,7 @@ export default function AIEngineeringPage() {
       <section className="section-padding bg-gray-50">
         <div className="container mx-auto max-w-3xl px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4 text-gray-900">
+            <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4 text-gray-900">
               Frequently asked questions.
             </h2>
           </div>
@@ -582,11 +583,12 @@ export default function AIEngineeringPage() {
       {/* CTA Banner */}
       <section className="relative py-20 md:py-28 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-brand-900 via-brand-800 to-brand-950 z-0" />
+        <div className="absolute inset-0 grain z-0" />
         <div className="absolute -top-24 -right-24 w-96 h-96 bg-brand-600 rounded-full opacity-10 blur-3xl" />
         <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-brand-700 rounded-full opacity-10 blur-3xl" />
 
         <div className="container relative z-10 mx-auto max-w-4xl px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6 text-white">
+          <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-6 text-white">
             Have a project in mind? Let&#39;s scope it.
           </h2>
           <p className="text-lg text-brand-200 mb-10 max-w-2xl mx-auto">
@@ -596,7 +598,7 @@ export default function AIEngineeringPage() {
           <Button
             asChild
             size="lg"
-            className="text-base px-8 py-6 font-medium bg-white text-brand-900 hover:bg-brand-50 shadow-lg group"
+            className="text-base px-8 py-6 font-medium bg-amber-500 hover:bg-amber-600 text-gray-900 shadow-lg group"
           >
             <Link href="/get-started" className="flex items-center">
               Start a Conversation

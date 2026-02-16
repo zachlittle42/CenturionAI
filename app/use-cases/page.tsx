@@ -35,7 +35,7 @@ export default function UseCasesPage() {
       {/* HERO — OPENCLAW                                              */}
       {/* ============================================================ */}
       <section className="relative pt-24 pb-20 md:pt-32 md:pb-28 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-brand-950 via-brand-900 to-brand-800 z-0" />
+        <div className="absolute inset-0 bg-gradient-to-b from-brand-950 via-brand-900 to-brand-800 z-0 grain" />
         <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-brand-400 via-brand-600 to-brand-800" />
         <div className="absolute -top-24 -right-24 w-96 h-96 bg-brand-700 rounded-full opacity-20 blur-3xl" />
         <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-brand-800 rounded-full opacity-20 blur-3xl" />
@@ -47,22 +47,22 @@ export default function UseCasesPage() {
             </span>
           </div>
 
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-white">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-white font-display text-balance opacity-0 animate-reveal">
             AI agents that run your business.{" "}
-            <span className="text-brand-300">24/7.</span>
+            <span className="text-amber-400">24/7.</span>
           </h1>
 
-          <p className="text-xl text-brand-100/80 mb-10 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-brand-100/80 mb-10 max-w-3xl mx-auto leading-relaxed opacity-0 animate-reveal stagger-1">
             OpenClaw is our open-source AI agent platform. Self-hosted or cloud-managed,
             it gives your business always-on AI agents with full tool access, security sandboxing,
             and complete control over what they can do.
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 opacity-0 animate-reveal stagger-2">
             <Button
               asChild
               size="lg"
-              className="text-base px-8 py-6 font-medium bg-white text-brand-900 hover:bg-brand-50 shadow-lg group"
+              className="text-base px-8 py-6 font-medium bg-amber-500 hover:bg-amber-600 text-gray-900 shadow-lg group"
             >
               <Link href="/get-started" className="flex items-center">
                 Deploy OpenClaw
@@ -89,7 +89,7 @@ export default function UseCasesPage() {
       <section className="py-20 px-4">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4 text-gray-900">
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4 text-gray-900 font-display">
               What OpenClaw does.
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -130,11 +130,11 @@ export default function UseCasesPage() {
                 title: "Custom Tool Integrations",
                 desc: "Build custom MCP servers to connect agents to your internal systems. CRM, ERP, databases, Slack, email — anything with an API.",
               },
-            ].map((item) => (
-              <Card key={item.title} className="border-0 shadow-md hover:shadow-xl transition-shadow overflow-hidden">
-                <div className="h-1 bg-gradient-to-r from-brand-600 to-brand-800" />
+            ].map((item, index) => (
+              <Card key={item.title} className="border-0 shadow-md hover:shadow-xl transition-shadow overflow-hidden card-hover">
+                <div className={`h-1 bg-gradient-to-r ${index % 2 === 0 ? "from-brand-600 to-brand-800" : "from-brand-500 to-amber-500"}`} />
                 <CardContent className="p-6">
-                  <div className="w-12 h-12 rounded-lg bg-brand-50 flex items-center justify-center mb-4">
+                  <div className={`w-12 h-12 rounded-lg ${index % 2 === 0 ? "bg-brand-50" : "bg-amber-50"} flex items-center justify-center mb-4`}>
                     <item.icon className="h-6 w-6 text-brand-600" />
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">{item.title}</h3>
@@ -152,7 +152,7 @@ export default function UseCasesPage() {
       <section className="py-20 px-4 bg-gray-50">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4 text-gray-900">
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4 text-gray-900 font-display">
               Agents we deploy.
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -192,32 +192,39 @@ export default function UseCasesPage() {
                 description: "Monitors competitor websites, social media, and job postings daily. Flags new product launches, pricing changes, or hiring patterns. Delivers a weekly competitive brief to your team.",
                 tools: ["Web scraping", "RSS feeds", "Email", "Slack"],
               },
-            ].map((agent) => (
-              <div
-                key={agent.title}
-                className="bg-white rounded-xl shadow-md border border-gray-100 p-8"
-              >
-                <div className="flex items-start gap-4 mb-4">
-                  <div className="w-10 h-10 rounded-lg bg-brand-600 flex items-center justify-center shrink-0">
-                    <Bot className="h-5 w-5 text-white" />
+            ].map((agent, index) => {
+              const botColors = ["bg-brand-600", "bg-amber-500", "bg-brand-700", "bg-brand-600", "bg-amber-500", "bg-brand-700"]
+              return (
+                <div
+                  key={agent.title}
+                  className="bg-white rounded-xl shadow-md border border-gray-100 p-8 hover-glow"
+                >
+                  <div className="flex items-start gap-4 mb-4">
+                    <div className={`w-10 h-10 rounded-lg ${botColors[index]} flex items-center justify-center shrink-0`}>
+                      <Bot className="h-5 w-5 text-white" />
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold text-gray-900">{agent.title}</h3>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-gray-900">{agent.title}</h3>
+                  <p className="text-gray-600 leading-relaxed mb-4">{agent.description}</p>
+                  <div className="flex flex-wrap gap-2">
+                    {agent.tools.map((tool, toolIndex) => (
+                      <span
+                        key={tool}
+                        className={`inline-block px-3 py-1 rounded-lg text-xs font-medium border ${
+                          toolIndex % 2 === 1
+                            ? "bg-amber-50 text-amber-800 border-amber-100"
+                            : "bg-brand-50 text-brand-800 border-brand-100"
+                        }`}
+                      >
+                        {tool}
+                      </span>
+                    ))}
                   </div>
                 </div>
-                <p className="text-gray-600 leading-relaxed mb-4">{agent.description}</p>
-                <div className="flex flex-wrap gap-2">
-                  {agent.tools.map((tool) => (
-                    <span
-                      key={tool}
-                      className="inline-block px-3 py-1 rounded-lg bg-brand-50 text-brand-800 text-xs font-medium border border-brand-100"
-                    >
-                      {tool}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            ))}
+              )
+            })}
           </div>
         </div>
       </section>
@@ -228,7 +235,7 @@ export default function UseCasesPage() {
       <section className="py-20 px-4">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4 text-gray-900">
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4 text-gray-900 font-display">
               AI use cases for every department.
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -305,21 +312,21 @@ export default function UseCasesPage() {
                   "ML-ready data infrastructure",
                 ],
               },
-            ].map((useCase) => (
-              <Card key={useCase.title} className="border-0 shadow-md hover:shadow-lg transition-shadow overflow-hidden bg-white">
-                <div className="h-1 bg-gradient-to-r from-brand-500 to-brand-700" />
+            ].map((useCase, index) => (
+              <Card key={useCase.title} className="border-0 shadow-md hover:shadow-lg transition-shadow overflow-hidden bg-white card-hover">
+                <div className={`h-1 bg-gradient-to-r ${index % 2 === 0 ? "from-brand-500 to-brand-700" : "from-amber-400 to-amber-600"}`} />
                 <CardContent className="p-6">
                   <div className="flex items-center gap-3 mb-4">
-                    <div className="w-10 h-10 rounded-lg bg-brand-50 flex items-center justify-center">
+                    <div className={`w-10 h-10 rounded-lg ${index % 2 === 0 ? "bg-brand-50" : "bg-amber-50"} flex items-center justify-center`}>
                       <useCase.icon className="h-5 w-5 text-brand-600" />
                     </div>
                     <h3 className="text-xl font-bold text-gray-900">{useCase.title}</h3>
                   </div>
                   <p className="text-gray-600 mb-5 leading-relaxed text-sm">{useCase.description}</p>
                   <ul className="space-y-2">
-                    {useCase.benefits.map((benefit) => (
+                    {useCase.benefits.map((benefit, benefitIndex) => (
                       <li key={benefit} className="flex items-start gap-2">
-                        <Check className="h-4 w-4 text-brand-500 flex-shrink-0 mt-0.5" />
+                        <Check className={`h-4 w-4 ${benefitIndex % 2 === 0 ? "text-brand-500" : "text-amber-500"} flex-shrink-0 mt-0.5`} />
                         <span className="text-gray-700 text-sm">{benefit}</span>
                       </li>
                     ))}
@@ -335,12 +342,12 @@ export default function UseCasesPage() {
       {/* CTA                                                          */}
       {/* ============================================================ */}
       <section className="relative py-20 md:py-28 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-brand-600 to-brand-800 z-0" />
+        <div className="absolute inset-0 bg-gradient-to-r from-brand-600 to-brand-800 z-0 grain" />
         <div className="absolute -top-24 -right-24 w-72 h-72 bg-brand-400 rounded-full opacity-10 blur-3xl" />
         <div className="absolute -bottom-24 -left-24 w-72 h-72 bg-brand-900 rounded-full opacity-10 blur-3xl" />
 
         <div className="container relative z-10 mx-auto max-w-3xl px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 font-display">
             Have a use case in mind?
           </h2>
           <p className="text-lg text-brand-100 mb-8 max-w-2xl mx-auto leading-relaxed">
@@ -349,7 +356,7 @@ export default function UseCasesPage() {
           <Button
             asChild
             size="lg"
-            className="text-base px-8 py-6 font-medium bg-white text-brand-700 hover:bg-brand-50 shadow-lg group"
+            className="text-base px-8 py-6 font-medium bg-amber-500 hover:bg-amber-600 text-gray-900 shadow-lg group"
           >
             <Link href="/get-started" className="flex items-center">
               Describe Your Use Case

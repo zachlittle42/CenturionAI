@@ -27,27 +27,26 @@ export default function Home() {
       {/* ================================================================ */}
       {/* HERO                                                             */}
       {/* ================================================================ */}
-      <header className="relative pt-24 pb-20 md:pt-32 md:pb-28 overflow-hidden">
+      <header className="relative pt-24 pb-20 md:pt-32 md:pb-28 overflow-hidden dot-grid">
         <div className="absolute inset-0 bg-gradient-to-b from-brand-50 to-white z-0" />
         <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-brand-400 via-brand-600 to-brand-800" />
-        <div className="absolute -top-24 -right-24 w-96 h-96 bg-brand-100 rounded-full opacity-20 blur-3xl" />
-        <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-brand-200 rounded-full opacity-20 blur-3xl" />
+        <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-amber-50/40 to-transparent z-0" />
 
         <div className="container relative z-10 mx-auto max-w-5xl px-4 text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-gray-900 via-gray-800 to-brand-950">
-            AI implementation for companies that want results, not slide decks.
+          <h1 className="font-display text-balance text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 text-gray-900 opacity-0 animate-reveal">
+            AI implementation for companies that want <span className="text-amber-500">results</span>, not slide decks.
           </h1>
 
-          <p className="text-xl text-gray-600 mb-10 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-600 mb-10 max-w-3xl mx-auto leading-relaxed opacity-0 animate-reveal stagger-2">
             We set up AI platforms, train your team, automate your workflows, build your software, and host your agents.
             Three service lines. One partner. Real outcomes.
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 opacity-0 animate-reveal stagger-3">
             <Button
               asChild
               size="lg"
-              className="text-base px-8 py-6 font-medium bg-brand-600 hover:bg-brand-700 shadow-lg shadow-brand-100/50 group"
+              className="text-base px-8 py-6 font-medium bg-amber-500 hover:bg-amber-600 text-gray-900 shadow-lg shadow-brand-100/50 group"
             >
               <Link href="/get-started" className="flex items-center">
                 Talk to Us
@@ -58,7 +57,7 @@ export default function Home() {
               asChild
               variant="outline"
               size="lg"
-              className="text-base px-8 py-6 font-medium border-brand-200 text-brand-700 hover:bg-brand-50"
+              className="text-base px-8 py-6 font-medium border-brand-300 text-brand-700 hover:bg-brand-50"
             >
               <Link href="/services/strategy-audit" className="flex items-center">
                 Start with a $1,500 Audit
@@ -74,7 +73,7 @@ export default function Home() {
       <section className="py-20 px-4">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4 text-gray-900">
+            <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4 text-gray-900">
               What we do.
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -84,8 +83,7 @@ export default function Home() {
 
           <div className="grid md:grid-cols-3 gap-8">
             {/* AI Transformation */}
-            <Card className="relative overflow-hidden border-0 shadow-md hover:shadow-xl transition-shadow duration-300">
-              <div className="h-1.5 bg-gradient-to-r from-brand-400 to-brand-600" />
+            <Card className="relative overflow-hidden border-0 border-l-4 border-amber-500 shadow-md card-hover">
               <CardContent className="p-8">
                 <div className="rounded-lg bg-brand-50 p-3 w-fit mb-5">
                   <Users className="h-7 w-7 text-brand-500" />
@@ -132,15 +130,14 @@ export default function Home() {
             </Card>
 
             {/* AI Engineering */}
-            <Card className="relative overflow-hidden border-0 shadow-md hover:shadow-xl transition-shadow duration-300">
-              <div className="h-1.5 bg-gradient-to-r from-brand-600 to-brand-800" />
+            <Card className="relative overflow-hidden border-0 shadow-md bg-brand-950 text-white card-hover">
               <CardContent className="p-8">
-                <div className="rounded-lg bg-brand-50 p-3 w-fit mb-5">
-                  <Code className="h-7 w-7 text-brand-700" />
+                <div className="rounded-lg bg-brand-800 p-3 w-fit mb-5">
+                  <Code className="h-7 w-7 text-amber-400" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">AI Engineering</h3>
-                <p className="text-brand-600 font-medium mb-4">Our AI team builds for you.</p>
-                <p className="text-gray-600 mb-6 leading-relaxed">
+                <h3 className="text-2xl font-bold text-white mb-2">AI Engineering</h3>
+                <p className="text-amber-400 font-medium mb-4">Our AI team builds for you.</p>
+                <p className="text-brand-200 mb-6 leading-relaxed">
                   AI-augmented engineering teams that ship working software in biweekly sprints.
                   3x faster than traditional agencies. You own all the code.
                 </p>
@@ -153,15 +150,15 @@ export default function Home() {
                     "Projects from $15k, sprints from $8k",
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-2">
-                      <Check className="h-5 w-5 text-brand-500 flex-shrink-0 mt-0.5" />
-                      <span className="text-gray-700 text-sm">{item}</span>
+                      <Check className="h-5 w-5 text-amber-400 flex-shrink-0 mt-0.5" />
+                      <span className="text-brand-300 text-sm">{item}</span>
                     </li>
                   ))}
                 </ul>
 
                 <Link
                   href="/ai-engineering"
-                  className="inline-flex items-center font-medium text-brand-700 group"
+                  className="inline-flex items-center font-medium text-amber-400 group"
                 >
                   See capabilities and pricing
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -170,8 +167,7 @@ export default function Home() {
             </Card>
 
             {/* Strategy Audit */}
-            <Card className="relative overflow-hidden border-0 shadow-md hover:shadow-xl transition-shadow duration-300">
-              <div className="h-1.5 bg-gradient-to-r from-brand-500 to-brand-700" />
+            <Card className="relative overflow-hidden border-0 shadow-md gradient-border card-hover">
               <CardContent className="p-8">
                 <div className="rounded-lg bg-brand-50 p-3 w-fit mb-5">
                   <Search className="h-7 w-7 text-brand-600" />
@@ -216,7 +212,7 @@ export default function Home() {
       <section className="py-20 px-4 bg-gray-50">
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4 text-gray-900">
+            <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4 text-gray-900">
               How every engagement starts.
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -225,16 +221,16 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-4 gap-8 relative">
-            <div className="hidden md:block absolute top-10 left-[15%] right-[15%] h-0.5 bg-brand-200" />
+            <div className="hidden md:block absolute top-10 left-[15%] right-[15%] h-0.5 bg-gradient-to-r from-amber-300 via-brand-300 to-amber-300" />
 
             {[
               { num: "01", title: "Call", desc: "30-minute conversation about your business, your tools, and what you're trying to accomplish." },
               { num: "02", title: "Scope", desc: "We come back within 48 hours with a specific proposal — what we'll do, what it costs, and what you'll get." },
               { num: "03", title: "Build", desc: "We start executing. Platform setup, workflow builds, or sprint development — depending on what you need." },
               { num: "04", title: "Ship", desc: "Real deliverables, documented and measured. Training, working software, or live agents — not a PowerPoint." },
-            ].map((step) => (
-              <div key={step.num} className="text-center relative">
-                <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-brand-600 text-white font-bold text-lg mb-5 relative z-10">
+            ].map((step, i) => (
+              <div key={step.num} className={`text-center relative opacity-0 animate-reveal stagger-${i + 1}`}>
+                <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-amber-500 text-gray-900 font-display font-bold text-lg mb-5 relative z-10">
                   {step.num}
                 </div>
                 <h3 className="text-lg font-bold mb-2 text-gray-900">{step.title}</h3>
@@ -251,7 +247,7 @@ export default function Home() {
       <section className="py-20 px-4">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4 text-gray-900">
+            <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4 text-gray-900">
               Real things we build for real businesses.
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -267,13 +263,13 @@ export default function Home() {
               { icon: Phone, title: "AI Voice Agents", desc: "AI receptionists that capture every call, qualify leads, and route inquiries — even off-hours." },
               { icon: Brain, title: "Internal Knowledge Bots", desc: "GPT-powered knowledge bases that answer team questions instantly from your docs and data." },
               { icon: Layout, title: "Custom Dashboards", desc: "Real-time reporting dashboards that pull from your CRM, analytics, and operational data." },
-            ].map((item) => (
+            ].map((item, i) => (
               <div
                 key={item.title}
-                className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 hover:shadow-md transition-shadow"
+                className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 hover-glow transition-shadow"
               >
-                <div className="w-10 h-10 rounded-lg bg-brand-50 flex items-center justify-center mb-4">
-                  <item.icon className="h-5 w-5 text-brand-600" />
+                <div className={`w-10 h-10 rounded-lg ${i % 2 === 0 ? 'bg-brand-50' : 'bg-amber-50'} flex items-center justify-center mb-4`}>
+                  <item.icon className={`h-5 w-5 ${i % 2 === 0 ? 'text-brand-600' : 'text-amber-600'}`} />
                 </div>
                 <h3 className="font-bold text-gray-900 mb-2">{item.title}</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">{item.desc}</p>
@@ -296,17 +292,17 @@ export default function Home() {
       {/* ================================================================ */}
       {/* WHY CENTURION (condensed)                                        */}
       {/* ================================================================ */}
-      <section className="py-20 px-4 relative overflow-hidden">
+      <section className="py-20 px-4 relative overflow-hidden grain">
         <div className="absolute inset-0 bg-gradient-to-b from-brand-900 to-black z-0" />
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-brand-700 rounded-full opacity-10 blur-3xl" />
         <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-brand-800 rounded-full opacity-10 blur-3xl" />
 
         <div className="container relative z-10 mx-auto max-w-5xl">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
+            <h2 className="font-display text-3xl md:text-4xl font-bold mb-4 text-white">
               Why companies choose us.
             </h2>
-            <div className="w-24 h-1 bg-brand-500 mx-auto" />
+            <div className="w-24 h-1 bg-gradient-to-r from-transparent via-amber-500 to-transparent mx-auto" />
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -317,10 +313,10 @@ export default function Home() {
               { title: "Start small, scale fast", desc: "Begin with a $1,500 audit. Upgrade to platform setup. Add workflows. Scale to managed infrastructure. No lock-in at any step." },
               { title: "You own everything", desc: "Code, documentation, configurations, prompt libraries — it's all yours. We build for handoff, not dependency." },
               { title: "48-hour response time", desc: "First call to scoped proposal in 48 hours. Team staffed in a week. We move at startup speed for companies of any size." },
-            ].map((item) => (
+            ].map((item, i) => (
               <div
                 key={item.title}
-                className="bg-white/5 backdrop-blur-sm rounded-lg p-6 border border-white/10"
+                className={`bg-white/5 backdrop-blur-sm rounded-lg p-6 border border-amber-500/10 hover-glow opacity-0 animate-reveal stagger-${i + 1}`}
               >
                 <h3 className="text-lg font-bold text-white mb-2">{item.title}</h3>
                 <p className="text-brand-100 text-sm leading-relaxed">{item.desc}</p>

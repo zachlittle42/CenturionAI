@@ -108,9 +108,9 @@ export default function GetStartedPage() {
   return (
     <main className="min-h-screen relative overflow-hidden">
       {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-white via-brand-50/30 to-white z-0" />
+      <div className="absolute inset-0 bg-gradient-to-b from-white via-brand-50/30 to-white z-0 dot-grid" />
       <div className="absolute -top-40 -right-40 w-80 h-80 bg-brand-100 rounded-full opacity-30 blur-3xl" />
-      <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-brand-100 rounded-full opacity-30 blur-3xl" />
+      <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-amber-100 rounded-full opacity-30 blur-3xl" />
 
       <div className="relative z-10 px-4 py-16 md:py-24">
         {/* Header */}
@@ -121,17 +121,17 @@ export default function GetStartedPage() {
           >
             &larr; Back to Centurion AI
           </Link>
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-gray-900 mb-4">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-gray-900 mb-4 font-display text-balance opacity-0 animate-reveal">
             Let&apos;s figure out the right path for you.
           </h1>
-          <p className="text-lg text-gray-600 leading-relaxed">
+          <p className="text-lg text-gray-600 leading-relaxed opacity-0 animate-reveal stagger-1">
             Tell us about your business and what you&apos;re looking for. We&apos;ll respond within 24 hours with a tailored recommendation.
           </p>
         </div>
 
         {/* Lead Form Card */}
-        <Card className="max-w-2xl mx-auto border-0 shadow-xl bg-white overflow-hidden">
-          <div className="h-1 bg-gradient-to-r from-brand-500 to-brand-700" />
+        <Card className="max-w-2xl mx-auto border-0 shadow-xl bg-white overflow-hidden gradient-border opacity-0 animate-reveal stagger-2">
+          <div className="h-1 bg-gradient-to-r from-brand-500 to-amber-500" />
           <CardContent className="p-6 md:p-8">
             <Form {...form}>
               <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-5">
@@ -147,7 +147,7 @@ export default function GetStartedPage() {
                         <FormControl>
                           <Input
                             placeholder="Your name"
-                            className="border-gray-200 focus:border-brand-500 focus:ring-brand-500"
+                            className="border-gray-200 focus:border-amber-500 focus:ring-amber-500"
                             {...field}
                           />
                         </FormControl>
@@ -168,7 +168,7 @@ export default function GetStartedPage() {
                           <Input
                             type="email"
                             placeholder="you@company.com"
-                            className="border-gray-200 focus:border-brand-500 focus:ring-brand-500"
+                            className="border-gray-200 focus:border-amber-500 focus:ring-amber-500"
                             {...field}
                           />
                         </FormControl>
@@ -190,7 +190,7 @@ export default function GetStartedPage() {
                         <FormControl>
                           <Input
                             placeholder="Your company"
-                            className="border-gray-200 focus:border-brand-500 focus:ring-brand-500"
+                            className="border-gray-200 focus:border-amber-500 focus:ring-amber-500"
                             {...field}
                           />
                         </FormControl>
@@ -212,7 +212,7 @@ export default function GetStartedPage() {
                           defaultValue={field.value}
                         >
                           <FormControl>
-                            <SelectTrigger className="border-gray-200 focus:border-brand-500 focus:ring-brand-500">
+                            <SelectTrigger className="border-gray-200 focus:border-amber-500 focus:ring-amber-500">
                               <SelectValue placeholder="Select team size" />
                             </SelectTrigger>
                           </FormControl>
@@ -243,7 +243,7 @@ export default function GetStartedPage() {
                         defaultValue={field.value}
                       >
                         <FormControl>
-                          <SelectTrigger className="border-gray-200 focus:border-brand-500 focus:ring-brand-500">
+                          <SelectTrigger className="border-gray-200 focus:border-amber-500 focus:ring-amber-500">
                             <SelectValue placeholder="Select an option" />
                           </SelectTrigger>
                         </FormControl>
@@ -272,7 +272,7 @@ export default function GetStartedPage() {
                         <Textarea
                           rows={4}
                           placeholder="What challenges are you facing? What are you hoping AI can help with?"
-                          className="border-gray-200 focus:border-brand-500 focus:ring-brand-500 resize-none"
+                          className="border-gray-200 focus:border-amber-500 focus:ring-amber-500 resize-none"
                           {...field}
                         />
                       </FormControl>
@@ -283,7 +283,7 @@ export default function GetStartedPage() {
 
                 <Button
                   type="submit"
-                  className="w-full bg-brand-600 hover:bg-brand-700 text-white py-6 text-base"
+                  className="w-full bg-amber-500 hover:bg-amber-600 text-gray-900 py-6 text-base"
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? (
@@ -316,11 +316,11 @@ export default function GetStartedPage() {
               </p>
             </div>
             <div
-              className="mt-4 rounded-lg border border-gray-200 bg-gray-50 p-8 text-center"
+              className="mt-4 rounded-lg border border-brand-200 bg-brand-50/50 p-8 text-center"
               data-url="https://calendly.com/YOUR_CALENDLY_URL"
             >
-              <p className="text-sm text-gray-500">
-                Calendly embed will appear here. Configure the data-url attribute with your Calendly link.
+              <p className="text-sm text-gray-600">
+                Schedule a free 30-minute strategy call. We&apos;ll discuss your goals and recommend the right path forward.
               </p>
             </div>
           </div>
@@ -329,7 +329,7 @@ export default function GetStartedPage() {
         {/* Trust Signals */}
         <div className="max-w-2xl mx-auto mt-10 text-center">
           <div className="flex items-center justify-center gap-2 text-gray-500">
-            <ShieldCheck className="h-4 w-4" />
+            <ShieldCheck className="h-4 w-4 text-amber-500" />
             <p className="text-sm">
               No spam. No pressure. Just a conversation about what&apos;s possible.
             </p>

@@ -1,12 +1,21 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
+import { DM_Sans, Instrument_Serif } from "next/font/google"
 import "./globals.css"
 import { Toaster } from "@/components/ui/toaster"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 
-const inter = Inter({ subsets: ["latin"] })
+const dmSans = DM_Sans({
+  subsets: ["latin"],
+  variable: "--font-body",
+})
+
+const instrumentSerif = Instrument_Serif({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-display",
+})
 
 export const metadata: Metadata = {
   title: "Centurion AI - AI Implementation That Actually Works",
@@ -20,7 +29,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={inter.className}>
+      <body className={`${dmSans.variable} ${instrumentSerif.variable} font-body antialiased`}>
         <Navbar />
         {children}
         <Footer />
