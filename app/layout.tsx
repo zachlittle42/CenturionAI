@@ -3,9 +3,8 @@ import type { Metadata } from "next"
 import { DM_Sans, Instrument_Serif } from "next/font/google"
 import "./globals.css"
 import { Toaster } from "@/components/ui/toaster"
-import Navbar from "@/components/navbar"
-import Footer from "@/components/footer"
-import StickyCta from "@/components/sticky-cta"
+import AuthSessionProvider from "@/components/session-provider"
+import LayoutShell from "@/components/layout-shell"
 import { Analytics } from "@vercel/analytics/next"
 
 const dmSans = DM_Sans({
@@ -32,12 +31,13 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className={`${dmSans.variable} ${instrumentSerif.variable} font-body antialiased`}>
-        <Navbar />
-        {children}
-        <Footer />
-        <StickyCta />
-        <Toaster />
-        <Analytics />
+        <AuthSessionProvider>
+          <LayoutShell>
+            {children}
+          </LayoutShell>
+          <Toaster />
+          <Analytics />
+        </AuthSessionProvider>
       </body>
     </html>
   )
