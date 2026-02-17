@@ -26,11 +26,22 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 })
   }
 
-  const body = await request.json()
+  let body
+  try {
+    body = await request.json()
+  } catch {
+    return NextResponse.json({ error: "Invalid JSON in request body" }, { status: 400 })
+  }
+
   const { rawData, name: providedName, notes } = body
 
   if (!rawData) {
     return NextResponse.json({ error: "rawData is required" }, { status: 400 })
+  }
+
+  // Basic input validation
+  if (typeof rawData !== "string" || rawData.length > 10000) {
+    return NextResponse.json({ error: "rawData must be a string under 10000 characters" }, { status: 400 })
   }
 
   const parsed = parseQRData(rawData)
@@ -70,7 +81,13 @@ export async function PATCH(request: Request) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 })
   }
 
-  const body = await request.json()
+  let body
+  try {
+    body = await request.json()
+  } catch {
+    return NextResponse.json({ error: "Invalid JSON in request body" }, { status: 400 })
+  }
+
   const { id, name, notes } = body
   if (!id) {
     return NextResponse.json({ error: "id is required" }, { status: 400 })

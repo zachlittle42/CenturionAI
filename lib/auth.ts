@@ -2,7 +2,11 @@ import type { NextAuthOptions } from "next-auth"
 import CredentialsProvider from "next-auth/providers/credentials"
 
 const ADMIN_EMAIL = "zlittle@uci.edu"
-const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || "centurion2024"
+// ADMIN_PASSWORD must be set via environment variable - no default allowed
+const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD
+if (!ADMIN_PASSWORD) {
+  console.error("CRITICAL: ADMIN_PASSWORD environment variable is not set")
+}
 
 export const authOptions: NextAuthOptions = {
   providers: [
@@ -13,6 +17,11 @@ export const authOptions: NextAuthOptions = {
         password: { label: "Password", type: "password" },
       },
       async authorize(credentials) {
+        // Reject all logins if ADMIN_PASSWORD is not configured
+        if (!ADMIN_PASSWORD) {
+          console.error("Login rejected: ADMIN_PASSWORD not configured")
+          return null
+        }
         if (
           credentials?.email === ADMIN_EMAIL &&
           credentials?.password === ADMIN_PASSWORD
@@ -47,5 +56,11 @@ export const authOptions: NextAuthOptions = {
       return session
     },
   },
-  secret: process.env.NEXTAUTH_SECRET || "centurion-ai-secret-key-change-in-production",
+  // NEXTAUTH_SECRET must be set via environment variable - no default allowed for security
+  secret: process.env.NEXTAUTH_SECRET,
+}
+
+// Validate required environment variables
+if (!process.env.NEXTAUTH_SECRET) {
+  console.error("CRITICAL: NEXTAUTH_SECRET environment variable is not set")
 }

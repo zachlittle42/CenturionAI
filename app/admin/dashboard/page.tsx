@@ -25,6 +25,7 @@ export default function AdminDashboard() {
   const [editingId, setEditingId] = useState<string | null>(null)
   const [editName, setEditName] = useState("")
   const [editNotes, setEditNotes] = useState("")
+  const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
     if (status === "unauthenticated") {
@@ -39,18 +40,32 @@ export default function AdminDashboard() {
   }, [status])
 
   async function fetchContacts() {
-    const res = await fetch("/api/admin/contacts")
-    if (res.ok) {
-      setContacts(await res.json())
+    setError(null)
+    try {
+      const res = await fetch("/api/admin/contacts")
+      if (res.ok) {
+        setContacts(await res.json())
+      } else {
+        setError("Failed to load contacts. Please try refreshing the page.")
+      }
+    } catch {
+      setError("Network error. Please check your connection and try again.")
     }
     setLoading(false)
   }
 
   async function handleDelete(id: string) {
     if (!confirm("Delete this contact?")) return
-    const res = await fetch(`/api/admin/contacts?id=${id}`, { method: "DELETE" })
-    if (res.ok) {
-      setContacts(contacts.filter((c) => c.id !== id))
+    setError(null)
+    try {
+      const res = await fetch(`/api/admin/contacts?id=${id}`, { method: "DELETE" })
+      if (res.ok) {
+        setContacts(contacts.filter((c) => c.id !== id))
+      } else {
+        setError("Failed to delete contact. Please try again.")
+      }
+    } catch {
+      setError("Network error while deleting contact.")
     }
   }
 
@@ -61,16 +76,25 @@ export default function AdminDashboard() {
   }
 
   async function saveEdit(id: string) {
-    const res = await fetch("/api/admin/contacts", {
-      method: "PATCH",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ id, name: editName, notes: editNotes }),
-    })
-    if (res.ok) {
-      const updated = await res.json()
-      setContacts(contacts.map((c) => (c.id === id ? updated : c)))
+    setError(null)
+    try {
+      const res = await fetch("/api/admin/contacts", {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ id, name: editName, notes: editNotes }),
+      })
+      if (res.ok) {
+        const updated = await res.json()
+        setContacts(contacts.map((c) => (c.id === id ? updated : c)))
+        setEditingId(null)
+      } else {
+        setError("Failed to save changes. Please try again.")
+        // Keep edit mode active on failure so user can retry
+      }
+    } catch {
+      setError("Network error while saving. Please try again.")
+      // Keep edit mode active on failure so user can retry
     }
-    setEditingId(null)
   }
 
   function getSourceIcon(type: Contact["sourceType"]) {
@@ -139,6 +163,18 @@ export default function AdminDashboard() {
             <span className="ml-2 text-sm font-normal text-slate-500">({contacts.length})</span>
           </h2>
         </div>
+
+        {error && (
+          <div className="mb-6 p-4 bg-red-500/10 border border-red-500/20 rounded-lg flex items-center justify-between">
+            <p className="text-red-400 text-sm">{error}</p>
+            <button
+              onClick={() => setError(null)}
+              className="text-red-400 hover:text-red-300 text-sm font-medium"
+            >
+              Dismiss
+            </button>
+          </div>
+        )}
 
         {contacts.length === 0 ? (
           <div className="text-center py-16 border border-dashed border-slate-700 rounded-xl">

@@ -1,5 +1,6 @@
 import fs from "fs"
 import path from "path"
+import crypto from "crypto"
 
 const DATA_FILE = path.join(process.cwd(), "data", "contacts.json")
 
@@ -25,15 +26,37 @@ function ensureDataFile() {
 
 export function getContacts(): Contact[] {
   ensureDataFile()
-  const data = fs.readFileSync(DATA_FILE, "utf-8")
-  return JSON.parse(data)
+
+  let data: string
+  try {
+    data = fs.readFileSync(DATA_FILE, "utf-8")
+  } catch (err) {
+    console.error(`Failed to read contacts file: ${(err as Error).message}`)
+    return []
+  }
+
+  try {
+    return JSON.parse(data)
+  } catch (err) {
+    console.error(`Failed to parse contacts JSON: ${(err as Error).message}`)
+    // Backup corrupted data before resetting
+    try {
+      const backupPath = `${DATA_FILE}.bak.${Date.now()}`
+      fs.writeFileSync(backupPath, data, "utf-8")
+    } catch {
+      // If backup fails, continue with reset
+    }
+    // Reset to empty contacts to recover from corruption
+    fs.writeFileSync(DATA_FILE, JSON.stringify([], null, 2))
+    return []
+  }
 }
 
 export function addContact(contact: Omit<Contact, "id" | "createdAt">): Contact {
   const contacts = getContacts()
   const newContact: Contact = {
     ...contact,
-    id: Date.now().toString(36) + Math.random().toString(36).slice(2, 7),
+    id: crypto.randomUUID(),
     createdAt: new Date().toISOString(),
   }
   contacts.unshift(newContact)
