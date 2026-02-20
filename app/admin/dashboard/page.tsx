@@ -5,7 +5,7 @@ import { useSession } from "next-auth/react"
 import { useRouter } from "next/navigation"
 import { signOut } from "next-auth/react"
 import Link from "next/link"
-import { Camera, LogOut, Trash2, ExternalLink, Linkedin, Globe, FileText, MessageSquare, Pencil, Check, X } from "lucide-react"
+import { Camera, LogOut, Trash2, ExternalLink, Linkedin, Globe, FileText, MessageSquare, Pencil, Check, X, Settings } from "lucide-react"
 
 interface Contact {
   id: string
@@ -143,6 +143,12 @@ export default function AdminDashboard() {
             >
               <Camera size={16} />
               Scan QR
+            </Link>
+            <Link
+              href="/admin/settings"
+              className="flex items-center gap-2 px-3 py-2 text-slate-400 hover:text-white text-sm transition-colors"
+            >
+              <Settings size={16} />
             </Link>
             <button
               onClick={() => signOut({ callbackUrl: "/admin/login" })}
