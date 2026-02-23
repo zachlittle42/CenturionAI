@@ -74,15 +74,18 @@
 ---
 
 ### AI Engineering Retainer
-**$3,000–$6,000/month**
+**$150/hr — pick your weekly hours**
 
 *"Submit tickets. We ship code."*
 
 - AI-augmented development team (Claude Code + Cursor doing the heavy lifting)
 - Full-stack: Next.js, React Native, Node.js, Python, PostgreSQL
-- 10 hrs/week ($3K), 20 hrs/week ($5K), 40 hrs/week available
-- You own all code, all repos
-- Weekly delivery cadence, async Slack communication
+- **10 hrs/week → $6,000/mo**
+- **20 hrs/week → $12,000/mo** *(most popular)*
+- **40 hrs/week → $24,000/mo**
+- You own all code, all repos, no lock-in
+- Month-to-month, cancel anytime
+- Weekly delivery cadence, async Slack + dedicated project manager
 - Separate from other tiers — different buyer, different contract
 
 ---
@@ -95,7 +98,9 @@
 | T2 — MCP + Workflow Build | Project | $5,000–$8,000 | No |
 | T3 — Managed OpenClaw | Platform | $3,500–$5,000 setup | $750–$1,500/mo |
 | T3 API/Infra Passthrough | Optional | Actual cost +12% | Varies |
-| AI Engineering | Retainer | $3,000–$6,000/mo | Yes |
+| AI Engineering (10 hrs/wk) | Retainer | $6,000/mo | Yes |
+| AI Engineering (20 hrs/wk) | Retainer | $12,000/mo | Yes |
+| AI Engineering (40 hrs/wk) | Retainer | $24,000/mo | Yes |
 
 ---
 
