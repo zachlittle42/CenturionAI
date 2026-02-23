@@ -154,12 +154,53 @@ You hit your debt-paydown target at 5 T3 clients. Engineering retainers are upsi
 |-------|---------|-----------|---------|
 | 1 | Hero | `hero.tsx` (rewrite) | Bold headline about AI gap. Sub-copy: fractional AI leadership positioning. Two primary CTAs: "Transform Your Team" → /ai-transformation, "Build With Us" → /ai-engineering |
 | 2 | The Problem | New: `problem-section.tsx` | 2-3 pain points: companies bought AI seats nobody uses, no strategy, competitors moving faster. Dark background for contrast |
-| 3 | Two Paths | New: `two-paths.tsx` | Side-by-side cards: AI Transformation ("We make your team AI-powered") vs AI Engineering ("Our AI team builds for you"). Each with icon, 3 bullets, CTA arrow |
+| 3 | What We Do Cards | New: `two-paths.tsx` | Three cards — Entry (AI Foundation Setup), Most Popular (AI Transformation), Most Valuable (AI Engineering). See card copy below. |
 | 4 | Social Proof | New: `social-proof.tsx` | Metrics strip (e.g., "50+ teams transformed", "3x faster delivery"). Can use placeholder numbers initially |
 | 5 | CTA | New: `cta-banner.tsx` | Full-width banner: "Ready to start?" with button to /get-started |
 | 6 | Footer | `footer.tsx` (update) | Updated links for new site structure |
 
 **Components to remove:** `two-column-intro.tsx`, `consulting-overview.tsx`, `services.tsx` (replaced by new sections)
+
+#### Homepage — "What We Do" Card Copy
+
+**Card 1 — Entry**
+> **AI Foundation Setup**
+> *Get your team actually using AI, correctly.*
+>
+> A focused engagement that assesses your current stack, selects the right platforms, configures your tools, and trains your team — so you leave with a working AI setup, not a strategy document.
+>
+> - AI readiness assessment
+> - Platform setup (Claude, ChatGPT, Gemini, Copilot)
+> - Role-specific prompt library
+> - Team training + 30-day support
+> - **Starting at $2,500**
+>
+> → *Learn About Foundation Setup*
+
+**Card 2 — Most Popular**
+> **AI Transformation**
+> *We make your team AI-powered — and your tools AI-connected.*
+>
+> Platform setup + team training. Coding agents for your engineers. MCPs wired into every tool your team uses. Managed AI infrastructure running 24/7.
+>
+> **T1** — AI Foundation Setup — *from $2,500*
+> **T2** — MCP Integration + Workflow Build — *from $5,000*
+> **T3** — Managed OpenClaw — *from $3,500 setup + $750/mo*
+>
+> → *See All Tiers & Pricing*
+
+**Card 3 — Most Valuable**
+> **AI Engineering**
+> *Our AI team builds for you.*
+>
+> Submit tickets, we ship code. AI-augmented engineering teams that build faster than traditional agencies. Full-stack apps, APIs, internal tools — you own everything.
+>
+> - Full-stack: Next.js, React Native, Node.js, Python
+> - Claude Code + Cursor doing the heavy lifting
+> - Submit tickets, we work on them
+> - **10, 20, or 40 hrs/week from $6K/mo**
+>
+> → *See Engineering Plans*
 
 ### 2. AI Transformation `/ai-transformation`
 
@@ -176,6 +217,58 @@ You hit your debt-paydown target at 5 T3 clients. Engineering retainers are upsi
 | 7 | FAQ | `faq-section.tsx` | 5-7 objections (shadcn Accordion) |
 | 8 | CTA | `cta-banner.tsx` (reuse) | "Start with a Foundation Setup" → /get-started |
 
+#### AI Transformation Page — Tier Card Copy
+
+**T1 — AI Foundation Setup — $2,500–$3,500**
+> *"Your team actually uses AI, correctly."*
+>
+> Most companies have bought the tools. Nobody's using them right. We do the assessment, pick the right platform for your team, get it configured, build your prompt library, and run the training — so your team walks away actually using AI on day one.
+>
+> **What's included:**
+> - AI readiness assessment (embedded in discovery — you get a working system, not a PDF)
+> - Platform setup: Claude Teams, ChatGPT Enterprise, Google Gemini, Copilot
+> - Slack, Gmail, and calendar connectors configured
+> - 20–30 role-specific prompts tuned to your team's actual jobs
+> - 1 live team training session
+> - 30 days async support
+>
+> **Delivered in ~1 week. Natural next step: T2.**
+
+**T2 — MCP Integration + Workflow Build — $5,000–$8,000**
+> *"Your AI is wired into every tool your team uses."*
+>
+> After T1, your team is using AI. After T2, your AI is connected to your actual business — reading from your CRM, writing to your docs, automating the workflows that currently require a human to copy-paste between apps.
+>
+> **What's included:**
+> - Full MCP setup for your tech stack: Slack, HubSpot/Salesforce, Google Drive/Notion, GitHub/Linear, Airtable, QuickBooks — whatever you run
+> - Claude Code + coding agent setup for your engineering team (if applicable) — your developers ship faster starting week one
+> - 3 custom automation workflows built and deployed
+> - Handoff documentation + training session
+>
+> **Delivered in 1–2 weeks. Natural next step: T3.**
+
+**T3 — Managed OpenClaw — $3,500–$5,000 setup + $750–$1,500/mo**
+> *"AI agents running your business 24/7, on your infrastructure."*
+>
+> We deploy OpenClaw on your cloud account, configure your agents, and manage the whole thing — updates, new workflows, coaching, support. Your data stays on your infrastructure. Your API keys are yours. We just keep everything running and building.
+>
+> **Setup includes:**
+> - OpenClaw deployed on your AWS or DigitalOcean account
+> - Up to 3 agents configured: voice, email, knowledge bot, CRM automation
+> - All integrations live, workflows deployed
+> - Team onboarding + admin training
+>
+> **Monthly plans:**
+>
+> | | Core $750/mo | Standard $1,000/mo | Premium $1,500/mo |
+> |---|---|---|---|
+> | Maintenance + updates | ✓ | ✓ | ✓ |
+> | Coaching calls/month | 1 | 2 | Unlimited async |
+> | New workflows/month | — | 2 | 4 |
+> | Support response | Email | Email | 4-hour |
+>
+> **API & infrastructure:** Your keys, your costs — or we manage consolidated billing at actual cost + 12% markup with hard usage caps and monthly itemized reports.
+
 ### 3. AI Engineering `/ai-engineering`
 
 **Purpose:** Sell outsourced AI-augmented development. Technical buyer audience.
@@ -186,10 +279,29 @@ You hit your debt-paydown target at 5 T3 clients. Engineering retainers are upsi
 | 2 | What We Build | `capabilities-grid.tsx` | Grid of capabilities: Full-stack apps, Internal tools, API integrations, Data pipelines, AI/ML features, Mobile apps |
 | 3 | How It Works | `process-steps.tsx` (reuse) | Sprint model: Scoping → Embedded team → Biweekly delivery → Ship |
 | 4 | Why Us | `comparison-section.tsx` | Traditional agency vs Centurion AI: speed, cost, AI tooling, outcome-based |
-| 5 | Engagement Models | `pricing-cards.tsx` | 10 hrs/wk $3K/mo / 20 hrs/wk $5K/mo / 40 hrs/wk custom. Client owns all code. |
+| 5 | Engagement Models | `pricing-cards.tsx` | $150/hr flat rate. 10 hrs/wk $6K/mo / 20 hrs/wk $12K/mo / 40 hrs/wk $24K/mo. Month-to-month, client owns all code. |
 | 6 | Tech Stack | `tech-stack.tsx` | Tools we use: Claude Code, Cursor, Next.js, Python, etc. |
 | 7 | FAQ | `faq-section.tsx` (reuse) | Technical questions |
 | 8 | CTA | `cta-banner.tsx` (reuse) | "Let's scope your project" → /get-started |
+
+#### AI Engineering Page — Pricing Section Copy
+
+**Headline:** Simple, transparent pricing.
+**Subhead:** $150/hr. You submit tickets, we build them. Pick your weekly hours.
+
+| | Starter | Growth ⭐ | Scale |
+|---|---|---|---|
+| Hours/week | 10 | 20 | 40 |
+| Monthly | $6,000 | $12,000 | $24,000 |
+| Effective rate | $150/hr | $150/hr | $150/hr |
+
+*Powered by Claude Code and Cursor — you get AI-augmented speed at human-accountable quality. You own all code, all repos, no lock-in.*
+
+**All plans include:** Month-to-month (cancel anytime) · You own all code + repos · Dedicated Slack channel · 30-day bug fix warranty
+
+**Growth adds:** Priority ticket queue · Daily standups · Sprint planning & retrospectives · Dedicated project manager
+
+**Scale adds:** Full-time dedicated team · Weekly strategy call · On-call support · Dedicated Slack workspace
 
 ### 4. ~~Strategy Audit `/services/strategy-audit`~~ — REMOVED
 
@@ -204,7 +316,14 @@ Remove this route and any nav/footer links pointing to it.
 | Order | Section | Component | Content |
 |-------|---------|-----------|---------|
 | 1 | Header | Inline | "Let's figure out the right path for you" |
-| 2 | Lead Form | `lead-form.tsx` | Name, Email, Company, Team Size (dropdown), Interest (dropdown: AI Foundation Setup / AI-Powered Dev + Integration / Managed OpenClaw / AI Engineering / Not sure yet), Message |
+| 2 | Lead Form | `lead-form.tsx` | Name, Email, Company, Team Size (dropdown), Interest (dropdown: see options below), Message |
+
+**Interest dropdown options:**
+- AI Foundation Setup (T1)
+- MCP Integration + Workflow Build (T2)
+- Managed OpenClaw (T3)
+- AI Engineering Retainer
+- Not sure yet — help me figure it out
 | 3 | Alternative | `calendly-embed.tsx` | "Prefer to talk? Book a call directly" with Calendly widget |
 | 4 | What to Expect | Inline | "We respond within 24 hours with a tailored recommendation" |
 
