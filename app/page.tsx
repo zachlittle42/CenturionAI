@@ -447,7 +447,7 @@ export default function Home() {
                     {[
                       { hours: "10", price: "$6k", label: "hrs/week" },
                       { hours: "20", price: "$12k", label: "hrs/week" },
-                      { hours: "40", price: "$22k", label: "hrs/week" },
+                      { hours: "40", price: "$24k", label: "hrs/week" },
                     ].map((plan) => (
                       <div key={plan.hours} className="rounded-lg bg-blue-500/10 border border-blue-400/10 p-3 text-center">
                         <p className="text-2xl font-bold text-white">{plan.hours}</p>
