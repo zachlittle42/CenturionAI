@@ -4,54 +4,115 @@
 
 ## Pricing Tiers (Source of Truth)
 
-### T1 — AI Foundation Setup — $2,500–$3,500 (one-time)
+---
+
+### T1 — AI Foundation Setup
+**$2,500–$3,500 (one-time)**
+
 *"Your team actually uses AI, correctly."*
-- AI readiness assessment embedded in discovery call (not a separate deliverable)
-- Platform selection + setup: Claude Teams, ChatGPT Enterprise, Google Gemini, Copilot
+
+- AI readiness assessment (discovery call + current stack audit)
+- Platform selection + setup (Claude Teams, ChatGPT Enterprise, Google Gemini, Copilot — your pick)
 - Key connectors configured (Slack, Gmail, calendar basics)
 - Role-specific prompt library (20–30 prompts tuned to actual job functions)
 - 1 live team training session
-- 30 days async support
-- Natural upsell → T2
+- 30 days async support via Slack/email
 
-### T2 — AI-Powered Development + Business Integration — $5,000–$8,000 (one-time)
-*"Your engineers ship faster. Your business tools talk to each other. AI does the work in between."*
-- **Coding agent setup** — Claude Code (primary), Cursor, GitHub Copilot, or right combo for their stack. Configured, trained into workflow, actually used.
-- **MCP integration** for full business stack: Slack, HubSpot/Salesforce, Google Drive/Notion, GitHub/Linear, Airtable, QuickBooks, and more
-- **3 custom automation workflows** built and deployed on top of those connections
-- Handoff documentation + team training session
-- Natural upsell → T3
+**Time to deliver:** ~1 week
+**Zach's time:** 6–10 hours
+**Natural upsell:** T2 (they're using AI but want it to do more)
 
-### T3 — Managed OpenClaw Platform — $3,500–$5,000 setup + monthly recurring
+---
+
+### T2 — MCP Integration + Workflow Build
+**$5,000–$8,000 (one-time)**
+
+*"Your AI is wired into every tool your team uses."*
+
+- Full MCP setup for your tech stack: Slack, HubSpot/Salesforce, Google Drive/Notion, GitHub/Linear, Airtable, QuickBooks — whatever you run
+- 3 custom automation workflows built and deployed (e.g., "inbound lead → CRM enriched → follow-up drafted → sent for approval")
+- Claude Code + Cursor setup for engineering teams (if applicable)
+- Coding agent workflow documentation
+- Handoff training session
+
+**Time to deliver:** 1–2 weeks
+**Zach's time:** 10–20 hours (Claude Code handles most builds)
+**Natural upsell:** T3 (they want it running autonomously, not just available)
+
+---
+
+### T3 — Managed OpenClaw Platform
+**$3,500–$5,000 setup + monthly recurring**
+
 *"AI agents running your business 24/7, on your infrastructure, managed by us."*
 
 **Setup (one-time):**
-- OpenClaw deployed on client-owned cloud (their AWS/DigitalOcean account — their data, their keys)
-- Up to 3 agents built and deployed: voice, email, knowledge bot, CRM automation
+- OpenClaw deployed on client-owned cloud (their AWS/DigitalOcean account)
+- Initial agent configuration: voice, email, knowledge bot, CRM automation — up to 3 agents
 - Integrations connected, workflows live
 - Team onboarding + admin training
 
 **Monthly plans:**
-| Plan | Monthly | Included |
-|------|---------|----------|
-| Managed Core | $750/mo | Maintenance + updates + 1 coaching call + email support |
-| Managed Standard | $1,000/mo | + 2 new workflow/skill builds + 2 coaching calls |
-| Managed Premium | $1,500/mo | + priority support (4hr response) + 4 builds/month + unlimited async |
 
-**Optional: API & Infrastructure Passthrough**
-- Client API keys + hosting managed by Centurion AI
-- Billed monthly: actual API + infrastructure costs + 12% management markup
-- Hard usage caps configured by default
-- Client receives itemized usage report with each invoice
+| Plan | Monthly | What's included |
+|------|---------|----------------|
+| **Managed Core** | $750/mo | Maintenance + updates + 1 coaching call + email support |
+| **Managed Standard** | $1,000/mo | + 2 new workflow/skill builds + 2 coaching calls |
+| **Managed Premium** | $1,500/mo | + priority support (4hr response) + 4 builds/month + unlimited async |
 
-### AI Engineering Retainer — $3,000–$6,000/month
+**API & Infrastructure passthrough:**
+- Client owns their API keys (Anthropic, OpenAI, etc.) and their cloud account
+- All API + hosting costs billed to their card directly — OR —
+- Zach manages consolidated billing: actual API + infrastructure costs + **12% management markup**
+- Monthly invoice includes: managed service fee + itemized infra/API usage
+- Hard usage caps configured by default (prevents runaway costs)
+
+**Zach's ongoing time per client:** 4–6 hrs/month
+**At $1,000/month: $166–$250/hr effective rate**
+**5 clients = $5,000–$7,500/month recurring**
+
+---
+
+### AI Engineering Retainer
+**$3,000–$6,000/month**
+
 *"Submit tickets. We ship code."*
-- AI-augmented development (Claude Code + Cursor doing the heavy lifting)
+
+- AI-augmented development team (Claude Code + Cursor doing the heavy lifting)
 - Full-stack: Next.js, React Native, Node.js, Python, PostgreSQL
-- 10 hrs/week ($3K), 20 hrs/week ($5K), 40 hrs/week (custom)
-- Client owns all code and repos
-- Weekly delivery cadence, async Slack
-- Note: Strategy Audit ($1,500 standalone) is removed — assessment is now embedded in T1
+- 10 hrs/week ($3K), 20 hrs/week ($5K), 40 hrs/week available
+- You own all code, all repos
+- Weekly delivery cadence, async Slack communication
+- Separate from other tiers — different buyer, different contract
+
+---
+
+### Summary Table
+
+| Tier | Type | Price | Recurring |
+|------|------|-------|-----------|
+| T1 — AI Foundation Setup | Project | $2,500–$3,500 | No |
+| T2 — MCP + Workflow Build | Project | $5,000–$8,000 | No |
+| T3 — Managed OpenClaw | Platform | $3,500–$5,000 setup | $750–$1,500/mo |
+| T3 API/Infra Passthrough | Optional | Actual cost +12% | Varies |
+| AI Engineering | Retainer | $3,000–$6,000/mo | Yes |
+
+---
+
+### The Path to $5K/Month Recurring
+
+| Milestone | Monthly Recurring |
+|-----------|-----------------|
+| 2 T3 Standard clients | $2,000/mo |
+| 5 T3 Standard clients | $5,000/mo |
+| 5 T3 + API passthrough (~$400 API avg) | $5,000 + $240 markup/mo |
+| 5 T3 + 1 Engineering retainer | $8,000–$10,500/mo |
+
+You hit your debt-paydown target at 5 T3 clients. Engineering retainers are upside.
+
+---
+
+*(Note: Standalone Strategy Audit at $1,500 removed. Assessment is embedded in T1 — it's how the engagement is scoped, not a separate product.)*
 
 ---
 
