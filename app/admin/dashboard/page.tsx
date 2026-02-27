@@ -5,7 +5,7 @@ import { useSession } from "next-auth/react"
 import { useRouter } from "next/navigation"
 import { signOut } from "next-auth/react"
 import Link from "next/link"
-import { Camera, LogOut, Trash2, ExternalLink, Linkedin, Globe, FileText, MessageSquare, Pencil, Check, X, Settings } from "lucide-react"
+import { Camera, LogOut, Trash2, ExternalLink, Linkedin, Globe, FileText, MessageSquare, Pencil, Check, X, Settings, Activity } from "lucide-react"
 
 interface Contact {
   id: string
@@ -137,6 +137,13 @@ export default function AdminDashboard() {
             </div>
           </div>
           <div className="flex items-center gap-3">
+            <Link
+              href="/admin/body"
+              className="flex items-center gap-2 px-4 py-2 text-slate-400 hover:text-white text-sm font-medium transition-colors"
+            >
+              <Activity size={16} />
+              Body
+            </Link>
             <Link
               href="/admin/scan"
               className="flex items-center gap-2 px-4 py-2 bg-blue-500 hover:bg-blue-400 text-white text-sm font-medium rounded-lg transition-colors"
