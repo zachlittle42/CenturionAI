@@ -99,7 +99,8 @@ export default function Home() {
                 </div>
                 <h3 className="text-2xl font-bold" style={{color: "#0F172A"}}>Tech Basics</h3>
               </div>
-              <p className="text-blue-500 font-medium mb-4">Not ready for AI? Start here.</p>
+              <p className="text-blue-500 font-medium mb-1">Not ready for AI? Start here.</p>
+              <p className="text-sm font-semibold mb-4" style={{color: "#94A3B8"}}>From $297/mo + $500 setup</p>
               <p className="mb-6 leading-relaxed" style={{color: "#64748B"}}>
                 Website, phone, texting, CRM, invoicing — everything your business
                 needs to run, in one platform.
@@ -137,7 +138,8 @@ export default function Home() {
                 </div>
                 <h3 className="text-2xl font-bold" style={{color: "#0F172A"}}>Strategy Audit</h3>
               </div>
-              <p className="text-blue-500 font-medium mb-4">Know exactly where AI fits.</p>
+              <p className="text-blue-500 font-medium mb-1">Know exactly where AI fits.</p>
+              <p className="text-sm font-semibold mb-4" style={{color: "#94A3B8"}}>From $1,500 one-time</p>
               <p className="mb-6 leading-relaxed" style={{color: "#64748B"}}>
                 A focused 30-60-90 day audit that maps your AI opportunities, estimates ROI,
                 and gives you a concrete implementation plan. Not a 200-slide deck.
@@ -175,7 +177,8 @@ export default function Home() {
                 </div>
                 <h3 className="text-2xl font-bold text-white">AI Transformation</h3>
               </div>
-              <p className="text-blue-200 font-medium mb-4">We make your team AI-powered.</p>
+              <p className="text-blue-200 font-medium mb-1">We make your team AI-powered.</p>
+              <p className="text-sm font-semibold text-blue-200/70 mb-4">From $3,000 setup</p>
               <p className="mb-6 leading-relaxed text-blue-100/80">
                 Platform setup, connector integrations, role-based prompt packs, team training,
                 custom workflows, and managed AI infrastructure.
@@ -223,7 +226,8 @@ export default function Home() {
                 </div>
                 <h3 className="text-2xl font-bold text-white">AI Engineering</h3>
               </div>
-              <p className="text-blue-400 font-medium mb-4">Our AI team builds for you.</p>
+              <p className="text-blue-400 font-medium mb-1">Our AI team builds for you.</p>
+              <p className="text-sm font-semibold text-blue-400/70 mb-4">From $6,000/mo</p>
               <p className="mb-6 leading-relaxed" style={{color: "#94A3B8"}}>
                 Submit tickets, we build them. AI-augmented engineering teams at $150/hr.
                 3x faster than traditional agencies. You own all the code.
@@ -248,6 +252,44 @@ export default function Home() {
                 className="inline-flex items-center justify-center w-full px-6 py-3 rounded-lg bg-blue-500 hover:bg-blue-400 text-white font-medium transition-colors shadow-md shadow-blue-500/20 group"
               >
                 See Capabilities & Pricing
+                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+              </Link>
+            </div>
+
+            {/* OpenClaw AI Agents */}
+            <div className="rounded-2xl border p-8 transition-all hover:shadow-lg relative" style={{backgroundColor: "#1E293B", borderColor: "rgba(96,165,250,0.15)"}}>
+              <div className="flex items-center gap-3 mb-2">
+                <div className="rounded-lg p-3 shrink-0" style={{backgroundColor: "#0F172A"}}>
+                  <Bot className="h-7 w-7 text-blue-400" />
+                </div>
+                <h3 className="text-2xl font-bold text-white">OpenClaw AI Agents</h3>
+              </div>
+              <p className="text-blue-400 font-medium mb-1">Autonomous agents, your infra.</p>
+              <p className="text-sm font-semibold text-blue-400/70 mb-4">From $3,000 setup</p>
+              <p className="mb-6 leading-relaxed" style={{color: "#94A3B8"}}>
+                Deploy AI agents that run your workflows 24/7 — voice, email, knowledge base, CRM.
+                Self-hosted or cloud-managed.
+              </p>
+
+              <ul className="space-y-3 mb-8">
+                {[
+                  "Open-source AI agent platform",
+                  "Self-hosted or cloud-managed",
+                  "Voice, email, automation agents",
+                  "Full security sandboxing",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-2">
+                    <Check className="h-5 w-5 text-blue-400 flex-shrink-0 mt-0.5" />
+                    <span className="text-sm" style={{color: "#94A3B8"}}>{item}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <Link
+                href="/openclaw-ai-agents"
+                className="inline-flex items-center justify-center w-full px-6 py-3 rounded-lg bg-blue-500 hover:bg-blue-400 text-white font-medium transition-colors shadow-md shadow-blue-500/20 group"
+              >
+                Explore OpenClaw Agents
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Link>
             </div>
