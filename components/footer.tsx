@@ -76,6 +76,12 @@ export default function Footer() {
                     Get Started
                   </Link>
                 </li>
+                <li>
+                  <Link href="/blog" className="text-gray-300 hover:text-white transition-colors flex items-center">
+                    <span className="w-1.5 h-1.5 bg-blue-400 rounded-full mr-2"></span>
+                    Blog
+                  </Link>
+                </li>
               </ul>
             </div>
 

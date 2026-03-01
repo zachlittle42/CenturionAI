@@ -121,7 +121,7 @@ const faqs = [
   {
     question: "What platform is this built on?",
     answer:
-      "Our proprietary platform — you get a branded login, your own dashboard, and full ownership of your data.",
+      "We use proven, enterprise-grade infrastructure — a combination of industry-standard tools tailored to your business. Happy to walk through the full tech stack on a call if you want the details.",
   },
   {
     question: "Can I keep my current phone number?",

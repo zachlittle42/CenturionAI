@@ -94,7 +94,7 @@ const tiers = [
   {
     icon: Server,
     label: "Tier 3",
-    name: "OpenClaw AI Agent Implementation",
+    name: "Managed AI Agent Infrastructure",
     tagline: "Your own AI agent — personal assistant, executive coach, or Jarvis.",
     description:
       "Self-hosted or managed deployment of OpenClaw, our open-source AI agent platform. Launch always-on AI agents with full tool access, security sandboxing, and complete control. Whether you want a personal assistant, executive coach, companion, or your own Jarvis — we help you bring it to life.",
@@ -585,6 +585,14 @@ export default function AITransformationPage() {
                     )}
                   </div>
 
+                  {isTier3 && (
+                    <p className="text-sm mb-4" style={{color: "#64748B"}}>
+                      <Link href="/openclaw-ai-agents" className="text-blue-500 hover:text-blue-400 transition-colors">
+                        → Learn more about our dedicated OpenClaw AI Agents service
+                      </Link>
+                    </p>
+                  )}
+
                   <Button
                     asChild
                     className="w-full bg-blue-500 hover:bg-blue-400 text-white"
@@ -608,6 +616,12 @@ export default function AITransformationPage() {
               </h3>
               <p className="text-lg" style={{color: "#64748B"}}>
                 All implementations come with optional ongoing support. We don&apos;t just set it up and leave.
+              </p>
+            </div>
+
+            <div className="rounded-lg border border-blue-200 bg-blue-50/30 p-5 text-center mb-8">
+              <p className="text-sm leading-relaxed" style={{color: "#64748B"}}>
+                All implementations are complete standalone engagements. Retainers are optional — add ongoing support if you want us to continue building and iterating after launch.
               </p>
             </div>
 

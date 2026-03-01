@@ -116,6 +116,11 @@ const faqs = [
     answer:
       "Self-hosted deployments take 2-4 weeks. Cloud-managed can be up in 1-2 weeks. Timeline depends on the number of tool integrations and customization required.",
   },
+  {
+    question: "How do I interact with my agent?",
+    answer:
+      "Your agent works across the tools you already use — Telegram, Slack, WhatsApp, or a custom web interface. You talk to it in plain English. It can also run on a schedule, triggering actions automatically without any input from you.",
+  },
 ]
 
 export default function OpenClawAgentsPage() {
@@ -142,9 +147,7 @@ export default function OpenClawAgentsPage() {
               </h1>
 
               <p className="text-xl mb-6 max-w-xl leading-relaxed opacity-0 animate-reveal stagger-2" style={{ color: "#94A3B8" }}>
-                Deploy AI agents that run your business workflows 24/7 — on your
-                infrastructure, with your data, under your control. Personal assistant,
-                executive coach, or your own Jarvis.
+                OpenClaw is an open-source AI agent platform. We deploy, configure, and manage it for your business — so you get enterprise-grade AI agents without the enterprise complexity. Your infrastructure. Your data. Your control.
               </p>
 
               <div className="mb-8 opacity-0 animate-reveal stagger-2">

@@ -14,7 +14,7 @@ import {
   Layout,
   Bot,
 } from "lucide-react"
-import CtaBanner from "@/components/cta-banner"
+import LeadForm from "@/components/lead-form"
 
 export default function Home() {
   return (
@@ -50,6 +50,24 @@ export default function Home() {
       </header>
 
       {/* ================================================================ */}
+      {/* PLATFORMS WE WORK WITH                                           */}
+      {/* ================================================================ */}
+      <section className="py-12 px-4" style={{backgroundColor: "#0B1120"}}>
+        <div className="container mx-auto max-w-5xl text-center">
+          <p className="text-xs uppercase tracking-widest font-semibold mb-6" style={{color: "#475569"}}>
+            Platforms we work with
+          </p>
+          <div className="flex flex-wrap justify-center gap-3">
+            {["Claude", "ChatGPT", "Gemini", "Microsoft Copilot", "Cursor", "n8n", "Make", "Zapier", "OpenClaw"].map((name) => (
+              <span key={name} className="text-sm font-medium px-4 py-2 rounded-full border" style={{color: "#94A3B8", borderColor: "rgba(148,163,184,0.15)", backgroundColor: "rgba(30,41,59,0.5)"}}>
+                {name}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ================================================================ */}
       {/* THREE SERVICE LINES                                              */}
       {/* ================================================================ */}
       <section className="py-20 px-4" style={{backgroundColor: "#F8FAFC"}}>
@@ -63,7 +81,15 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="flex flex-wrap justify-center gap-2 mb-10">
+            {["Tech", "Audit", "Transform", "Build", "Agents"].map((tab) => (
+              <span key={tab} className="px-4 py-1.5 rounded-full text-sm font-semibold bg-slate-100 border border-slate-200/60" style={{color: "#475569"}}>
+                {tab}
+              </span>
+            ))}
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Tech Basics */}
             <div className="bg-white rounded-2xl border border-slate-200/60 p-8 hover:shadow-lg hover:border-blue-200 transition-all relative">
               <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-green-600 text-white text-sm font-bold px-5 py-1.5 rounded-full shadow-lg uppercase tracking-wide whitespace-nowrap">Start Here</span>
@@ -646,12 +672,7 @@ export default function Home() {
       {/* ================================================================ */}
       {/* CTA                                                              */}
       {/* ================================================================ */}
-      <CtaBanner
-        title="Not sure where to start?"
-        subtitle="Book a 30-minute call. We'll help you figure out whether you need transformation, engineering, or both — and what the first step looks like."
-        buttonText="Get Started"
-        buttonHref="/get-started"
-      />
+      <LeadForm />
     </main>
   )
 }

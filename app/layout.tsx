@@ -1,6 +1,7 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { DM_Sans, Instrument_Serif } from "next/font/google"
+import Script from "next/script"
 import "./globals.css"
 import { Toaster } from "@/components/ui/toaster"
 import AuthSessionProvider from "@/components/session-provider"
@@ -30,6 +31,19 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
+      {/* TODO: Replace G-XXXXXXXXXX with your actual GA4 Measurement ID */}
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
+        strategy="afterInteractive"
+      />
+      <Script id="ga4-init" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-XXXXXXXXXX');
+        `}
+      </Script>
       <body className={`${dmSans.variable} ${instrumentSerif.variable} font-body antialiased`}>
         <AuthSessionProvider>
           <LayoutShell>
