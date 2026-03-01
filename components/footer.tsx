@@ -53,13 +53,19 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/use-cases" className="text-gray-300 hover:text-white transition-colors flex items-center">
+                  <Link href="/openclaw-ai-agents" className="text-gray-300 hover:text-white transition-colors flex items-center">
                     <span className="w-1.5 h-1.5 bg-blue-400 rounded-full mr-2"></span>
-                    Use Cases
+                    OpenClaw AI Agents
                   </Link>
                 </li>
                 <li>
-                  <Link href="/services/strategy-audit" className="text-gray-300 hover:text-white transition-colors flex items-center">
+                  <Link href="/tech-basics" className="text-gray-300 hover:text-white transition-colors flex items-center">
+                    <span className="w-1.5 h-1.5 bg-blue-400 rounded-full mr-2"></span>
+                    Tech Basics
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/strategy-audit" className="text-gray-300 hover:text-white transition-colors flex items-center">
                     <span className="w-1.5 h-1.5 bg-blue-400 rounded-full mr-2"></span>
                     Strategy Audit
                   </Link>

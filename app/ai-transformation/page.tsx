@@ -67,7 +67,7 @@ const tiers = [
       "Live training sessions with recorded library",
       "Ongoing support and quarterly optimization",
     ],
-    price: "From $1,500 setup + $199/mo",
+    price: "From $3,000-$5,000 setup",
     priceNote: "Scales with team size",
     cta: "Get Started",
     featured: false,
@@ -86,7 +86,7 @@ const tiers = [
       "Multi-agent workflow orchestration",
       "n8n and automation platform guidance",
     ],
-    price: "From $3,500 setup + $499/mo",
+    price: "From $5,000-$10,000",
     priceNote: null,
     cta: "Get Started",
     featured: true,
@@ -105,7 +105,7 @@ const tiers = [
       "Monitoring, usage reporting, and cost tracking",
       "Self-hosted from $3,500 or cloud-managed from $6,000",
     ],
-    price: "From $3,500 setup + $199/mo",
+    price: "From $3,000 setup",
     priceNote: null,
     cta: "Deploy Your Agent",
     featured: false,
@@ -596,9 +596,54 @@ export default function AITransformationPage() {
             })}
           </div>
 
-          <p className="text-sm text-center" style={{color: "#64748B"}}>
+          <p className="text-sm text-center mb-16" style={{color: "#64748B"}}>
             All tiers are available month-to-month. No lock-in.
           </p>
+
+          {/* Retainer Section */}
+          <div className="rounded-2xl border border-slate-200/60 bg-white p-8 md:p-10 shadow-md">
+            <div className="text-center mb-8">
+              <h3 className="font-display text-2xl md:text-3xl font-bold tracking-tight mb-3" style={{color: "#0F172A"}}>
+                Ongoing Support &amp; Retainers
+              </h3>
+              <p className="text-lg" style={{color: "#64748B"}}>
+                All implementations come with optional ongoing support. We don&apos;t just set it up and leave.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-6 mb-8">
+              <div className="rounded-lg border border-slate-200/60 p-6 hover:border-blue-200 transition-colors">
+                <h4 className="text-lg font-bold mb-1" style={{color: "#0F172A"}}>Basic Support</h4>
+                <p className="text-2xl font-bold text-blue-500 mb-3">$300<span className="text-sm font-normal" style={{color: "#94A3B8"}}>/mo</span></p>
+                <p className="text-sm leading-relaxed" style={{color: "#64748B"}}>
+                  Monthly check-in, issue resolution, minor workflow adjustments.
+                </p>
+              </div>
+              <div className="rounded-lg border border-blue-200 bg-blue-50/50 p-6">
+                <h4 className="text-lg font-bold mb-1" style={{color: "#0F172A"}}>Standard Support</h4>
+                <p className="text-2xl font-bold text-blue-500 mb-3">$750<span className="text-sm font-normal" style={{color: "#94A3B8"}}>/mo</span></p>
+                <p className="text-sm leading-relaxed" style={{color: "#64748B"}}>
+                  Bi-weekly calls, ongoing workflow optimization, new prompt packs as your needs evolve, priority response.
+                </p>
+              </div>
+              <div className="rounded-lg border border-slate-200/60 p-6 hover:border-blue-200 transition-colors">
+                <h4 className="text-lg font-bold mb-1" style={{color: "#0F172A"}}>Dedicated Partnership</h4>
+                <p className="text-2xl font-bold text-blue-500 mb-3">$1,500+<span className="text-sm font-normal" style={{color: "#94A3B8"}}>/mo</span></p>
+                <p className="text-sm leading-relaxed" style={{color: "#64748B"}}>
+                  Weekly strategy calls, continuous workflow builds and iteration, dedicated Slack channel, first priority on new capabilities.
+                </p>
+              </div>
+            </div>
+
+            <div className="rounded-lg border border-blue-200 bg-blue-50/30 p-5 text-center">
+              <p className="font-medium" style={{color: "#0F172A"}}>
+                Tech Basics Add-On — <span className="text-blue-500">$297/mo</span>
+              </p>
+              <p className="text-sm mt-1" style={{color: "#64748B"}}>
+                Add our Tech Basics package (website, phone, texting, CRM, invoicing) to any AI Transformation engagement. Bundle discount available.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 

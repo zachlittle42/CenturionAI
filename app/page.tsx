@@ -42,7 +42,7 @@ export default function Home() {
               Talk to Us
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Link>
-            <Link href="/services/strategy-audit" className="inline-flex items-center text-base px-8 py-3 font-medium border rounded-md transition-colors cursor-pointer" style={{borderColor: "rgba(96,165,250,0.3)", color: "#93C5FD"}}>
+            <Link href="/strategy-audit" className="inline-flex items-center text-base px-8 py-3 font-medium border rounded-md transition-colors cursor-pointer" style={{borderColor: "rgba(96,165,250,0.3)", color: "#93C5FD"}}>
               Start with a $1,500 Audit
             </Link>
           </div>
@@ -63,7 +63,45 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* Tech Basics */}
+            <div className="bg-white rounded-2xl border border-slate-200/60 p-8 hover:shadow-lg hover:border-blue-200 transition-all relative">
+              <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-green-600 text-white text-sm font-bold px-5 py-1.5 rounded-full shadow-lg uppercase tracking-wide whitespace-nowrap">Start Here</span>
+              <div className="flex items-center gap-3 mb-2 mt-2">
+                <div className="rounded-lg bg-blue-50 p-3 shrink-0">
+                  <Layout className="h-7 w-7 text-blue-500" />
+                </div>
+                <h3 className="text-2xl font-bold" style={{color: "#0F172A"}}>Tech Basics</h3>
+              </div>
+              <p className="text-blue-500 font-medium mb-4">Not ready for AI? Start here.</p>
+              <p className="mb-6 leading-relaxed" style={{color: "#64748B"}}>
+                Website, phone, texting, CRM, invoicing — everything your business
+                needs to run, in one platform.
+              </p>
+
+              <ul className="space-y-3 mb-8">
+                {[
+                  "Modern website built to convert",
+                  "Business phone + missed-call text-back",
+                  "2-way texting & CRM",
+                  "From $297/mo",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-2">
+                    <Check className="h-5 w-5 text-blue-500 flex-shrink-0 mt-0.5" />
+                    <span className="text-sm" style={{color: "#64748B"}}>{item}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <Link
+                href="/tech-basics"
+                className="inline-flex items-center justify-center w-full px-6 py-3 rounded-lg bg-blue-500 hover:bg-blue-400 text-white font-medium transition-colors shadow-md shadow-blue-500/20 group"
+              >
+                Learn More
+                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+              </Link>
+            </div>
+
             {/* Strategy Audit */}
             <div className="bg-white rounded-2xl border border-slate-200/60 p-8 hover:shadow-lg hover:border-blue-200 transition-all relative">
               <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-slate-800 text-white text-sm font-bold px-5 py-1.5 rounded-full shadow-lg uppercase tracking-wide whitespace-nowrap">Minimum Package</span>
@@ -94,7 +132,7 @@ export default function Home() {
               </ul>
 
               <Link
-                href="/services/strategy-audit"
+                href="/strategy-audit"
                 className="inline-flex items-center justify-center w-full px-6 py-3 rounded-lg bg-blue-500 hover:bg-blue-400 text-white font-medium transition-colors shadow-md shadow-blue-500/20 group"
               >
                 Learn About the Audit
@@ -122,21 +160,21 @@ export default function Home() {
                   <div className="rounded bg-blue-500/30 text-white px-2 py-0.5 text-xs font-semibold mt-0.5 shrink-0">T1</div>
                   <div>
                     <span className="font-medium text-white">AI Foundations</span>
-                    <span className="text-sm text-blue-200"> — Platform setup + training from $1,500</span>
+                    <span className="text-sm text-blue-200"> — Platform setup + training from $3,000</span>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="rounded bg-blue-500/30 text-white px-2 py-0.5 text-xs font-semibold mt-0.5 shrink-0">T2</div>
                   <div>
                     <span className="font-medium text-white">Custom Workflows</span>
-                    <span className="text-sm text-blue-200"> — Claude Code + agent automation from $3,500</span>
+                    <span className="text-sm text-blue-200"> — Claude Code + agent automation from $5,000</span>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="rounded bg-blue-500/30 text-white px-2 py-0.5 text-xs font-semibold mt-0.5 shrink-0">T3</div>
                   <div>
                     <span className="font-medium text-white">Managed Infrastructure</span>
-                    <span className="text-sm text-blue-200"> — OpenClaw hosted agents from $3,500</span>
+                    <span className="text-sm text-blue-200"> — OpenClaw hosted agents from $3,000</span>
                   </div>
                 </div>
               </div>
@@ -283,7 +321,7 @@ export default function Home() {
                   </div>
 
                   <Link
-                    href="/use-cases"
+                    href="/openclaw-ai-agents"
                     className="inline-flex items-center px-7 py-3 rounded-lg bg-blue-500 hover:bg-blue-400 text-white font-medium transition-colors shadow-lg shadow-blue-500/25 group"
                   >
                     Explore OpenClaw Agents
@@ -356,9 +394,9 @@ export default function Home() {
 
                   <div className="space-y-2.5 mb-8">
                     {[
-                      { tier: "T1", label: "AI Foundations", detail: "Platform setup + training from $1,500" },
-                      { tier: "T2", label: "Custom Workflows", detail: "Claude Code + agent automation from $3,500" },
-                      { tier: "T3", label: "Managed Infrastructure", detail: "OpenClaw hosted agents from $3,500" },
+                      { tier: "T1", label: "AI Foundations", detail: "Platform setup + training from $3,000" },
+                      { tier: "T2", label: "Custom Workflows", detail: "Claude Code + agent automation from $5,000" },
+                      { tier: "T3", label: "Managed Infrastructure", detail: "OpenClaw hosted agents from $3,000" },
                     ].map((t) => (
                       <div key={t.tier} className="flex items-start gap-3">
                         <span className="rounded bg-white/20 text-white text-xs font-bold px-2 py-0.5 shrink-0 mt-0.5">{t.tier}</span>
@@ -558,7 +596,7 @@ export default function Home() {
 
           <div className="text-center mt-10">
             <Link
-              href="/use-cases"
+              href="/openclaw-ai-agents"
               className="inline-flex items-center font-medium text-blue-500 group text-lg"
             >
               See all use cases and learn about OpenClaw

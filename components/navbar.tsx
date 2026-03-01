@@ -7,10 +7,11 @@ import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const navLinks = [
-  { href: "/services/strategy-audit", label: "Strategy Audit" },
+  { href: "/tech-basics", label: "Tech Basics" },
+  { href: "/strategy-audit", label: "Strategy Audit" },
   { href: "/ai-transformation", label: "AI Transformation" },
   { href: "/ai-engineering", label: "AI Engineering" },
-  { href: "/use-cases", label: "OpenClaw AI Agents" },
+  { href: "/openclaw-ai-agents", label: "OpenClaw AI Agents" },
 ]
 
 export default function Navbar() {
@@ -29,7 +30,7 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden lg:flex items-center space-x-6">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -48,7 +49,7 @@ export default function Navbar() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-white"
+            className="lg:hidden text-white"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           >
@@ -58,7 +59,7 @@ export default function Navbar() {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 animate-slide-down bg-[rgba(15,23,42,0.98)]">
+          <div className="lg:hidden py-4 animate-slide-down bg-[rgba(15,23,42,0.98)]">
             <div className="flex flex-col space-y-4">
               {navLinks.map((link, index) => (
                 <Link
@@ -75,7 +76,7 @@ export default function Navbar() {
               <Button
                 asChild
                 size="sm"
-                className={`animate-slide-down stagger-5 bg-blue-500 hover:bg-blue-400 text-white w-full`}
+                className={`animate-slide-down stagger-6 bg-blue-500 hover:bg-blue-400 text-white w-full`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 <Link href="/get-started">Get Started</Link>
