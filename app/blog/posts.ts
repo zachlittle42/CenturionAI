@@ -1,6 +1,18 @@
-export const posts = [
+export type PostCategory = 'pillar' | 'implementation' | 'automation' | 'models' | 'agents' | 'healthcare' | 'tech-basics' | 'comparison' | 'project-writeup'
+
+export interface Post {
+  slug: string
+  title: string
+  date: string
+  excerpt: string
+  content: string
+  category: PostCategory
+}
+
+export const posts: Post[] = [
   {
     slug: "why-your-ai-pilot-failed",
+    category: 'project-writeup',
     title: "Why Your AI Pilot Failed (And What to Do Differently)",
     date: "February 25, 2026",
     excerpt:
@@ -37,6 +49,7 @@ That's exactly what we do at Centurion AI. If you've had a pilot that didn't sti
   },
   {
     slug: "the-1500-question",
+    category: 'project-writeup',
     title:
       "The $1,500 Question Every Business Should Answer Before Buying AI Software",
     date: "February 20, 2026",
@@ -78,6 +91,7 @@ Don't buy AI software before you know what problem you're solving. A $1,500 Stra
   },
   {
     slug: "ai-agent-medical-spa",
+    category: 'project-writeup',
     title:
       "How I Built an AI Agent for a Healthcare Business in One Afternoon",
     date: "February 15, 2026",
@@ -128,6 +142,7 @@ That's what we do at Centurion AI. If you want an AI agent for your business —
   },
   {
     slug: "ai-intake-bot-weight-loss-clinic",
+    category: 'project-writeup',
     title:
       "I Built an AI Intake Bot for a Weight Loss Clinic in 4 Hours — Here's Exactly How",
     date: "March 1, 2026",
@@ -219,6 +234,7 @@ Book a Strategy Audit and we'll map exactly where your patients are falling off 
   },
   {
     slug: "automate-med-spa-followup",
+    category: 'automation',
     title:
       "How We Automated 80% of a Med Spa's Patient Follow-Up with Claude and n8n",
     date: "February 28, 2026",
@@ -316,6 +332,7 @@ Start with a Strategy Audit and we'll show you exactly how much revenue you're l
   },
   {
     slug: "ai-knowledge-base-company",
+    category: 'project-writeup',
     title:
       "Building an AI Knowledge Base for a 30-Person Company — Full Walkthrough",
     date: "February 26, 2026",
@@ -406,6 +423,7 @@ Book a Strategy Audit and we'll assess your knowledge landscape and build a plan
   },
   {
     slug: "openclaw-customer-service-agent",
+    category: 'agents',
     title:
       "We Deployed OpenClaw as a 24/7 Customer Service Agent — Here's What Happened",
     date: "February 24, 2026",
@@ -524,6 +542,7 @@ Start with a Strategy Audit and we'll map your ticket data to build a custom dep
   },
   {
     slug: "glp1-coaching-bot-claude",
+    category: 'project-writeup',
     title:
       "How to Build a GLP-1 Patient Coaching Bot with Claude (Step-by-Step)",
     date: "February 22, 2026",
@@ -654,6 +673,7 @@ Book a Strategy Audit and we'll design a coaching system tailored to your protoc
   },
   {
     slug: "ai-vs-va-90-days",
+    category: 'project-writeup',
     title:
       "I Replaced a VA with an AI Agent for 90 Days — Honest Results",
     date: "February 18, 2026",
@@ -810,6 +830,7 @@ Whether you need a full AI agent system, a hybrid model, or help figuring out wh
   },
   {
     slug: "ai-report-generator",
+    category: 'project-writeup',
     title:
       "Building an AI Weekly Report Generator — From Idea to Production in a Weekend",
     date: "February 16, 2026",
@@ -955,6 +976,7 @@ Book a Strategy Audit and we'll identify every report in your organization that 
   },
   {
     slug: "ai-outreach-sequence",
+    category: 'project-writeup',
     title:
       "How I Set Up an AI Outreach Sequence That Books Meetings While I Sleep",
     date: "February 14, 2026",
@@ -1114,6 +1136,7 @@ Book a Strategy Audit and we'll design an outreach engine that books meetings wh
   },
   {
     slug: "ai-for-medical-spas",
+    category: 'healthcare',
     title: "AI for Medical Spas — 6 Workflows to Automate Today",
     date: "March 1, 2026",
     excerpt:
@@ -1199,6 +1222,7 @@ Ready to see what AI can do for your med spa? Book a Strategy Audit with Centuri
   },
   {
     slug: "ai-weight-loss-clinic",
+    category: 'healthcare',
     title:
       "How Weight Loss Clinics Are Using AI to Improve Patient Retention",
     date: "March 2, 2026",
@@ -1302,6 +1326,7 @@ Centurion AI deploys retention automation systems built specifically for weight 
   },
   {
     slug: "ai-patient-communication",
+    category: 'healthcare',
     title:
       "AI Patient Communication Tools — What to Use and What to Avoid",
     date: "March 3, 2026",
@@ -1411,6 +1436,7 @@ Centurion AI deploys HIPAA-compliant AI communication systems for healthcare pra
   },
   {
     slug: "hipaa-and-ai",
+    category: 'healthcare',
     title:
       "HIPAA and AI — What You Actually Need to Know Before You Deploy",
     date: "March 4, 2026",
@@ -1532,6 +1558,7 @@ Centurion AI builds HIPAA-compliant AI systems for healthcare practices. Every d
   },
   {
     slug: "glp1-clinic-ai",
+    category: 'healthcare',
     title:
       "GLP-1 Clinic Operations — Where AI Saves the Most Time",
     date: "March 5, 2026",
@@ -1632,6 +1659,7 @@ Centurion AI builds operations automation specifically for GLP-1 and weight mana
   },
   {
     slug: "ai-appointment-reminders",
+    category: 'healthcare',
     title:
       "How to Set Up AI Appointment Reminders That Patients Actually Respond To",
     date: "March 6, 2026",
@@ -1749,6 +1777,7 @@ Centurion AI deploys AI reminder and scheduling systems for healthcare practices
   },
   {
     slug: "ai-aesthetics-practice",
+    category: 'healthcare',
     title:
       "AI for Aesthetics Practices — Lead Nurturing Automation Guide",
     date: "March 7, 2026",
@@ -1856,6 +1885,7 @@ Centurion AI builds lead nurturing automation for aesthetics practices. Book a S
   },
   {
     slug: "do-you-need-a-website",
+    category: 'tech-basics',
     title:
       "Does Your Small Business Actually Need a Website in 2026?",
     date: "March 8, 2026",
@@ -1974,6 +2004,7 @@ If you need help deciding what kind of web presence makes sense for your busines
   },
   {
     slug: "business-phone-systems",
+    category: 'tech-basics',
     title:
       "Business Phone Systems Explained — VoIP, Virtual Numbers, and Missed-Call Text-Back",
     date: "March 9, 2026",
@@ -2128,6 +2159,7 @@ Centurion AI sets up complete business phone systems as part of our Tech Basics 
   },
   {
     slug: "crm-for-small-business",
+    category: 'tech-basics',
     title: "CRM for Small Business — Do You Need One and Which One?",
     date: "March 10, 2026",
     excerpt:
@@ -2259,6 +2291,7 @@ Centurion AI sets up and configures CRMs as part of our Tech Basics service. We'
   },
   {
     slug: "texting-vs-email-business",
+    category: 'tech-basics',
     title:
       "Why Texting Beats Email for Customer Communication (With Data)",
     date: "March 11, 2026",
@@ -2400,6 +2433,7 @@ Centurion AI sets up business texting systems — from basic automation to AI-po
   },
   {
     slug: "ai-ready-tech-stack",
+    category: 'tech-basics',
     title:
       "Getting Your Tech Stack AI-Ready — The Pre-Work Most Businesses Skip",
     date: "March 12, 2026",
@@ -2535,6 +2569,7 @@ Centurion AI starts every engagement with a tech stack assessment. Book a Strate
   },
   {
     slug: "ai-consulting-vs-diy",
+    category: 'comparison',
     title:
       "AI Consulting vs. DIY — When to Bring in Help and When to Build Yourself",
     date: "March 13, 2026",
@@ -2672,6 +2707,7 @@ Centurion AI offers Strategy Audits ($1,500) for businesses that want expert gui
   },
   {
     slug: "claude-api-vs-openai-api",
+    category: 'comparison',
     title:
       "Claude API vs. OpenAI API — Which to Build On for Your Business App",
     date: "March 14, 2026",
@@ -2808,6 +2844,7 @@ Centurion AI builds custom AI applications on both Claude and OpenAI APIs. We'll
   },
   {
     slug: "ai-chatbot-vs-agent-cost",
+    category: 'comparison',
     title:
       "AI Chatbot vs. AI Agent — Cost Comparison and Use Case Breakdown",
     date: "March 15, 2026",
@@ -2995,6 +3032,7 @@ Centurion AI builds both AI chatbots and full-stack AI agents. We'll assess your
   },
   {
     slug: "strategy-audit-vs-implementation",
+    category: 'comparison',
     title:
       "Strategy Audit vs. Jumping Straight to Implementation — Which Is the Right Call?",
     date: "March 16, 2026",
@@ -3141,6 +3179,7 @@ Centurion AI Strategy Audits start at $1,500. In 2-4 weeks, you'll have a priori
   },
   {
     slug: "n8n-vs-make-vs-zapier-2026",
+    category: 'comparison',
     title: "n8n vs. Make vs. Zapier for AI Automation in 2026",
     date: "March 17, 2026",
     excerpt:
@@ -3338,6 +3377,7 @@ Centurion AI builds AI automations on all three platforms and can advise on whic
   },
   {
     slug: "ai-implementation-mistakes",
+    category: 'implementation',
     title: "The 7 Most Common AI Implementation Mistakes",
     date: "March 1, 2026",
     excerpt:
@@ -3441,6 +3481,7 @@ A: Time saved, error reduction, revenue impact, satisfaction changes, adoption r
   },
   {
     slug: "ai-implementation-timeline",
+    category: 'implementation',
     title: "How Long Does AI Implementation Actually Take?",
     date: "March 1, 2026",
     excerpt:
@@ -3522,6 +3563,7 @@ A: Tier 1: first month. Tier 2: 60-90 days. Tier 3: early wins by month 2, full 
   },
   {
     slug: "ai-implementation-cost",
+    category: 'implementation',
     title: "What Does AI Implementation Cost in 2026?",
     date: "March 1, 2026",
     excerpt:
@@ -3595,6 +3637,7 @@ A: Project-based for implementation. Monthly retainer for optimization. Avoid lo
   },
   {
     slug: "ai-business-case",
+    category: 'implementation',
     title: "How to Write an AI Business Case Your CFO Will Approve",
     date: "March 1, 2026",
     excerpt:
@@ -3675,6 +3718,7 @@ A: Time saved, accuracy rate, adoption rate, one business outcome metric.
   },
   {
     slug: "business-ready-for-ai",
+    category: 'implementation',
     title:
       "5 Signs Your Business Is Ready for AI (And 3 Signs It Isn't)",
     date: "March 1, 2026",
@@ -3752,6 +3796,7 @@ A: Real but manageable. Competitors move faster. Gap compounds. But implementing
   },
   {
     slug: "ai-pilot-failed",
+    category: 'implementation',
     title: "What to Do After Your AI Pilot Fails",
     date: "March 1, 2026",
     excerpt:
@@ -3844,6 +3889,7 @@ A: If first attempt was without experienced help — yes. Partners compress time
   },
   {
     slug: "ai-team-onboarding",
+    category: 'implementation',
     title:
       "How to Onboard Your Team to New AI Tools Without the Pushback",
     date: "March 1, 2026",
@@ -3926,6 +3972,7 @@ A: Absolutely. If managers don't use it, teams won't. Leaders model behavior.
   },
   {
     slug: "ai-implementation-checklist",
+    category: 'implementation',
     title:
       "AI Implementation Checklist — 27 Things to Do Before You Go Live",
     date: "March 1, 2026",
@@ -4015,6 +4062,7 @@ A: Strategy and data overlap. Technical starts at 80% data prep. Team readiness 
   },
   {
     slug: "automate-business-workflows",
+    category: 'automation',
     title: "10 Business Workflows You Can Automate with AI Today",
     date: "March 1, 2026",
     excerpt:
@@ -4079,6 +4127,7 @@ Pick the one costing you the most time or money. Implement, prove ROI, repeat. U
   },
   {
     slug: "automate-customer-followup",
+    category: 'automation',
     title:
       "How to Automate Customer Follow-Up with AI (Step-by-Step)",
     date: "March 1, 2026",
@@ -4150,6 +4199,7 @@ Real contacts, internal test inbox. Check personalization, tone, timing, edge ca
   },
   {
     slug: "ai-email-responder",
+    category: 'automation',
     title:
       "How to Build an AI Email Responder for Your Business",
     date: "March 1, 2026",
@@ -4219,6 +4269,7 @@ Complaints, legal/compliance, money disputes, complex support, VIP clients, low-
   },
   {
     slug: "ai-lead-qualification",
+    category: 'automation',
     title:
       "AI-Powered Lead Qualification — How to Set It Up in a Week",
     date: "March 1, 2026",
@@ -4285,6 +4336,7 @@ Score incoming leads. Sales manager reviews alongside own judgment for 2 weeks. 
   },
   {
     slug: "n8n-claude-automation",
+    category: 'automation',
     title:
       "How to Use n8n + Claude to Automate Anything in Your Business",
     date: "March 1, 2026",
@@ -4357,6 +4409,7 @@ Test 10-20 emails, activate.
   },
   {
     slug: "make-vs-zapier-vs-n8n",
+    category: 'automation',
     title:
       "Make vs. Zapier vs. n8n — Which AI Automation Platform Is Right for You",
     date: "March 1, 2026",
@@ -4430,6 +4483,7 @@ Gap widens dramatically at higher volumes.
   },
   {
     slug: "automate-invoicing-ai",
+    category: 'automation',
     title:
       "Automating Invoicing and Payment Follow-Up with AI",
     date: "March 1, 2026",
@@ -4516,6 +4570,7 @@ Personalized per client, project, amount, history. First-time late = gentler. Re
   },
   {
     slug: "pillar-ai-implementation-small-business",
+    category: 'pillar',
     title: "The Complete Guide to AI Implementation for Small Business",
     date: "March 1, 2026",
     excerpt:
@@ -4689,6 +4744,7 @@ The first step is always the same: a Strategy Audit. In 2-4 weeks, you'll know e
   },
   {
     slug: "pillar-ai-workflow-automation",
+    category: 'pillar',
     title: "AI Workflow Automation — What It Is, What It Costs, What to Expect",
     date: "March 1, 2026",
     excerpt: "AI workflow automation connects your tools, eliminates manual handoffs, and lets your team focus on work that actually requires a human brain. Here's everything you need to know.",
@@ -4879,6 +4935,7 @@ AI workflow automation isn't a future thing — it's a right-now thing. Your com
   },
   {
     slug: "pillar-choose-ai-platform",
+    category: 'pillar',
     title: "How to Choose the Right AI Platform for Your Business",
     date: "March 1, 2026",
     excerpt: "The best AI platform for business in 2026 depends on your size, budget, existing tools, and what you're actually trying to accomplish. This guide cuts through the noise.",
@@ -5016,6 +5073,7 @@ The best AI platform for your business isn't the one with the most features or t
   },
   {
     slug: "pillar-ai-strategy-audit",
+    category: 'pillar',
     title: "The AI Strategy Audit — How to Find ROI Before You Spend Anything",
     date: "March 1, 2026",
     excerpt: "An AI strategy for business starts with knowing where the money is. A Strategy Audit maps your opportunities, scores them by ROI, and gives you a concrete plan — before you spend a dime on tools.",
@@ -5135,6 +5193,7 @@ $1,500. 2-4 weeks. Complete clarity on where AI fits in your business and what t
   },
   {
     slug: "pillar-openclaw-agents",
+    category: 'pillar',
     title: "OpenClaw AI Agents — The Complete Implementation Guide",
     date: "March 1, 2026",
     excerpt: "OpenClaw AI agents handle calls, book appointments, qualify leads, and automate workflows — all running on your infrastructure. This is the complete implementation guide.",
@@ -5287,6 +5346,7 @@ The Strategy Audit identifies which agent types, channels, and use cases deliver
   },
   {
     slug: "pillar-ai-healthcare-wellness",
+    category: 'pillar',
     title: "AI for Healthcare and Wellness Businesses",
     date: "March 1, 2026",
     excerpt: "AI for medical spa, dental, chiropractic, wellness, and healthcare practices. Practical applications that recover revenue, reduce admin burden, and improve patient experience.",
@@ -5444,6 +5504,7 @@ AI for medical spa, dental, chiropractic, and wellness practices is here. The pr
   },
   {
     slug: "pillar-hire-ai-engineering",
+    category: 'pillar',
     title: "How to Hire AI Engineering Help — Freelancers vs. Agencies vs. Build In-House",
     date: "March 1, 2026",
     excerpt: "Need to hire AI engineer talent? This guide compares freelancers, agencies, and in-house hires — with real costs, timelines, and decision frameworks for each option.",
@@ -5657,6 +5718,7 @@ A Strategy Audit gives you that clarity in 2-4 weeks. You'll know which AI oppor
 
   {
     slug: "claude-vs-chatgpt-business",
+    category: 'models',
     title: "Claude vs. ChatGPT for Business — Honest Comparison (2026)",
     date: "March 1, 2026",
     excerpt:
@@ -5749,6 +5811,7 @@ No. Models improve constantly. Any properly built system can swap models. Waitin
   },
   {
     slug: "gpt5-vs-claude4",
+    category: 'models',
     title: "GPT-5 vs. Claude 4 — Which Is Better for Customer-Facing AI?",
     date: "February 28, 2026",
     excerpt:
@@ -5827,6 +5890,7 @@ No. Deploy now, iterate later. Waiting means losing months of productivity gains
   },
   {
     slug: "gemini-for-business",
+    category: 'models',
     title: "Gemini for Business — What It's Actually Good At",
     date: "February 26, 2026",
     excerpt:
@@ -5906,6 +5970,7 @@ We generally don't recommend it. Claude and ChatGPT produce more consistent, hig
   },
   {
     slug: "microsoft-copilot-review",
+    category: 'models',
     title: "Microsoft Copilot Honest Review — Is It Worth It for SMBs?",
     date: "February 24, 2026",
     excerpt:
@@ -5988,6 +6053,7 @@ Typically annual. Some resellers offer monthly at a premium. Factor lock-in into
   },
   {
     slug: "best-ai-models-by-task",
+    category: 'models',
     title: "The Best AI Models for Writing, Coding, Analysis, and Customer Service",
     date: "February 22, 2026",
     excerpt:
@@ -6067,6 +6133,7 @@ Claude Haiku or GPT-4o Mini. Strong capabilities at a fraction of flagship cost.
   },
   {
     slug: "how-to-evaluate-ai-model",
+    category: 'models',
     title: "How to Evaluate an AI Model Before You Build on It",
     date: "February 19, 2026",
     excerpt:
@@ -6162,6 +6229,7 @@ Every 6-12 months, or on major model launches.
   },
   {
     slug: "prompt-engineering-for-business",
+    category: 'models',
     title: "Prompt Engineering for Non-Technical Business Owners",
     date: "February 18, 2026",
     excerpt:
@@ -6252,6 +6320,7 @@ Yes. Differentiates mediocre from exceptional AI results. Not going away even as
   },
   {
     slug: "why-we-use-claude",
+    category: 'models',
     title: "Why We Use Claude as Our Default — And When We Don't",
     date: "February 16, 2026",
     excerpt:
@@ -6317,6 +6386,7 @@ We build model-agnostic systems. If Anthropic disappeared, we'd migrate clients 
   },
   {
     slug: "what-is-an-ai-agent",
+    category: 'agents',
     title: "What Is an AI Agent? Plain English Explanation with Examples",
     date: "February 14, 2026",
     excerpt:
@@ -6404,6 +6474,7 @@ Automation: rigid scripts. Agents: understand language, make judgment calls, han
   },
   {
     slug: "ai-agents-vs-chatbots",
+    category: 'agents',
     title: "AI Agents vs. Chatbots — What's the Difference and Which Do You Need?",
     date: "February 12, 2026",
     excerpt:
@@ -6483,6 +6554,7 @@ Tasks completed, not conversations had. 500 conversations with zero completed ta
   },
   {
     slug: "deploy-ai-agent-no-code",
+    category: 'agents',
     title: "How to Deploy Your First AI Agent Without a Dev Team",
     date: "February 10, 2026",
     excerpt:
@@ -6561,6 +6633,7 @@ Yes. Transparency builds trust. Most customers appreciate honesty.
   },
   {
     slug: "openclaw-vs-competitors",
+    category: 'agents',
     title: "OpenClaw vs. Other AI Agent Platforms — Honest Comparison",
     date: "February 8, 2026",
     excerpt:
@@ -6646,6 +6719,7 @@ Cloud platforms handle infrastructure for you. Self-hosted is as reliable as you
   },
   {
     slug: "self-hosted-vs-cloud-agents",
+    category: 'agents',
     title: "Self-Hosted vs. Cloud AI Agents — Which Is Right for Your Business?",
     date: "February 6, 2026",
     excerpt:
@@ -6729,6 +6803,7 @@ AWS, GCP, Azure. For cost efficiency: DigitalOcean or Hetzner.
   },
   {
     slug: "ai-agent-customer-service",
+    category: 'agents',
     title: "How AI Agents Handle Customer Service — Real Example Walkthrough",
     date: "February 4, 2026",
     excerpt:
@@ -6796,6 +6871,7 @@ We review regularly and update knowledge base. Common failures get explicit answ
   },
   {
     slug: "ai-executive-assistant",
+    category: 'agents',
     title: "Building an AI Executive Assistant — What It Can and Can't Do",
     date: "February 2, 2026",
     excerpt:
@@ -6874,6 +6950,7 @@ Yes. Coordinate work + personal to avoid conflicts without exposing details.
   },
   {
     slug: "ai-agents-sales-outreach",
+    category: 'agents',
     title: "AI Agents for Sales Outreach — Does It Actually Work?",
     date: "January 31, 2026",
     excerpt:
