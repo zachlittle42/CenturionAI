@@ -32,28 +32,19 @@ const formSchema = z.object({
   name: z.string().min(1, "Name is required"),
   email: z.string().email("Please enter a valid email address"),
   company: z.string().min(1, "Company is required"),
-  teamSize: z.string().min(1, "Please select a team size"),
-  interest: z.string().min(1, "Please select what you're interested in"),
-  message: z.string().optional(),
+  phone: z.string().optional(),
+  revenue: z.string().min(1, "Please select your monthly revenue"),
+  challenge: z.string().min(1, "Please tell us about your biggest challenge"),
+  referral: z.string().optional(),
 })
 
 type FormValues = z.infer<typeof formSchema>
 
-const teamSizeOptions = [
-  { value: "1-10", label: "1-10" },
-  { value: "11-25", label: "11-25" },
-  { value: "26-50", label: "26-50" },
-  { value: "51-150", label: "51-150" },
-  { value: "150+", label: "150+" },
-]
-
-const interestOptions = [
-  { value: "ai-foundations", label: "AI Foundations - Platform Setup & Training" },
-  { value: "custom-workflows", label: "Custom Workflows - Automation & Agents" },
-  { value: "managed-infrastructure", label: "Managed AI Infrastructure - OpenClaw" },
-  { value: "ai-engineering", label: "AI Engineering - Software Development" },
-  { value: "strategy-audit", label: "Strategy Audit - Where Does AI Fit?" },
-  { value: "not-sure", label: "Not sure yet - help me figure it out" },
+const revenueOptions = [
+  { value: "under-50k", label: "Under $50K" },
+  { value: "50k-250k", label: "$50K–$250K" },
+  { value: "250k-1m", label: "$250K–$1M" },
+  { value: "1m-plus", label: "$1M+" },
 ]
 
 export default function GetStartedPage() {
@@ -66,9 +57,10 @@ export default function GetStartedPage() {
       name: "",
       email: "",
       company: "",
-      teamSize: "",
-      interest: "",
-      message: "",
+      phone: "",
+      revenue: "",
+      challenge: "",
+      referral: "",
     },
   })
 
@@ -90,7 +82,7 @@ export default function GetStartedPage() {
 
       toast({
         title: "Request received",
-        description: "We'll be in touch within 24 hours.",
+        description: "We'll be in touch within 24 hours with a recommendation.",
       })
 
       form.reset()
@@ -122,10 +114,10 @@ export default function GetStartedPage() {
             &larr; Back to Centurion AI
           </Link>
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-4 font-display text-balance opacity-0 animate-reveal">
-            Let&apos;s figure out the right path for you.
+            Tell us about your business. We&apos;ll recommend the right path.
           </h1>
           <p className="text-lg leading-relaxed opacity-0 animate-reveal stagger-1" style={{ color: "#94A3B8" }}>
-            Tell us about your business and what you&apos;re looking for. We&apos;ll respond within 24 hours with a tailored recommendation.
+            We&apos;ll get back to you within 24 hours with a tailored recommendation.
           </p>
         </div>
 
@@ -158,6 +150,28 @@ export default function GetStartedPage() {
 
                   <FormField
                     control={form.control}
+                    name="company"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel className="text-sm font-medium text-slate-300">
+                          Company
+                        </FormLabel>
+                        <FormControl>
+                          <Input
+                            placeholder="Your company"
+                            className="bg-slate-800/50 border-slate-600/50 text-white placeholder:text-slate-500 focus:border-blue-500 focus:ring-blue-500"
+                            {...field}
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                  <FormField
+                    control={form.control}
                     name="email"
                     render={({ field }) => (
                       <FormItem>
@@ -176,20 +190,19 @@ export default function GetStartedPage() {
                       </FormItem>
                     )}
                   />
-                </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                   <FormField
                     control={form.control}
-                    name="company"
+                    name="phone"
                     render={({ field }) => (
                       <FormItem>
                         <FormLabel className="text-sm font-medium text-slate-300">
-                          Company
+                          Phone <span className="text-slate-500">(optional)</span>
                         </FormLabel>
                         <FormControl>
                           <Input
-                            placeholder="Your company"
+                            type="tel"
+                            placeholder="(555) 123-4567"
                             className="bg-slate-800/50 border-slate-600/50 text-white placeholder:text-slate-500 focus:border-blue-500 focus:ring-blue-500"
                             {...field}
                           />
@@ -198,45 +211,15 @@ export default function GetStartedPage() {
                       </FormItem>
                     )}
                   />
-
-                  <FormField
-                    control={form.control}
-                    name="teamSize"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel className="text-sm font-medium text-slate-300">
-                          Team Size
-                        </FormLabel>
-                        <Select
-                          onValueChange={field.onChange}
-                          defaultValue={field.value}
-                        >
-                          <FormControl>
-                            <SelectTrigger className="bg-slate-800/50 border-slate-600/50 text-white placeholder:text-slate-500 focus:border-blue-500 focus:ring-blue-500">
-                              <SelectValue placeholder="Select team size" />
-                            </SelectTrigger>
-                          </FormControl>
-                          <SelectContent>
-                            {teamSizeOptions.map((option) => (
-                              <SelectItem key={option.value} value={option.value}>
-                                {option.label}
-                              </SelectItem>
-                            ))}
-                          </SelectContent>
-                        </Select>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
                 </div>
 
                 <FormField
                   control={form.control}
-                  name="interest"
+                  name="revenue"
                   render={({ field }) => (
                     <FormItem>
                       <FormLabel className="text-sm font-medium text-slate-300">
-                        What are you interested in?
+                        Monthly Revenue
                       </FormLabel>
                       <Select
                         onValueChange={field.onChange}
@@ -244,11 +227,11 @@ export default function GetStartedPage() {
                       >
                         <FormControl>
                           <SelectTrigger className="bg-slate-800/50 border-slate-600/50 text-white placeholder:text-slate-500 focus:border-blue-500 focus:ring-blue-500">
-                            <SelectValue placeholder="Select an option" />
+                            <SelectValue placeholder="Select monthly revenue" />
                           </SelectTrigger>
                         </FormControl>
                         <SelectContent>
-                          {interestOptions.map((option) => (
+                          {revenueOptions.map((option) => (
                             <SelectItem key={option.value} value={option.value}>
                               {option.label}
                             </SelectItem>
@@ -262,17 +245,37 @@ export default function GetStartedPage() {
 
                 <FormField
                   control={form.control}
-                  name="message"
+                  name="challenge"
                   render={({ field }) => (
                     <FormItem>
                       <FormLabel className="text-sm font-medium text-slate-300">
-                        Tell us more
+                        What&apos;s your biggest challenge right now?
                       </FormLabel>
                       <FormControl>
                         <Textarea
                           rows={4}
-                          placeholder="What challenges are you facing? What are you hoping AI can help with?"
+                          placeholder="Tell us in your own words..."
                           className="bg-slate-800/50 border-slate-600/50 text-white placeholder:text-slate-500 focus:border-blue-500 focus:ring-blue-500 resize-none"
+                          {...field}
+                        />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+
+                <FormField
+                  control={form.control}
+                  name="referral"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel className="text-sm font-medium text-slate-300">
+                        How did you hear about us? <span className="text-slate-500">(optional)</span>
+                      </FormLabel>
+                      <FormControl>
+                        <Input
+                          placeholder="Google, referral, social media..."
+                          className="bg-slate-800/50 border-slate-600/50 text-white placeholder:text-slate-500 focus:border-blue-500 focus:ring-blue-500"
                           {...field}
                         />
                       </FormControl>
@@ -291,7 +294,7 @@ export default function GetStartedPage() {
                   ) : (
                     <>
                       <Send className="h-4 w-4 mr-2" />
-                      Send My Request
+                      Get My Recommendation
                     </>
                   )}
                 </Button>

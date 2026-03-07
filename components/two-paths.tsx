@@ -15,8 +15,8 @@ const paths = [
       "Custom automated workflows that replace manual busywork",
       "Managed AI infrastructure with always-on agents",
     ],
-    href: "/ai-transformation",
-    ctaText: "Transform Your Team",
+    href: "/get-started",
+    ctaText: "Get Started",
   },
   {
     icon: Code,
@@ -30,8 +30,8 @@ const paths = [
       "Internal tools, apps, APIs, and data pipelines",
       "Outcome-based pricing tied to what ships",
     ],
-    href: "/ai-engineering",
-    ctaText: "Build With Us",
+    href: "/get-started",
+    ctaText: "Get Started",
   },
 ]
 

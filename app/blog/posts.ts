@@ -6149,7 +6149,7 @@ Yes. Differentiates mediocre from exceptional AI results. Not going away even as
 
 ---
 
-*Want prompt packs for your team's workflows? Our AI Transformation service includes custom prompt libraries, training, and optimization. [Learn more](/services/ai-transformation).*`,
+*Want prompt packs for your team's workflows? Our Transformation service includes custom prompt libraries, training, and optimization. [Learn more](/transformation).*`,
   },
   {
     slug: "why-we-use-claude",

@@ -28,7 +28,7 @@ export default function StickyCta() {
             href="/get-started"
             className="inline-flex items-center gap-2 px-6 py-2.5 rounded-lg bg-blue-500 hover:bg-blue-400 text-white text-sm font-medium transition-colors shadow-lg shadow-blue-500/20 ml-auto sm:ml-0"
           >
-            Talk to Us <ArrowRight className="h-3.5 w-3.5" />
+            Get Started <ArrowRight className="h-3.5 w-3.5" />
           </Link>
         </div>
       </div>

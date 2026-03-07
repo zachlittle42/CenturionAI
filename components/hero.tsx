@@ -32,8 +32,8 @@ export default function Hero() {
             size="lg"
             className="text-base px-8 py-6 font-medium bg-brand-600 hover:bg-brand-700 shadow-lg shadow-brand-100/50 group"
           >
-            <Link href="/ai-transformation" className="flex items-center">
-              Transform Your Team
+            <Link href="/get-started" className="flex items-center">
+              Get Started
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Link>
           </Button>
@@ -43,8 +43,8 @@ export default function Hero() {
             size="lg"
             className="text-base px-8 py-6 font-medium border-brand-200 text-brand-700 hover:bg-brand-50"
           >
-            <Link href="/ai-engineering" className="flex items-center">
-              Build With Us
+            <Link href="/get-started" className="flex items-center">
+              Get Started
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Link>
           </Button>

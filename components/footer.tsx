@@ -41,33 +41,33 @@ export default function Footer() {
               <h3 className="text-xl font-bold mb-6 text-white">Services</h3>
               <ul className="space-y-3">
                 <li>
-                  <Link href="/ai-transformation" className="text-gray-300 hover:text-white transition-colors flex items-center">
+                  <Link href="/fundamentals" className="text-gray-300 hover:text-white transition-colors flex items-center">
                     <span className="w-1.5 h-1.5 bg-blue-400 rounded-full mr-2"></span>
-                    AI Transformation
+                    Fundamentals
                   </Link>
                 </li>
                 <li>
-                  <Link href="/ai-engineering" className="text-gray-300 hover:text-white transition-colors flex items-center">
+                  <Link href="/strategy" className="text-gray-300 hover:text-white transition-colors flex items-center">
                     <span className="w-1.5 h-1.5 bg-blue-400 rounded-full mr-2"></span>
-                    AI Engineering
+                    Strategy
                   </Link>
                 </li>
                 <li>
-                  <Link href="/openclaw-ai-agents" className="text-gray-300 hover:text-white transition-colors flex items-center">
+                  <Link href="/transformation" className="text-gray-300 hover:text-white transition-colors flex items-center">
                     <span className="w-1.5 h-1.5 bg-blue-400 rounded-full mr-2"></span>
-                    OpenClaw AI Agents
+                    Transformation
                   </Link>
                 </li>
                 <li>
-                  <Link href="/tech-basics" className="text-gray-300 hover:text-white transition-colors flex items-center">
+                  <Link href="/engineering" className="text-gray-300 hover:text-white transition-colors flex items-center">
                     <span className="w-1.5 h-1.5 bg-blue-400 rounded-full mr-2"></span>
-                    Tech Basics
+                    Engineering
                   </Link>
                 </li>
                 <li>
-                  <Link href="/strategy-audit" className="text-gray-300 hover:text-white transition-colors flex items-center">
+                  <Link href="/use-cases" className="text-gray-300 hover:text-white transition-colors flex items-center">
                     <span className="w-1.5 h-1.5 bg-blue-400 rounded-full mr-2"></span>
-                    Strategy Audit
+                    Use Cases
                   </Link>
                 </li>
                 <li>

@@ -181,7 +181,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
               <div className="sticky top-24 rounded-xl border border-slate-700/40 p-6" style={{ backgroundColor: '#1E293B' }}>
                 <h3 className="text-lg font-bold text-white">Book a Strategy Audit</h3>
                 <p className="text-sm mt-2" style={{ color: '#94A3B8' }}>Get a custom AI roadmap for your business in 30 days.</p>
-                <Link href="/strategy-audit"
+                <Link href="/get-started"
                   className="mt-4 inline-block w-full text-center bg-amber-500 hover:bg-amber-600 text-black font-semibold px-6 py-3 rounded-lg transition-colors">
                   Get Started →
                 </Link>

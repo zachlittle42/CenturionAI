@@ -265,10 +265,10 @@ export default function BlogContent() {
                     the highest-ROI AI opportunities in your business.
                   </p>
                   <Link
-                    href="/strategy-audit"
+                    href="/get-started"
                     className="mt-4 block text-center bg-amber-500 hover:bg-amber-600 text-black font-semibold px-6 py-3 rounded-lg transition-colors"
                   >
-                    Book Strategy Audit &rarr;
+                    Get Started &rarr;
                   </Link>
                 </div>
               </div>
