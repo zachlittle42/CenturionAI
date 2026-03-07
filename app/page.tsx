@@ -34,11 +34,11 @@ export default function Home() {
 
         <div className="container relative z-10 mx-auto max-w-5xl px-4 text-center">
           <h1 className="font-display text-balance text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 text-white opacity-0 animate-reveal">
-            AI that pays for <span className="text-blue-400">itself.</span>
+            The AI advantage is real. <span className="text-blue-400">We help you build it.</span>
           </h1>
 
           <p className="text-xl mb-10 max-w-3xl mx-auto leading-relaxed opacity-0 animate-reveal stagger-2" style={{color: "#94A3B8"}}>
-            Strategy, training, and custom AI tools for healthcare practices and service businesses doing $50K+/month.
+            Your partner in AI strategy and implementation — from first audit to custom-built tools.
           </p>
 
           <div className="flex items-center justify-center opacity-0 animate-reveal stagger-3">
