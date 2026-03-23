@@ -19,14 +19,14 @@ export default function StickyCta() {
         visible ? "translate-y-0" : "translate-y-full"
       }`}
     >
-      <div className="bg-[rgba(15,23,42,0.95)] backdrop-blur-md border-t border-[rgba(148,163,184,0.1)]">
+      <div className="bg-[rgba(18,20,17,0.95)] backdrop-blur-md border-t border-[rgba(66,73,62,0.15)]">
         <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-          <p className="text-sm text-slate-400 hidden sm:block">
+          <p className="text-sm text-[#8c9387] hidden sm:block">
             Ready to get started? Let&apos;s find the right path for you.
           </p>
           <Link
             href="/get-started"
-            className="inline-flex items-center gap-2 px-6 py-2.5 rounded-lg bg-blue-500 hover:bg-blue-400 text-white text-sm font-medium transition-colors shadow-lg shadow-blue-500/20 ml-auto sm:ml-0"
+            className="inline-flex items-center gap-2 px-6 py-2.5 rounded-lg bg-[#bcf1ae] hover:opacity-90 text-[#0b390a] text-sm font-medium transition-colors shadow-lg shadow-[#bcf1ae]/10 ml-auto sm:ml-0"
           >
             Get Started <ArrowRight className="h-3.5 w-3.5" />
           </Link>

@@ -1,7 +1,7 @@
 import type React from "react"
 
 export const metadata = {
-  title: "Admin - Centurion AI",
+  title: "Admin - Verdant AI Partners",
 }
 
 export default function AdminLayout({
@@ -10,7 +10,7 @@ export default function AdminLayout({
   children: React.ReactNode
 }) {
   return (
-    <div className="min-h-screen bg-[#0F172A]">
+    <div className="min-h-screen bg-[#121411]">
       {children}
     </div>
   )

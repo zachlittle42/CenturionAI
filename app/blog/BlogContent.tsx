@@ -10,7 +10,7 @@ function getReadTime(content: string): string {
 }
 
 const categoryConfig: Record<PostCategory, { label: string; color: string }> = {
-  pillar: { label: 'Pillar Guide', color: '#3B82F6' },
+  pillar: { label: 'Pillar Guide', color: '#bcf1ae' },
   implementation: { label: 'Implementation', color: '#10B981' },
   automation: { label: 'Automation', color: '#8B5CF6' },
   models: { label: 'AI Models', color: '#F59E0B' },
@@ -44,9 +44,9 @@ function PostCard({ post }: { post: Post }) {
   return (
     <Link
       href={`/blog/${post.slug}`}
-      className="block rounded-xl border border-slate-700/40 p-6 transition-all duration-200 group"
+      className="block rounded-xl border border-[#42493e]/15 p-6 transition-all duration-200 group"
       style={{
-        backgroundColor: '#1E293B',
+        backgroundColor: '#1a1c19',
       }}
       onMouseEnter={(e) => {
         e.currentTarget.style.borderColor = config.color + '60'
@@ -64,7 +64,7 @@ function PostCard({ post }: { post: Post }) {
           {config.label}
         </span>
       </div>
-      <h3 className="text-lg font-bold text-white mb-2 line-clamp-2 group-hover:text-blue-400 transition-colors">
+      <h3 className="text-lg font-bold text-white mb-2 line-clamp-2 group-hover:text-[#bcf1ae] transition-colors">
         {post.title}
       </h3>
       <p className="text-sm text-slate-400 mb-4 line-clamp-2">
@@ -74,7 +74,7 @@ function PostCard({ post }: { post: Post }) {
         <span className="text-xs text-slate-500">
           {post.date} &middot; {getReadTime(post.content)}
         </span>
-        <ArrowRight className="h-4 w-4 text-slate-500 group-hover:text-blue-400 transition-colors" />
+        <ArrowRight className="h-4 w-4 text-slate-500 group-hover:text-[#bcf1ae] transition-colors" />
       </div>
     </Link>
   )
@@ -109,17 +109,8 @@ export default function BlogContent() {
       {/* HERO SECTION */}
       <section
         className="relative pt-24 pb-12 md:pt-32 md:pb-16 overflow-hidden"
-        style={{ backgroundColor: '#0F172A' }}
+        style={{ backgroundColor: '#121411' }}
       >
-        <div
-          className="absolute inset-0 opacity-[0.03]"
-          style={{
-            backgroundImage:
-              'linear-gradient(rgba(148,163,184,1) 1px, transparent 1px), linear-gradient(90deg, rgba(148,163,184,1) 1px, transparent 1px)',
-            backgroundSize: '60px 60px',
-          }}
-        />
-        <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-400/50 via-blue-400/50 to-transparent" />
 
         <div className="container relative z-10 mx-auto max-w-4xl px-4 text-center">
           <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-white">
@@ -138,8 +129,8 @@ export default function BlogContent() {
               <Link
                 key={post.slug}
                 href={`/blog/${post.slug}`}
-                className="rounded-xl border border-slate-700/40 p-6 transition-all duration-200 group hover:border-blue-400/40"
-                style={{ backgroundColor: '#1E293B' }}
+                className="rounded-xl border border-[#42493e]/15 p-6 transition-all duration-200 group hover:border-[#bcf1ae]/40"
+                style={{ backgroundColor: '#1a1c19' }}
               >
                 <div className="flex items-center gap-2 mb-3">
                   <span
@@ -150,7 +141,7 @@ export default function BlogContent() {
                     {config.label}
                   </span>
                 </div>
-                <h3 className="text-lg font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
+                <h3 className="text-lg font-bold text-white mb-2 group-hover:text-[#bcf1ae] transition-colors">
                   {post.title}
                 </h3>
                 <p className="text-sm text-slate-400 mb-4 line-clamp-2">
@@ -160,7 +151,7 @@ export default function BlogContent() {
                   <span className="text-xs text-slate-500">
                     {getReadTime(post.content)}
                   </span>
-                  <ArrowRight className="h-4 w-4 text-slate-500 group-hover:text-blue-400 transition-colors" />
+                  <ArrowRight className="h-4 w-4 text-slate-500 group-hover:text-[#bcf1ae] transition-colors" />
                 </div>
               </Link>
             )
@@ -170,8 +161,8 @@ export default function BlogContent() {
 
       {/* STICKY FILTER BAR */}
       <div
-        className="sticky top-0 z-30 border-b border-slate-700/40"
-        style={{ backgroundColor: 'rgba(11, 17, 32, 0.95)', backdropFilter: 'blur(4px)' }}
+        className="sticky top-0 z-30 border-b border-[#42493e]/15"
+        style={{ backgroundColor: 'rgba(13, 15, 12, 0.95)', backdropFilter: 'blur(4px)' }}
       >
         <div className="max-w-6xl mx-auto overflow-x-auto">
           <div className="flex gap-1 px-4 py-3">
@@ -193,7 +184,7 @@ export default function BlogContent() {
       </div>
 
       {/* MAIN CONTENT AREA */}
-      <section style={{ backgroundColor: '#0B1120' }}>
+      <section style={{ backgroundColor: '#0d0f0c' }}>
         <div className="max-w-7xl mx-auto px-4 py-12">
           <div className="lg:flex lg:gap-8">
             {/* Post Grid */}
@@ -222,7 +213,7 @@ export default function BlogContent() {
                         {categoryPosts.length > 4 && (
                           <button
                             onClick={() => setActiveCategory(category)}
-                            className="mt-6 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors inline-flex items-center gap-1"
+                            className="mt-6 text-sm font-medium text-[#bcf1ae] hover:text-[#a1d494] transition-colors inline-flex items-center gap-1"
                           >
                             View all {categoryPosts.length} posts
                             <ArrowRight className="h-3 w-3" />
@@ -254,8 +245,8 @@ export default function BlogContent() {
             <aside className="hidden lg:block w-80 shrink-0">
               <div className="sticky top-24">
                 <div
-                  className="rounded-xl border border-slate-700/40 p-6"
-                  style={{ backgroundColor: '#1E293B' }}
+                  className="rounded-xl border border-[#42493e]/15 p-6"
+                  style={{ backgroundColor: '#1a1c19' }}
                 >
                   <h3 className="text-lg font-bold text-white">
                     Not sure where to start?

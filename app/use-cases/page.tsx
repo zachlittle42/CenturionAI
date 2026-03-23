@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 import { ArrowRight, Check } from "lucide-react"
 
 export const metadata = {
-  title: "Use Cases | Centurion AI",
+  title: "Use Cases | Verdant AI Partners",
   description:
     "Real problems we solve for real businesses. Healthcare practices, clinics, and service businesses — here's how we help.",
 }
@@ -102,21 +102,14 @@ export default function UseCasesPage() {
       {/* HERO                                                         */}
       {/* ============================================================ */}
       <section className="relative pt-24 pb-20 md:pt-32 md:pb-28 overflow-hidden">
-        <div className="absolute inset-0 z-0" style={{ backgroundColor: "#0F172A" }} />
-        <div
-          className="absolute inset-0 z-0 opacity-[0.03]"
-          style={{
-            backgroundImage:
-              "url(\"data:image/svg+xml,%3Csvg width='60' height='60' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cpattern id='grid' width='60' height='60' patternUnits='userSpaceOnUse'%3E%3Cpath d='M 60 0 L 0 0 0 60' fill='none' stroke='white' stroke-width='1'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23grid)'/%3E%3C/svg%3E\")",
-          }}
-        />
-        <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-blue-400/50 to-transparent" />
-        <div className="absolute -top-24 -right-24 w-96 h-96 bg-blue-900 rounded-full opacity-20 blur-3xl" />
-        <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-blue-950 rounded-full opacity-20 blur-3xl" />
+        <div className="absolute inset-0 z-0" style={{ backgroundColor: "#121411" }} />
+        <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#bcf1ae]/50 to-transparent" />
+        <div className="absolute -top-24 -right-24 w-96 h-96 bg-[#0d0f0c] rounded-full opacity-20 blur-3xl" />
+        <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-[#0d0f0c] rounded-full opacity-20 blur-3xl" />
 
         <div className="container relative z-10 mx-auto max-w-4xl px-4 text-center">
-          <div className="inline-block mb-4 px-4 py-1.5 bg-blue-900/50 rounded-full border border-blue-700/50">
-            <span className="text-blue-300 font-medium text-sm">Use Cases</span>
+          <div className="inline-block mb-4 px-4 py-1.5 bg-[#0d0f0c]/50 rounded-full border border-[#42493e]/50">
+            <span className="text-[#a1d494] font-medium text-sm">Use Cases</span>
           </div>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-white font-display text-balance opacity-0 animate-reveal">
@@ -125,7 +118,7 @@ export default function UseCasesPage() {
 
           <p
             className="text-xl mb-10 max-w-3xl mx-auto leading-relaxed opacity-0 animate-reveal stagger-1"
-            style={{ color: "#94A3B8" }}
+            style={{ color: "#c2c9bb" }}
           >
             Healthcare practices, clinics, and service businesses — here&apos;s how we help.
           </p>
@@ -134,7 +127,7 @@ export default function UseCasesPage() {
             <Button
               asChild
               size="lg"
-              className="text-base px-8 py-6 font-medium bg-blue-500 hover:bg-blue-400 text-white shadow-lg shadow-blue-500/20 group"
+              className="text-base px-8 py-6 font-medium bg-[#bcf1ae] hover:opacity-90 text-[#0b390a] shadow-lg shadow-[#bcf1ae]/10 group"
             >
               <Link href="/get-started" className="flex items-center">
                 Get Started
@@ -154,7 +147,7 @@ export default function UseCasesPage() {
           <section
             key={useCase.title}
             className="py-20 px-4"
-            style={{ backgroundColor: isDark ? "#0F172A" : "#FFFFFF" }}
+            style={{ backgroundColor: isDark ? "#121411" : "#1a1c19" }}
           >
             <div className="container mx-auto max-w-5xl">
               <div className="grid md:grid-cols-2 gap-12 items-start">
@@ -162,7 +155,7 @@ export default function UseCasesPage() {
                 <div>
                   <h2
                     className="text-3xl md:text-4xl font-bold tracking-tight mb-6 font-display"
-                    style={{ color: isDark ? "#FFFFFF" : "#0F172A" }}
+                    style={{ color: "#FFFFFF" }}
                   >
                     {useCase.title}
                   </h2>
@@ -170,13 +163,13 @@ export default function UseCasesPage() {
                   <div className="mb-6">
                     <h3
                       className="text-sm font-semibold uppercase tracking-wider mb-2"
-                      style={{ color: isDark ? "#64748B" : "#94A3B8" }}
+                      style={{ color: "#c2c9bb" }}
                     >
                       The Problem
                     </h3>
                     <p
                       className="leading-relaxed"
-                      style={{ color: isDark ? "#94A3B8" : "#64748B" }}
+                      style={{ color: "#c2c9bb" }}
                     >
                       {useCase.problem}
                     </p>
@@ -185,13 +178,13 @@ export default function UseCasesPage() {
                   <div className="mb-8">
                     <h3
                       className="text-sm font-semibold uppercase tracking-wider mb-2"
-                      style={{ color: isDark ? "#64748B" : "#94A3B8" }}
+                      style={{ color: "#c2c9bb" }}
                     >
                       Our Solution
                     </h3>
                     <p
                       className="leading-relaxed"
-                      style={{ color: isDark ? "#94A3B8" : "#64748B" }}
+                      style={{ color: "#c2c9bb" }}
                     >
                       {useCase.solution}
                     </p>
@@ -201,13 +194,11 @@ export default function UseCasesPage() {
                     {useCase.bullets.map((bullet) => (
                       <li key={bullet} className="flex items-start gap-3">
                         <Check
-                          className={`h-5 w-5 flex-shrink-0 mt-0.5 ${
-                            isDark ? "text-blue-400" : "text-blue-500"
-                          }`}
+                          className="h-5 w-5 flex-shrink-0 mt-0.5 text-[#bcf1ae]"
                         />
                         <span
                           className="text-sm"
-                          style={{ color: isDark ? "#CBD5E1" : "#475569" }}
+                          style={{ color: "#e3e3dd" }}
                         >
                           {bullet}
                         </span>
@@ -219,7 +210,7 @@ export default function UseCasesPage() {
                   <div className="flex items-center gap-3 mb-8">
                     <span
                       className="text-xs font-semibold uppercase tracking-wider"
-                      style={{ color: isDark ? "#64748B" : "#94A3B8" }}
+                      style={{ color: "#c2c9bb" }}
                     >
                       Maps to:
                     </span>
@@ -227,11 +218,7 @@ export default function UseCasesPage() {
                       {useCase.mapsTo.map((service) => (
                         <span
                           key={service}
-                          className={`inline-block px-3 py-1 rounded-full text-xs font-medium ${
-                            isDark
-                              ? "bg-blue-500/15 text-blue-300 border border-blue-400/20"
-                              : "bg-blue-50 text-blue-600 border border-blue-100"
-                          }`}
+                          className="inline-block px-3 py-1 rounded-full text-xs font-medium bg-[#bcf1ae]/15 text-[#a1d494] border border-[#bcf1ae]/20"
                         >
                           {service}
                         </span>
@@ -243,7 +230,7 @@ export default function UseCasesPage() {
                   <Button
                     asChild
                     size="lg"
-                    className="text-base px-8 py-6 font-medium bg-blue-500 hover:bg-blue-400 text-white shadow-lg shadow-blue-500/20 group"
+                    className="text-base px-8 py-6 font-medium bg-[#bcf1ae] hover:opacity-90 text-[#0b390a] shadow-lg shadow-[#bcf1ae]/10 group"
                   >
                     <Link href="/get-started" className="flex items-center">
                       Get Started
@@ -257,14 +244,12 @@ export default function UseCasesPage() {
                   <div
                     className={`rounded-xl border p-6 ${
                       isDark
-                        ? "border-blue-400/15 bg-[#1E293B]"
-                        : "border-slate-200 bg-slate-50"
+                        ? "border-[#bcf1ae]/15 bg-[#1a1c19]"
+                        : "border-[#42493e]/15 bg-[#292b27]"
                     }`}
                   >
                     <div
-                      className={`text-lg font-bold mb-4 ${
-                        isDark ? "text-white" : "text-slate-900"
-                      }`}
+                      className="text-lg font-bold mb-4 text-white"
                     >
                       {useCase.title}
                     </div>
@@ -272,13 +257,11 @@ export default function UseCasesPage() {
                       {useCase.bullets.map((bullet) => (
                         <li key={bullet} className="flex items-start gap-3">
                           <div
-                            className={`w-2 h-2 rounded-full mt-1.5 flex-shrink-0 ${
-                              isDark ? "bg-blue-400" : "bg-blue-500"
-                            }`}
+                            className="w-2 h-2 rounded-full mt-1.5 flex-shrink-0 bg-[#bcf1ae]"
                           />
                           <span
                             className="text-sm"
-                            style={{ color: isDark ? "#94A3B8" : "#64748B" }}
+                            style={{ color: "#c2c9bb" }}
                           >
                             {bullet}
                           </span>
@@ -287,17 +270,13 @@ export default function UseCasesPage() {
                     </ul>
                     <div
                       className={`mt-5 pt-4 border-t flex flex-wrap gap-2 ${
-                        isDark ? "border-slate-700/40" : "border-slate-200"
+                        isDark ? "border-[#42493e]/40" : "border-[#42493e]/15"
                       }`}
                     >
                       {useCase.mapsTo.map((service) => (
                         <span
                           key={service}
-                          className={`inline-block px-3 py-1 rounded-full text-xs font-medium ${
-                            isDark
-                              ? "bg-blue-500/10 text-blue-300 border border-blue-400/15"
-                              : "bg-blue-50 text-blue-600 border border-blue-100"
-                          }`}
+                          className="inline-block px-3 py-1 rounded-full text-xs font-medium bg-[#bcf1ae]/10 text-[#a1d494] border border-[#bcf1ae]/15"
                         >
                           {service}
                         </span>
@@ -315,10 +294,10 @@ export default function UseCasesPage() {
       {/* FINAL CTA                                                    */}
       {/* ============================================================ */}
       <section className="relative py-20 md:py-28 overflow-hidden">
-        <div className="absolute inset-0 z-0" style={{ backgroundColor: "#1E293B" }} />
-        <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-blue-400/20 to-transparent" />
-        <div className="absolute -top-24 -right-24 w-72 h-72 bg-blue-500/5 rounded-full blur-3xl" />
-        <div className="absolute -bottom-24 -left-24 w-72 h-72 bg-blue-900/10 rounded-full blur-3xl" />
+        <div className="absolute inset-0 z-0" style={{ backgroundColor: "#1a1c19" }} />
+        <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#bcf1ae]/20 to-transparent" />
+        <div className="absolute -top-24 -right-24 w-72 h-72 bg-[#bcf1ae]/5 rounded-full blur-3xl" />
+        <div className="absolute -bottom-24 -left-24 w-72 h-72 bg-[#0d0f0c]/10 rounded-full blur-3xl" />
 
         <div className="container relative z-10 mx-auto max-w-3xl px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 font-display">
@@ -326,7 +305,7 @@ export default function UseCasesPage() {
           </h2>
           <p
             className="text-lg mb-8 max-w-2xl mx-auto leading-relaxed"
-            style={{ color: "#94A3B8" }}
+            style={{ color: "#c2c9bb" }}
           >
             Tell us what you&apos;re trying to solve. We&apos;ll recommend the right path and
             get back to you within 24 hours.
@@ -334,7 +313,7 @@ export default function UseCasesPage() {
           <Button
             asChild
             size="lg"
-            className="text-base px-8 py-6 font-medium bg-blue-500 hover:bg-blue-400 text-white shadow-lg shadow-blue-500/20 group"
+            className="text-base px-8 py-6 font-medium bg-[#bcf1ae] hover:opacity-90 text-[#0b390a] shadow-lg shadow-[#bcf1ae]/10 group"
           >
             <Link href="/get-started" className="flex items-center">
               Get Started

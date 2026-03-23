@@ -22,7 +22,7 @@ import {
 } from "lucide-react"
 
 export const metadata = {
-  title: "AI Engineering | Centurion AI",
+  title: "AI Engineering | Verdant AI Partners",
   description:
     "AI-augmented engineering teams that ship 3x faster. Full-stack apps, internal tools, API integrations, and more in biweekly sprints.",
 }
@@ -245,37 +245,36 @@ export default function AIEngineeringPage() {
   return (
     <main>
       {/* Hero Section */}
-      <section className="relative pt-24 pb-20 md:pt-32 md:pb-28 overflow-hidden" style={{ backgroundColor: "#0F172A" }}>
-        <div className="absolute inset-0 opacity-[0.03]" style={{backgroundImage: "linear-gradient(rgba(148,163,184,1) 1px, transparent 1px), linear-gradient(90deg, rgba(148,163,184,1) 1px, transparent 1px)", backgroundSize: "60px 60px"}} />
-        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-400/50 to-transparent" />
-        <div className="absolute -top-24 -right-24 w-96 h-96 bg-blue-500 rounded-full opacity-10 blur-3xl" />
-        <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-blue-600 rounded-full opacity-10 blur-3xl" />
+      <section className="relative pt-24 pb-20 md:pt-32 md:pb-28 overflow-hidden" style={{ backgroundColor: "#121411" }}>
+        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#bcf1ae]/30 to-transparent" />
+        <div className="absolute -top-24 -right-24 w-96 h-96 bg-[#bcf1ae] rounded-full opacity-10 blur-3xl" />
+        <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-[#3b6934] rounded-full opacity-10 blur-3xl" />
 
         <div className="container relative z-10 mx-auto max-w-6xl px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="text-center md:text-left">
-              <div className="inline-block mb-4 px-4 py-1.5 bg-blue-900/50 rounded-full border border-blue-700/50">
-                <span className="text-blue-300 font-medium text-sm">
+              <div className="inline-block mb-4 px-4 py-1.5 bg-[#0d0f0c]/50 rounded-full border border-[#1a2e1a]/50">
+                <span className="text-[#a1d494] font-medium text-sm">
                   AI-Augmented Development
                 </span>
               </div>
 
               <h1 className="font-display text-balance text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-white opacity-0 animate-reveal">
                 Ship faster. Spend less.{" "}
-                <span className="text-blue-400">Skip the hiring.</span>
+                <span className="text-[#bcf1ae]">Skip the hiring.</span>
               </h1>
 
-              <p className="text-xl mb-8 max-w-xl leading-relaxed opacity-0 animate-reveal stagger-2" style={{ color: "#94A3B8" }}>
+              <p className="text-xl mb-8 max-w-xl leading-relaxed opacity-0 animate-reveal stagger-2" style={{ color: "#c2c9bb" }}>
                 Our AI-augmented engineering teams deliver working software in
                 biweekly sprints. We use Claude Code, Cursor, and custom agent
                 workflows to build at 3x the speed of traditional agencies.
               </p>
 
               <div className="mb-8 opacity-0 animate-reveal stagger-2">
-                <p className="text-xs uppercase tracking-wider text-slate-400 font-semibold mb-3">We build with</p>
+                <p className="text-xs uppercase tracking-wider text-[#8c9387] font-semibold mb-3">We build with</p>
                 <div className="flex flex-wrap gap-2">
                   {["React / Next.js", "Node.js", "Python", "TypeScript", "PostgreSQL", "Claude Code", "Cursor AI"].map((tech) => (
-                    <span key={tech} className="text-sm font-medium bg-slate-700/50 text-slate-300 px-3 py-1.5 rounded-full border border-slate-600/30">
+                    <span key={tech} className="text-sm font-medium bg-[#1a1c19]/50 text-[#c2c9bb] px-3 py-1.5 rounded-full border border-[#42493e]/30">
                       {tech}
                     </span>
                   ))}
@@ -285,7 +284,7 @@ export default function AIEngineeringPage() {
               <Button
                 asChild
                 size="lg"
-                className="text-base px-8 py-6 font-medium bg-blue-500 hover:bg-blue-400 text-white shadow-lg shadow-blue-500/20 group opacity-0 animate-reveal stagger-3"
+                className="text-base px-8 py-6 font-medium bg-[#bcf1ae] hover:opacity-90 text-[#0b390a] shadow-lg shadow-[#bcf1ae]/10 group opacity-0 animate-reveal stagger-3"
               >
                 <Link href="/get-started" className="flex items-center">
                   Scope Your Project
@@ -296,30 +295,30 @@ export default function AIEngineeringPage() {
 
             {/* Sprint board mockup */}
             <div className="hidden md:block opacity-0 animate-reveal stagger-3">
-              <div className="rounded-xl border border-blue-400/10 bg-[#0B1222] p-5 shadow-2xl">
+              <div className="rounded-xl border border-[#bcf1ae]/10 bg-[#0d0f0c] p-5 shadow-2xl">
                 <div className="flex items-center gap-2 mb-4">
                   <div className="w-2.5 h-2.5 rounded-full bg-red-400/60" />
                   <div className="w-2.5 h-2.5 rounded-full bg-yellow-400/60" />
                   <div className="w-2.5 h-2.5 rounded-full bg-green-400/60" />
-                  <span className="ml-2 text-xs text-slate-500 font-mono">Sprint Board — Acme Corp</span>
+                  <span className="ml-2 text-xs text-[#8c9387] font-mono">Sprint Board — Acme Corp</span>
                 </div>
                 <div className="grid grid-cols-3 gap-3">
                   <div>
-                    <p className="text-xs font-semibold text-slate-400 uppercase tracking-wide mb-2">To Do</p>
+                    <p className="text-xs font-semibold text-[#8c9387] uppercase tracking-wide mb-2">To Do</p>
                     <div className="space-y-2">
                       {["API v2 endpoints", "Mobile responsive"].map((t) => (
-                        <div key={t} className="rounded bg-slate-800/80 border border-slate-700/50 p-2.5">
-                          <p className="text-xs text-slate-300 font-mono">{t}</p>
+                        <div key={t} className="rounded bg-[#1a1c19]/80 border border-[#42493e]/50 p-2.5">
+                          <p className="text-xs text-[#c2c9bb] font-mono">{t}</p>
                         </div>
                       ))}
                     </div>
                   </div>
                   <div>
-                    <p className="text-xs font-semibold text-blue-400 uppercase tracking-wide mb-2">In Progress</p>
+                    <p className="text-xs font-semibold text-[#bcf1ae] uppercase tracking-wide mb-2">In Progress</p>
                     <div className="space-y-2">
                       {["Auth system", "Dashboard UI", "Webhook integration"].map((t) => (
-                        <div key={t} className="rounded bg-blue-500/10 border border-blue-400/20 p-2.5">
-                          <p className="text-xs text-blue-200 font-mono">{t}</p>
+                        <div key={t} className="rounded bg-[#bcf1ae]/10 border border-[#42493e]/15 p-2.5">
+                          <p className="text-xs text-[#a1d494] font-mono">{t}</p>
                         </div>
                       ))}
                     </div>
@@ -335,9 +334,9 @@ export default function AIEngineeringPage() {
                     </div>
                   </div>
                 </div>
-                <div className="mt-4 pt-3 border-t border-slate-700/40 flex items-center justify-between">
-                  <span className="text-xs text-slate-500 font-mono">Sprint 4 of 6</span>
-                  <span className="text-xs text-blue-400 font-mono">$150/hr — 20 hrs/wk</span>
+                <div className="mt-4 pt-3 border-t border-[#42493e]/40 flex items-center justify-between">
+                  <span className="text-xs text-[#8c9387] font-mono">Sprint 4 of 6</span>
+                  <span className="text-xs text-[#bcf1ae] font-mono">$150/hr — 20 hrs/wk</span>
                 </div>
               </div>
             </div>
@@ -346,13 +345,13 @@ export default function AIEngineeringPage() {
       </section>
 
       {/* What We Build */}
-      <section className="py-20 px-4 bg-white">
+      <section className="py-20 px-4 bg-[#1a1c19]">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
-            <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4" style={{ color: "#0F172A" }}>
+            <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4" style={{ color: "#e3e3dd" }}>
               What we build.
             </h2>
-            <p className="text-lg max-w-2xl mx-auto" style={{ color: "#64748B" }}>
+            <p className="text-lg max-w-2xl mx-auto" style={{ color: "#c2c9bb" }}>
               From MVPs to production systems. If it involves code, we ship it.
             </p>
           </div>
@@ -361,17 +360,17 @@ export default function AIEngineeringPage() {
             {capabilities.map((cap, index) => (
               <div
                 key={cap.title}
-                className="bg-white rounded-xl shadow-md overflow-hidden border border-slate-200/60 hover:shadow-lg hover:border-blue-200 transition-all"
+                className="bg-[#1a1c19] rounded-xl shadow-md overflow-hidden border border-[#42493e]/15 hover:shadow-lg hover:border-[#bcf1ae]/20 transition-all"
               >
-                <div className={`h-1 bg-gradient-to-r ${index % 2 === 0 ? "from-blue-600 to-blue-400" : "from-blue-400 to-blue-600"}`} />
+                <div className={`h-1 bg-gradient-to-r ${index % 2 === 0 ? "from-[#bcf1ae] to-[#a1d494]" : "from-[#a1d494] to-[#bcf1ae]"}`} />
                 <div className="p-6">
-                  <div className="w-12 h-12 rounded-lg bg-blue-50 flex items-center justify-center mb-4">
-                    <cap.icon className="h-6 w-6 text-blue-600" />
+                  <div className="w-12 h-12 rounded-lg bg-[#292b27] flex items-center justify-center mb-4">
+                    <cap.icon className="h-6 w-6 text-[#bcf1ae]" />
                   </div>
-                  <h3 className="text-xl font-bold mb-2" style={{ color: "#0F172A" }}>
+                  <h3 className="text-xl font-bold mb-2" style={{ color: "#e3e3dd" }}>
                     {cap.title}
                   </h3>
-                  <p className="leading-relaxed" style={{ color: "#64748B" }}>
+                  <p className="leading-relaxed" style={{ color: "#c2c9bb" }}>
                     {cap.description}
                   </p>
                 </div>
@@ -382,69 +381,68 @@ export default function AIEngineeringPage() {
       </section>
 
       {/* AI-Powered Development Showcase */}
-      <section className="py-20 px-4 relative overflow-hidden" style={{ backgroundColor: "#0B1222" }}>
-        <div className="absolute inset-0 opacity-[0.03]" style={{backgroundImage: "linear-gradient(rgba(148,163,184,1) 1px, transparent 1px), linear-gradient(90deg, rgba(148,163,184,1) 1px, transparent 1px)", backgroundSize: "60px 60px"}} />
-        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-400/30 to-transparent" />
+      <section className="py-20 px-4 relative overflow-hidden" style={{ backgroundColor: "#0d0f0c" }}>
+        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#bcf1ae]/30 to-transparent" />
 
         <div className="container relative z-10 mx-auto max-w-6xl">
           <div className="text-center mb-14">
             <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4 text-white">
               How AI makes us 3x faster.
             </h2>
-            <p className="text-lg max-w-2xl mx-auto" style={{ color: "#94A3B8" }}>
+            <p className="text-lg max-w-2xl mx-auto" style={{ color: "#c2c9bb" }}>
               Our engineers pair with AI agents on every task. Here is what that looks like in practice.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
             {/* Terminal mockup: AI-assisted coding */}
-            <div className="rounded-xl border border-blue-400/10 bg-[#0B1222] p-5 shadow-2xl">
+            <div className="rounded-xl border border-[#bcf1ae]/10 bg-[#0d0f0c] p-5 shadow-2xl">
               <div className="flex items-center gap-2 mb-4">
                 <div className="w-2.5 h-2.5 rounded-full bg-red-400/60" />
                 <div className="w-2.5 h-2.5 rounded-full bg-yellow-400/60" />
                 <div className="w-2.5 h-2.5 rounded-full bg-green-400/60" />
-                <Terminal className="ml-2 h-3.5 w-3.5 text-slate-500" />
-                <span className="text-xs text-slate-500 font-mono">claude-code — acme-dashboard</span>
+                <Terminal className="ml-2 h-3.5 w-3.5 text-[#8c9387]" />
+                <span className="text-xs text-[#8c9387] font-mono">claude-code — acme-dashboard</span>
               </div>
               <div className="space-y-3 font-mono text-sm">
                 <div>
-                  <span className="text-blue-400">$</span>
-                  <span className="text-slate-300 ml-2">claude &quot;Build the user dashboard with role-based access&quot;</span>
+                  <span className="text-[#bcf1ae]">$</span>
+                  <span className="text-[#c2c9bb] ml-2">claude &quot;Build the user dashboard with role-based access&quot;</span>
                 </div>
                 <div className="pl-4 space-y-1.5">
-                  <p className="text-slate-500">Analyzing project structure...</p>
+                  <p className="text-[#8c9387]">Analyzing project structure...</p>
                   <p className="text-green-400">Created: app/dashboard/page.tsx</p>
                   <p className="text-green-400">Created: app/dashboard/components/role-guard.tsx</p>
                   <p className="text-green-400">Created: lib/permissions.ts</p>
                   <p className="text-green-400">Modified: middleware.ts</p>
-                  <p className="text-slate-500">Running tests...</p>
+                  <p className="text-[#8c9387]">Running tests...</p>
                   <p className="text-green-400">All 12 tests passed</p>
                 </div>
-                <div className="pt-2 border-t border-slate-700/40">
-                  <span className="text-blue-400">$</span>
-                  <span className="text-slate-300 ml-2">git add -A && git commit -m &quot;feat: dashboard with RBAC&quot;</span>
+                <div className="pt-2 border-t border-[#42493e]/40">
+                  <span className="text-[#bcf1ae]">$</span>
+                  <span className="text-[#c2c9bb] ml-2">git add -A && git commit -m &quot;feat: dashboard with RBAC&quot;</span>
                 </div>
                 <div className="pl-4">
-                  <p className="text-slate-500">[feature/dashboard 4a2f1c8] feat: dashboard with RBAC</p>
-                  <p className="text-slate-500">4 files changed, 287 insertions(+)</p>
+                  <p className="text-[#8c9387]">[feature/dashboard 4a2f1c8] feat: dashboard with RBAC</p>
+                  <p className="text-[#8c9387]">4 files changed, 287 insertions(+)</p>
                 </div>
               </div>
-              <div className="mt-4 pt-3 border-t border-slate-700/40">
-                <span className="text-xs text-slate-500 font-mono">Feature completed in 45 min vs 4+ hours traditional</span>
+              <div className="mt-4 pt-3 border-t border-[#42493e]/40">
+                <span className="text-xs text-[#8c9387] font-mono">Feature completed in 45 min vs 4+ hours traditional</span>
               </div>
             </div>
 
             {/* Code diff mockup */}
-            <div className="rounded-xl border border-blue-400/10 bg-[#0B1222] p-5 shadow-2xl">
+            <div className="rounded-xl border border-[#bcf1ae]/10 bg-[#0d0f0c] p-5 shadow-2xl">
               <div className="flex items-center gap-2 mb-4">
                 <div className="w-2.5 h-2.5 rounded-full bg-red-400/60" />
                 <div className="w-2.5 h-2.5 rounded-full bg-yellow-400/60" />
                 <div className="w-2.5 h-2.5 rounded-full bg-green-400/60" />
-                <Code className="ml-2 h-3.5 w-3.5 text-slate-500" />
-                <span className="text-xs text-slate-500 font-mono">PR #47 — Add Stripe billing integration</span>
+                <Code className="ml-2 h-3.5 w-3.5 text-[#8c9387]" />
+                <span className="text-xs text-[#8c9387] font-mono">PR #47 — Add Stripe billing integration</span>
               </div>
               <div className="space-y-0.5 font-mono text-xs">
-                <div className="bg-slate-800/50 rounded px-3 py-1.5 text-slate-500 mb-2">
+                <div className="bg-[#1a1c19]/50 rounded px-3 py-1.5 text-[#8c9387] mb-2">
                   lib/billing.ts
                 </div>
                 <div className="bg-green-500/5 border-l-2 border-green-400/40 px-3 py-1">
@@ -489,9 +487,9 @@ export default function AIEngineeringPage() {
                   <div className="w-2 h-2 rounded-full bg-red-400" />
                   <span className="text-xs text-red-400 font-mono">-12 lines</span>
                 </div>
-                <span className="text-xs text-slate-500 font-mono ml-auto">6 files changed</span>
+                <span className="text-xs text-[#8c9387] font-mono ml-auto">6 files changed</span>
               </div>
-              <div className="mt-3 pt-3 border-t border-slate-700/40 flex items-center gap-3">
+              <div className="mt-3 pt-3 border-t border-[#42493e]/40 flex items-center gap-3">
                 <div className="flex items-center gap-1.5">
                   <Check className="h-3.5 w-3.5 text-green-400" />
                   <span className="text-xs text-green-400 font-mono">CI passed</span>
@@ -500,7 +498,7 @@ export default function AIEngineeringPage() {
                   <Check className="h-3.5 w-3.5 text-green-400" />
                   <span className="text-xs text-green-400 font-mono">Review approved</span>
                 </div>
-                <span className="text-xs text-blue-400 font-mono ml-auto">Ready to merge</span>
+                <span className="text-xs text-[#bcf1ae] font-mono ml-auto">Ready to merge</span>
               </div>
             </div>
           </div>
@@ -508,35 +506,34 @@ export default function AIEngineeringPage() {
       </section>
 
       {/* How We Work */}
-      <section className="py-20 px-4 relative overflow-hidden" style={{ backgroundColor: "#0F172A" }}>
-        <div className="absolute inset-0 opacity-[0.03]" style={{backgroundImage: "linear-gradient(rgba(148,163,184,1) 1px, transparent 1px), linear-gradient(90deg, rgba(148,163,184,1) 1px, transparent 1px)", backgroundSize: "60px 60px"}} />
-        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-400/30 to-transparent" />
+      <section className="py-20 px-4 relative overflow-hidden" style={{ backgroundColor: "#121411" }}>
+        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#bcf1ae]/30 to-transparent" />
 
         <div className="container relative z-10 mx-auto max-w-5xl">
           <div className="text-center mb-16">
             <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4 text-white">
               How we work.
             </h2>
-            <p className="text-lg max-w-2xl mx-auto" style={{ color: "#94A3B8" }}>
+            <p className="text-lg max-w-2xl mx-auto" style={{ color: "#c2c9bb" }}>
               From first call to production. No mystery, no surprises.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative">
-            <div className="hidden lg:block absolute top-10 left-[15%] right-[15%] h-0.5 bg-gradient-to-r from-blue-400/30 via-blue-400/30 to-blue-400/30" />
+            <div className="hidden lg:block absolute top-10 left-[15%] right-[15%] h-0.5 bg-gradient-to-r from-[#bcf1ae]/30 via-[#bcf1ae]/30 to-[#bcf1ae]/30" />
 
             {processSteps.map((step, i) => (
               <div key={step.title} className={`text-center relative opacity-0 animate-reveal stagger-${i + 1}`}>
-                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-blue-500 text-white font-display font-bold text-lg mb-5 relative z-10 shadow-lg shadow-blue-500/20">
+                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#bcf1ae] text-white font-display font-bold text-lg mb-5 relative z-10 shadow-lg shadow-[#bcf1ae]/10">
                   {step.step}
                 </div>
                 <h3 className="text-xl font-bold mb-1 text-white">
                   {step.title}
                 </h3>
-                <span className="inline-block text-sm font-medium text-blue-400 mb-3">
+                <span className="inline-block text-sm font-medium text-[#bcf1ae] mb-3">
                   {step.timeline}
                 </span>
-                <p className="leading-relaxed text-sm" style={{ color: "#94A3B8" }}>
+                <p className="leading-relaxed text-sm" style={{ color: "#c2c9bb" }}>
                   {step.description}
                 </p>
               </div>
@@ -546,38 +543,37 @@ export default function AIEngineeringPage() {
       </section>
 
       {/* Why Us vs. Traditional Agencies */}
-      <section className="py-20 px-4 relative overflow-hidden" style={{ backgroundColor: "#0B1222" }}>
-        <div className="absolute inset-0 opacity-[0.02]" style={{backgroundImage: "linear-gradient(rgba(148,163,184,1) 1px, transparent 1px), linear-gradient(90deg, rgba(148,163,184,1) 1px, transparent 1px)", backgroundSize: "60px 60px"}} />
+      <section className="py-20 px-4 relative overflow-hidden" style={{ backgroundColor: "#0d0f0c" }}>
 
         <div className="container relative z-10 mx-auto max-w-5xl">
           <div className="text-center mb-16">
             <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4 text-white">
               Why us vs. traditional agencies.
             </h2>
-            <p className="text-lg max-w-2xl mx-auto" style={{ color: "#94A3B8" }}>
+            <p className="text-lg max-w-2xl mx-auto" style={{ color: "#c2c9bb" }}>
               AI tooling changes the math on outsourced engineering. Here is what
               that looks like.
             </p>
           </div>
 
-          <div className="rounded-xl border border-blue-400/10 bg-[#0B1222] shadow-2xl overflow-hidden">
-            <div className="flex items-center gap-2 px-6 py-3 border-b border-slate-700/40">
+          <div className="rounded-xl border border-[#bcf1ae]/10 bg-[#0d0f0c] shadow-2xl overflow-hidden">
+            <div className="flex items-center gap-2 px-6 py-3 border-b border-[#42493e]/40">
               <div className="w-2.5 h-2.5 rounded-full bg-red-400/60" />
               <div className="w-2.5 h-2.5 rounded-full bg-yellow-400/60" />
               <div className="w-2.5 h-2.5 rounded-full bg-green-400/60" />
-              <span className="ml-2 text-xs text-slate-500 font-mono">Comparison Matrix</span>
+              <span className="ml-2 text-xs text-[#8c9387] font-mono">Comparison Matrix</span>
             </div>
             <table className="w-full text-left">
               <thead>
-                <tr className="border-b border-slate-700/40">
-                  <th className="py-4 px-6 text-sm font-semibold text-slate-500 uppercase tracking-wider w-1/5">
+                <tr className="border-b border-[#42493e]/40">
+                  <th className="py-4 px-6 text-sm font-semibold text-[#8c9387] uppercase tracking-wider w-1/5">
                     &nbsp;
                   </th>
-                  <th className="py-4 px-6 text-sm font-semibold text-slate-500 uppercase tracking-wider w-2/5">
+                  <th className="py-4 px-6 text-sm font-semibold text-[#8c9387] uppercase tracking-wider w-2/5">
                     Traditional Agency
                   </th>
-                  <th className="py-4 px-6 text-sm font-semibold text-blue-400 uppercase tracking-wider w-2/5">
-                    Centurion AI Engineering
+                  <th className="py-4 px-6 text-sm font-semibold text-[#bcf1ae] uppercase tracking-wider w-2/5">
+                    Verdant AI Partners Engineering
                   </th>
                 </tr>
               </thead>
@@ -585,20 +581,20 @@ export default function AIEngineeringPage() {
                 {comparisonRows.map((row, index) => (
                   <tr
                     key={row.label}
-                    className={index < comparisonRows.length - 1 ? "border-b border-slate-700/20" : ""}
+                    className={index < comparisonRows.length - 1 ? "border-b border-[#42493e]/20" : ""}
                   >
                     <td className="py-4 px-6 font-medium text-white text-sm">
                       {row.label}
                     </td>
-                    <td className="py-4 px-6 text-sm" style={{ color: "#94A3B8" }}>
+                    <td className="py-4 px-6 text-sm" style={{ color: "#c2c9bb" }}>
                       <span className="flex items-start gap-2">
-                        <X className="h-4 w-4 text-slate-600 mt-0.5 shrink-0" />
+                        <X className="h-4 w-4 text-[#8c9387] mt-0.5 shrink-0" />
                         {row.traditional}
                       </span>
                     </td>
                     <td className="py-4 px-6 text-sm font-medium text-white">
                       <span className="flex items-start gap-2">
-                        <Check className="h-4 w-4 text-blue-400 mt-0.5 shrink-0" />
+                        <Check className="h-4 w-4 text-[#bcf1ae] mt-0.5 shrink-0" />
                         {row.centurion}
                       </span>
                     </td>
@@ -611,16 +607,15 @@ export default function AIEngineeringPage() {
       </section>
 
       {/* Engagement Models */}
-      <section className="py-20 px-4 relative overflow-hidden" style={{ backgroundColor: "#0F172A" }}>
-        <div className="absolute inset-0 opacity-[0.03]" style={{backgroundImage: "linear-gradient(rgba(148,163,184,1) 1px, transparent 1px), linear-gradient(90deg, rgba(148,163,184,1) 1px, transparent 1px)", backgroundSize: "60px 60px"}} />
-        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-400/30 to-transparent" />
+      <section className="py-20 px-4 relative overflow-hidden" style={{ backgroundColor: "#121411" }}>
+        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#bcf1ae]/30 to-transparent" />
 
         <div className="container relative z-10 mx-auto max-w-6xl">
           <div className="text-center mb-16">
             <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4 text-white">
               Simple, transparent pricing.
             </h2>
-            <p className="text-lg max-w-2xl mx-auto" style={{ color: "#94A3B8" }}>
+            <p className="text-lg max-w-2xl mx-auto" style={{ color: "#c2c9bb" }}>
               $150/hr. You submit tickets, we build them. Pick your weekly hours.
             </p>
           </div>
@@ -631,14 +626,14 @@ export default function AIEngineeringPage() {
                 key={tier.name}
                 className={`relative rounded-xl p-8 flex flex-col border transition-all ${
                   tier.popular
-                    ? "bg-blue-500/10 border-blue-400/30 shadow-2xl shadow-blue-500/10"
-                    : "border-slate-700/40 hover:border-blue-400/20"
+                    ? "bg-[#bcf1ae]/10 border-[#bcf1ae]/10 shadow-2xl shadow-[#bcf1ae]/10"
+                    : "border-[#42493e]/40 hover:border-[#42493e]/15"
                 }`}
-                style={{ backgroundColor: tier.popular ? undefined : "#1E293B" }}
+                style={{ backgroundColor: tier.popular ? undefined : "#1a1c19" }}
               >
                 {tier.popular && (
                   <div className="absolute -top-3.5 left-1/2 -translate-x-1/2">
-                    <span className="inline-flex items-center bg-blue-500 text-white px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wide shadow-lg shadow-blue-500/30">
+                    <span className="inline-flex items-center bg-[#bcf1ae] text-white px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wide shadow-lg shadow-[#bcf1ae]/10">
                       <Star className="h-3 w-3 mr-1.5" />
                       MOST POPULAR
                     </span>
@@ -650,16 +645,16 @@ export default function AIEngineeringPage() {
                     {tier.name}
                   </h3>
                   <div className="flex items-baseline gap-1">
-                    <span className="text-3xl font-bold text-blue-400">
+                    <span className="text-3xl font-bold text-[#bcf1ae]">
                       {tier.price}
                     </span>
-                    <span className="text-sm" style={{ color: "#94A3B8" }}>
+                    <span className="text-sm" style={{ color: "#c2c9bb" }}>
                       /{tier.priceLabel}
                     </span>
                   </div>
                 </div>
 
-                <div className="space-y-2 mb-6 text-sm" style={{ color: "#94A3B8" }}>
+                <div className="space-y-2 mb-6 text-sm" style={{ color: "#c2c9bb" }}>
                   <p>
                     <span className="font-medium text-white">Team:</span>{" "}
                     {tier.team}
@@ -678,8 +673,8 @@ export default function AIEngineeringPage() {
                   </p>
                 </div>
 
-                <div className="border-t border-slate-700/40 pt-6 mb-8 flex-1">
-                  <p className="text-xs font-semibold uppercase tracking-wider text-slate-500 mb-4">
+                <div className="border-t border-[#42493e]/40 pt-6 mb-8 flex-1">
+                  <p className="text-xs font-semibold uppercase tracking-wider text-[#8c9387] mb-4">
                     Includes
                   </p>
                   <ul className="space-y-3">
@@ -687,9 +682,9 @@ export default function AIEngineeringPage() {
                       <li
                         key={feature}
                         className="flex items-start gap-2 text-sm"
-                        style={{ color: "#94A3B8" }}
+                        style={{ color: "#c2c9bb" }}
                       >
-                        <Check className="h-4 w-4 text-blue-400 mt-0.5 shrink-0" />
+                        <Check className="h-4 w-4 text-[#bcf1ae] mt-0.5 shrink-0" />
                         {feature}
                       </li>
                     ))}
@@ -700,8 +695,8 @@ export default function AIEngineeringPage() {
                   asChild
                   className={`w-full ${
                     tier.popular
-                      ? "bg-blue-500 hover:bg-blue-400 text-white shadow-lg shadow-blue-500/20"
-                      : "bg-slate-700/50 hover:bg-slate-600/50 text-white border border-slate-600/30"
+                      ? "bg-[#bcf1ae] hover:opacity-90 text-[#0b390a] shadow-lg shadow-[#bcf1ae]/10"
+                      : "bg-[#1a1c19]/50 hover:bg-[#292b27]/50 text-white border border-[#42493e]/30"
                   }`}
                 >
                   <Link href="/get-started">Scope Your Project</Link>
@@ -713,16 +708,15 @@ export default function AIEngineeringPage() {
       </section>
 
       {/* Our Stack */}
-      <section className="py-20 px-4 relative overflow-hidden" style={{ backgroundColor: "#0B1222" }}>
-        <div className="absolute inset-0 opacity-[0.02]" style={{backgroundImage: "linear-gradient(rgba(148,163,184,1) 1px, transparent 1px), linear-gradient(90deg, rgba(148,163,184,1) 1px, transparent 1px)", backgroundSize: "60px 60px"}} />
-        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-400/30 to-transparent" />
+      <section className="py-20 px-4 relative overflow-hidden" style={{ backgroundColor: "#0d0f0c" }}>
+        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#bcf1ae]/30 to-transparent" />
 
         <div className="container relative z-10 mx-auto max-w-5xl">
           <div className="text-center mb-16">
             <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4 text-white">
               Our stack.
             </h2>
-            <p className="text-lg max-w-2xl mx-auto" style={{ color: "#94A3B8" }}>
+            <p className="text-lg max-w-2xl mx-auto" style={{ color: "#c2c9bb" }}>
               Real tools we use daily. Not a logo wall — a working toolkit.
             </p>
           </div>
@@ -730,14 +724,14 @@ export default function AIEngineeringPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {techStack.map((group) => (
               <div key={group.category}>
-                <h3 className="text-sm font-semibold uppercase tracking-wider text-blue-400 mb-3">
+                <h3 className="text-sm font-semibold uppercase tracking-wider text-[#bcf1ae] mb-3">
                   {group.category}
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {group.tools.map((tool) => (
                     <span
                       key={tool}
-                      className="inline-block px-3 py-1.5 rounded-full bg-slate-700/50 text-slate-300 text-sm font-medium border border-slate-600/30"
+                      className="inline-block px-3 py-1.5 rounded-full bg-[#1a1c19]/50 text-[#c2c9bb] text-sm font-medium border border-[#42493e]/30"
                     >
                       {tool}
                     </span>
@@ -750,7 +744,7 @@ export default function AIEngineeringPage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-20 px-4" style={{ backgroundColor: "#0F172A" }}>
+      <section className="py-20 px-4" style={{ backgroundColor: "#121411" }}>
         <div className="container mx-auto max-w-3xl px-4">
           <div className="text-center mb-12">
             <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4 text-white">
@@ -763,12 +757,12 @@ export default function AIEngineeringPage() {
               <AccordionItem
                 key={index}
                 value={`item-${index}`}
-                className="border-b border-slate-700/40"
+                className="border-b border-[#42493e]/40"
               >
-                <AccordionTrigger className="text-left text-base font-medium text-white hover:no-underline hover:text-blue-400 py-5">
+                <AccordionTrigger className="text-left text-base font-medium text-white hover:no-underline hover:text-[#bcf1ae] py-5">
                   {item.question}
                 </AccordionTrigger>
-                <AccordionContent className="leading-relaxed text-base" style={{ color: "#94A3B8" }}>
+                <AccordionContent className="leading-relaxed text-base" style={{ color: "#c2c9bb" }}>
                   {item.answer}
                 </AccordionContent>
               </AccordionItem>
@@ -778,24 +772,23 @@ export default function AIEngineeringPage() {
       </section>
 
       {/* CTA Banner */}
-      <section className="relative py-20 md:py-28 overflow-hidden" style={{ backgroundColor: "#0B1222" }}>
-        <div className="absolute inset-0 opacity-[0.02]" style={{backgroundImage: "linear-gradient(rgba(148,163,184,1) 1px, transparent 1px), linear-gradient(90deg, rgba(148,163,184,1) 1px, transparent 1px)", backgroundSize: "60px 60px"}} />
-        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-400/30 to-transparent" />
-        <div className="absolute -top-24 -right-24 w-96 h-96 bg-blue-500 rounded-full opacity-10 blur-3xl" />
-        <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-blue-600 rounded-full opacity-10 blur-3xl" />
+      <section className="relative py-20 md:py-28 overflow-hidden" style={{ backgroundColor: "#0d0f0c" }}>
+        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#bcf1ae]/30 to-transparent" />
+        <div className="absolute -top-24 -right-24 w-96 h-96 bg-[#bcf1ae] rounded-full opacity-10 blur-3xl" />
+        <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-[#3b6934] rounded-full opacity-10 blur-3xl" />
 
         <div className="container relative z-10 mx-auto max-w-4xl px-4 text-center">
           <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-6 text-white">
             Have a project in mind? Let&#39;s scope it.
           </h2>
-          <p className="text-lg mb-10 max-w-2xl mx-auto" style={{ color: "#94A3B8" }}>
+          <p className="text-lg mb-10 max-w-2xl mx-auto" style={{ color: "#c2c9bb" }}>
             Tell us what you need built. We will respond within 24 hours with a
             tailored proposal.
           </p>
           <Button
             asChild
             size="lg"
-            className="text-base px-8 py-6 font-medium bg-blue-500 hover:bg-blue-400 text-white shadow-lg shadow-blue-500/20 group"
+            className="text-base px-8 py-6 font-medium bg-[#bcf1ae] hover:opacity-90 text-[#0b390a] shadow-lg shadow-[#bcf1ae]/10 group"
           >
             <Link href="/get-started" className="flex items-center">
               Start a Conversation

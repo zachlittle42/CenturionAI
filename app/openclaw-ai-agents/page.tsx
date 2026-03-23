@@ -23,7 +23,7 @@ import {
 import CtaBanner from "@/components/cta-banner"
 
 export const metadata = {
-  title: "OpenClaw AI Agents | Centurion AI",
+  title: "OpenClaw AI Agents | Verdant AI Partners",
   description:
     "Deploy AI agents that run your business workflows 24/7 — on your infrastructure, with your data, under your control. Self-hosted or cloud-managed.",
 }
@@ -129,32 +129,31 @@ export default function OpenClawAgentsPage() {
       {/* ============================================================ */}
       {/* HERO                                                         */}
       {/* ============================================================ */}
-      <section className="relative pt-24 pb-20 md:pt-32 md:pb-28 overflow-hidden" style={{ backgroundColor: "#0F172A" }}>
-        <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: "linear-gradient(rgba(148,163,184,1) 1px, transparent 1px), linear-gradient(90deg, rgba(148,163,184,1) 1px, transparent 1px)", backgroundSize: "60px 60px" }} />
-        <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-400/50 via-blue-400/50 to-transparent" />
-        <div className="absolute -top-24 -right-24 w-96 h-96 bg-blue-500 rounded-full opacity-10 blur-3xl" />
-        <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-blue-600 rounded-full opacity-10 blur-3xl" />
+      <section className="relative pt-24 pb-20 md:pt-32 md:pb-28 overflow-hidden" style={{ backgroundColor: "#121411" }}>
+        <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#bcf1ae]/50 via-[#bcf1ae]/50 to-transparent" />
+        <div className="absolute -top-24 -right-24 w-96 h-96 bg-[#bcf1ae] rounded-full opacity-10 blur-3xl" />
+        <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-[#3b6934] rounded-full opacity-10 blur-3xl" />
 
         <div className="container relative z-10 mx-auto max-w-6xl px-4">
           <div className="grid md:grid-cols-2 gap-10 items-center">
             <div className="text-center md:text-left">
-              <div className="inline-block mb-4 px-4 py-1.5 bg-blue-900/50 rounded-full border border-blue-700/50">
-                <span className="text-blue-300 font-medium text-sm">OpenClaw AI Agents</span>
+              <div className="inline-block mb-4 px-4 py-1.5 bg-[#0d0f0c]/50 rounded-full border border-[#42493e]/50">
+                <span className="text-[#a1d494] font-medium text-sm">OpenClaw AI Agents</span>
               </div>
 
               <h1 className="font-display text-balance text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-white opacity-0 animate-reveal">
                 Your own AI agent. Always on. Fully yours.
               </h1>
 
-              <p className="text-xl mb-6 max-w-xl leading-relaxed opacity-0 animate-reveal stagger-2" style={{ color: "#94A3B8" }}>
+              <p className="text-xl mb-6 max-w-xl leading-relaxed opacity-0 animate-reveal stagger-2" style={{ color: "#c2c9bb" }}>
                 OpenClaw is an open-source AI agent platform. We deploy, configure, and manage it for your business — so you get enterprise-grade AI agents without the enterprise complexity. Your infrastructure. Your data. Your control.
               </p>
 
               <div className="mb-8 opacity-0 animate-reveal stagger-2">
-                <p className="text-xs uppercase tracking-wider text-slate-400 font-semibold mb-3">Built on open-source</p>
+                <p className="text-xs uppercase tracking-wider text-[#8c9387] font-semibold mb-3">Built on open-source</p>
                 <div className="flex flex-wrap gap-2 justify-center md:justify-start">
                   {["OpenClaw Platform", "Self-Hosted", "Cloud-Managed", "Full Tool Access"].map((tag) => (
-                    <span key={tag} className="text-sm font-medium bg-slate-700/50 text-slate-300 px-3 py-1.5 rounded-full border border-slate-600/30">
+                    <span key={tag} className="text-sm font-medium bg-[#292b27]/50 text-[#c2c9bb] px-3 py-1.5 rounded-full border border-[#42493e]/30">
                       {tag}
                     </span>
                   ))}
@@ -164,7 +163,7 @@ export default function OpenClawAgentsPage() {
               <Button
                 asChild
                 size="lg"
-                className="text-base px-8 py-6 font-medium bg-blue-500 hover:bg-blue-400 text-white shadow-lg shadow-blue-500/20 group opacity-0 animate-reveal stagger-3"
+                className="text-base px-8 py-6 font-medium bg-[#bcf1ae] hover:opacity-90 text-[#0b390a] shadow-lg shadow-[#bcf1ae]/10 group opacity-0 animate-reveal stagger-3"
               >
                 <Link href="/get-started" className="flex items-center">
                   Deploy Your Agent
@@ -175,12 +174,12 @@ export default function OpenClawAgentsPage() {
 
             {/* Agent dashboard mockup */}
             <div className="hidden md:block opacity-0 animate-reveal stagger-3">
-              <div className="rounded-xl border border-blue-400/15 bg-[#0B1222] p-5 shadow-2xl">
+              <div className="rounded-xl border border-[#bcf1ae]/15 bg-[#0d0f0c] p-5 shadow-2xl">
                 <div className="flex items-center gap-2 mb-4">
                   <div className="w-2.5 h-2.5 rounded-full bg-red-400/60" />
                   <div className="w-2.5 h-2.5 rounded-full bg-yellow-400/60" />
                   <div className="w-2.5 h-2.5 rounded-full bg-green-400/60" />
-                  <span className="ml-2 text-xs text-slate-500 font-mono">OpenClaw Dashboard</span>
+                  <span className="ml-2 text-xs text-[#8c9387] font-mono">OpenClaw Dashboard</span>
                 </div>
                 <div className="space-y-2.5">
                   {[
@@ -190,17 +189,17 @@ export default function OpenClawAgentsPage() {
                     { name: "Executive Coach — CEO", status: "Active", metric: "38 sessions/wk", color: "bg-green-400" },
                     { name: "CRM Agent — Lead Scoring", status: "Processing", metric: "89 new leads", color: "bg-yellow-400" },
                   ].map((agent) => (
-                    <div key={agent.name} className="flex items-center justify-between rounded-lg bg-slate-800/50 border border-slate-700/40 px-4 py-3">
+                    <div key={agent.name} className="flex items-center justify-between rounded-lg bg-[#292b27]/50 border border-[#42493e]/40 px-4 py-3">
                       <div className="flex items-center gap-3">
                         <div className={`w-2 h-2 rounded-full ${agent.color}`} />
-                        <span className="text-sm text-slate-300 font-mono">{agent.name}</span>
+                        <span className="text-sm text-[#c2c9bb] font-mono">{agent.name}</span>
                       </div>
-                      <span className="text-xs text-slate-500 font-mono">{agent.metric}</span>
+                      <span className="text-xs text-[#8c9387] font-mono">{agent.metric}</span>
                     </div>
                   ))}
                 </div>
-                <div className="mt-4 pt-3 border-t border-slate-700/40 flex items-center justify-between">
-                  <span className="text-xs text-slate-500 font-mono">5 agents deployed</span>
+                <div className="mt-4 pt-3 border-t border-[#42493e]/40 flex items-center justify-between">
+                  <span className="text-xs text-[#8c9387] font-mono">5 agents deployed</span>
                   <span className="text-xs text-green-400 font-mono">All systems nominal</span>
                 </div>
               </div>
@@ -212,13 +211,13 @@ export default function OpenClawAgentsPage() {
       {/* ============================================================ */}
       {/* USE CASES                                                    */}
       {/* ============================================================ */}
-      <section className="py-20 px-4" style={{ backgroundColor: "#F8FAFC" }}>
+      <section className="py-20 px-4" style={{ backgroundColor: "#1a1c19" }}>
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
-            <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4" style={{ color: "#0F172A" }}>
+            <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4 text-white">
               What your agent can do.
             </h2>
-            <p className="text-lg max-w-2xl mx-auto" style={{ color: "#64748B" }}>
+            <p className="text-lg max-w-2xl mx-auto" style={{ color: "#c2c9bb" }}>
               From personal assistant to business automation — deploy the agent that fits your needs.
             </p>
           </div>
@@ -227,17 +226,18 @@ export default function OpenClawAgentsPage() {
             {useCases.map((item, index) => (
               <div
                 key={item.title}
-                className="bg-white rounded-xl shadow-md overflow-hidden border border-slate-200/60 hover:shadow-lg hover:border-blue-200 transition-all"
+                className="rounded-xl shadow-md overflow-hidden border border-[#42493e]/15 hover:shadow-lg hover:border-[#bcf1ae]/20 transition-all"
+                style={{ backgroundColor: "#1a1c19" }}
               >
-                <div className={`h-1 bg-gradient-to-r ${index % 2 === 0 ? "from-blue-600 to-blue-400" : "from-blue-400 to-blue-600"}`} />
+                <div className={`h-1 bg-gradient-to-r ${index % 2 === 0 ? "from-[#3b6934] to-[#bcf1ae]" : "from-[#bcf1ae] to-[#a1d494]"}`} />
                 <div className="p-6">
-                  <div className="w-12 h-12 rounded-lg bg-blue-50 flex items-center justify-center mb-4">
-                    <item.icon className="h-6 w-6 text-blue-600" />
+                  <div className="w-12 h-12 rounded-lg bg-[#292b27] flex items-center justify-center mb-4">
+                    <item.icon className="h-6 w-6 text-[#bcf1ae]" />
                   </div>
-                  <h3 className="text-xl font-bold mb-2" style={{ color: "#0F172A" }}>
+                  <h3 className="text-xl font-bold mb-2 text-white">
                     {item.title}
                   </h3>
-                  <p className="leading-relaxed" style={{ color: "#64748B" }}>
+                  <p className="leading-relaxed" style={{ color: "#c2c9bb" }}>
                     {item.description}
                   </p>
                 </div>
@@ -250,16 +250,15 @@ export default function OpenClawAgentsPage() {
       {/* ============================================================ */}
       {/* PLATFORM FEATURES                                            */}
       {/* ============================================================ */}
-      <section className="py-20 px-4 relative overflow-hidden" style={{ backgroundColor: "#0F172A" }}>
-        <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: "linear-gradient(rgba(148,163,184,1) 1px, transparent 1px), linear-gradient(90deg, rgba(148,163,184,1) 1px, transparent 1px)", backgroundSize: "60px 60px" }} />
-        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-400/30 to-transparent" />
+      <section className="py-20 px-4 relative overflow-hidden" style={{ backgroundColor: "#121411" }}>
+        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#bcf1ae]/30 to-transparent" />
 
         <div className="container relative z-10 mx-auto max-w-5xl">
           <div className="text-center mb-16">
             <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4 text-white">
               Built for control and security.
             </h2>
-            <p className="text-lg max-w-2xl mx-auto" style={{ color: "#94A3B8" }}>
+            <p className="text-lg max-w-2xl mx-auto" style={{ color: "#c2c9bb" }}>
               OpenClaw gives you the capabilities of enterprise AI agents without giving up control.
             </p>
           </div>
@@ -268,16 +267,16 @@ export default function OpenClawAgentsPage() {
             {features.map((feature, i) => (
               <div
                 key={feature.title}
-                className={`rounded-lg p-6 border hover:border-blue-500/20 transition-colors opacity-0 animate-reveal stagger-${i + 1}`}
-                style={{ backgroundColor: "#1E293B", borderColor: "rgba(148,163,184,0.1)" }}
+                className={`rounded-lg p-6 border hover:border-[#bcf1ae]/20 transition-colors opacity-0 animate-reveal stagger-${i + 1}`}
+                style={{ backgroundColor: "#1a1c19", borderColor: "rgba(66,73,62,0.15)" }}
               >
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-blue-500/15 flex items-center justify-center shrink-0">
-                    <feature.icon className="h-5 w-5 text-blue-400" />
+                  <div className="w-10 h-10 rounded-lg bg-[#bcf1ae]/15 flex items-center justify-center shrink-0">
+                    <feature.icon className="h-5 w-5 text-[#bcf1ae]" />
                   </div>
                   <div>
                     <h3 className="text-lg font-bold text-white mb-2">{feature.title}</h3>
-                    <p className="text-sm leading-relaxed" style={{ color: "#94A3B8" }}>{feature.description}</p>
+                    <p className="text-sm leading-relaxed" style={{ color: "#c2c9bb" }}>{feature.description}</p>
                   </div>
                 </div>
               </div>
@@ -289,9 +288,8 @@ export default function OpenClawAgentsPage() {
       {/* ============================================================ */}
       {/* PRICING                                                      */}
       {/* ============================================================ */}
-      <section className="py-20 px-4 relative overflow-hidden" style={{ backgroundColor: "#0B1222" }}>
-        <div className="absolute inset-0 opacity-[0.02]" style={{ backgroundImage: "linear-gradient(rgba(148,163,184,1) 1px, transparent 1px), linear-gradient(90deg, rgba(148,163,184,1) 1px, transparent 1px)", backgroundSize: "60px 60px" }} />
-        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-400/30 to-transparent" />
+      <section className="py-20 px-4 relative overflow-hidden" style={{ backgroundColor: "#0d0f0c" }}>
+        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#bcf1ae]/30 to-transparent" />
 
         <div className="container relative z-10 mx-auto max-w-5xl">
           <div className="text-center mb-16">
@@ -302,19 +300,19 @@ export default function OpenClawAgentsPage() {
 
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {/* Self-Hosted */}
-            <div className="rounded-xl p-8 flex flex-col border border-slate-700/40 hover:border-blue-400/20 transition-all" style={{ backgroundColor: "#1E293B" }}>
+            <div className="rounded-xl p-8 flex flex-col border border-[#42493e]/40 hover:border-[#bcf1ae]/20 transition-all" style={{ backgroundColor: "#1a1c19" }}>
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-lg bg-blue-500/15 flex items-center justify-center">
-                  <Server className="h-5 w-5 text-blue-400" />
+                <div className="w-10 h-10 rounded-lg bg-[#bcf1ae]/15 flex items-center justify-center">
+                  <Server className="h-5 w-5 text-[#bcf1ae]" />
                 </div>
                 <h3 className="text-2xl font-bold text-white">Self-Hosted</h3>
               </div>
-              <p className="text-sm mb-6 leading-relaxed" style={{ color: "#94A3B8" }}>
+              <p className="text-sm mb-6 leading-relaxed" style={{ color: "#c2c9bb" }}>
                 Deploy on your infrastructure. Full control, full privacy.
               </p>
               <div className="mb-6">
-                <span className="text-3xl font-bold text-blue-400">From $3,000</span>
-                <span className="text-sm ml-1" style={{ color: "#94A3B8" }}>setup</span>
+                <span className="text-3xl font-bold text-[#bcf1ae]">From $3,000</span>
+                <span className="text-sm ml-1" style={{ color: "#c2c9bb" }}>setup</span>
               </div>
               <ul className="space-y-3 mb-8 flex-1">
                 {[
@@ -324,36 +322,36 @@ export default function OpenClawAgentsPage() {
                   "Custom agent personality and capabilities",
                   "Monitoring and usage reporting",
                 ].map((feature) => (
-                  <li key={feature} className="flex items-start gap-2 text-sm" style={{ color: "#94A3B8" }}>
-                    <Check className="h-4 w-4 text-blue-400 mt-0.5 shrink-0" />
+                  <li key={feature} className="flex items-start gap-2 text-sm" style={{ color: "#c2c9bb" }}>
+                    <Check className="h-4 w-4 text-[#bcf1ae] mt-0.5 shrink-0" />
                     {feature}
                   </li>
                 ))}
               </ul>
-              <Button asChild className="w-full bg-slate-700/50 hover:bg-slate-600/50 text-white border border-slate-600/30">
+              <Button asChild className="w-full bg-[#292b27] hover:bg-[#292b27]/80 text-white border border-[#42493e]/30">
                 <Link href="/get-started">Get Started</Link>
               </Button>
             </div>
 
             {/* Cloud-Managed */}
-            <div className="relative rounded-xl p-8 flex flex-col bg-blue-500/10 border border-blue-400/30 shadow-2xl shadow-blue-500/10 transition-all">
+            <div className="relative rounded-xl p-8 flex flex-col bg-[#bcf1ae]/10 border border-[#bcf1ae]/30 shadow-2xl shadow-[#bcf1ae]/10 transition-all">
               <div className="absolute -top-3.5 left-1/2 -translate-x-1/2">
-                <span className="inline-flex items-center bg-blue-500 text-white px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wide shadow-lg shadow-blue-500/30">
+                <span className="inline-flex items-center bg-[#bcf1ae] text-[#0b390a] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wide shadow-lg shadow-[#bcf1ae]/30">
                   RECOMMENDED
                 </span>
               </div>
               <div className="flex items-center gap-3 mb-4 mt-2">
-                <div className="w-10 h-10 rounded-lg bg-blue-500/15 flex items-center justify-center">
-                  <Cloud className="h-5 w-5 text-blue-400" />
+                <div className="w-10 h-10 rounded-lg bg-[#bcf1ae]/15 flex items-center justify-center">
+                  <Cloud className="h-5 w-5 text-[#bcf1ae]" />
                 </div>
                 <h3 className="text-2xl font-bold text-white">Cloud-Managed</h3>
               </div>
-              <p className="text-sm mb-6 leading-relaxed" style={{ color: "#94A3B8" }}>
+              <p className="text-sm mb-6 leading-relaxed" style={{ color: "#c2c9bb" }}>
                 We host, monitor, and maintain everything. You just use it.
               </p>
               <div className="mb-6">
-                <span className="text-3xl font-bold text-blue-400">From $6,000</span>
-                <span className="text-sm ml-1" style={{ color: "#94A3B8" }}>setup</span>
+                <span className="text-3xl font-bold text-[#bcf1ae]">From $6,000</span>
+                <span className="text-sm ml-1" style={{ color: "#c2c9bb" }}>setup</span>
               </div>
               <ul className="space-y-3 mb-8 flex-1">
                 {[
@@ -364,13 +362,13 @@ export default function OpenClawAgentsPage() {
                   "Dedicated support channel",
                   "Cost tracking and optimization",
                 ].map((feature) => (
-                  <li key={feature} className="flex items-start gap-2 text-sm" style={{ color: "#94A3B8" }}>
-                    <Check className="h-4 w-4 text-blue-400 mt-0.5 shrink-0" />
+                  <li key={feature} className="flex items-start gap-2 text-sm" style={{ color: "#c2c9bb" }}>
+                    <Check className="h-4 w-4 text-[#bcf1ae] mt-0.5 shrink-0" />
                     {feature}
                   </li>
                 ))}
               </ul>
-              <Button asChild className="w-full bg-blue-500 hover:bg-blue-400 text-white shadow-lg shadow-blue-500/20">
+              <Button asChild className="w-full bg-[#bcf1ae] hover:opacity-90 text-[#0b390a] shadow-lg shadow-[#bcf1ae]/10">
                 <Link href="/get-started">Deploy Your Agent</Link>
               </Button>
             </div>
@@ -381,7 +379,7 @@ export default function OpenClawAgentsPage() {
       {/* ============================================================ */}
       {/* FAQ                                                          */}
       {/* ============================================================ */}
-      <section className="py-20 px-4" style={{ backgroundColor: "#0F172A" }}>
+      <section className="py-20 px-4" style={{ backgroundColor: "#121411" }}>
         <div className="container mx-auto max-w-3xl px-4">
           <div className="text-center mb-12">
             <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4 text-white">
@@ -394,12 +392,12 @@ export default function OpenClawAgentsPage() {
               <AccordionItem
                 key={i}
                 value={`faq-${i}`}
-                className="border-b border-slate-700/40"
+                className="border-b border-[#42493e]/40"
               >
-                <AccordionTrigger className="text-left text-base font-medium text-white hover:no-underline hover:text-blue-400 py-5">
+                <AccordionTrigger className="text-left text-base font-medium text-white hover:no-underline hover:text-[#bcf1ae] py-5">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="leading-relaxed text-base" style={{ color: "#94A3B8" }}>
+                <AccordionContent className="leading-relaxed text-base" style={{ color: "#c2c9bb" }}>
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>

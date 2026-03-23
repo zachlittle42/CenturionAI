@@ -1,6 +1,6 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { DM_Sans, Instrument_Serif } from "next/font/google"
+import { Manrope, Epilogue } from "next/font/google"
 import Script from "next/script"
 import "./globals.css"
 import { Toaster } from "@/components/ui/toaster"
@@ -8,20 +8,21 @@ import AuthSessionProvider from "@/components/session-provider"
 import LayoutShell from "@/components/layout-shell"
 import { Analytics } from "@vercel/analytics/next"
 
-const dmSans = DM_Sans({
+const manrope = Manrope({
   subsets: ["latin"],
   variable: "--font-body",
+  weight: ["400", "500", "600"],
 })
 
-const instrumentSerif = Instrument_Serif({
-  weight: "400",
+const epilogue = Epilogue({
   subsets: ["latin"],
   variable: "--font-display",
+  weight: ["400", "600", "700", "800"],
 })
 
 export const metadata: Metadata = {
-  title: "Centurion AI - AI Implementation That Actually Works",
-  description: "We transform your team with AI tools and workflows, or our AI-augmented engineering teams build your product. Platform setup, training, custom workflows, managed infrastructure, and full-stack development.",
+  title: "Verdant AI Partners — AI Implementation That Actually Works",
+  description: "We help businesses adopt AI effectively — from tech foundations and team training through custom agents and embedded engineering. Hands-on implementation, not slide decks.",
 }
 
 export default function RootLayout({
@@ -44,7 +45,7 @@ export default function RootLayout({
           gtag('config', 'G-XXXXXXXXXX');
         `}
       </Script>
-      <body className={`${dmSans.variable} ${instrumentSerif.variable} font-body antialiased`}>
+      <body className={`${manrope.variable} ${epilogue.variable} font-body antialiased`}>
         <AuthSessionProvider>
           <LayoutShell>
             {children}

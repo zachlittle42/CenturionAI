@@ -98,32 +98,31 @@ export default function GetStartedPage() {
   }
 
   return (
-    <main className="min-h-screen relative overflow-hidden" style={{ backgroundColor: "#0F172A" }}>
+    <main className="min-h-screen relative overflow-hidden" style={{ backgroundColor: "#121411" }}>
       {/* Background */}
-      <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:64px_64px] opacity-[0.03] z-0" />
-      <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl" />
-      <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl" />
+      <div className="absolute -top-40 -right-40 w-80 h-80 bg-[#bcf1ae]/10 rounded-full blur-3xl" />
+      <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-[#bcf1ae]/10 rounded-full blur-3xl" />
 
       <div className="relative z-10 px-4 py-16 md:py-24">
         {/* Header */}
         <div className="max-w-2xl mx-auto text-center mb-10">
           <Link
             href="/"
-            className="inline-block text-sm text-blue-400 hover:text-blue-300 mb-8"
+            className="inline-block text-sm text-[#bcf1ae] hover:text-[#a1d494] mb-8"
           >
-            &larr; Back to Centurion AI
+            &larr; Back to Verdant AI Partners
           </Link>
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-4 font-display text-balance opacity-0 animate-reveal">
             Tell us about your business. We&apos;ll recommend the right path.
           </h1>
-          <p className="text-lg leading-relaxed opacity-0 animate-reveal stagger-1" style={{ color: "#94A3B8" }}>
+          <p className="text-lg leading-relaxed opacity-0 animate-reveal stagger-1" style={{ color: "#c2c9bb" }}>
             We&apos;ll get back to you within 24 hours with a tailored recommendation.
           </p>
         </div>
 
         {/* Lead Form Card */}
-        <Card className="max-w-2xl mx-auto border shadow-xl overflow-hidden gradient-border opacity-0 animate-reveal stagger-2" style={{ backgroundColor: "#1E293B", borderColor: "rgba(96,165,250,0.15)" }}>
-          <div className="h-1 bg-gradient-to-r from-blue-500 to-blue-400" />
+        <Card className="max-w-2xl mx-auto border shadow-xl overflow-hidden gradient-border opacity-0 animate-reveal stagger-2" style={{ backgroundColor: "#1a1c19", borderColor: "rgba(188,241,174,0.15)" }}>
+          <div className="h-1 bg-gradient-to-r from-[#bcf1ae] to-[#a1d494]" />
           <CardContent className="p-6 md:p-8">
             <Form {...form}>
               <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-5">
@@ -133,13 +132,13 @@ export default function GetStartedPage() {
                     name="name"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel className="text-sm font-medium text-slate-300">
+                        <FormLabel className="text-sm font-medium text-[#c2c9bb]">
                           Name
                         </FormLabel>
                         <FormControl>
                           <Input
                             placeholder="Your name"
-                            className="bg-slate-800/50 border-slate-600/50 text-white placeholder:text-slate-500 focus:border-blue-500 focus:ring-blue-500"
+                            className="bg-[#292b27]/50 border-[#42493e]/50 text-white placeholder:text-[#8c9387] focus:border-[#bcf1ae] focus:ring-[#bcf1ae]"
                             {...field}
                           />
                         </FormControl>
@@ -153,13 +152,13 @@ export default function GetStartedPage() {
                     name="company"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel className="text-sm font-medium text-slate-300">
+                        <FormLabel className="text-sm font-medium text-[#c2c9bb]">
                           Company
                         </FormLabel>
                         <FormControl>
                           <Input
                             placeholder="Your company"
-                            className="bg-slate-800/50 border-slate-600/50 text-white placeholder:text-slate-500 focus:border-blue-500 focus:ring-blue-500"
+                            className="bg-[#292b27]/50 border-[#42493e]/50 text-white placeholder:text-[#8c9387] focus:border-[#bcf1ae] focus:ring-[#bcf1ae]"
                             {...field}
                           />
                         </FormControl>
@@ -175,14 +174,14 @@ export default function GetStartedPage() {
                     name="email"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel className="text-sm font-medium text-slate-300">
+                        <FormLabel className="text-sm font-medium text-[#c2c9bb]">
                           Email
                         </FormLabel>
                         <FormControl>
                           <Input
                             type="email"
                             placeholder="you@company.com"
-                            className="bg-slate-800/50 border-slate-600/50 text-white placeholder:text-slate-500 focus:border-blue-500 focus:ring-blue-500"
+                            className="bg-[#292b27]/50 border-[#42493e]/50 text-white placeholder:text-[#8c9387] focus:border-[#bcf1ae] focus:ring-[#bcf1ae]"
                             {...field}
                           />
                         </FormControl>
@@ -196,14 +195,14 @@ export default function GetStartedPage() {
                     name="phone"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel className="text-sm font-medium text-slate-300">
-                          Phone <span className="text-slate-500">(optional)</span>
+                        <FormLabel className="text-sm font-medium text-[#c2c9bb]">
+                          Phone <span className="text-[#8c9387]">(optional)</span>
                         </FormLabel>
                         <FormControl>
                           <Input
                             type="tel"
                             placeholder="(555) 123-4567"
-                            className="bg-slate-800/50 border-slate-600/50 text-white placeholder:text-slate-500 focus:border-blue-500 focus:ring-blue-500"
+                            className="bg-[#292b27]/50 border-[#42493e]/50 text-white placeholder:text-[#8c9387] focus:border-[#bcf1ae] focus:ring-[#bcf1ae]"
                             {...field}
                           />
                         </FormControl>
@@ -218,7 +217,7 @@ export default function GetStartedPage() {
                   name="revenue"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-sm font-medium text-slate-300">
+                      <FormLabel className="text-sm font-medium text-[#c2c9bb]">
                         Monthly Revenue
                       </FormLabel>
                       <Select
@@ -226,7 +225,7 @@ export default function GetStartedPage() {
                         defaultValue={field.value}
                       >
                         <FormControl>
-                          <SelectTrigger className="bg-slate-800/50 border-slate-600/50 text-white placeholder:text-slate-500 focus:border-blue-500 focus:ring-blue-500">
+                          <SelectTrigger className="bg-[#292b27]/50 border-[#42493e]/50 text-white placeholder:text-[#8c9387] focus:border-[#bcf1ae] focus:ring-[#bcf1ae]">
                             <SelectValue placeholder="Select monthly revenue" />
                           </SelectTrigger>
                         </FormControl>
@@ -248,14 +247,14 @@ export default function GetStartedPage() {
                   name="challenge"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-sm font-medium text-slate-300">
+                      <FormLabel className="text-sm font-medium text-[#c2c9bb]">
                         What&apos;s your biggest challenge right now?
                       </FormLabel>
                       <FormControl>
                         <Textarea
                           rows={4}
                           placeholder="Tell us in your own words..."
-                          className="bg-slate-800/50 border-slate-600/50 text-white placeholder:text-slate-500 focus:border-blue-500 focus:ring-blue-500 resize-none"
+                          className="bg-[#292b27]/50 border-[#42493e]/50 text-white placeholder:text-[#8c9387] focus:border-[#bcf1ae] focus:ring-[#bcf1ae] resize-none"
                           {...field}
                         />
                       </FormControl>
@@ -269,13 +268,13 @@ export default function GetStartedPage() {
                   name="referral"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-sm font-medium text-slate-300">
-                        How did you hear about us? <span className="text-slate-500">(optional)</span>
+                      <FormLabel className="text-sm font-medium text-[#c2c9bb]">
+                        How did you hear about us? <span className="text-[#8c9387]">(optional)</span>
                       </FormLabel>
                       <FormControl>
                         <Input
                           placeholder="Google, referral, social media..."
-                          className="bg-slate-800/50 border-slate-600/50 text-white placeholder:text-slate-500 focus:border-blue-500 focus:ring-blue-500"
+                          className="bg-[#292b27]/50 border-[#42493e]/50 text-white placeholder:text-[#8c9387] focus:border-[#bcf1ae] focus:ring-[#bcf1ae]"
                           {...field}
                         />
                       </FormControl>
@@ -286,7 +285,7 @@ export default function GetStartedPage() {
 
                 <Button
                   type="submit"
-                  className="w-full bg-blue-500 hover:bg-blue-400 text-white py-6 text-base"
+                  className="w-full bg-[#bcf1ae] hover:opacity-90 text-[#0b390a] py-6 text-base"
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? (
@@ -306,23 +305,23 @@ export default function GetStartedPage() {
         {/* Divider + Alternative Contact */}
         <div className="max-w-2xl mx-auto mt-10">
           <div className="flex items-center gap-4">
-            <Separator className="flex-1 bg-slate-700" />
-            <span className="text-sm text-slate-500 font-medium">or</span>
-            <Separator className="flex-1 bg-slate-700" />
+            <Separator className="flex-1 bg-[#42493e]" />
+            <span className="text-sm text-[#8c9387] font-medium">or</span>
+            <Separator className="flex-1 bg-[#42493e]" />
           </div>
 
           <div className="text-center mt-8">
             <div className="flex items-center justify-center gap-2 mb-3">
-              <Calendar className="h-5 w-5 text-blue-400" />
+              <Calendar className="h-5 w-5 text-[#bcf1ae]" />
               <p className="text-lg font-semibold text-white">
                 Prefer to talk? Book a call directly.
               </p>
             </div>
             <div
-              className="mt-4 rounded-lg border border-blue-400/20 bg-blue-900/20 p-8 text-center"
+              className="mt-4 rounded-lg border border-[#bcf1ae]/20 bg-[#0d0f0c]/20 p-8 text-center"
               data-url="https://calendly.com/YOUR_CALENDLY_URL"
             >
-              <p className="text-sm" style={{ color: "#94A3B8" }}>
+              <p className="text-sm" style={{ color: "#c2c9bb" }}>
                 Schedule a free 30-minute strategy call. We&apos;ll discuss your goals and recommend the right path forward.
               </p>
             </div>
@@ -331,8 +330,8 @@ export default function GetStartedPage() {
 
         {/* Trust Signals */}
         <div className="max-w-2xl mx-auto mt-10 text-center">
-          <div className="flex items-center justify-center gap-2 text-slate-400">
-            <ShieldCheck className="h-4 w-4 text-blue-400" />
+          <div className="flex items-center justify-center gap-2 text-[#8c9387]">
+            <ShieldCheck className="h-4 w-4 text-[#bcf1ae]" />
             <p className="text-sm">
               No spam. No pressure. Just a conversation about what&apos;s possible.
             </p>

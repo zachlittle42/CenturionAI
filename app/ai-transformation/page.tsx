@@ -33,7 +33,7 @@ import {
 } from "lucide-react"
 
 export const metadata = {
-  title: "AI Transformation | Centurion AI",
+  title: "AI Transformation | Verdant AI Partners",
   description:
     "Go from AI-curious to AI-native. Platform setup, custom workflows, and managed AI infrastructure for your team.",
 }
@@ -174,18 +174,17 @@ export default function AITransformationPage() {
       {/* ============================================================ */}
       {/* HERO                                                         */}
       {/* ============================================================ */}
-      <section className="relative pt-24 pb-20 md:pt-32 md:pb-28 overflow-hidden" style={{backgroundColor: "#0F172A"}}>
-        <div className="absolute inset-0 opacity-[0.03]" style={{backgroundImage: "linear-gradient(rgba(148,163,184,1) 1px, transparent 1px), linear-gradient(90deg, rgba(148,163,184,1) 1px, transparent 1px)", backgroundSize: "60px 60px"}} />
-        <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-400/50 via-blue-400/50 to-transparent" />
-        <div className="absolute -top-24 -right-24 w-96 h-96 bg-blue-500 rounded-full opacity-10 blur-3xl" />
-        <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-blue-600 rounded-full opacity-10 blur-3xl" />
+      <section className="relative pt-24 pb-20 md:pt-32 md:pb-28 overflow-hidden" style={{backgroundColor: "#121411"}}>
+        <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#bcf1ae]/30 via-[#bcf1ae]/30 to-transparent" />
+        <div className="absolute -top-24 -right-24 w-96 h-96 bg-[#bcf1ae] rounded-full opacity-10 blur-3xl" />
+        <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-[#3b6934] rounded-full opacity-10 blur-3xl" />
 
         <div className="container relative z-10 mx-auto max-w-6xl px-4">
           <div className="grid md:grid-cols-2 gap-10 items-center">
             {/* Left: copy */}
             <div className="text-center md:text-left">
-              <div className="inline-block mb-4 px-4 py-1.5 bg-blue-900/50 rounded-full border border-blue-700/50">
-                <span className="text-blue-300 font-medium text-sm">
+              <div className="inline-block mb-4 px-4 py-1.5 bg-[#0d0f0c]/50 rounded-full border border-[#1a2e1a]/50">
+                <span className="text-[#a1d494] font-medium text-sm">
                   AI Transformation
                 </span>
               </div>
@@ -194,17 +193,17 @@ export default function AITransformationPage() {
                 Go from AI-curious to AI-native.
               </h1>
 
-              <p className="text-xl mb-6 max-w-xl leading-relaxed opacity-0 animate-reveal stagger-2" style={{color: "#94A3B8"}}>
+              <p className="text-xl mb-6 max-w-xl leading-relaxed opacity-0 animate-reveal stagger-2" style={{color: "#c2c9bb"}}>
                 Most companies buy AI seats and hope for the best. We set up the
                 platforms, connect your tools, train your team, and build the
                 workflows that make AI actually useful.
               </p>
 
               <div className="mb-8 opacity-0 animate-reveal stagger-3">
-                <p className="text-xs uppercase tracking-wider font-semibold mb-3" style={{color: "rgba(147,197,253,0.5)"}}>We set up & train your team on</p>
+                <p className="text-xs uppercase tracking-wider font-semibold mb-3" style={{color: "rgba(188,241,174,0.5)"}}>We set up & train your team on</p>
                 <div className="flex flex-wrap gap-2 justify-center md:justify-start">
                   {["Anthropic Claude", "OpenAI ChatGPT", "Google Gemini", "Microsoft Copilot", "Cursor"].map((platform) => (
-                    <span key={platform} className="text-sm font-medium bg-white/10 text-white px-3 py-1.5 rounded-full border border-white/10">
+                    <span key={platform} className="text-sm font-medium bg-[#1a1c19]/10 text-white px-3 py-1.5 rounded-full border border-white/10">
                       {platform}
                     </span>
                   ))}
@@ -214,7 +213,7 @@ export default function AITransformationPage() {
               <Button
                 asChild
                 size="lg"
-                className="text-base px-8 py-6 font-medium bg-blue-500 hover:bg-blue-400 text-white shadow-lg shadow-blue-500/20 group opacity-0 animate-reveal stagger-3"
+                className="text-base px-8 py-6 font-medium bg-[#bcf1ae] hover:opacity-90 text-[#0b390a] shadow-lg shadow-[#bcf1ae]/10 group opacity-0 animate-reveal stagger-3"
               >
                 <Link href="/get-started" className="flex items-center">
                   Start with an AI Audit
@@ -225,12 +224,12 @@ export default function AITransformationPage() {
 
             {/* Right: Platform Setup Progress mockup */}
             <div className="hidden md:block opacity-0 animate-reveal stagger-3">
-              <div className="rounded-xl border border-white/10 bg-white/5 backdrop-blur p-5 shadow-2xl">
+              <div className="rounded-xl border border-white/10 bg-[#1a1c19]/5 backdrop-blur p-5 shadow-2xl">
                 <div className="flex items-center gap-2 mb-4">
                   <div className="w-2.5 h-2.5 rounded-full bg-red-400/60" />
                   <div className="w-2.5 h-2.5 rounded-full bg-yellow-400/60" />
                   <div className="w-2.5 h-2.5 rounded-full bg-green-400/60" />
-                  <span className="ml-2 text-xs text-slate-400 font-mono">Platform Setup Progress</span>
+                  <span className="ml-2 text-xs text-[#8c9387] font-mono">Platform Setup Progress</span>
                 </div>
                 <div className="space-y-2.5">
                   {[
@@ -241,20 +240,20 @@ export default function AITransformationPage() {
                     { label: "Custom prompt library — 24 role-based packs", done: true },
                     { label: "Team training sessions — 3 of 4 complete", done: false },
                   ].map((item) => (
-                    <div key={item.label} className="flex items-center gap-3 rounded-lg bg-white/5 border border-white/5 px-4 py-3">
-                      <div className={`w-5 h-5 rounded-full flex items-center justify-center shrink-0 ${item.done ? "bg-green-400/20" : "bg-blue-300/20"}`}>
+                    <div key={item.label} className="flex items-center gap-3 rounded-lg bg-[#1a1c19]/5 border border-white/5 px-4 py-3">
+                      <div className={`w-5 h-5 rounded-full flex items-center justify-center shrink-0 ${item.done ? "bg-green-400/20" : "bg-[#a1d494]/20"}`}>
                         {item.done ? (
                           <Check className="h-3 w-3 text-green-400" />
                         ) : (
-                          <div className="w-2 h-2 rounded-full bg-blue-300 animate-pulse" />
+                          <div className="w-2 h-2 rounded-full bg-[#a1d494] animate-pulse" />
                         )}
                       </div>
-                      <span className="text-sm text-blue-100/80 font-mono">{item.label}</span>
+                      <span className="text-sm text-[#bcf1ae]/80 font-mono">{item.label}</span>
                     </div>
                   ))}
                 </div>
                 <div className="mt-4 pt-3 border-t border-white/10 flex items-center justify-between">
-                  <span className="text-xs text-blue-200/50 font-mono">5 of 6 tasks complete</span>
+                  <span className="text-xs text-[#a1d494]/50 font-mono">5 of 6 tasks complete</span>
                   <span className="text-xs text-green-400/70 font-mono">Est. 2 days remaining</span>
                 </div>
               </div>
@@ -266,15 +265,14 @@ export default function AITransformationPage() {
       {/* ============================================================ */}
       {/* THE GAP (dark section)                                       */}
       {/* ============================================================ */}
-      <section className="py-20 px-4 relative overflow-hidden" style={{backgroundColor: "#0F172A"}}>
-        <div className="absolute inset-0 opacity-[0.03]" style={{backgroundImage: "linear-gradient(rgba(148,163,184,1) 1px, transparent 1px), linear-gradient(90deg, rgba(148,163,184,1) 1px, transparent 1px)", backgroundSize: "60px 60px"}} />
+      <section className="py-20 px-4 relative overflow-hidden" style={{backgroundColor: "#121411"}}>
         <div className="absolute inset-0 grain z-0" />
 
         <div className="container relative z-10 mx-auto max-w-5xl text-center">
           <h2 className="font-display text-3xl md:text-4xl font-bold mb-6 text-white">
             Having ChatGPT seats isn&apos;t a strategy.
           </h2>
-          <div className="w-16 h-0.5 bg-blue-400 mx-auto mb-12" />
+          <div className="w-16 h-0.5 bg-[#bcf1ae] mx-auto mb-12" />
 
           <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
             {[
@@ -285,10 +283,10 @@ export default function AITransformationPage() {
             ].map((item, i) => (
               <div
                 key={i}
-                className="flex items-start gap-3 bg-white/5 backdrop-blur-sm p-5 rounded-lg text-left animate-fade-in"
+                className="flex items-start gap-3 bg-[#1a1c19]/5 backdrop-blur-sm p-5 rounded-lg text-left animate-fade-in"
                 style={{ animationDelay: `${i * 100}ms` }}
               >
-                <XCircle className="h-6 w-6 text-blue-400 flex-shrink-0 mt-0.5" />
+                <XCircle className="h-6 w-6 text-[#bcf1ae] flex-shrink-0 mt-0.5" />
                 <span className="text-white text-base">{item}</span>
               </div>
             ))}
@@ -299,7 +297,7 @@ export default function AITransformationPage() {
       {/* ============================================================ */}
       {/* DAY IN THE LIFE — Connected Platforms Mockup                 */}
       {/* ============================================================ */}
-      <section className="py-20 px-4 relative overflow-hidden" style={{background: "linear-gradient(135deg, #2563eb 0%, #1d4ed8 50%, #1e40af 100%)"}}>
+      <section className="py-20 px-4 relative overflow-hidden" style={{background: "linear-gradient(135deg, #1a2e1a 0%, #2d4a2d 50%, #1a2e1a 100%)"}}>
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent" />
 
         <div className="container mx-auto max-w-6xl relative z-10">
@@ -307,19 +305,19 @@ export default function AITransformationPage() {
             <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4 text-white">
               What AI-native looks like in practice.
             </h2>
-            <p className="text-lg max-w-2xl mx-auto text-blue-100/80">
+            <p className="text-lg max-w-2xl mx-auto text-[#bcf1ae]/80">
               Your team uses the right AI tool for every task — connected, trained, and measured.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 items-start">
             {/* Mockup: Team Activity Feed */}
-            <div className="rounded-xl border border-white/10 bg-white/5 backdrop-blur p-5 shadow-2xl">
+            <div className="rounded-xl border border-white/10 bg-[#1a1c19]/5 backdrop-blur p-5 shadow-2xl">
               <div className="flex items-center gap-2 mb-4">
                 <div className="w-2.5 h-2.5 rounded-full bg-red-400/60" />
                 <div className="w-2.5 h-2.5 rounded-full bg-yellow-400/60" />
                 <div className="w-2.5 h-2.5 rounded-full bg-green-400/60" />
-                <span className="ml-2 text-xs text-blue-200/50 font-mono">Team AI Activity — Today</span>
+                <span className="ml-2 text-xs text-[#a1d494]/50 font-mono">Team AI Activity — Today</span>
               </div>
               <div className="space-y-2.5">
                 {[
@@ -329,32 +327,32 @@ export default function AITransformationPage() {
                   { user: "Carlos (Ops)", action: "Analyzed vendor contracts", tool: "Gemini", time: "22m ago", icon: BarChart3 },
                   { user: "Lisa (Support)", action: "Updated knowledge base", tool: "Claude", time: "31m ago", icon: FileText },
                 ].map((item) => (
-                  <div key={item.user} className="flex items-center gap-3 rounded-lg bg-white/5 border border-white/5 px-4 py-3">
-                    <item.icon className="h-4 w-4 text-blue-200/60 shrink-0" />
+                  <div key={item.user} className="flex items-center gap-3 rounded-lg bg-[#1a1c19]/5 border border-white/5 px-4 py-3">
+                    <item.icon className="h-4 w-4 text-[#a1d494]/60 shrink-0" />
                     <div className="flex-1 min-w-0">
                       <p className="text-sm text-white font-mono truncate">{item.user}</p>
-                      <p className="text-xs text-blue-200/50 font-mono truncate">{item.action}</p>
+                      <p className="text-xs text-[#a1d494]/50 font-mono truncate">{item.action}</p>
                     </div>
                     <div className="text-right shrink-0">
-                      <span className="text-xs font-medium bg-white/15 text-white px-2 py-0.5 rounded-full border border-white/10">{item.tool}</span>
-                      <p className="text-xs text-blue-200/40 font-mono mt-1">{item.time}</p>
+                      <span className="text-xs font-medium bg-[#1a1c19]/15 text-white px-2 py-0.5 rounded-full border border-white/10">{item.tool}</span>
+                      <p className="text-xs text-[#a1d494]/40 font-mono mt-1">{item.time}</p>
                     </div>
                   </div>
                 ))}
               </div>
               <div className="mt-4 pt-3 border-t border-white/10 flex items-center justify-between">
-                <span className="text-xs text-blue-200/50 font-mono">47 team members active today</span>
+                <span className="text-xs text-[#a1d494]/50 font-mono">47 team members active today</span>
                 <span className="text-xs text-green-300/70 font-mono">89% adoption rate</span>
               </div>
             </div>
 
             {/* Mockup: Platform Usage Dashboard */}
-            <div className="rounded-xl border border-white/10 bg-white/5 backdrop-blur p-5 shadow-2xl">
+            <div className="rounded-xl border border-white/10 bg-[#1a1c19]/5 backdrop-blur p-5 shadow-2xl">
               <div className="flex items-center gap-2 mb-4">
                 <div className="w-2.5 h-2.5 rounded-full bg-red-400/60" />
                 <div className="w-2.5 h-2.5 rounded-full bg-yellow-400/60" />
                 <div className="w-2.5 h-2.5 rounded-full bg-green-400/60" />
-                <span className="ml-2 text-xs text-blue-200/50 font-mono">Platform Usage — This Week</span>
+                <span className="ml-2 text-xs text-[#a1d494]/50 font-mono">Platform Usage — This Week</span>
               </div>
 
               {/* Usage bars */}
@@ -369,11 +367,11 @@ export default function AITransformationPage() {
                   <div key={item.platform}>
                     <div className="flex items-center justify-between mb-1.5">
                       <span className="text-sm text-white font-mono">{item.platform}</span>
-                      <span className="text-xs text-blue-200/50 font-mono">{item.queries} queries</span>
+                      <span className="text-xs text-[#a1d494]/50 font-mono">{item.queries} queries</span>
                     </div>
-                    <div className="h-2 rounded-full bg-white/10 overflow-hidden">
+                    <div className="h-2 rounded-full bg-[#1a1c19]/10 overflow-hidden">
                       <div
-                        className="h-full rounded-full bg-gradient-to-r from-blue-300 to-white/80"
+                        className="h-full rounded-full bg-gradient-to-r from-[#a1d494] to-white/80"
                         style={{ width: `${item.pct}%` }}
                       />
                     </div>
@@ -388,9 +386,9 @@ export default function AITransformationPage() {
                   { label: "Avg/Person", value: "162" },
                   { label: "Est. Hours Saved", value: "340" },
                 ].map((stat) => (
-                  <div key={stat.label} className="text-center rounded-lg bg-white/5 border border-white/5 py-2.5 px-2">
+                  <div key={stat.label} className="text-center rounded-lg bg-[#1a1c19]/5 border border-white/5 py-2.5 px-2">
                     <p className="text-lg font-bold text-white font-mono">{stat.value}</p>
-                    <p className="text-xs text-blue-200/50 font-mono">{stat.label}</p>
+                    <p className="text-xs text-[#a1d494]/50 font-mono">{stat.label}</p>
                   </div>
                 ))}
               </div>
@@ -402,14 +400,13 @@ export default function AITransformationPage() {
       {/* ============================================================ */}
       {/* THREE TIER PRICING CARDS                                     */}
       {/* ============================================================ */}
-      <section className="section-padding px-4 relative" style={{backgroundColor: "#F8FAFC"}}>
-        <div className="absolute inset-0 opacity-[0.03]" style={{backgroundImage: "linear-gradient(rgba(148,163,184,1) 1px, transparent 1px), linear-gradient(90deg, rgba(148,163,184,1) 1px, transparent 1px)", backgroundSize: "60px 60px"}} />
+      <section className="section-padding px-4 relative" style={{backgroundColor: "#1a1c19"}}>
         <div className="container mx-auto max-w-6xl relative">
           <div className="text-center mb-16">
-            <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4" style={{color: "#0F172A"}}>
+            <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4" style={{color: "#e3e3dd"}}>
               Three tiers. One partner. Start anywhere.
             </h2>
-            <p className="text-lg max-w-2xl mx-auto" style={{color: "#64748B"}}>
+            <p className="text-lg max-w-2xl mx-auto" style={{color: "#c2c9bb"}}>
               Each tier builds on the previous one. Start with implementation,
               add workflows, then deploy agents.
             </p>
@@ -421,15 +418,15 @@ export default function AITransformationPage() {
 
               if (tier.featured) {
                 return (
-                  <div key={tier.name} className="relative rounded-2xl overflow-hidden flex flex-col shadow-xl shadow-blue-600/20" style={{background: "linear-gradient(135deg, #2563eb 0%, #1d4ed8 50%, #1e40af 100%)"}}>
-                    <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-white text-blue-600 text-xs font-bold px-4 py-1 rounded-full shadow-md z-10">
+                  <div key={tier.name} className="relative rounded-2xl overflow-hidden flex flex-col shadow-xl shadow-[#bcf1ae]/10" style={{background: "linear-gradient(135deg, #1a2e1a 0%, #2d4a2d 50%, #1a2e1a 100%)"}}>
+                    <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#1a1c19] text-[#bcf1ae] text-xs font-bold px-4 py-1 rounded-full shadow-md z-10">
                       MOST POPULAR
                     </div>
 
                     <div className="p-8 flex flex-col flex-1">
                       <div className="flex items-center gap-2 mb-4">
-                        <Icon className="h-5 w-5 text-blue-200" />
-                        <span className="text-blue-200 font-medium text-sm">
+                        <Icon className="h-5 w-5 text-[#a1d494]" />
+                        <span className="text-[#a1d494] font-medium text-sm">
                           {tier.label}
                         </span>
                       </div>
@@ -437,29 +434,29 @@ export default function AITransformationPage() {
                       <h3 className="text-xl font-bold text-white mb-2">
                         {tier.name}
                       </h3>
-                      <p className="text-blue-100 text-sm italic mb-4">
+                      <p className="text-[#bcf1ae] text-sm italic mb-4">
                         {tier.tagline}
                       </p>
-                      <p className="text-blue-100/80 text-sm mb-6 leading-relaxed">
+                      <p className="text-[#bcf1ae]/80 text-sm mb-6 leading-relaxed">
                         {tier.description}
                       </p>
 
                       <ul className="space-y-3 mb-8 flex-1">
                         {tier.features.map((feature) => (
                           <li key={feature} className="flex items-start gap-2">
-                            <Check className="h-5 w-5 text-blue-200 flex-shrink-0 mt-0.5" />
+                            <Check className="h-5 w-5 text-[#a1d494] flex-shrink-0 mt-0.5" />
                             <span className="text-white text-sm">{feature}</span>
                           </li>
                         ))}
                       </ul>
 
                       {/* Mini mockup: workflow automation preview */}
-                      <div className="rounded-lg border border-white/10 bg-white/5 p-3 mb-6">
+                      <div className="rounded-lg border border-white/10 bg-[#1a1c19]/5 p-3 mb-6">
                         <div className="flex items-center gap-1.5 mb-2">
                           <div className="w-1.5 h-1.5 rounded-full bg-red-400/60" />
                           <div className="w-1.5 h-1.5 rounded-full bg-yellow-400/60" />
                           <div className="w-1.5 h-1.5 rounded-full bg-green-400/60" />
-                          <span className="ml-1 text-[10px] text-blue-200/40 font-mono">workflow.config</span>
+                          <span className="ml-1 text-[10px] text-[#a1d494]/40 font-mono">workflow.config</span>
                         </div>
                         <div className="space-y-1.5">
                           {[
@@ -469,7 +466,7 @@ export default function AITransformationPage() {
                             "  -> draft_response (GPT-4)",
                             "  -> notify #slack-support",
                           ].map((line) => (
-                            <p key={line} className="text-xs text-blue-100/60 font-mono leading-tight">{line}</p>
+                            <p key={line} className="text-xs text-[#bcf1ae]/60 font-mono leading-tight">{line}</p>
                           ))}
                         </div>
                       </div>
@@ -482,7 +479,7 @@ export default function AITransformationPage() {
 
                       <Button
                         asChild
-                        className="w-full bg-white hover:bg-blue-50 text-blue-600 font-semibold"
+                        className="w-full bg-[#1a1c19] hover:bg-[#292b27] text-[#bcf1ae] font-semibold"
                       >
                         <Link href="/get-started">{tier.cta}</Link>
                       </Button>
@@ -497,41 +494,41 @@ export default function AITransformationPage() {
               const isTier3 = tier.label === "Tier 3"
 
               return (
-                <div key={tier.name} className="relative rounded-2xl bg-white border border-slate-200/60 p-8 flex flex-col shadow-md">
+                <div key={tier.name} className="relative rounded-2xl bg-[#1a1c19] border border-[#42493e]/15 p-8 flex flex-col shadow-md">
                   <div className="flex items-center gap-2 mb-4">
-                    <Icon className="h-5 w-5 text-blue-500" />
-                    <span className="text-blue-600 font-medium text-sm">
+                    <Icon className="h-5 w-5 text-[#bcf1ae]" />
+                    <span className="text-[#bcf1ae] font-medium text-sm">
                       {tier.label}
                     </span>
                   </div>
 
-                  <h3 className="text-xl font-bold mb-2" style={{color: "#0F172A"}}>
+                  <h3 className="text-xl font-bold mb-2" style={{color: "#e3e3dd"}}>
                     {tier.name}
                   </h3>
-                  <p className="text-sm italic mb-4" style={{color: "#64748B"}}>
+                  <p className="text-sm italic mb-4" style={{color: "#c2c9bb"}}>
                     {tier.tagline}
                   </p>
-                  <p className="text-sm mb-6 leading-relaxed" style={{color: "#64748B"}}>
+                  <p className="text-sm mb-6 leading-relaxed" style={{color: "#c2c9bb"}}>
                     {tier.description}
                   </p>
 
                   <ul className="space-y-3 mb-8 flex-1">
                     {tier.features.map((feature) => (
                       <li key={feature} className="flex items-start gap-2">
-                        <Check className="h-5 w-5 text-blue-500 flex-shrink-0 mt-0.5" />
-                        <span className="text-sm" style={{color: "#64748B"}}>{feature}</span>
+                        <Check className="h-5 w-5 text-[#bcf1ae] flex-shrink-0 mt-0.5" />
+                        <span className="text-sm" style={{color: "#c2c9bb"}}>{feature}</span>
                       </li>
                     ))}
                   </ul>
 
                   {/* Tier 1: connected platforms mini mockup */}
                   {isTier1 && (
-                    <div className="rounded-lg border border-slate-200 bg-slate-50 p-3 mb-6">
+                    <div className="rounded-lg border border-[#42493e]/15 bg-[#292b27] p-3 mb-6">
                       <div className="flex items-center gap-1.5 mb-2">
                         <div className="w-1.5 h-1.5 rounded-full bg-red-400/60" />
                         <div className="w-1.5 h-1.5 rounded-full bg-yellow-400/60" />
                         <div className="w-1.5 h-1.5 rounded-full bg-green-400/60" />
-                        <span className="ml-1 text-[10px] text-slate-400 font-mono">integrations</span>
+                        <span className="ml-1 text-[10px] text-[#8c9387] font-mono">integrations</span>
                       </div>
                       <div className="space-y-1.5">
                         {[
@@ -540,8 +537,8 @@ export default function AITransformationPage() {
                           { name: "Drive + Gemini", status: "Connected" },
                           { name: "CRM + Copilot", status: "Pending" },
                         ].map((item) => (
-                          <div key={item.name} className="flex items-center justify-between rounded bg-white border border-slate-200/80 px-3 py-1.5">
-                            <span className="text-xs text-slate-600 font-mono">{item.name}</span>
+                          <div key={item.name} className="flex items-center justify-between rounded bg-[#1a1c19] border border-[#42493e]/15 px-3 py-1.5">
+                            <span className="text-xs text-[#8c9387] font-mono">{item.name}</span>
                             <span className={`text-[10px] font-mono ${item.status === "Connected" ? "text-green-500" : "text-amber-500"}`}>{item.status}</span>
                           </div>
                         ))}
@@ -551,22 +548,22 @@ export default function AITransformationPage() {
 
                   {/* Tier 3: agent status mini mockup */}
                   {isTier3 && (
-                    <div className="rounded-lg border border-slate-200 bg-slate-50 p-3 mb-6">
+                    <div className="rounded-lg border border-[#42493e]/15 bg-[#292b27] p-3 mb-6">
                       <div className="flex items-center gap-1.5 mb-2">
                         <div className="w-1.5 h-1.5 rounded-full bg-red-400/60" />
                         <div className="w-1.5 h-1.5 rounded-full bg-yellow-400/60" />
                         <div className="w-1.5 h-1.5 rounded-full bg-green-400/60" />
-                        <span className="ml-1 text-[10px] text-slate-400 font-mono">openclaw agent</span>
+                        <span className="ml-1 text-[10px] text-[#8c9387] font-mono">openclaw agent</span>
                       </div>
                       <div className="space-y-1.5">
                         {[
                           { label: "Agent Status", value: "Online", color: "text-green-500" },
-                          { label: "Uptime", value: "99.97%", color: "text-slate-600" },
-                          { label: "Tools Active", value: "12 / 12", color: "text-slate-600" },
-                          { label: "Queries Today", value: "284", color: "text-blue-500" },
+                          { label: "Uptime", value: "99.97%", color: "text-[#8c9387]" },
+                          { label: "Tools Active", value: "12 / 12", color: "text-[#8c9387]" },
+                          { label: "Queries Today", value: "284", color: "text-[#bcf1ae]" },
                         ].map((item) => (
-                          <div key={item.label} className="flex items-center justify-between rounded bg-white border border-slate-200/80 px-3 py-1.5">
-                            <span className="text-xs text-slate-500 font-mono">{item.label}</span>
+                          <div key={item.label} className="flex items-center justify-between rounded bg-[#1a1c19] border border-[#42493e]/15 px-3 py-1.5">
+                            <span className="text-xs text-[#8c9387] font-mono">{item.label}</span>
                             <span className={`text-xs font-mono font-medium ${item.color}`}>{item.value}</span>
                           </div>
                         ))}
@@ -575,19 +572,19 @@ export default function AITransformationPage() {
                   )}
 
                   <div className="mb-6">
-                    <p className="text-2xl font-bold" style={{color: "#0F172A"}}>
+                    <p className="text-2xl font-bold" style={{color: "#e3e3dd"}}>
                       {tier.price}
                     </p>
                     {tier.priceNote && (
-                      <p className="text-xs mt-1" style={{color: "#94A3B8"}}>
+                      <p className="text-xs mt-1" style={{color: "#c2c9bb"}}>
                         {tier.priceNote}
                       </p>
                     )}
                   </div>
 
                   {isTier3 && (
-                    <p className="text-sm mb-4" style={{color: "#64748B"}}>
-                      <Link href="/openclaw-ai-agents" className="text-blue-500 hover:text-blue-400 transition-colors">
+                    <p className="text-sm mb-4" style={{color: "#c2c9bb"}}>
+                      <Link href="/openclaw-ai-agents" className="text-[#bcf1ae] hover:text-[#bcf1ae] transition-colors">
                         → Learn more about our dedicated OpenClaw AI Agents service
                       </Link>
                     </p>
@@ -595,7 +592,7 @@ export default function AITransformationPage() {
 
                   <Button
                     asChild
-                    className="w-full bg-blue-500 hover:bg-blue-400 text-white"
+                    className="w-full bg-[#bcf1ae] hover:opacity-90 text-[#0b390a]"
                   >
                     <Link href="/get-started">{tier.cta}</Link>
                   </Button>
@@ -604,56 +601,56 @@ export default function AITransformationPage() {
             })}
           </div>
 
-          <p className="text-sm text-center mb-16" style={{color: "#64748B"}}>
+          <p className="text-sm text-center mb-16" style={{color: "#c2c9bb"}}>
             All tiers are available month-to-month. No lock-in.
           </p>
 
           {/* Retainer Section */}
-          <div className="rounded-2xl border border-slate-200/60 bg-white p-8 md:p-10 shadow-md">
+          <div className="rounded-2xl border border-[#42493e]/15 bg-[#1a1c19] p-8 md:p-10 shadow-md">
             <div className="text-center mb-8">
-              <h3 className="font-display text-2xl md:text-3xl font-bold tracking-tight mb-3" style={{color: "#0F172A"}}>
+              <h3 className="font-display text-2xl md:text-3xl font-bold tracking-tight mb-3" style={{color: "#e3e3dd"}}>
                 Ongoing Support &amp; Retainers
               </h3>
-              <p className="text-lg" style={{color: "#64748B"}}>
+              <p className="text-lg" style={{color: "#c2c9bb"}}>
                 All implementations come with optional ongoing support. We don&apos;t just set it up and leave.
               </p>
             </div>
 
-            <div className="rounded-lg border border-blue-200 bg-blue-50/30 p-5 text-center mb-8">
-              <p className="text-sm leading-relaxed" style={{color: "#64748B"}}>
+            <div className="rounded-lg border border-[#bcf1ae]/20 bg-[#292b27]/30 p-5 text-center mb-8">
+              <p className="text-sm leading-relaxed" style={{color: "#c2c9bb"}}>
                 All implementations are complete standalone engagements. Retainers are optional — add ongoing support if you want us to continue building and iterating after launch.
               </p>
             </div>
 
             <div className="grid md:grid-cols-3 gap-6 mb-8">
-              <div className="rounded-lg border border-slate-200/60 p-6 hover:border-blue-200 transition-colors">
-                <h4 className="text-lg font-bold mb-1" style={{color: "#0F172A"}}>Basic Support</h4>
-                <p className="text-2xl font-bold text-blue-500 mb-3">$300<span className="text-sm font-normal" style={{color: "#94A3B8"}}>/mo</span></p>
-                <p className="text-sm leading-relaxed" style={{color: "#64748B"}}>
+              <div className="rounded-lg border border-[#42493e]/15 p-6 hover:border-[#bcf1ae]/20 transition-colors">
+                <h4 className="text-lg font-bold mb-1" style={{color: "#e3e3dd"}}>Basic Support</h4>
+                <p className="text-2xl font-bold text-[#bcf1ae] mb-3">$300<span className="text-sm font-normal" style={{color: "#c2c9bb"}}>/mo</span></p>
+                <p className="text-sm leading-relaxed" style={{color: "#c2c9bb"}}>
                   Monthly check-in, issue resolution, minor workflow adjustments.
                 </p>
               </div>
-              <div className="rounded-lg border border-blue-200 bg-blue-50/50 p-6">
-                <h4 className="text-lg font-bold mb-1" style={{color: "#0F172A"}}>Standard Support</h4>
-                <p className="text-2xl font-bold text-blue-500 mb-3">$750<span className="text-sm font-normal" style={{color: "#94A3B8"}}>/mo</span></p>
-                <p className="text-sm leading-relaxed" style={{color: "#64748B"}}>
+              <div className="rounded-lg border border-[#bcf1ae]/20 bg-[#292b27]/50 p-6">
+                <h4 className="text-lg font-bold mb-1" style={{color: "#e3e3dd"}}>Standard Support</h4>
+                <p className="text-2xl font-bold text-[#bcf1ae] mb-3">$750<span className="text-sm font-normal" style={{color: "#c2c9bb"}}>/mo</span></p>
+                <p className="text-sm leading-relaxed" style={{color: "#c2c9bb"}}>
                   Bi-weekly calls, ongoing workflow optimization, new prompt packs as your needs evolve, priority response.
                 </p>
               </div>
-              <div className="rounded-lg border border-slate-200/60 p-6 hover:border-blue-200 transition-colors">
-                <h4 className="text-lg font-bold mb-1" style={{color: "#0F172A"}}>Dedicated Partnership</h4>
-                <p className="text-2xl font-bold text-blue-500 mb-3">$1,500+<span className="text-sm font-normal" style={{color: "#94A3B8"}}>/mo</span></p>
-                <p className="text-sm leading-relaxed" style={{color: "#64748B"}}>
+              <div className="rounded-lg border border-[#42493e]/15 p-6 hover:border-[#bcf1ae]/20 transition-colors">
+                <h4 className="text-lg font-bold mb-1" style={{color: "#e3e3dd"}}>Dedicated Partnership</h4>
+                <p className="text-2xl font-bold text-[#bcf1ae] mb-3">$1,500+<span className="text-sm font-normal" style={{color: "#c2c9bb"}}>/mo</span></p>
+                <p className="text-sm leading-relaxed" style={{color: "#c2c9bb"}}>
                   Weekly strategy calls, continuous workflow builds and iteration, dedicated Slack channel, first priority on new capabilities.
                 </p>
               </div>
             </div>
 
-            <div className="rounded-lg border border-blue-200 bg-blue-50/30 p-5 text-center">
-              <p className="font-medium" style={{color: "#0F172A"}}>
-                Tech Basics Add-On — <span className="text-blue-500">$297/mo</span>
+            <div className="rounded-lg border border-[#bcf1ae]/20 bg-[#292b27]/30 p-5 text-center">
+              <p className="font-medium" style={{color: "#e3e3dd"}}>
+                Tech Basics Add-On — <span className="text-[#bcf1ae]">$297/mo</span>
               </p>
-              <p className="text-sm mt-1" style={{color: "#64748B"}}>
+              <p className="text-sm mt-1" style={{color: "#c2c9bb"}}>
                 Add our Tech Basics package (website, phone, texting, CRM, invoicing) to any AI Transformation engagement. Bundle discount available.
               </p>
             </div>
@@ -664,13 +661,13 @@ export default function AITransformationPage() {
       {/* ============================================================ */}
       {/* PLATFORM COMPARISON TABLE                                    */}
       {/* ============================================================ */}
-      <section className="section-padding px-4 bg-white">
+      <section className="section-padding px-4 bg-[#1a1c19]">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4" style={{color: "#0F172A"}}>
+            <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4" style={{color: "#e3e3dd"}}>
               We support these platforms
             </h2>
-            <p className="text-lg max-w-2xl mx-auto" style={{color: "#64748B"}}>
+            <p className="text-lg max-w-2xl mx-auto" style={{color: "#c2c9bb"}}>
               We help you pick the right platform for your team and handle the
               full rollout.
             </p>
@@ -680,20 +677,20 @@ export default function AITransformationPage() {
             <div className="overflow-x-auto">
               <Table>
                 <TableHeader>
-                  <TableRow className="bg-slate-50 border-b-2 border-blue-200">
-                    <TableHead className="font-bold text-gray-900">Platform</TableHead>
-                    <TableHead className="font-bold text-gray-900">Per Seat Cost</TableHead>
-                    <TableHead className="font-bold text-gray-900">Min Seats</TableHead>
-                    <TableHead className="font-bold text-gray-900">Best For</TableHead>
+                  <TableRow className="bg-[#292b27] border-b-2 border-[#bcf1ae]/20">
+                    <TableHead className="font-bold text-[#e3e3dd]">Platform</TableHead>
+                    <TableHead className="font-bold text-[#e3e3dd]">Per Seat Cost</TableHead>
+                    <TableHead className="font-bold text-[#e3e3dd]">Min Seats</TableHead>
+                    <TableHead className="font-bold text-[#e3e3dd]">Best For</TableHead>
                   </TableRow>
                 </TableHeader>
                 <TableBody>
                   {platforms.map((p) => (
-                    <TableRow key={p.name} className="hover:bg-blue-50/50">
+                    <TableRow key={p.name} className="hover:bg-[#292b27]/50">
                       <TableCell className="font-medium">{p.name}</TableCell>
                       <TableCell>{p.cost}</TableCell>
                       <TableCell>{p.minSeats}</TableCell>
-                      <TableCell className="text-gray-600">{p.bestFor}</TableCell>
+                      <TableCell className="text-[#c2c9bb]">{p.bestFor}</TableCell>
                     </TableRow>
                   ))}
                 </TableBody>
@@ -709,28 +706,28 @@ export default function AITransformationPage() {
       <section className="section-padding px-4">
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-16">
-            <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4" style={{color: "#0F172A"}}>
+            <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4" style={{color: "#e3e3dd"}}>
               How it works
             </h2>
-            <p className="text-lg max-w-2xl mx-auto" style={{color: "#64748B"}}>
+            <p className="text-lg max-w-2xl mx-auto" style={{color: "#c2c9bb"}}>
               Three phases. Clear deliverables at each step.
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 relative">
             {/* Connecting line (desktop only) */}
-            <div className="hidden md:block absolute top-16 left-[20%] right-[20%] h-0.5 bg-gradient-to-r from-blue-300 to-blue-400" />
+            <div className="hidden md:block absolute top-16 left-[20%] right-[20%] h-0.5 bg-gradient-to-r from-[#a1d494] to-[#bcf1ae]" />
 
             {steps.map((step) => (
               <div key={step.number} className="text-center relative">
-                <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-blue-500 text-white font-display font-bold text-lg mb-6 relative z-10">
+                <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-[#bcf1ae] text-white font-display font-bold text-lg mb-6 relative z-10">
                   {step.number}
                 </div>
-                <div className="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-blue-50 mb-4">
-                  <step.icon className="h-5 w-5 text-blue-600" />
+                <div className="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-[#292b27] mb-4">
+                  <step.icon className="h-5 w-5 text-[#bcf1ae]" />
                 </div>
-                <h3 className="text-xl font-bold mb-3" style={{color: "#0F172A"}}>{step.title}</h3>
-                <p style={{color: "#64748B"}}>{step.description}</p>
+                <h3 className="text-xl font-bold mb-3" style={{color: "#e3e3dd"}}>{step.title}</h3>
+                <p style={{color: "#c2c9bb"}}>{step.description}</p>
               </div>
             ))}
           </div>
@@ -740,10 +737,10 @@ export default function AITransformationPage() {
       {/* ============================================================ */}
       {/* FAQ                                                          */}
       {/* ============================================================ */}
-      <section className="section-padding px-4" style={{backgroundColor: "#F8FAFC"}}>
+      <section className="section-padding px-4" style={{backgroundColor: "#1a1c19"}}>
         <div className="container mx-auto max-w-3xl">
           <div className="text-center mb-12">
-            <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4" style={{color: "#0F172A"}}>
+            <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4" style={{color: "#e3e3dd"}}>
               Frequently asked questions
             </h2>
           </div>
@@ -754,7 +751,7 @@ export default function AITransformationPage() {
                 <AccordionTrigger className="text-left text-base font-medium">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-gray-600 text-base leading-relaxed">
+                <AccordionContent className="text-[#c2c9bb] text-base leading-relaxed">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
@@ -766,23 +763,23 @@ export default function AITransformationPage() {
       {/* ============================================================ */}
       {/* CTA BANNER                                                   */}
       {/* ============================================================ */}
-      <section className="py-20 px-4 relative overflow-hidden" style={{backgroundColor: "#0F172A"}}>
+      <section className="py-20 px-4 relative overflow-hidden" style={{backgroundColor: "#121411"}}>
         <div className="absolute inset-0 grain z-0" />
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-500 rounded-full opacity-10 blur-3xl" />
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-blue-600 rounded-full opacity-10 blur-3xl" />
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-[#bcf1ae] rounded-full opacity-10 blur-3xl" />
+        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-[#3b6934] rounded-full opacity-10 blur-3xl" />
 
         <div className="container relative z-10 mx-auto max-w-3xl text-center">
           <h2 className="font-display text-3xl md:text-4xl font-bold mb-6 text-white">
             Ready to transform how your team works with AI?
           </h2>
-          <p className="text-lg mb-10 max-w-2xl mx-auto" style={{color: "#94A3B8"}}>
+          <p className="text-lg mb-10 max-w-2xl mx-auto" style={{color: "#c2c9bb"}}>
             Start with an audit. We&apos;ll assess your tools, your team, and
             your workflows - then give you a concrete plan to move forward.
           </p>
           <Button
             asChild
             size="lg"
-            className="text-base px-8 py-6 font-medium bg-blue-500 hover:bg-blue-400 text-white shadow-lg group"
+            className="text-base px-8 py-6 font-medium bg-[#bcf1ae] hover:opacity-90 text-[#0b390a] shadow-lg group"
           >
             <Link href="/get-started" className="flex items-center">
               Book Your AI Audit

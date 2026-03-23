@@ -19,7 +19,7 @@ import {
 import CtaBanner from "@/components/cta-banner"
 
 export const metadata = {
-  title: "Fundamentals | Centurion AI",
+  title: "Fundamentals | Verdant AI Partners",
   description:
     "Get your tech right before you get it smart. Website, phone, texting, CRM, invoicing — everything your business needs to run, in one platform.",
 }
@@ -150,27 +150,26 @@ export default function FundamentalsPage() {
       {/* ============================================================ */}
       {/* HERO                                                         */}
       {/* ============================================================ */}
-      <section className="relative pt-24 pb-20 md:pt-32 md:pb-28 overflow-hidden" style={{ backgroundColor: "#0F172A" }}>
-        <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: "linear-gradient(rgba(148,163,184,1) 1px, transparent 1px), linear-gradient(90deg, rgba(148,163,184,1) 1px, transparent 1px)", backgroundSize: "60px 60px" }} />
-        <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-400/50 via-blue-400/50 to-transparent" />
-        <div className="absolute -top-24 -right-24 w-96 h-96 bg-blue-500 rounded-full opacity-10 blur-3xl" />
-        <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-blue-600 rounded-full opacity-10 blur-3xl" />
+      <section className="relative pt-24 pb-20 md:pt-32 md:pb-28 overflow-hidden" style={{ backgroundColor: "#121411" }}>
+        <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#bcf1ae]/30 via-[#bcf1ae]/30 to-transparent" />
+        <div className="absolute -top-24 -right-24 w-96 h-96 bg-[#bcf1ae] rounded-full opacity-10 blur-3xl" />
+        <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-[#3b6934] rounded-full opacity-10 blur-3xl" />
 
         <div className="container relative z-10 mx-auto max-w-5xl px-4 text-center">
-          <div className="inline-block mb-4 px-4 py-1.5 bg-blue-900/50 rounded-full border border-blue-700/50">
-            <span className="text-blue-300 font-medium text-sm">Fundamentals</span>
+          <div className="inline-block mb-4 px-4 py-1.5 bg-[#0d0f0c]/50 rounded-full border border-[#1a2e1a]/50">
+            <span className="text-[#a1d494] font-medium text-sm">Fundamentals</span>
           </div>
 
           <h1 className="font-display text-balance text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-white opacity-0 animate-reveal">
             Stop losing leads to broken tech. Get the basics right.
           </h1>
 
-          <p className="text-xl mb-6 max-w-3xl mx-auto leading-relaxed opacity-0 animate-reveal stagger-2" style={{ color: "#94A3B8" }}>
+          <p className="text-xl mb-6 max-w-3xl mx-auto leading-relaxed opacity-0 animate-reveal stagger-2" style={{ color: "#c2c9bb" }}>
             Most businesses we meet are losing $5-10K/month in leads they never follow up on.
             We fix the foundation so AI has something to build on.
           </p>
 
-          <p className="text-lg mb-10 max-w-2xl mx-auto leading-relaxed opacity-0 animate-reveal stagger-2" style={{ color: "#CBD5E1" }}>
+          <p className="text-lg mb-10 max-w-2xl mx-auto leading-relaxed opacity-0 animate-reveal stagger-2" style={{ color: "#e3e3dd" }}>
             We set up the foundation — so when you&apos;re ready for AI, everything&apos;s already connected.
           </p>
 
@@ -178,7 +177,7 @@ export default function FundamentalsPage() {
             <Button
               asChild
               size="lg"
-              className="text-base px-8 py-6 font-medium bg-blue-500 hover:bg-blue-400 text-white shadow-lg shadow-blue-500/20 group"
+              className="text-base px-8 py-6 font-medium bg-[#bcf1ae] hover:opacity-90 text-[#0b390a] shadow-lg shadow-[#bcf1ae]/10 group"
             >
               <Link href="/get-started" className="flex items-center">
                 Get Started
@@ -192,8 +191,7 @@ export default function FundamentalsPage() {
       {/* ============================================================ */}
       {/* PROBLEM SECTION                                              */}
       {/* ============================================================ */}
-      <section className="py-20 px-4 relative overflow-hidden" style={{ backgroundColor: "#0F172A" }}>
-        <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: "linear-gradient(rgba(148,163,184,1) 1px, transparent 1px), linear-gradient(90deg, rgba(148,163,184,1) 1px, transparent 1px)", backgroundSize: "60px 60px" }} />
+      <section className="py-20 px-4 relative overflow-hidden" style={{ backgroundColor: "#121411" }}>
         <div className="absolute inset-0 grain z-0" />
 
         <div className="container relative z-10 mx-auto max-w-4xl">
@@ -201,22 +199,22 @@ export default function FundamentalsPage() {
             <h2 className="font-display text-3xl md:text-4xl font-bold mb-4 text-white">
               Sound familiar?
             </h2>
-            <div className="w-16 h-0.5 bg-blue-400 mx-auto" />
+            <div className="w-16 h-0.5 bg-[#bcf1ae] mx-auto" />
           </div>
 
           <div className="space-y-4 max-w-2xl mx-auto mb-12">
             {painPoints.map((point, i) => (
               <div
                 key={i}
-                className={`flex items-start gap-3 bg-white/5 backdrop-blur-sm p-5 rounded-lg text-left opacity-0 animate-reveal stagger-${i + 1}`}
+                className={`flex items-start gap-3 bg-[#1a1c19]/5 backdrop-blur-sm p-5 rounded-lg text-left opacity-0 animate-reveal stagger-${i + 1}`}
               >
-                <div className="w-2 h-2 rounded-full bg-blue-400 shrink-0 mt-2" />
+                <div className="w-2 h-2 rounded-full bg-[#bcf1ae] shrink-0 mt-2" />
                 <span className="text-white text-base">{point}</span>
               </div>
             ))}
           </div>
 
-          <p className="text-center text-xl font-medium text-blue-400 opacity-0 animate-reveal stagger-6">
+          <p className="text-center text-xl font-medium text-[#bcf1ae] opacity-0 animate-reveal stagger-6">
             You don&apos;t need AI yet. You need infrastructure.
           </p>
         </div>
@@ -225,10 +223,10 @@ export default function FundamentalsPage() {
       {/* ============================================================ */}
       {/* WHAT'S INCLUDED                                              */}
       {/* ============================================================ */}
-      <section className="py-20 px-4" style={{ backgroundColor: "#F8FAFC" }}>
+      <section className="py-20 px-4" style={{ backgroundColor: "#1a1c19" }}>
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
-            <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4" style={{ color: "#0F172A" }}>
+            <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4" style={{ color: "#e3e3dd" }}>
               Everything your business needs to run. One platform.
             </h2>
           </div>
@@ -237,17 +235,17 @@ export default function FundamentalsPage() {
             {features.map((feature, index) => (
               <div
                 key={feature.title}
-                className="bg-white rounded-xl shadow-md overflow-hidden border border-slate-200/60 hover:shadow-lg hover:border-blue-200 transition-all"
+                className="bg-[#1a1c19] rounded-xl shadow-md overflow-hidden border border-[#42493e]/15 hover:shadow-lg hover:border-[#bcf1ae]/20 transition-all"
               >
-                <div className={`h-1 bg-gradient-to-r ${index % 2 === 0 ? "from-blue-600 to-blue-400" : "from-blue-400 to-blue-600"}`} />
+                <div className={`h-1 bg-gradient-to-r ${index % 2 === 0 ? "from-[#bcf1ae] to-[#a1d494]" : "from-[#a1d494] to-[#bcf1ae]"}`} />
                 <div className="p-6">
-                  <div className="w-12 h-12 rounded-lg bg-blue-50 flex items-center justify-center mb-4">
-                    <feature.icon className="h-6 w-6 text-blue-600" />
+                  <div className="w-12 h-12 rounded-lg bg-[#292b27] flex items-center justify-center mb-4">
+                    <feature.icon className="h-6 w-6 text-[#bcf1ae]" />
                   </div>
-                  <h3 className="text-xl font-bold mb-2" style={{ color: "#0F172A" }}>
+                  <h3 className="text-xl font-bold mb-2" style={{ color: "#e3e3dd" }}>
                     {feature.title}
                   </h3>
-                  <p className="leading-relaxed" style={{ color: "#64748B" }}>
+                  <p className="leading-relaxed" style={{ color: "#c2c9bb" }}>
                     {feature.description}
                   </p>
                 </div>
@@ -260,16 +258,15 @@ export default function FundamentalsPage() {
       {/* ============================================================ */}
       {/* PRICING CARDS                                                */}
       {/* ============================================================ */}
-      <section className="py-20 px-4 relative overflow-hidden" style={{ backgroundColor: "#0F172A" }}>
-        <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: "linear-gradient(rgba(148,163,184,1) 1px, transparent 1px), linear-gradient(90deg, rgba(148,163,184,1) 1px, transparent 1px)", backgroundSize: "60px 60px" }} />
-        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-400/30 to-transparent" />
+      <section className="py-20 px-4 relative overflow-hidden" style={{ backgroundColor: "#121411" }}>
+        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#bcf1ae]/30 to-transparent" />
 
         <div className="container relative z-10 mx-auto max-w-6xl">
           <div className="text-center mb-16">
             <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4 text-white">
               Simple, transparent pricing.
             </h2>
-            <p className="text-lg max-w-2xl mx-auto" style={{ color: "#94A3B8" }}>
+            <p className="text-lg max-w-2xl mx-auto" style={{ color: "#c2c9bb" }}>
               All plans: $500 one-time setup. Month-to-month. Cancel anytime.
             </p>
           </div>
@@ -280,14 +277,14 @@ export default function FundamentalsPage() {
                 key={tier.name}
                 className={`relative rounded-xl p-8 flex flex-col border transition-all ${
                   tier.popular
-                    ? "bg-blue-500/10 border-blue-400/30 shadow-2xl shadow-blue-500/10"
-                    : "border-slate-700/40 hover:border-blue-400/20"
+                    ? "bg-[#bcf1ae]/10 border-[#bcf1ae]/10 shadow-2xl shadow-[#bcf1ae]/10"
+                    : "border-slate-700/40 hover:border-[#42493e]/15"
                 }`}
-                style={{ backgroundColor: tier.popular ? undefined : "#1E293B" }}
+                style={{ backgroundColor: tier.popular ? undefined : "#1a1c19" }}
               >
                 {tier.popular && (
                   <div className="absolute -top-3.5 left-1/2 -translate-x-1/2">
-                    <span className="inline-flex items-center bg-blue-500 text-white px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wide shadow-lg shadow-blue-500/30">
+                    <span className="inline-flex items-center bg-[#bcf1ae] text-white px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wide shadow-lg shadow-[#bcf1ae]/10">
                       MOST POPULAR
                     </span>
                   </div>
@@ -298,14 +295,14 @@ export default function FundamentalsPage() {
                     {tier.name}
                   </h3>
                   <div className="flex items-baseline gap-1">
-                    <span className="text-3xl font-bold text-blue-400">
+                    <span className="text-3xl font-bold text-[#bcf1ae]">
                       {tier.price}
                     </span>
-                    <span className="text-sm" style={{ color: "#94A3B8" }}>
+                    <span className="text-sm" style={{ color: "#c2c9bb" }}>
                       /mo
                     </span>
                   </div>
-                  <p className="text-sm mt-2 italic" style={{ color: "#94A3B8" }}>
+                  <p className="text-sm mt-2 italic" style={{ color: "#c2c9bb" }}>
                     {tier.tagline}
                   </p>
                 </div>
@@ -316,9 +313,9 @@ export default function FundamentalsPage() {
                       <li
                         key={feature}
                         className="flex items-start gap-2 text-sm"
-                        style={{ color: "#94A3B8" }}
+                        style={{ color: "#c2c9bb" }}
                       >
-                        <Check className="h-4 w-4 text-blue-400 mt-0.5 shrink-0" />
+                        <Check className="h-4 w-4 text-[#bcf1ae] mt-0.5 shrink-0" />
                         {feature}
                       </li>
                     ))}
@@ -329,8 +326,8 @@ export default function FundamentalsPage() {
                   asChild
                   className={`w-full ${
                     tier.popular
-                      ? "bg-blue-500 hover:bg-blue-400 text-white shadow-lg shadow-blue-500/20"
-                      : "bg-slate-700/50 hover:bg-slate-600/50 text-white border border-slate-600/30"
+                      ? "bg-[#bcf1ae] hover:opacity-90 text-[#0b390a] shadow-lg shadow-[#bcf1ae]/10"
+                      : "bg-[#1a1c19]/50 hover:bg-slate-600/50 text-white border border-slate-600/30"
                   }`}
                 >
                   <Link href="/get-started">Get Started</Link>
@@ -339,7 +336,7 @@ export default function FundamentalsPage() {
             ))}
           </div>
 
-          <p className="text-sm text-center mt-8" style={{ color: "#64748B" }}>
+          <p className="text-sm text-center mt-8" style={{ color: "#c2c9bb" }}>
             All plans include $500 one-time setup. Month-to-month. Cancel anytime.
           </p>
         </div>
@@ -348,14 +345,14 @@ export default function FundamentalsPage() {
       {/* ============================================================ */}
       {/* UPSELL CTA                                                   */}
       {/* ============================================================ */}
-      <section className="py-20 px-4 relative overflow-hidden" style={{ background: "linear-gradient(135deg, #2563eb 0%, #1d4ed8 50%, #1e40af 100%)" }}>
+      <section className="py-20 px-4 relative overflow-hidden" style={{ background: "linear-gradient(135deg, #1a2e1a 0%, #2d4a2d 50%, #1a2e1a 100%)" }}>
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent" />
 
         <div className="container mx-auto max-w-3xl relative z-10 text-center">
           <h2 className="font-display text-3xl md:text-4xl font-bold mb-6 text-white">
             When the basics are handled, AI becomes easy.
           </h2>
-          <p className="text-lg mb-10 max-w-2xl mx-auto leading-relaxed text-blue-100/80">
+          <p className="text-lg mb-10 max-w-2xl mx-auto leading-relaxed text-[#bcf1ae]/80">
             Tech Basics clients get first priority for our AI Transformation services.
             Once your systems are connected and your data is flowing, adding AI workflows
             is plug-and-play — not a rebuild.
@@ -363,7 +360,7 @@ export default function FundamentalsPage() {
           <Button
             asChild
             size="lg"
-            className="text-base px-8 py-6 font-medium bg-white hover:bg-blue-50 text-blue-600 shadow-lg group"
+            className="text-base px-8 py-6 font-medium bg-[#1a1c19] hover:bg-[#292b27] text-[#bcf1ae] shadow-lg group"
           >
             <Link href="/get-started" className="flex items-center">
               Get Started
@@ -376,10 +373,10 @@ export default function FundamentalsPage() {
       {/* ============================================================ */}
       {/* FAQ                                                          */}
       {/* ============================================================ */}
-      <section className="py-20 px-4" style={{ backgroundColor: "#F8FAFC" }}>
+      <section className="py-20 px-4" style={{ backgroundColor: "#1a1c19" }}>
         <div className="container mx-auto max-w-3xl">
           <div className="text-center mb-12">
-            <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4" style={{ color: "#0F172A" }}>
+            <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4" style={{ color: "#e3e3dd" }}>
               Frequently asked questions
             </h2>
           </div>
@@ -390,7 +387,7 @@ export default function FundamentalsPage() {
                 <AccordionTrigger className="text-left text-base font-medium">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-gray-600 text-base leading-relaxed">
+                <AccordionContent className="text-[#c2c9bb] text-base leading-relaxed">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
