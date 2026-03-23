@@ -36,6 +36,9 @@ export const metadata = {
   title: "Transformation | Verdant AI Partners",
   description:
     "Go from AI-curious to AI-native. Platform setup, custom workflows, and managed AI infrastructure for your team.",
+  alternates: {
+    canonical: "https://verdantaipartners.com/transformation",
+  },
 }
 
 /* ------------------------------------------------------------------ */

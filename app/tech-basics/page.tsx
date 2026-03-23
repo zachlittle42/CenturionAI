@@ -22,6 +22,9 @@ export const metadata = {
   title: "Tech Basics | Verdant AI Partners",
   description:
     "Get your tech right before you get it smart. Website, phone, texting, CRM, invoicing — everything your business needs to run, in one platform.",
+  alternates: {
+    canonical: "https://verdantaipartners.com/tech-basics",
+  },
 }
 
 const painPoints = [

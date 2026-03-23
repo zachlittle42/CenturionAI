@@ -6,6 +6,9 @@ export const metadata = {
   title: "Use Cases | Verdant AI Partners",
   description:
     "Real problems we solve for real businesses. Healthcare practices, clinics, and service businesses — here's how we help.",
+  alternates: {
+    canonical: "https://verdantaipartners.com/use-cases",
+  },
 }
 
 const useCases = [

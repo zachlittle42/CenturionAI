@@ -25,6 +25,9 @@ export const metadata = {
   title: "Engineering | Verdant AI Partners",
   description:
     "AI-augmented engineering teams that ship 3x faster. Full-stack apps, internal tools, API integrations, and more in biweekly sprints.",
+  alternates: {
+    canonical: "https://verdantaipartners.com/engineering",
+  },
 }
 
 const capabilities = [

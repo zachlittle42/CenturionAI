@@ -20,9 +20,26 @@ const epilogue = Epilogue({
   weight: ["400", "600", "700", "800"],
 })
 
+const siteTitle = "Verdant AI Partners — AI Implementation That Actually Works"
+const siteDescription = "We help businesses adopt AI effectively — from tech foundations and team training through custom agents and embedded engineering. Hands-on implementation, not slide decks."
+
 export const metadata: Metadata = {
-  title: "Verdant AI Partners — AI Implementation That Actually Works",
-  description: "We help businesses adopt AI effectively — from tech foundations and team training through custom agents and embedded engineering. Hands-on implementation, not slide decks.",
+  metadataBase: new URL('https://verdantaipartners.com'),
+  title: siteTitle,
+  description: siteDescription,
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://verdantaipartners.com',
+    siteName: 'Verdant AI Partners',
+    title: siteTitle,
+    description: siteDescription,
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: siteTitle,
+    description: siteDescription,
+  },
 }
 
 export default function RootLayout({
@@ -46,6 +63,23 @@ export default function RootLayout({
         `}
       </Script>
       <body className={`${manrope.variable} ${epilogue.variable} font-body antialiased`}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "Verdant AI Partners",
+              url: "https://verdantaipartners.com",
+              description: "AI implementation for modern businesses — strategy, training, transformation, and engineering.",
+              contactPoint: {
+                "@type": "ContactPoint",
+                email: "hello@verdant.ai",
+                contactType: "sales"
+              }
+            })
+          }}
+        />
         <AuthSessionProvider>
           <LayoutShell>
             {children}

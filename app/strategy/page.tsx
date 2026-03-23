@@ -15,6 +15,9 @@ export const metadata = {
   title: "Strategy | Verdant AI Partners",
   description:
     "Know exactly where AI fits in your business — and what each opportunity is worth. A focused 30-day assessment with ROI estimates and a concrete implementation plan.",
+  alternates: {
+    canonical: "https://verdantaipartners.com/strategy",
+  },
 }
 
 const deliverables = [

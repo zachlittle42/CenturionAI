@@ -8,6 +8,24 @@ function getReadTime(content: string): string {
   return Math.ceil(content.split(/\s+/).length / 200) + ' min read'
 }
 
+/** Convert "February 25, 2026" → "2026-02-25" (ISO 8601) */
+function toISODate(dateStr: string): string {
+  const d = new Date(dateStr)
+  return d.toISOString().split('T')[0]
+}
+
+const categoryKeywords: Record<PostCategory, string[]> = {
+  pillar: ['AI strategy', 'AI implementation', 'enterprise AI', 'digital transformation'],
+  implementation: ['AI implementation', 'AI deployment', 'AI integration', 'machine learning'],
+  automation: ['AI automation', 'workflow automation', 'business process automation', 'RPA'],
+  models: ['AI models', 'large language models', 'LLM', 'GPT', 'machine learning models'],
+  agents: ['AI agents', 'autonomous agents', 'agentic AI', 'AI assistants'],
+  healthcare: ['healthcare AI', 'medical AI', 'health tech', 'clinical AI'],
+  'tech-basics': ['AI basics', 'AI fundamentals', 'technology explained', 'AI for business'],
+  comparison: ['AI tools comparison', 'software comparison', 'AI platforms', 'tool evaluation'],
+  'project-writeup': ['AI case study', 'AI project', 'implementation results', 'AI ROI'],
+}
+
 const categoryConfig: Record<PostCategory, { label: string; color: string }> = {
   pillar: { label: 'Pillar Guide', color: '#bcf1ae' },
   implementation: { label: 'Implementation', color: '#10B981' },
@@ -30,6 +48,24 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
   return {
     title: `${post.title} | Verdant AI Partners Blog`,
     description: post.excerpt,
+    keywords: categoryKeywords[post.category],
+    openGraph: {
+      title: post.title,
+      description: post.excerpt,
+      url: `https://verdantaipartners.com/blog/${post.slug}`,
+      siteName: 'Verdant AI Partners',
+      type: 'article' as const,
+      publishedTime: toISODate(post.date),
+      authors: ['Verdant AI Partners'],
+    },
+    twitter: {
+      card: 'summary_large_image' as const,
+      title: post.title,
+      description: post.excerpt,
+    },
+    alternates: {
+      canonical: `https://verdantaipartners.com/blog/${post.slug}`,
+    },
   }
 }
 
@@ -48,6 +84,32 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
 
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            headline: post.title,
+            description: post.excerpt,
+            datePublished: toISODate(post.date),
+            author: {
+              "@type": "Organization",
+              name: "Verdant AI Partners",
+              url: "https://verdantaipartners.com",
+            },
+            publisher: {
+              "@type": "Organization",
+              name: "Verdant AI Partners",
+              url: "https://verdantaipartners.com",
+            },
+            mainEntityOfPage: {
+              "@type": "WebPage",
+              "@id": `https://verdantaipartners.com/blog/${post.slug}`,
+            },
+          }),
+        }}
+      />
       <ReadingProgress />
 
       <section
