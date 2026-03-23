@@ -1,0 +1,5 @@
+[     594ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://v0-centurion-ai-si.vercel.app/favicon.ico:0
+[     792ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://v0-centurion-ai-si.vercel.app/api/auth/session:0
+[     794ms] [ERROR] [next-auth][error][CLIENT_FETCH_ERROR] 
+https://next-auth.js.org/errors#client_fetch_error There is a problem with the server configuration. Check the server logs for more information. {error: Object, url: /api/auth/session, message: There is a problem with the server configuration. Check the server logs for more information.} @ https://v0-centurion-ai-si.vercel.app/_next/static/chunks/117-99db0e1349e4b645.js:0
+[     913ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://v0-centurion-ai-si.vercel.app/api/auth/_log:0

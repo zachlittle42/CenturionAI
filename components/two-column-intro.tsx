@@ -7,15 +7,15 @@ export default function TwoColumnIntro() {
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 gradient-text">Our Approach</h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-brand-400 to-brand-600 mx-auto"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-[#bcf1ae] to-[#a1d494] mx-auto"></div>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
-          <Card className="border-0 shadow-md hover:shadow-xl transition-shadow duration-300 bg-gradient-to-br from-white to-brand-50 overflow-hidden">
-            <div className="absolute top-0 left-0 w-2 h-full bg-brand-500"></div>
+          <Card className="border-0 shadow-md hover:shadow-xl transition-shadow duration-300 bg-gradient-to-br from-white to-[#292b27] overflow-hidden">
+            <div className="absolute top-0 left-0 w-2 h-full bg-[#bcf1ae]"></div>
             <CardContent className="p-8">
-              <div className="mb-6 w-14 h-14 rounded-lg bg-brand-100 flex items-center justify-center">
-                <BarChart3 className="h-7 w-7 text-brand-600" />
+              <div className="mb-6 w-14 h-14 rounded-lg bg-[#bcf1ae]/20 flex items-center justify-center">
+                <BarChart3 className="h-7 w-7 text-[#3b6934]" />
               </div>
               <h3 className="text-2xl font-bold mb-4 text-gray-900">AI Strategy & Roadmapping</h3>
               <p className="text-gray-700 leading-relaxed">
@@ -26,11 +26,11 @@ export default function TwoColumnIntro() {
             </CardContent>
           </Card>
 
-          <Card className="border-0 shadow-md hover:shadow-xl transition-shadow duration-300 bg-gradient-to-br from-white to-brand-50 overflow-hidden">
-            <div className="absolute top-0 left-0 w-2 h-full bg-brand-600"></div>
+          <Card className="border-0 shadow-md hover:shadow-xl transition-shadow duration-300 bg-gradient-to-br from-white to-[#292b27] overflow-hidden">
+            <div className="absolute top-0 left-0 w-2 h-full bg-[#3b6934]"></div>
             <CardContent className="p-8">
-              <div className="mb-6 w-14 h-14 rounded-lg bg-brand-100 flex items-center justify-center">
-                <Cog className="h-7 w-7 text-brand-600" />
+              <div className="mb-6 w-14 h-14 rounded-lg bg-[#bcf1ae]/20 flex items-center justify-center">
+                <Cog className="h-7 w-7 text-[#3b6934]" />
               </div>
               <h3 className="text-2xl font-bold mb-4 text-gray-900">Hands-On Implementation</h3>
               <p className="text-gray-700 leading-relaxed">

@@ -4,23 +4,22 @@ import { ArrowRight } from "lucide-react"
 
 export default function Hero() {
   return (
-    <header className="relative pt-24 pb-20 md:pt-32 md:pb-28 overflow-hidden">
+    <header className="relative pt-24 pb-20 md:pt-32 md:pb-28 overflow-hidden bg-[#121411]">
       {/* Background Elements */}
-      <div className="absolute inset-0 z-0" style={{ backgroundColor: "#121411" }}></div>
-      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#bcf1ae] via-[#a1d494] to-[#3b6934]"></div>
-      <div className="absolute -top-24 -right-24 w-96 h-96 bg-[#bcf1ae]/20 rounded-full opacity-20 blur-3xl"></div>
-      <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-[#bcf1ae]/10 rounded-full opacity-20 blur-3xl"></div>
+      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#bcf1ae] via-[#3b6934] to-[#1a1c19]"></div>
+      <div className="absolute -top-24 -right-24 w-96 h-96 bg-[#bcf1ae]/10 rounded-full opacity-20 blur-3xl"></div>
+      <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-[#a1d494]/10 rounded-full opacity-20 blur-3xl"></div>
 
       <div className="container relative z-10 mx-auto max-w-5xl px-4 text-center">
         <div className="inline-block mb-4 px-4 py-1.5 bg-[#292b27] rounded-full border border-[#42493e]/15">
           <span className="text-[#bcf1ae] font-medium text-sm">Fractional AI Leadership</span>
         </div>
 
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-white">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-[#e3e3dd]">
           Stop paying for AI tools nobody uses.
         </h1>
 
-        <p className="text-xl mb-10 max-w-3xl mx-auto leading-relaxed" style={{ color: "#c2c9bb" }}>
+        <p className="text-xl text-[#c2c9bb] mb-10 max-w-3xl mx-auto leading-relaxed">
           You bought the seats. Your team barely touches them. Verdant AI Partners bridges the gap between
           having AI tools and actually getting value from them. We set up, train, build, and run AI
           systems so your team ships faster and works smarter.
@@ -30,7 +29,7 @@ export default function Hero() {
           <Button
             asChild
             size="lg"
-            className="text-base px-8 py-6 font-medium bg-[#bcf1ae] hover:opacity-90 text-[#0b390a] shadow-lg shadow-[#bcf1ae]/10 group"
+            className="text-base px-8 py-6 font-medium bg-gradient-to-br from-[#bcf1ae] to-[#a1d494] text-[#0b390a] hover:opacity-90 shadow-lg shadow-[#bcf1ae]/10 group"
           >
             <Link href="/get-started" className="flex items-center">
               Get Started
@@ -41,7 +40,7 @@ export default function Hero() {
             asChild
             variant="outline"
             size="lg"
-            className="text-base px-8 py-6 font-medium border-[#42493e] text-[#bcf1ae] hover:bg-[#292b27]"
+            className="text-base px-8 py-6 font-medium border-[#42493e]/15 text-[#bcf1ae] hover:bg-[#1a1c19]"
           >
             <Link href="/get-started" className="flex items-center">
               Get Started
