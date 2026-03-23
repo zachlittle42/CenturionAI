@@ -22,16 +22,16 @@ export default function ProblemSection() {
   return (
     <section className="py-20 px-4 relative overflow-hidden">
       {/* Dark Background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-brand-900 to-black z-0"></div>
-      <div className="absolute -top-40 -right-40 w-80 h-80 bg-brand-700 rounded-full opacity-10 blur-3xl"></div>
-      <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-brand-800 rounded-full opacity-10 blur-3xl"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-[#121411] to-black z-0"></div>
+      <div className="absolute -top-40 -right-40 w-80 h-80 bg-[#1a2e1a] rounded-full opacity-10 blur-3xl"></div>
+      <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-[#1a1c19] rounded-full opacity-10 blur-3xl"></div>
 
       <div className="container relative z-10 mx-auto max-w-5xl">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
             The AI gap is real. And it's growing.
           </h2>
-          <div className="w-24 h-1 bg-brand-500 mx-auto"></div>
+          <div className="w-24 h-1 bg-[#bcf1ae] mx-auto"></div>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
@@ -41,13 +41,13 @@ export default function ProblemSection() {
               className="bg-white/5 backdrop-blur-sm rounded-lg p-6 border border-white/10 animate-fade-in"
               style={{ animationDelay: `${index * 150}ms` }}
             >
-              <div className="rounded-lg bg-brand-500/10 p-3 w-fit mb-4">
-                <point.icon className="h-6 w-6 text-brand-400" />
+              <div className="rounded-lg bg-[#bcf1ae]/10 p-3 w-fit mb-4">
+                <point.icon className="h-6 w-6 text-[#bcf1ae]" />
               </div>
               <h3 className="text-xl font-bold text-white mb-3">
                 {point.headline}
               </h3>
-              <p className="text-brand-100 leading-relaxed">
+              <p className="text-[#e3e3dd] leading-relaxed">
                 {point.body}
               </p>
             </div>

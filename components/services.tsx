@@ -11,7 +11,7 @@ const services = [
       "Align AI initiatives with core business goals.",
       "Confidently estimate ROI and resource needs.",
     ],
-    icon: <BarChart3 className="h-6 w-6 text-brand-600" />,
+    icon: <BarChart3 className="h-6 w-6 text-[#3b6934]" />,
   },
   {
     title: "CRM (No-Code) Setup",
@@ -22,7 +22,7 @@ const services = [
       "Centralize client communications for seamless collaboration.",
       "Scale workflows instantly, no coding required.",
     ],
-    icon: <Database className="h-6 w-6 text-brand-600" />,
+    icon: <Database className="h-6 w-6 text-[#3b6934]" />,
   },
   {
     title: "Cold Email Infrastructure",
@@ -33,7 +33,7 @@ const services = [
       "Maximize conversion with relevant, AI-personalized messages.",
       "Monitor deliverability and optimize continuously.",
     ],
-    icon: <Mail className="h-6 w-6 text-brand-600" />,
+    icon: <Mail className="h-6 w-6 text-[#3b6934]" />,
   },
   {
     title: "Automated Proposals & Onboarding",
@@ -44,7 +44,7 @@ const services = [
       "Centralize onboarding tasks and client documentation.",
       "Free up your team to nurture relationships, not paperwork.",
     ],
-    icon: <FileText className="h-6 w-6 text-brand-600" />,
+    icon: <FileText className="h-6 w-6 text-[#3b6934]" />,
   },
   {
     title: "AI Voice Receptionist & Internal GPT",
@@ -55,7 +55,7 @@ const services = [
       "Reduce repetitive support queries and free up staff bandwidth.",
       "Empower your team with instant, AI-powered insights.",
     ],
-    icon: <Phone className="h-6 w-6 text-brand-600" />,
+    icon: <Phone className="h-6 w-6 text-[#3b6934]" />,
   },
   {
     title: "Modern Data Stack",
@@ -66,7 +66,7 @@ const services = [
       "Enable predictive analytics and machine learning at scale.",
       "Strengthen compliance and data governance practices.",
     ],
-    icon: <LineChart className="h-6 w-6 text-brand-600" />,
+    icon: <LineChart className="h-6 w-6 text-[#3b6934]" />,
   },
 ]
 
@@ -76,7 +76,7 @@ export default function Services() {
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 gradient-text">Our Core Services</h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-brand-400 to-brand-600 mx-auto mb-6"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-[#bcf1ae] to-[#a1d494] mx-auto mb-6"></div>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto">
             Every service we offer targets a specific business challenge—improving the jobs your team already does,
             boosting efficiency, and growing revenue. Check out how we turn AI into real-world benefits:
@@ -86,10 +86,10 @@ export default function Services() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <Card key={index} className="border-0 shadow-md card-hover overflow-hidden bg-white">
-              <div className="h-2 bg-gradient-to-r from-brand-500 to-brand-700"></div>
+              <div className="h-2 bg-gradient-to-r from-[#bcf1ae] to-[#1a2e1a]"></div>
               <CardContent className="p-6 pt-8">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 rounded-lg bg-brand-50 flex items-center justify-center">
+                  <div className="w-10 h-10 rounded-lg bg-[#292b27] flex items-center justify-center">
                     {service.icon}
                   </div>
                   <h3 className="text-xl font-bold text-gray-900">{service.title}</h3>
@@ -98,7 +98,7 @@ export default function Services() {
                 <ul className="space-y-3">
                   {service.benefits.map((benefit, i) => (
                     <li key={i} className="flex items-start gap-2">
-                      <Check className="h-5 w-5 text-brand-500 mt-0.5 flex-shrink-0" />
+                      <Check className="h-5 w-5 text-[#bcf1ae] mt-0.5 flex-shrink-0" />
                       <span className="text-gray-700 text-sm">{benefit}</span>
                     </li>
                   ))}

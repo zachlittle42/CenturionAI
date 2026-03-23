@@ -51,15 +51,15 @@ That's exactly what we do at Centurion AI. If you've had a pilot that didn't sti
     slug: "the-1500-question",
     category: 'project-writeup',
     title:
-      "The $1,500 Question Every Business Should Answer Before Buying AI Software",
+      "The $5,000 Question Every Business Should Answer Before Buying AI Software",
     date: "February 20, 2026",
     excerpt:
-      "Before you spend $50K on an AI platform, spend $1,500 figuring out whether you actually need one. A Strategy Audit saves you from the most expensive mistake in AI adoption.",
+      "Before you spend $50K on an AI platform, spend $5,000 figuring out whether you actually need one. A Strategy Audit saves you from the most expensive mistake in AI adoption.",
     content: `Every week, we talk to businesses that are about to spend $50,000 or more on AI software. Enterprise licenses, custom platforms, consultant fees, implementation costs. It adds up fast.
 
 And every week, at least one of them doesn't need any of it. At least not yet.
 
-The most expensive mistake in AI adoption isn't picking the wrong tool. It's skipping the step where you figure out what you actually need. That's the $1,500 question.
+The most expensive mistake in AI adoption isn't picking the wrong tool. It's skipping the step where you figure out what you actually need. That's the $5,000 question.
 
 **What a Strategy Audit actually does**
 
@@ -77,7 +77,7 @@ Here's what you get:
 
 We've seen companies buy enterprise AI licenses for 500 seats when 50 would have been enough. We've seen teams invest in custom AI platforms when an off-the-shelf tool with the right configuration would have done the job. We've seen six-figure consulting engagements that produced nothing but PowerPoints.
 
-$1,500 to avoid a $50,000 mistake is the best ROI in the entire AI space.
+$5,000 to avoid a $50,000 mistake is the best ROI in the entire AI space.
 
 **Who should do a Strategy Audit**
 
@@ -87,7 +87,7 @@ If you already know exactly what you need and you just need someone to build it,
 
 **The bottom line**
 
-Don't buy AI software before you know what problem you're solving. A $1,500 Strategy Audit gives you the clarity to make every dollar after it count.`,
+Don't buy AI software before you know what problem you're solving. A $5,000 Strategy Audit gives you the clarity to make every dollar after it count.`,
   },
   {
     slug: "ai-agent-medical-spa",
@@ -2601,7 +2601,7 @@ DIY takes longer. You'll hit dead ends, rebuild things, and learn through trial 
 
 ### Budget Is the Primary Constraint
 
-If you genuinely can't afford consulting ($1,500-$15,000 depending on scope) and you have more time than money, DIY is your only option. Just go in with realistic expectations about timeline and quality.
+If you genuinely can't afford consulting ($5,000-$15,000 depending on scope) and you have more time than money, DIY is your only option. Just go in with realistic expectations about timeline and quality.
 
 ## When to Bring In Help
 
@@ -2638,7 +2638,7 @@ Total real cost of DIY: often $3,000-$15,000 when you account for time and mista
 
 ### Consulting Costs (Transparent)
 
-- **Strategy Audit:** $1,500 for a roadmap and implementation plan
+- **Strategy Audit:** $5,000 for a roadmap and implementation plan
 - **Implementation:** $3,000-$24,000 depending on scope and complexity
 - **Ongoing support:** $500-$2,000/month for maintenance and optimization
 
@@ -2703,7 +2703,7 @@ Compare scope, not just price. A $5,000 project that includes strategy, implemen
 
 The DIY vs. consulting decision isn't about capability — it's about context. Some projects are perfect for DIY. Others need expert guidance. The key is being honest about which category your project falls into.
 
-Centurion AI offers Strategy Audits ($1,500) for businesses that want expert guidance before committing to a full engagement. We'll assess your needs, map your opportunities, and give you a clear recommendation — including telling you if DIY is the right call. Book a Strategy Audit and get clarity before you spend.`,
+Centurion AI offers Strategy Audits ($5,000) for businesses that want expert guidance before committing to a full engagement. We'll assess your needs, map your opportunities, and give you a clear recommendation — including telling you if DIY is the right call. Book a Strategy Audit and get clarity before you spend.`,
   },
   {
     slug: "claude-api-vs-openai-api",
@@ -3038,7 +3038,7 @@ Centurion AI builds both AI chatbots and full-stack AI agents. We'll assess your
     date: "March 16, 2026",
     excerpt:
       "Some businesses need a plan before they build. Others are ready to go. Here's how to tell which camp you're in — and what happens when you guess wrong.",
-    content: `**TL;DR:** Jumping straight to implementation works when you know exactly what you need, your systems are ready, and the scope is narrow. A Strategy Audit is the right call when there's uncertainty about where to start, multiple possible approaches, compliance considerations, or significant budget at stake. The audit costs $1,500 and typically saves $5,000-$50,000 in wasted implementation spend.
+    content: `**TL;DR:** Jumping straight to implementation works when you know exactly what you need, your systems are ready, and the scope is narrow. A Strategy Audit is the right call when there's uncertainty about where to start, multiple possible approaches, compliance considerations, or significant budget at stake. The audit costs $5,000 and typically saves $10,000-$50,000 in wasted implementation spend.
 
 ## Two Approaches, Very Different Outcomes
 
@@ -3082,7 +3082,7 @@ Healthcare, finance, legal — any industry where AI deployment has regulatory i
 
 ### Significant budget at risk
 
-If you're about to spend $10,000-$50,000+ on AI implementation, spending $1,500 to make sure you're spending it correctly is the highest-ROI investment you'll make. The audit pays for itself by preventing a single wrong tool purchase.
+If you're about to spend $10,000-$50,000+ on AI implementation, spending $5,000 to make sure you're spending it correctly is the highest-ROI investment you'll make. The audit pays for itself by preventing a single wrong tool purchase.
 
 ### Your tech stack is messy
 
@@ -3135,7 +3135,7 @@ We see it regularly: businesses that skipped the audit and spent $15,000-$50,000
 - **Wrong vendor:** Chose based on demos and sales pitches instead of fit for their specific workflows
 - **Wrong scope:** Tried to automate everything at once instead of sequencing by ROI
 
-Each of these mistakes costs months and thousands of dollars. A $1,500 audit prevents all of them.
+Each of these mistakes costs months and thousands of dollars. A $5,000 audit prevents all of them.
 
 ## The Hybrid Path
 
@@ -3169,13 +3169,13 @@ Bring it to the audit. We'll evaluate the proposal against your actual needs, id
 Free consultations are sales conversations designed to sell you a specific product. A paid audit is an independent assessment designed to find the right solution — which may or may not be the product any specific vendor sells.
 
 **What's the ROI of a Strategy Audit?**
-The audit costs $1,500. It prevents wrong tool purchases ($2,000-$50,000), identifies the highest-ROI opportunity first (months of faster time-to-value), and provides a plan that reduces implementation time by 30-50%. Most clients see 10-30x ROI on the audit cost.
+The audit costs $5,000. It prevents wrong tool purchases ($10,000-$50,000), identifies the highest-ROI opportunity first (months of faster time-to-value), and provides a plan that reduces implementation time by 30-50%. Most clients see 10-30x ROI on the audit cost.
 
 ## Make the Right First Move
 
 The most expensive AI mistake isn't picking the wrong tool — it's starting without knowing what you need. A Strategy Audit gives you clarity, confidence, and a concrete plan. Implementation without strategy is just expensive experimentation.
 
-Centurion AI Strategy Audits start at $1,500. In 2-4 weeks, you'll have a prioritized roadmap, tool recommendations, integration architecture, and ROI projections. Book a Strategy Audit and make your first AI investment the right one.`,
+Centurion AI Strategy Audits start at $5,000. In 2-4 weeks, you'll have a prioritized roadmap, tool recommendations, integration architecture, and ROI projections. Book a Strategy Audit and make your first AI investment the right one.`,
   },
   {
     slug: "n8n-vs-make-vs-zapier-2026",
@@ -3567,8 +3567,8 @@ A: Tier 1: first month. Tier 2: 60-90 days. Tier 3: early wins by month 2, full 
     title: "What Does AI Implementation Cost in 2026?",
     date: "March 1, 2026",
     excerpt:
-      "AI implementation costs range from $1,500 to $250,000+. Here's a no-BS breakdown of what you'll spend and where companies waste the most money.",
-    content: `**TL;DR:** Strategy Audit: $1,500. Simple automations: $2,000-$8,000. Mid-complexity: $8,000-$40,000. Full transformation: $40,000-$250,000+. Biggest waste: enterprise tools you don't need and over-engineering simple problems.
+      "AI implementation costs range from $5,000 to $250,000+. Here's a no-BS breakdown of what you'll spend and where companies waste the most money.",
+    content: `**TL;DR:** Strategy Audit: $5,000. Simple automations: $2,000-$8,000. Mid-complexity: $8,000-$40,000. Full transformation: $40,000-$250,000+. Biggest waste: enterprise tools you don't need and over-engineering simple problems.
 
 ---
 
@@ -3576,7 +3576,7 @@ The AI consulting industry has a pricing transparency problem. Most firms hide c
 
 ## Cost by Project Type
 
-### Strategy Audit: $1,500 - $4,500
+### Strategy Audit: $5,000 - $15,000
 Assesses current state, identifies opportunities, produces implementation plan. Workflow analysis, opportunity mapping, tool recommendations, prioritized roadmap, ROI projections. The cheapest insurance in AI — prevents $50K+ mistakes.
 
 ### Simple Automation: $2,000 - $8,000
@@ -3605,7 +3605,7 @@ Company-wide deployment. Custom agents, enterprise workflow redesign, extensive 
 
 ## Maximize Value
 
-1. Strategy Audit first — $1,500 to ensure every dollar after is well-spent
+1. Strategy Audit first — $5,000 to ensure every dollar after is well-spent
 2. Prioritize by ROI — highest-return opportunities first
 3. Off-the-shelf before custom
 4. Bundle strategy + implementation — one partner, no gaps
@@ -3614,7 +3614,7 @@ Company-wide deployment. Custom agents, enterprise workflow redesign, extensive 
 ## FAQ
 
 **Q: Minimum budget to start?**
-A: $1,500 for audit. $3,500-$10,000 to implement a simple automation after.
+A: $5,000 for audit. $3,500-$10,000 to implement a simple automation after.
 
 **Q: AI vs hiring?**
 A: Almost always cheaper. Employee: $50-120K/year. AI automation replacing 20 hrs/week: fraction of that, runs 24/7.
@@ -3756,7 +3756,7 @@ $3,000-$50,000+ depending on scope, plus ongoing costs and training time. Usuall
 Just migrated CRMs, restructured departments, hired ten people? Change fatigue is real. **Wait** 2-3 months for stabilization.
 
 ### 3. Chasing Hype
-"Competitors are using AI" is the worst implementation reason. Can't articulate a specific problem? You're shopping, not solving. **Run a Strategy Audit** — $1,500 for clarity.
+"Competitors are using AI" is the worst implementation reason. Can't articulate a specific problem? You're shopping, not solving. **Run a Strategy Audit** — $5,000 for clarity.
 
 ## Scorecard (1 point per "yes")
 
@@ -4440,7 +4440,7 @@ A proper Strategy Audit covers:
 - **Tool audit.** What software are you already running? What has APIs? What integrates with what? This determines what's possible without ripping out your existing stack.
 - **ROI scoring.** For each opportunity, estimate the time saved, revenue impact, and implementation difficulty. Rank them. Pick the top 1-3.
 
-We charge $1,500 for a Strategy Audit and it typically takes 2-4 weeks. It's the single highest-ROI investment in the entire AI implementation process, because it prevents you from spending $20,000 on the wrong thing.
+We charge $5,000 for a Strategy Audit and it typically takes 2-4 weeks. It's the single highest-ROI investment in the entire AI implementation process, because it prevents you from spending $20,000 on the wrong thing.
 
 ### Phase 2: Tool Selection (Week 2-3)
 
@@ -4500,7 +4500,7 @@ Once you've proven ROI on your first workflow, expand. Take the next item from y
 
 We've seen every mistake in the book. Here are the ones that cost the most:
 
-**Buying before auditing.** Companies spend $10,000-$50,000 on AI tools before understanding what they actually need. A $1,500 Strategy Audit prevents this.
+**Buying before auditing.** Companies spend $10,000-$50,000 on AI tools before understanding what they actually need. A $5,000 Strategy Audit prevents this.
 
 **Trying to boil the ocean.** "Let's AI-enable everything!" No. Pick one thing. Prove it. Then expand. Companies that try to do everything at once end up doing nothing well.
 
@@ -4526,7 +4526,7 @@ We've seen every mistake in the book. Here are the ones that cost the most:
 
 Let's talk actual numbers, because most guides won't:
 
-- **Strategy Audit:** $1,500. Covers assessment, opportunity mapping, and implementation roadmap.
+- **Strategy Audit:** $5,000. Covers assessment, opportunity mapping, and implementation roadmap.
 - **Simple automation (1-2 workflows):** $3,000-$8,000 for implementation, plus $100-$500/month for tools and hosting.
 - **AI agent deployment (voice, chat, or email):** $4,000-$15,000 for setup and configuration, plus $200-$800/month for operation.
 - **Custom AI application:** $12,000-$50,000+ depending on complexity, plus ongoing maintenance.
@@ -4573,7 +4573,7 @@ AI implementation for small business doesn't have to be complicated, expensive, 
 
 The first step is always the same: a Strategy Audit. In 2-4 weeks, you'll know exactly where AI fits in your business, what it will cost, and what results to expect. No guessing, no wasted spend, no science projects.
 
-**[Book a Strategy Audit →](/get-started)** — $1,500 to get a concrete, actionable AI implementation roadmap built specifically for your business.`,
+**[Book a Strategy Audit →](/get-started)** — $5,000 to get a concrete, actionable AI implementation roadmap built specifically for your business.`,
   },
   {
     slug: "pillar-ai-workflow-automation",
@@ -4758,7 +4758,7 @@ Well-built automations run at 95-99% accuracy for standard cases. The key is pro
 We've implemented across healthcare, legal, financial services, e-commerce, professional services, real estate, and manufacturing. If your business has repetitive processes that follow patterns, it will work.
 
 **How do I get started?**
-Start with a Strategy Audit. We'll map your workflows, score them for automation potential, and give you a prioritized plan with cost estimates and expected ROI. 2-4 weeks, $1,500.
+Start with a Strategy Audit. We'll map your workflows, score them for automation potential, and give you a prioritized plan with cost estimates and expected ROI. 2-4 weeks, $5,000.
 
 ## Your Next Step
 
@@ -4916,7 +4916,7 @@ An AI strategy for business isn't a 200-slide deck from a consulting firm. It's 
 
 That's what a Strategy Audit delivers. In 2-4 weeks, you get clarity that saves you months of trial and error and tens of thousands in wasted spend.
 
-**TL;DR:** A Strategy Audit is a $1,500, 2-4 week engagement that maps your AI opportunities, scores them by ROI, and produces a prioritized implementation plan. It's the single most valuable step in any AI strategy for business, because it prevents you from investing in the wrong tools, automating the wrong workflows, and solving problems that don't exist.
+**TL;DR:** A Strategy Audit is a $5,000, 2-4 week engagement that maps your AI opportunities, scores them by ROI, and produces a prioritized implementation plan. It's the single most valuable step in any AI strategy for business, because it prevents you from investing in the wrong tools, automating the wrong workflows, and solving problems that don't exist.
 
 ## Why Most AI Strategies Fail
 
@@ -4996,10 +4996,10 @@ We conservatively estimate $15,000-$50,000 in avoided mistakes and 3-6 months of
 ## FAQ: AI Strategy for Business
 
 **How is a Strategy Audit different from hiring a consultant?**
-Traditional consulting: 3-6 months, $50,000-$200,000, massive slide decks. Strategy Audit: 2-4 weeks, $1,500, specific actionable plan with tool names and cost numbers.
+Traditional consulting: 3-6 months, $50,000-$200,000, massive slide decks. Strategy Audit: 2-4 weeks, $5,000, specific actionable plan with tool names and cost numbers.
 
 **What if the audit reveals we're not ready for AI?**
-That's valuable information. The roadmap includes prerequisites like process standardization or data cleanup. Better to learn for $1,500 than after spending $20,000 on tools that don't work with messy data.
+That's valuable information. The roadmap includes prerequisites like process standardization or data cleanup. Better to learn for $5,000 than after spending $20,000 on tools that don't work with messy data.
 
 **Do we have to use Centurion AI for implementation?**
 No. The deliverables work regardless of who implements them. Some clients self-implement, some use other vendors, some work with us.
@@ -5020,7 +5020,7 @@ You can start implementing immediately. If you want Centurion AI for implementat
 
 An AI strategy for business that works starts with understanding where the ROI actually is — not where you think it is, not where a vendor says it is, but where the data says it is.
 
-$1,500. 2-4 weeks. Complete clarity on where AI fits in your business and what to do first.
+$5,000. 2-4 weeks. Complete clarity on where AI fits in your business and what to do first.
 
 **[Book a Strategy Audit →](/get-started)** — Stop guessing. Start with a concrete plan built from your actual workflows, data, and business goals.`,
   },
@@ -5175,7 +5175,7 @@ Yes. Pilot program — 1-2 weeks, $3,000-$5,000, credited toward full implementa
 
 The Strategy Audit identifies which agent types, channels, and use cases deliver the highest ROI for your specific business.
 
-**[Book a Strategy Audit →](/get-started)** — Find out exactly where OpenClaw AI agents fit in your business. $1,500 for a complete assessment and implementation roadmap.`,
+**[Book a Strategy Audit →](/get-started)** — Find out exactly where OpenClaw AI agents fit in your business. $5,000 for a complete assessment and implementation roadmap.`,
   },
   {
     slug: "pillar-ai-healthcare-wellness",
@@ -5333,7 +5333,7 @@ We help develop appropriate consent language and disclosure processes tailored t
 
 AI for medical spa, dental, chiropractic, and wellness practices is here. The practices adopting now are capturing patients that competitors lose to voicemail.
 
-**[Book a Strategy Audit →](/get-started)** — In 2-4 weeks, you'll know exactly which AI applications fit your practice, what they'll cost, and what revenue they'll recover. $1,500 for complete clarity.`,
+**[Book a Strategy Audit →](/get-started)** — In 2-4 weeks, you'll know exactly which AI applications fit your practice, what they'll cost, and what revenue they'll recover. $5,000 for complete clarity.`,
   },
   {
     slug: "pillar-hire-ai-engineering",
@@ -5546,7 +5546,7 @@ Whether you want to hire AI engineer talent as a freelancer, engage an agency, o
 
 A Strategy Audit gives you that clarity in 2-4 weeks. You'll know which AI opportunities are worth pursuing, what they'll cost, and which hiring model fits.
 
-**[Book a Strategy Audit →](/get-started)** — Get a concrete plan for your AI needs, including whether to hire freelancers, engage an agency, or build in-house. $1,500 for complete clarity.`,
+**[Book a Strategy Audit →](/get-started)** — Get a concrete plan for your AI needs, including whether to hire freelancers, engage an agency, or build in-house. $5,000 for complete clarity.`,
   },
 
   {

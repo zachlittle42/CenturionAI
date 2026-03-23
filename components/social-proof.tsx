@@ -12,7 +12,7 @@ export default function SocialProof() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-0 md:divide-x md:divide-gray-200">
           {metrics.map((metric) => (
             <div key={metric.label} className="text-center px-4">
-              <div className="text-3xl md:text-4xl font-bold text-brand-700 mb-1">
+              <div className="text-3xl md:text-4xl font-bold text-[#1a2e1a] mb-1">
                 {metric.value}
               </div>
               <div className="text-sm text-gray-500 font-medium uppercase tracking-wide">

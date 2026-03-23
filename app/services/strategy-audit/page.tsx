@@ -147,7 +147,6 @@ export default function StrategyAuditPage() {
     <main className="min-h-screen">
       {/* Hero */}
       <section className="relative overflow-hidden py-20 md:py-28 px-4" style={{backgroundColor: "#0F172A"}}>
-        <div className="absolute inset-0 z-0 dot-grid opacity-[0.03]" />
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-400/50 to-transparent" />
         <div className="absolute -top-40 -right-40 w-96 h-96 bg-blue-500 rounded-full opacity-10 blur-3xl" />
 

@@ -59,19 +59,19 @@ export default function TwoPaths() {
               <div
                 className={`h-1.5 ${
                   index === 0
-                    ? "bg-gradient-to-r from-brand-400 to-brand-600"
-                    : "bg-gradient-to-r from-brand-600 to-brand-800"
+                    ? "bg-gradient-to-r from-[#bcf1ae] to-[#a1d494]"
+                    : "bg-gradient-to-r from-[#3b6934] to-[#1a1c19]"
                 }`}
               ></div>
               <CardContent className="p-8">
                 <div
                   className={`rounded-lg p-3 w-fit mb-5 ${
-                    index === 0 ? "bg-brand-50" : "bg-brand-50"
+                    index === 0 ? "bg-[#292b27]" : "bg-[#292b27]"
                   }`}
                 >
                   <path.icon
                     className={`h-7 w-7 ${
-                      index === 0 ? "text-brand-500" : "text-brand-700"
+                      index === 0 ? "text-[#bcf1ae]" : "text-[#1a2e1a]"
                     }`}
                   />
                 </div>
@@ -79,7 +79,7 @@ export default function TwoPaths() {
                 <h3 className="text-2xl font-bold text-gray-900 mb-1">
                   {path.title}
                 </h3>
-                <p className="text-lg font-medium text-brand-600 mb-3">
+                <p className="text-lg font-medium text-[#3b6934] mb-3">
                   {path.subtitle}
                 </p>
                 <p className="text-gray-600 mb-6 leading-relaxed">
@@ -89,7 +89,7 @@ export default function TwoPaths() {
                 <ul className="space-y-3 mb-8">
                   {path.bullets.map((bullet, i) => (
                     <li key={i} className="flex items-start gap-3">
-                      <Check className="h-5 w-5 text-brand-500 flex-shrink-0 mt-0.5" />
+                      <Check className="h-5 w-5 text-[#bcf1ae] flex-shrink-0 mt-0.5" />
                       <span className="text-gray-700">{bullet}</span>
                     </li>
                   ))}
@@ -98,7 +98,7 @@ export default function TwoPaths() {
                 <Link
                   href={path.href}
                   className={`inline-flex items-center font-medium group ${
-                    index === 0 ? "text-brand-600" : "text-brand-700"
+                    index === 0 ? "text-[#3b6934]" : "text-[#1a2e1a]"
                   }`}
                 >
                   {path.ctaText}
