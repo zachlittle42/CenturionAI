@@ -43,14 +43,14 @@ export default function Home() {
         <div className="relative z-10 max-w-7xl mx-auto px-8 w-full grid md:grid-cols-2 gap-12 items-center">
           <div className="max-w-2xl">
             <span className="inline-block px-4 py-1.5 bg-[#292b27] text-[#bcf1ae] text-xs font-bold tracking-[0.25em] uppercase rounded-full mb-8 opacity-0 animate-reveal">
-              Architectural Intelligence
+              AI Consulting & Engineering
             </span>
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-extrabold tracking-tighter text-[#e3e3dd] leading-[0.9] mb-8 opacity-0 animate-reveal stagger-1">
-              Begin Your AI{" "}
+              Start Your AI{" "}
               <span className="text-gradient">Evolution</span>
             </h1>
             <p className="text-xl text-[#c2c9bb] font-body leading-relaxed mb-10 max-w-lg opacity-0 animate-reveal stagger-2">
-              Premium AI consulting for modern businesses. We build the technical infrastructure that powers sustainable intelligence systems.
+              Most businesses are 6 months behind on AI. We get you caught up — and ahead — in weeks.
             </p>
             <div className="opacity-0 animate-reveal stagger-3">
               <Link
