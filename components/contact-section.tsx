@@ -44,31 +44,31 @@ export default function ContactSection() {
   return (
     <section id="contact" className="py-20 px-4 relative overflow-hidden">
       {/* Background Elements */}
-      <div className="absolute inset-0 bg-gradient-to-b from-white to-brand-50 z-0"></div>
-      <div className="absolute -top-40 -right-40 w-80 h-80 bg-brand-100 rounded-full opacity-30 blur-3xl"></div>
-      <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-brand-100 rounded-full opacity-30 blur-3xl"></div>
+      <div className="absolute inset-0 z-0" style={{ backgroundColor: "#121411" }}></div>
+      <div className="absolute -top-40 -right-40 w-80 h-80 bg-[#bcf1ae]/10 rounded-full opacity-30 blur-3xl"></div>
+      <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-[#bcf1ae]/10 rounded-full opacity-30 blur-3xl"></div>
 
       <div className="container relative z-10 mx-auto max-w-6xl">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 gradient-text">Ready to Elevate Your Business?</h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-brand-400 to-brand-600 mx-auto mb-6"></div>
-          <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-            Choose how you'd like to connect with our team at Centurion AI.
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Ready to Elevate Your Business?</h2>
+          <div className="w-24 h-1 bg-gradient-to-r from-[#bcf1ae] to-[#a1d494] mx-auto mb-6"></div>
+          <p className="text-lg max-w-3xl mx-auto" style={{ color: "#c2c9bb" }}>
+            Choose how you'd like to connect with our team at Verdant AI Partners.
           </p>
         </div>
 
         <Tabs defaultValue="form" className="max-w-3xl mx-auto">
-          <TabsList className="grid w-full grid-cols-2 mb-8 bg-brand-50 p-1 rounded-lg">
+          <TabsList className="grid w-full grid-cols-2 mb-8 bg-[#292b27] p-1 rounded-lg">
             <TabsTrigger
               value="form"
-              className="data-[state=active]:bg-white data-[state=active]:text-brand-700 data-[state=active]:shadow-md"
+              className="data-[state=active]:bg-[#1a1c19] data-[state=active]:text-[#bcf1ae] data-[state=active]:shadow-md"
             >
               <Send className="h-4 w-4 mr-2" />
               Contact Form
             </TabsTrigger>
             <TabsTrigger
               value="calendly"
-              className="data-[state=active]:bg-white data-[state=active]:text-brand-700 data-[state=active]:shadow-md"
+              className="data-[state=active]:bg-[#1a1c19] data-[state=active]:text-[#bcf1ae] data-[state=active]:shadow-md"
             >
               <Calendar className="h-4 w-4 mr-2" />
               Schedule a Call
@@ -76,13 +76,13 @@ export default function ContactSection() {
           </TabsList>
 
           <TabsContent value="form">
-            <Card className="border-0 shadow-xl bg-white overflow-hidden">
-              <div className="h-1 bg-gradient-to-r from-brand-500 to-brand-700"></div>
+            <Card className="border border-[#42493e]/15 shadow-xl overflow-hidden" style={{ backgroundColor: "#1a1c19" }}>
+              <div className="h-1 bg-gradient-to-r from-[#bcf1ae] to-[#a1d494]"></div>
               <CardContent className="p-8">
-                <h3 className="text-xl font-bold text-center mb-6 text-gray-900">Tell us about your challenges</h3>
+                <h3 className="text-xl font-bold text-center mb-6 text-white">Tell us about your challenges</h3>
                 <form onSubmit={handleSubmit} className="space-y-5">
                   <div className="space-y-2">
-                    <label htmlFor="name" className="text-sm font-medium text-gray-700">
+                    <label htmlFor="name" className="text-sm font-medium text-[#c2c9bb]">
                       Your Name
                     </label>
                     <Input
@@ -91,12 +91,12 @@ export default function ContactSection() {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="border-gray-200 focus:border-brand-500 focus:ring-brand-500"
+                      className="border-[#42493e]/30 bg-[#292b27] text-white focus:border-[#bcf1ae] focus:ring-[#bcf1ae]"
                     />
                   </div>
 
                   <div className="space-y-2">
-                    <label htmlFor="email" className="text-sm font-medium text-gray-700">
+                    <label htmlFor="email" className="text-sm font-medium text-[#c2c9bb]">
                       Your Email
                     </label>
                     <Input
@@ -106,12 +106,12 @@ export default function ContactSection() {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="border-gray-200 focus:border-brand-500 focus:ring-brand-500"
+                      className="border-[#42493e]/30 bg-[#292b27] text-white focus:border-[#bcf1ae] focus:ring-[#bcf1ae]"
                     />
                   </div>
 
                   <div className="space-y-2">
-                    <label htmlFor="message" className="text-sm font-medium text-gray-700">
+                    <label htmlFor="message" className="text-sm font-medium text-[#c2c9bb]">
                       Your Message
                     </label>
                     <Textarea
@@ -122,27 +122,27 @@ export default function ContactSection() {
                       value={formData.message}
                       onChange={handleChange}
                       required
-                      className="border-gray-200 focus:border-brand-500 focus:ring-brand-500"
+                      className="border-[#42493e]/30 bg-[#292b27] text-white focus:border-[#bcf1ae] focus:ring-[#bcf1ae]"
                     />
                   </div>
 
                   <Button
                     type="submit"
-                    className="w-full bg-brand-600 hover:bg-brand-700 text-white py-6"
+                    className="w-full bg-[#bcf1ae] hover:opacity-90 text-[#0b390a] py-6"
                     disabled={isSubmitting}
                   >
                     {isSubmitting ? "Sending..." : "Send Message"}
                   </Button>
 
-                  <p className="text-sm text-center text-gray-500">We'll respond within 24 hours.</p>
+                  <p className="text-sm text-center text-[#8c9387]">We'll respond within 24 hours.</p>
                 </form>
               </CardContent>
             </Card>
           </TabsContent>
 
           <TabsContent value="calendly">
-            <Card className="border-0 shadow-xl bg-white overflow-hidden">
-              <div className="h-1 bg-gradient-to-r from-brand-500 to-brand-700"></div>
+            <Card className="border border-[#42493e]/15 shadow-xl overflow-hidden" style={{ backgroundColor: "#1a1c19" }}>
+              <div className="h-1 bg-gradient-to-r from-[#bcf1ae] to-[#a1d494]"></div>
               <CardContent className="p-0 overflow-hidden rounded-md">
                 <div
                   className="calendly-inline-widget"

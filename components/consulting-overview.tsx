@@ -20,7 +20,7 @@ export default function ConsultingOverview() {
         <div className="w-24 h-1 bg-brand-500 mx-auto mb-8"></div>
 
         <p className="text-xl text-brand-50 max-w-3xl mx-auto mb-12 leading-relaxed">
-          Centurion AI pairs technical excellence with genuine business insight. We learn your unique challenges, test
+          Verdant AI Partners pairs technical excellence with genuine business insight. We learn your unique challenges, test
           viable solutions, and measure ROI every step of the way.
         </p>
 

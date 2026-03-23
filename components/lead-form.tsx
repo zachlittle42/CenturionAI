@@ -44,12 +44,12 @@ export default function LeadForm() {
 
   if (submitted) {
     return (
-      <section id="get-started-form" className="py-20 px-4 relative overflow-hidden" style={{ backgroundColor: "#1E293B" }}>
-        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-400/20 to-transparent" />
+      <section id="get-started-form" className="py-20 px-4 relative overflow-hidden" style={{ backgroundColor: "#1a1c19" }}>
+        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#bcf1ae]/20 to-transparent" />
         <div className="container relative z-10 mx-auto max-w-xl text-center">
-          <div className="rounded-2xl border border-blue-400/20 bg-blue-500/10 p-10">
+          <div className="rounded-2xl border border-[#bcf1ae]/20 bg-[#bcf1ae]/10 p-10">
             <p className="text-2xl font-bold text-white mb-2">Thanks!</p>
-            <p className="text-lg" style={{ color: "#94A3B8" }}>
+            <p className="text-lg" style={{ color: "#c2c9bb" }}>
               We will be in touch within 24 hours with a recommendation.
             </p>
           </div>
@@ -59,22 +59,22 @@ export default function LeadForm() {
   }
 
   return (
-    <section id="get-started-form" className="py-20 px-4 relative overflow-hidden" style={{ backgroundColor: "#1E293B" }}>
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-400/20 to-transparent" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl" />
+    <section id="get-started-form" className="py-20 px-4 relative overflow-hidden" style={{ backgroundColor: "#1a1c19" }}>
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#bcf1ae]/20 to-transparent" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-[#bcf1ae]/5 rounded-full blur-3xl" />
 
       <div className="container relative z-10 mx-auto max-w-xl text-center">
         <h2 className="font-display text-balance text-3xl md:text-4xl font-bold text-white mb-4">
           Not sure where to start? Tell us about your business.
         </h2>
-        <p className="text-lg mb-8 max-w-2xl mx-auto leading-relaxed" style={{ color: "#94A3B8" }}>
+        <p className="text-lg mb-8 max-w-2xl mx-auto leading-relaxed" style={{ color: "#c2c9bb" }}>
           We&apos;ll recommend the right path and get back to you within 24 hours.
         </p>
 
         <form onSubmit={handleSubmit} className="space-y-4 text-left">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
-              <label htmlFor="lead-name" className="block text-sm font-medium text-slate-300 mb-1.5">
+              <label htmlFor="lead-name" className="block text-sm font-medium text-[#c2c9bb] mb-1.5">
                 Name
               </label>
               <input
@@ -83,12 +83,12 @@ export default function LeadForm() {
                 required
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                className="w-full rounded-lg border border-slate-600/50 bg-slate-800/50 px-4 py-3 text-white placeholder-slate-500 focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-400 transition-colors"
+                className="w-full rounded-lg border border-[#42493e]/50 bg-[#292b27]/50 px-4 py-3 text-white placeholder-[#8c9387] focus:border-[#bcf1ae] focus:outline-none focus:ring-1 focus:ring-[#bcf1ae] transition-colors"
                 placeholder="Your name"
               />
             </div>
             <div>
-              <label htmlFor="lead-company" className="block text-sm font-medium text-slate-300 mb-1.5">
+              <label htmlFor="lead-company" className="block text-sm font-medium text-[#c2c9bb] mb-1.5">
                 Company
               </label>
               <input
@@ -97,7 +97,7 @@ export default function LeadForm() {
                 required
                 value={company}
                 onChange={(e) => setCompany(e.target.value)}
-                className="w-full rounded-lg border border-slate-600/50 bg-slate-800/50 px-4 py-3 text-white placeholder-slate-500 focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-400 transition-colors"
+                className="w-full rounded-lg border border-[#42493e]/50 bg-[#292b27]/50 px-4 py-3 text-white placeholder-[#8c9387] focus:border-[#bcf1ae] focus:outline-none focus:ring-1 focus:ring-[#bcf1ae] transition-colors"
                 placeholder="Your company"
               />
             </div>
@@ -105,7 +105,7 @@ export default function LeadForm() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
-              <label htmlFor="lead-email" className="block text-sm font-medium text-slate-300 mb-1.5">
+              <label htmlFor="lead-email" className="block text-sm font-medium text-[#c2c9bb] mb-1.5">
                 Email
               </label>
               <input
@@ -114,27 +114,27 @@ export default function LeadForm() {
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full rounded-lg border border-slate-600/50 bg-slate-800/50 px-4 py-3 text-white placeholder-slate-500 focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-400 transition-colors"
+                className="w-full rounded-lg border border-[#42493e]/50 bg-[#292b27]/50 px-4 py-3 text-white placeholder-[#8c9387] focus:border-[#bcf1ae] focus:outline-none focus:ring-1 focus:ring-[#bcf1ae] transition-colors"
                 placeholder="you@company.com"
               />
             </div>
             <div>
-              <label htmlFor="lead-phone" className="block text-sm font-medium text-slate-300 mb-1.5">
-                Phone <span className="text-slate-500">(optional)</span>
+              <label htmlFor="lead-phone" className="block text-sm font-medium text-[#c2c9bb] mb-1.5">
+                Phone <span className="text-[#8c9387]">(optional)</span>
               </label>
               <input
                 id="lead-phone"
                 type="tel"
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
-                className="w-full rounded-lg border border-slate-600/50 bg-slate-800/50 px-4 py-3 text-white placeholder-slate-500 focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-400 transition-colors"
+                className="w-full rounded-lg border border-[#42493e]/50 bg-[#292b27]/50 px-4 py-3 text-white placeholder-[#8c9387] focus:border-[#bcf1ae] focus:outline-none focus:ring-1 focus:ring-[#bcf1ae] transition-colors"
                 placeholder="(555) 123-4567"
               />
             </div>
           </div>
 
           <div>
-            <label htmlFor="lead-revenue" className="block text-sm font-medium text-slate-300 mb-1.5">
+            <label htmlFor="lead-revenue" className="block text-sm font-medium text-[#c2c9bb] mb-1.5">
               Monthly Revenue
             </label>
             <select
@@ -142,7 +142,7 @@ export default function LeadForm() {
               required
               value={revenue}
               onChange={(e) => setRevenue(e.target.value)}
-              className="w-full rounded-lg border border-slate-600/50 bg-slate-800/50 px-4 py-3 text-white focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-400 transition-colors appearance-none"
+              className="w-full rounded-lg border border-[#42493e]/50 bg-[#292b27]/50 px-4 py-3 text-white focus:border-[#bcf1ae] focus:outline-none focus:ring-1 focus:ring-[#bcf1ae] transition-colors appearance-none"
             >
               <option value="" disabled>Select monthly revenue</option>
               {revenueOptions.map((opt) => (
@@ -152,7 +152,7 @@ export default function LeadForm() {
           </div>
 
           <div>
-            <label htmlFor="lead-challenge" className="block text-sm font-medium text-slate-300 mb-1.5">
+            <label htmlFor="lead-challenge" className="block text-sm font-medium text-[#c2c9bb] mb-1.5">
               What&apos;s your biggest challenge right now?
             </label>
             <textarea
@@ -161,21 +161,21 @@ export default function LeadForm() {
               rows={3}
               value={challenge}
               onChange={(e) => setChallenge(e.target.value)}
-              className="w-full rounded-lg border border-slate-600/50 bg-slate-800/50 px-4 py-3 text-white placeholder-slate-500 focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-400 transition-colors resize-none"
+              className="w-full rounded-lg border border-[#42493e]/50 bg-[#292b27]/50 px-4 py-3 text-white placeholder-[#8c9387] focus:border-[#bcf1ae] focus:outline-none focus:ring-1 focus:ring-[#bcf1ae] transition-colors resize-none"
               placeholder="Tell us in your own words..."
             />
           </div>
 
           <div>
-            <label htmlFor="lead-referral" className="block text-sm font-medium text-slate-300 mb-1.5">
-              How did you hear about us? <span className="text-slate-500">(optional)</span>
+            <label htmlFor="lead-referral" className="block text-sm font-medium text-[#c2c9bb] mb-1.5">
+              How did you hear about us? <span className="text-[#8c9387]">(optional)</span>
             </label>
             <input
               id="lead-referral"
               type="text"
               value={referral}
               onChange={(e) => setReferral(e.target.value)}
-              className="w-full rounded-lg border border-slate-600/50 bg-slate-800/50 px-4 py-3 text-white placeholder-slate-500 focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-400 transition-colors"
+              className="w-full rounded-lg border border-[#42493e]/50 bg-[#292b27]/50 px-4 py-3 text-white placeholder-[#8c9387] focus:border-[#bcf1ae] focus:outline-none focus:ring-1 focus:ring-[#bcf1ae] transition-colors"
               placeholder="Google, referral, social media..."
             />
           </div>
@@ -183,7 +183,7 @@ export default function LeadForm() {
           <button
             type="submit"
             disabled={submitting}
-            className="w-full inline-flex items-center justify-center px-8 py-3 rounded-lg bg-blue-500 hover:bg-blue-400 disabled:opacity-50 text-white font-medium transition-colors shadow-lg shadow-blue-500/20 group mt-2"
+            className="w-full inline-flex items-center justify-center px-8 py-3 rounded-lg bg-[#bcf1ae] hover:opacity-90 disabled:opacity-50 text-[#0b390a] font-medium transition-colors shadow-lg shadow-[#bcf1ae]/10 group mt-2"
           >
             {submitting ? "Sending..." : "Get My Recommendation"}
             {!submitting && <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />}

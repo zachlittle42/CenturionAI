@@ -2,9 +2,9 @@ import { Metadata } from "next"
 import BlogContent from "./BlogContent"
 
 export const metadata: Metadata = {
-  title: "Blog | Centurion AI",
+  title: "Blog | Verdant AI Partners",
   description:
-    "Insights on AI implementation, strategy, and automation from the Centurion AI team.",
+    "Insights on AI implementation, strategy, and automation from the Verdant AI Partners team.",
 }
 
 export default function BlogIndex() {

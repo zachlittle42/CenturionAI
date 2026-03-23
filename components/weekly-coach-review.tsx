@@ -51,7 +51,7 @@ function getGradeColor(grade: string): string {
     case "A":
       return "text-green-400"
     case "B":
-      return "text-blue-400"
+      return "text-[#bcf1ae]"
     case "C":
       return "text-yellow-400"
     case "D":
@@ -68,7 +68,7 @@ function getGradeBg(grade: string): string {
     case "A":
       return "bg-green-500/10 border-green-500/20"
     case "B":
-      return "bg-blue-500/10 border-blue-500/20"
+      return "bg-[#bcf1ae]/10 border-[#bcf1ae]/20"
     case "C":
       return "bg-yellow-500/10 border-yellow-500/20"
     case "D":
@@ -89,7 +89,7 @@ function getTrendIcon(current: number, previous?: number) {
 
 function getBarColor(score: number): string {
   if (score >= 80) return "#22c55e"
-  if (score >= 60) return "#3b82f6"
+  if (score >= 60) return "#bcf1ae"
   if (score >= 40) return "#eab308"
   return "#ef4444"
 }
@@ -128,8 +128,8 @@ export default function WeeklyCoachReview({ data }: WeeklyCoachReviewProps) {
       <CardHeader className="pb-3">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="rounded-lg bg-gradient-to-br from-blue-500 to-purple-600 p-2.5">
-              <Calendar size={20} className="text-white" />
+            <div className="rounded-lg bg-gradient-to-br from-[#bcf1ae] to-[#a1d494] p-2.5">
+              <Calendar size={20} className="text-black" />
             </div>
             <div>
               <CardTitle className="text-lg font-bold text-white">
@@ -213,7 +213,7 @@ export default function WeeklyCoachReview({ data }: WeeklyCoachReviewProps) {
                       </div>
                       <div className="h-1 bg-slate-700 rounded-full overflow-hidden">
                         <div
-                          className={`h-full rounded-full transition-all ${atTarget ? "bg-green-500" : "bg-blue-500"}`}
+                          className={`h-full rounded-full transition-all ${atTarget ? "bg-green-500" : "bg-[#bcf1ae]"}`}
                           style={{
                             width: `${Math.min(100, (metric.value / metric.target) * 100)}%`,
                           }}
@@ -266,7 +266,7 @@ export default function WeeklyCoachReview({ data }: WeeklyCoachReviewProps) {
                   80+
                 </span>
                 <span className="flex items-center gap-1">
-                  <span className="w-2 h-2 rounded-full bg-blue-500" />
+                  <span className="w-2 h-2 rounded-full bg-[#bcf1ae]" />
                   60+
                 </span>
                 <span className="flex items-center gap-1">
@@ -311,7 +311,7 @@ export default function WeeklyCoachReview({ data }: WeeklyCoachReviewProps) {
                     </div>
                     <div className="h-1 bg-slate-700 rounded-full overflow-hidden">
                       <div
-                        className={`h-full rounded-full ${hit ? "bg-green-500" : "bg-blue-500"}`}
+                        className={`h-full rounded-full ${hit ? "bg-green-500" : "bg-[#bcf1ae]"}`}
                         style={{ width: `${Math.min(100, pct)}%` }}
                       />
                     </div>
@@ -412,16 +412,16 @@ export default function WeeklyCoachReview({ data }: WeeklyCoachReviewProps) {
             {/* Action Plan */}
             <div>
               <h4 className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-3 flex items-center gap-1.5">
-                <Target size={12} className="text-blue-400" />
+                <Target size={12} className="text-[#bcf1ae]" />
                 Action Plan for Next Week
               </h4>
               <div className="space-y-2">
                 {review.actionPlan.map((action, i) => (
                   <div
                     key={i}
-                    className="flex items-start gap-2.5 bg-blue-500/5 border border-blue-500/10 rounded-lg p-3"
+                    className="flex items-start gap-2.5 bg-[#bcf1ae]/5 border border-[#bcf1ae]/10 rounded-lg p-3"
                   >
-                    <span className="flex items-center justify-center w-5 h-5 rounded-full bg-blue-500/20 text-blue-400 text-xs font-bold shrink-0 mt-0.5">
+                    <span className="flex items-center justify-center w-5 h-5 rounded-full bg-[#bcf1ae]/20 text-[#bcf1ae] text-xs font-bold shrink-0 mt-0.5">
                       {i + 1}
                     </span>
                     <span className="text-sm text-slate-300">{action}</span>

@@ -100,7 +100,7 @@ export default function AdminDashboard() {
   function getSourceIcon(type: Contact["sourceType"]) {
     switch (type) {
       case "linkedin":
-        return <Linkedin size={16} className="text-blue-400" />
+        return <Linkedin size={16} className="text-[#bcf1ae]" />
       case "url":
         return <Globe size={16} className="text-green-400" />
       case "vcard":
@@ -128,8 +128,8 @@ export default function AdminDashboard() {
       <header className="border-b border-slate-800 px-6 py-4">
         <div className="max-w-6xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center">
-              <span className="text-white font-bold text-sm">C</span>
+            <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-[#bcf1ae] to-[#a1d494] flex items-center justify-center">
+              <span className="text-black font-bold text-sm">V</span>
             </div>
             <div>
               <h1 className="text-lg font-bold text-white">Contact Scanner</h1>
@@ -139,7 +139,7 @@ export default function AdminDashboard() {
           <div className="flex items-center gap-3">
             <Link
               href="/admin/scan"
-              className="flex items-center gap-2 px-4 py-2 bg-blue-500 hover:bg-blue-400 text-white text-sm font-medium rounded-lg transition-colors"
+              className="flex items-center gap-2 px-4 py-2 bg-[#3b6934] hover:opacity-90 text-white text-sm font-medium rounded-lg transition-colors"
             >
               <Camera size={16} />
               Scan QR
@@ -189,7 +189,7 @@ export default function AdminDashboard() {
             <p className="text-slate-500 mb-6 text-sm">Scan a QR code to add your first contact</p>
             <Link
               href="/admin/scan"
-              className="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-500 hover:bg-blue-400 text-white text-sm font-medium rounded-lg transition-colors"
+              className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#3b6934] hover:opacity-90 text-white text-sm font-medium rounded-lg transition-colors"
             >
               <Camera size={16} />
               Scan QR Code
@@ -209,7 +209,7 @@ export default function AdminDashboard() {
                       <input
                         value={editName}
                         onChange={(e) => setEditName(e.target.value)}
-                        className="w-full px-3 py-2 bg-slate-900 border border-slate-600 rounded-lg text-white text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="w-full px-3 py-2 bg-slate-900 border border-slate-600 rounded-lg text-white text-sm focus:outline-none focus:ring-2 focus:ring-[#bcf1ae]"
                       />
                     </div>
                     <div>
@@ -218,7 +218,7 @@ export default function AdminDashboard() {
                         value={editNotes}
                         onChange={(e) => setEditNotes(e.target.value)}
                         rows={2}
-                        className="w-full px-3 py-2 bg-slate-900 border border-slate-600 rounded-lg text-white text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
+                        className="w-full px-3 py-2 bg-slate-900 border border-slate-600 rounded-lg text-white text-sm focus:outline-none focus:ring-2 focus:ring-[#bcf1ae] resize-none"
                         placeholder="Add notes about this contact..."
                       />
                     </div>
@@ -254,7 +254,7 @@ export default function AdminDashboard() {
                           href={contact.source}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-blue-400 hover:text-blue-300 text-sm flex items-center gap-1 mb-1"
+                          className="text-[#bcf1ae] hover:text-[#a1d494] text-sm flex items-center gap-1 mb-1"
                         >
                           {contact.source}
                           <ExternalLink size={12} />
@@ -278,7 +278,7 @@ export default function AdminDashboard() {
                     <div className="flex items-center gap-1">
                       <button
                         onClick={() => startEdit(contact)}
-                        className="p-2 text-slate-500 hover:text-blue-400 transition-colors"
+                        className="p-2 text-slate-500 hover:text-[#bcf1ae] transition-colors"
                         title="Edit contact"
                       >
                         <Pencil size={16} />

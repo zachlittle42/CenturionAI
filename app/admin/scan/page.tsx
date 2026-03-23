@@ -181,7 +181,7 @@ export default function ScanPage() {
               <div id="qr-reader" ref={scannerRef} className="w-full" />
               {!scannerReady && !error && (
                 <div className="absolute inset-0 flex flex-col items-center justify-center bg-slate-900/90">
-                  <Loader2 size={32} className="text-blue-400 animate-spin mb-3" />
+                  <Loader2 size={32} className="text-[#bcf1ae] animate-spin mb-3" />
                   <p className="text-slate-400 text-sm">Starting camera...</p>
                 </div>
               )}
@@ -211,8 +211,8 @@ export default function ScanPage() {
             ) : (
               <>
                 {/* Scanned data preview */}
-                <div className="p-4 bg-blue-500/10 border border-blue-500/20 rounded-lg">
-                  <p className="text-xs text-blue-400 font-medium mb-1">Scanned Data</p>
+                <div className="p-4 bg-[#bcf1ae]/10 border border-[#bcf1ae]/20 rounded-lg">
+                  <p className="text-xs text-[#bcf1ae] font-medium mb-1">Scanned Data</p>
                   <p className="text-white text-sm break-all">{scannedData}</p>
                 </div>
 
@@ -225,7 +225,7 @@ export default function ScanPage() {
                     <input
                       value={contactName}
                       onChange={(e) => setContactName(e.target.value)}
-                      className="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                      className="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-[#bcf1ae] focus:border-transparent"
                       placeholder="e.g., Ash"
                     />
                   </div>
@@ -238,7 +238,7 @@ export default function ScanPage() {
                       value={contactNotes}
                       onChange={(e) => setContactNotes(e.target.value)}
                       rows={3}
-                      className="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
+                      className="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-[#bcf1ae] focus:border-transparent resize-none"
                       placeholder="e.g., Met at Starbucks, interested in AI consulting"
                     />
                   </div>
@@ -254,7 +254,7 @@ export default function ScanPage() {
                   <button
                     onClick={handleSave}
                     disabled={saving}
-                    className="flex-1 flex items-center justify-center gap-2 py-3 bg-blue-500 hover:bg-blue-400 disabled:bg-blue-500/50 text-white font-medium rounded-lg transition-colors"
+                    className="flex-1 flex items-center justify-center gap-2 py-3 bg-[#3b6934] hover:opacity-90 disabled:bg-[#3b6934]/50 text-white font-medium rounded-lg transition-colors"
                   >
                     {saving ? (
                       <>

@@ -76,20 +76,20 @@
 }
 
 @layer components {
-  /* Gradient text - ice blue gradient */
+  /* Gradient text - Verdant green gradient */
   .gradient-text {
     @apply bg-clip-text text-transparent;
-    background-image: linear-gradient(135deg, #60a5fa, #3b82f6, #93c5fd);
+    background-image: linear-gradient(135deg, #bcf1ae, #a1d494, #bcf1ae);
   }
 
-  /* Card hover - blue glow */
+  /* Card hover - Verdant green glow */
   .card-hover {
     @apply transition-all duration-500 hover:shadow-xl hover:-translate-y-1.5;
   }
   .card-hover:hover {
     box-shadow:
-      0 20px 40px -12px rgba(96, 165, 250, 0.15),
-      0 0 0 1px rgba(96, 165, 250, 0.05);
+      0 20px 40px -12px rgba(188, 241, 174, 0.15),
+      0 0 0 1px rgba(188, 241, 174, 0.05);
   }
 
   .section-padding {
@@ -116,23 +116,15 @@
     z-index: 2;
   }
 
-  /* Grid pattern background (replaces dot-grid) */
-  .grid-pattern {
+  /* Tonal grid - subtle Verdant outline */
+  .tonal-grid {
     background-image:
-      linear-gradient(rgba(148,163,184,1) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(148,163,184,1) 1px, transparent 1px);
+      linear-gradient(rgba(140,147,135,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(140,147,135,0.03) 1px, transparent 1px);
     background-size: 60px 60px;
   }
 
-  /* Keep dot-grid as alias for grid pattern */
-  .dot-grid {
-    background-image:
-      linear-gradient(rgba(148,163,184,1) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(148,163,184,1) 1px, transparent 1px);
-    background-size: 60px 60px;
-  }
-
-  /* Animated gradient border - blue-based */
+  /* Animated gradient border - Verdant green */
   .gradient-border {
     position: relative;
     border-radius: var(--radius);
@@ -142,7 +134,7 @@
     position: absolute;
     inset: -1px;
     border-radius: inherit;
-    background: linear-gradient(135deg, #60a5fa, #3b82f6, #93c5fd, #60a5fa);
+    background: linear-gradient(135deg, #bcf1ae, #a1d494, #bcf1ae, #bcf1ae);
     background-size: 300% 300%;
     animation: gradient-shift 8s ease infinite;
     z-index: -1;
@@ -166,7 +158,7 @@
   .stagger-5 { animation-delay: 0.5s; }
   .stagger-6 { animation-delay: 0.6s; }
 
-  /* Nav link animated underline - blue */
+  /* Nav link animated underline - Verdant green */
   .nav-link {
     position: relative;
   }
@@ -177,7 +169,7 @@
     left: 0;
     width: 100%;
     height: 2px;
-    background: linear-gradient(90deg, #60a5fa, #3b82f6);
+    background: linear-gradient(90deg, #bcf1ae, #a1d494);
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.3s ease;
@@ -187,11 +179,40 @@
     transform: scaleX(1);
   }
 
-  /* Glow effect for hover states - blue */
+  /* Glow effect for hover states - Verdant green */
   .hover-glow {
     @apply transition-all duration-300;
   }
   .hover-glow:hover {
-    box-shadow: 0 0 20px rgba(96, 165, 250, 0.2), 0 0 40px rgba(96, 165, 250, 0.1);
+    box-shadow: 0 0 20px rgba(188, 241, 174, 0.2), 0 0 40px rgba(188, 241, 174, 0.1);
+  }
+
+  /* Glass navigation */
+  .glass-nav {
+    background: rgba(18, 20, 17, 0.6);
+    backdrop-filter: blur(20px);
+  }
+
+  /* Text gradient utility */
+  .text-gradient {
+    background: linear-gradient(135deg, #bcf1ae 0%, #a1d494 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* Hero gradient overlay */
+  .hero-gradient-overlay {
+    background: linear-gradient(to right, #121411 30%, rgba(18, 20, 17, 0) 100%);
+  }
+
+  /* Bio progress leading edge */
+  .bio-progress .leading-edge {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 8px;
+    background: #bcf1ae;
+    filter: blur(4px);
   }
 }

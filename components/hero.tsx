@@ -6,22 +6,22 @@ export default function Hero() {
   return (
     <header className="relative pt-24 pb-20 md:pt-32 md:pb-28 overflow-hidden">
       {/* Background Elements */}
-      <div className="absolute inset-0 bg-gradient-to-b from-brand-50 to-white z-0"></div>
-      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-brand-400 via-brand-600 to-brand-800"></div>
-      <div className="absolute -top-24 -right-24 w-96 h-96 bg-brand-100 rounded-full opacity-20 blur-3xl"></div>
-      <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-brand-200 rounded-full opacity-20 blur-3xl"></div>
+      <div className="absolute inset-0 z-0" style={{ backgroundColor: "#121411" }}></div>
+      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#bcf1ae] via-[#a1d494] to-[#3b6934]"></div>
+      <div className="absolute -top-24 -right-24 w-96 h-96 bg-[#bcf1ae]/20 rounded-full opacity-20 blur-3xl"></div>
+      <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-[#bcf1ae]/10 rounded-full opacity-20 blur-3xl"></div>
 
       <div className="container relative z-10 mx-auto max-w-5xl px-4 text-center">
-        <div className="inline-block mb-4 px-4 py-1.5 bg-brand-50 rounded-full border border-brand-100">
-          <span className="text-brand-700 font-medium text-sm">Fractional AI Leadership</span>
+        <div className="inline-block mb-4 px-4 py-1.5 bg-[#292b27] rounded-full border border-[#42493e]/15">
+          <span className="text-[#bcf1ae] font-medium text-sm">Fractional AI Leadership</span>
         </div>
 
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-gray-900 via-gray-800 to-brand-950">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-white">
           Stop paying for AI tools nobody uses.
         </h1>
 
-        <p className="text-xl text-gray-700 mb-10 max-w-3xl mx-auto leading-relaxed">
-          You bought the seats. Your team barely touches them. Centurion AI bridges the gap between
+        <p className="text-xl mb-10 max-w-3xl mx-auto leading-relaxed" style={{ color: "#c2c9bb" }}>
+          You bought the seats. Your team barely touches them. Verdant AI Partners bridges the gap between
           having AI tools and actually getting value from them. We set up, train, build, and run AI
           systems so your team ships faster and works smarter.
         </p>
@@ -30,7 +30,7 @@ export default function Hero() {
           <Button
             asChild
             size="lg"
-            className="text-base px-8 py-6 font-medium bg-brand-600 hover:bg-brand-700 shadow-lg shadow-brand-100/50 group"
+            className="text-base px-8 py-6 font-medium bg-[#bcf1ae] hover:opacity-90 text-[#0b390a] shadow-lg shadow-[#bcf1ae]/10 group"
           >
             <Link href="/get-started" className="flex items-center">
               Get Started
@@ -41,7 +41,7 @@ export default function Hero() {
             asChild
             variant="outline"
             size="lg"
-            className="text-base px-8 py-6 font-medium border-brand-200 text-brand-700 hover:bg-brand-50"
+            className="text-base px-8 py-6 font-medium border-[#42493e] text-[#bcf1ae] hover:bg-[#292b27]"
           >
             <Link href="/get-started" className="flex items-center">
               Get Started

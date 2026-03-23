@@ -45,7 +45,7 @@ The fix: Define what success looks like before you start. Track adoption weekly.
 
 AI pilots don't fail because of technology. They fail because of implementation. The companies that succeed treat AI adoption like any other change management initiative: they plan the rollout, train the team, integrate with existing tools, and measure results.
 
-That's exactly what we do at Centurion AI. If you've had a pilot that didn't stick — or you want to make sure your first one does — start with a Strategy Audit. We'll map where AI fits, what tools to use, and how to make adoption stick.`,
+That's exactly what we do at Verdant AI Partners. If you've had a pilot that didn't stick — or you want to make sure your first one does — start with a Strategy Audit. We'll map where AI fits, what tools to use, and how to make adoption stick.`,
   },
   {
     slug: "the-1500-question",
@@ -138,7 +138,7 @@ After the first month: zero missed calls. Appointment bookings went up 35%. The 
 
 AI agents aren't science fiction and they aren't enterprise-only. A small healthcare practice can deploy a voice agent in an afternoon and see ROI in weeks. The technology is ready. The question is whether your implementation partner knows how to deploy it properly.
 
-That's what we do at Centurion AI. If you want an AI agent for your business — voice, email, knowledge base, or automation — we deploy it on your infrastructure with your data, and you own everything.`,
+That's what we do at Verdant AI Partners. If you want an AI agent for your business — voice, email, knowledge base, or automation — we deploy it on your infrastructure with your data, and you own everything.`,
   },
   {
     slug: "ai-intake-bot-weight-loss-clinic",
@@ -813,7 +813,7 @@ The VA is the right choice if:
 Yes. I was transparent about it from the start. She understood the goal was research, not replacement. She's now working with me in the hybrid model and actually enjoys her role more because the tedious tasks are gone.
 
 **How technical do you need to be to set this up?**
-Moderately technical. You need to be comfortable with APIs, n8n or similar automation tools, and basic prompt engineering. If that sounds intimidating, that's exactly what we build for clients at Centurion AI.
+Moderately technical. You need to be comfortable with APIs, n8n or similar automation tools, and basic prompt engineering. If that sounds intimidating, that's exactly what we build for clients at Verdant AI Partners.
 
 **What was the biggest surprise?**
 How much implicit knowledge my VA had that I'd never documented. Things like "always cc [specific colleague] on emails about [specific topic]." I had to discover these rules by noticing when the AI got them wrong.
@@ -1218,7 +1218,7 @@ The AI is configured to recognize urgent language and immediately route to your 
 
 Medical spas that automate these six workflows see more bookings, higher retention, and less staff burnout. The technology is mature, the ROI is measurable, and the implementation is faster than most owners expect.
 
-Ready to see what AI can do for your med spa? Book a Strategy Audit with Centurion AI. We'll map your highest-ROI automation opportunities and give you a concrete deployment plan — typically in under two weeks.`,
+Ready to see what AI can do for your med spa? Book a Strategy Audit with Verdant AI Partners. We'll map your highest-ROI automation opportunities and give you a concrete deployment plan — typically in under two weeks.`,
   },
   {
     slug: "ai-weight-loss-clinic",
@@ -1322,7 +1322,7 @@ AI voice agents can handle outbound check-in calls with natural conversation. Pa
 
 Patient retention is the highest-leverage problem in weight loss clinic operations. You've already spent the money to get them in the door. AI makes sure they stay long enough to get results — which is good for them and good for your business.
 
-Centurion AI deploys retention automation systems built specifically for weight loss and GLP-1 clinics. Book a Strategy Audit and we'll map your drop-off points, calculate your retention gap, and build a deployment plan that pays for itself within 60 days.`,
+Verdant AI Partners deploys retention automation systems built specifically for weight loss and GLP-1 clinics. Book a Strategy Audit and we'll map your drop-off points, calculate your retention gap, and build a deployment plan that pays for itself within 60 days.`,
   },
   {
     slug: "ai-patient-communication",
@@ -1432,7 +1432,7 @@ Yes. Patients should be informed that they may interact with AI-powered tools an
 
 AI patient communication is a competitive advantage when done right and a liability when done wrong. The difference is in the implementation — compliance, guardrails, integration, and escalation paths.
 
-Centurion AI deploys HIPAA-compliant AI communication systems for healthcare practices. We handle the compliance, the integration, and the guardrails so you can focus on patient care. Book a Strategy Audit to see what's possible for your practice.`,
+Verdant AI Partners deploys HIPAA-compliant AI communication systems for healthcare practices. We handle the compliance, the integration, and the guardrails so you can focus on patient care. Book a Strategy Audit to see what's possible for your practice.`,
   },
   {
     slug: "hipaa-and-ai",
@@ -1554,7 +1554,7 @@ At minimum annually, or whenever you make significant changes. Quarterly is bett
 
 HIPAA compliance isn't a barrier to AI adoption — it's a framework for doing it safely. The practices that figure this out gain a massive competitive advantage: better patient communication, lower costs, and higher retention, all without compliance risk.
 
-Centurion AI builds HIPAA-compliant AI systems for healthcare practices. Every deployment includes proper BAAs, encryption, access controls, audit trails, and clinical guardrails. Book a Strategy Audit and we'll assess your compliance posture and build a safe deployment plan.`,
+Verdant AI Partners builds HIPAA-compliant AI systems for healthcare practices. Every deployment includes proper BAAs, encryption, access controls, audit trails, and clinical guardrails. Book a Strategy Audit and we'll assess your compliance posture and build a safe deployment plan.`,
   },
   {
     slug: "glp1-clinic-ai",
@@ -1655,7 +1655,7 @@ Perfectly. Telehealth GLP-1 clinics benefit even more because the entire patient
 
 GLP-1 clinics that automate operations don't just save time — they scale without proportionally scaling staff. A clinic that can handle 500 patients with the same team that managed 200 has a fundamental competitive advantage.
 
-Centurion AI builds operations automation specifically for GLP-1 and weight management clinics. Book a Strategy Audit and we'll map your biggest operational time sinks and deploy AI where it has the highest impact.`,
+Verdant AI Partners builds operations automation specifically for GLP-1 and weight management clinics. Book a Strategy Audit and we'll map your biggest operational time sinks and deploy AI where it has the highest impact.`,
   },
   {
     slug: "ai-appointment-reminders",
@@ -1773,7 +1773,7 @@ Yes. Each location gets its own scheduling rules, provider lists, and reminder s
 
 No-shows are a solved problem. AI-powered reminders with conversational rescheduling turn missed appointments into rebooked ones. The technology is mature, the setup is fast, and the ROI is immediate.
 
-Centurion AI deploys AI reminder and scheduling systems for healthcare practices and service businesses. Book a Strategy Audit and we'll calculate your no-show cost and build a reminder system that pays for itself in the first month.`,
+Verdant AI Partners deploys AI reminder and scheduling systems for healthcare practices and service businesses. Book a Strategy Audit and we'll calculate your no-show cost and build a reminder system that pays for itself in the first month.`,
   },
   {
     slug: "ai-aesthetics-practice",
@@ -1881,7 +1881,7 @@ The same AI system can handle website chat, text inquiries, and even phone calls
 
 Every lead that goes cold is ad money wasted. AI lead nurturing ensures every inquiry gets an instant, personalized response and persistent follow-up until they book or explicitly opt out.
 
-Centurion AI builds lead nurturing automation for aesthetics practices. Book a Strategy Audit and we'll analyze your current lead flow, calculate your conversion gap, and deploy a nurturing system that turns your ad spend into booked consultations.`,
+Verdant AI Partners builds lead nurturing automation for aesthetics practices. Book a Strategy Audit and we'll analyze your current lead flow, calculate your conversion gap, and deploy a nurturing system that turns your ad spend into booked consultations.`,
   },
   {
     slug: "do-you-need-a-website",
@@ -2000,7 +2000,7 @@ Review it quarterly. Update pricing, services, and contact info whenever they ch
 
 Most small businesses need a website. It doesn't need to be expensive or complex. It needs to be fast, mobile-friendly, findable in search, and make it easy for potential customers to take the next step.
 
-If you need help deciding what kind of web presence makes sense for your business — or if you need one built — Centurion AI offers fast, conversion-focused website builds as part of our Tech Basics service. Book a call and we'll figure out exactly what you need.`,
+If you need help deciding what kind of web presence makes sense for your business — or if you need one built — Verdant AI Partners offers fast, conversion-focused website builds as part of our Tech Basics service. Book a call and we'll figure out exactly what you need.`,
   },
   {
     slug: "business-phone-systems",
@@ -2155,7 +2155,7 @@ Most VoIP providers include domestic calling and offer international plans. If y
 
 Your phone system should work as hard as you do. A modern VoIP setup with missed-call text-back captures leads you're currently losing — and it costs less than a dinner out each month.
 
-Centurion AI sets up complete business phone systems as part of our Tech Basics service — VoIP, virtual numbers, missed-call text-back, and AI voice agents. Book a call and we'll build a system that captures every lead.`,
+Verdant AI Partners sets up complete business phone systems as part of our Tech Basics service — VoIP, virtual numbers, missed-call text-back, and AI voice agents. Book a call and we'll build a system that captures every lead.`,
   },
   {
     slug: "crm-for-small-business",
@@ -2287,7 +2287,7 @@ Yes, but it's painful. Contact data migrates easily. Customizations, automations
 
 A CRM is one of the few tools that pays for itself almost immediately. When every follow-up happens on time, every lead gets worked, and every customer interaction is tracked — you close more deals and keep more customers.
 
-Centurion AI sets up and configures CRMs as part of our Tech Basics service. We'll pick the right platform for your business, customize it for your workflow, set up automations, and train your team. Book a call and stop losing deals to forgotten follow-ups.`,
+Verdant AI Partners sets up and configures CRMs as part of our Tech Basics service. We'll pick the right platform for your business, customize it for your workflow, set up automations, and train your team. Book a call and stop losing deals to forgotten follow-ups.`,
   },
   {
     slug: "texting-vs-email-business",
@@ -2429,7 +2429,7 @@ Auto-responders for after-hours texts work well: "Thanks for reaching out! We're
 
 Your customers are on their phones. They read texts. They respond to texts. They act on texts. If your primary customer communication channel is still email, you're speaking into a void.
 
-Centurion AI sets up business texting systems — from basic automation to AI-powered conversational agents — as part of our Tech Basics service. Book a call and start reaching customers where they actually are.`,
+Verdant AI Partners sets up business texting systems — from basic automation to AI-powered conversational agents — as part of our Tech Basics service. Book a call and start reaching customers where they actually are.`,
   },
   {
     slug: "ai-ready-tech-stack",
@@ -2558,14 +2558,14 @@ Not necessarily. If your current tools have APIs and handle your workflows adequ
 **What's the biggest pre-work mistake you see?**
 Skipping data cleanup. Every time. Businesses spend weeks on AI configuration and deployment, then wonder why the AI sends follow-up emails to dead leads or books appointments with the wrong provider. The data was bad from the start.
 
-**Can Centurion AI help with pre-work?**
+**Can Verdant AI Partners help with pre-work?**
 Yes. Our Strategy Audit includes a tech stack assessment and readiness evaluation. For businesses that need hands-on pre-work, our Tech Basics service handles data cleanup, integration setup, and infrastructure configuration before AI deployment.
 
 ## Get the Foundation Right
 
 AI on top of a solid tech stack is transformative. AI on top of a messy tech stack is expensive chaos. The pre-work isn't glamorous, but it's the difference between an AI deployment that delivers ROI and one that delivers headaches.
 
-Centurion AI starts every engagement with a tech stack assessment. Book a Strategy Audit and we'll evaluate your readiness, identify gaps, and build a plan to get your stack AI-ready — before a single dollar is spent on automation.`,
+Verdant AI Partners starts every engagement with a tech stack assessment. Book a Strategy Audit and we'll evaluate your readiness, identify gaps, and build a plan to get your stack AI-ready — before a single dollar is spent on automation.`,
   },
   {
     slug: "ai-consulting-vs-diy",
@@ -2703,7 +2703,7 @@ Compare scope, not just price. A $5,000 project that includes strategy, implemen
 
 The DIY vs. consulting decision isn't about capability — it's about context. Some projects are perfect for DIY. Others need expert guidance. The key is being honest about which category your project falls into.
 
-Centurion AI offers Strategy Audits ($1,500) for businesses that want expert guidance before committing to a full engagement. We'll assess your needs, map your opportunities, and give you a clear recommendation — including telling you if DIY is the right call. Book a Strategy Audit and get clarity before you spend.`,
+Verdant AI Partners offers Strategy Audits ($1,500) for businesses that want expert guidance before committing to a full engagement. We'll assess your needs, map your opportunities, and give you a clear recommendation — including telling you if DIY is the right call. Book a Strategy Audit and get clarity before you spend.`,
   },
   {
     slug: "claude-api-vs-openai-api",
@@ -2840,7 +2840,7 @@ Both support function calling/tool use effectively. Claude's implementation tend
 
 The Claude vs. OpenAI debate isn't about which is "better" — it's about which is better for your specific application. Evaluate based on your use case, test with your actual prompts, and choose the provider that delivers the best results for your needs.
 
-Centurion AI builds custom AI applications on both Claude and OpenAI APIs. We'll evaluate your use case, recommend the right foundation, and build an application that leverages each provider's strengths. Book a Strategy Audit and let's figure out the right architecture for your business.`,
+Verdant AI Partners builds custom AI applications on both Claude and OpenAI APIs. We'll evaluate your use case, recommend the right foundation, and build an application that leverages each provider's strengths. Book a Strategy Audit and let's figure out the right architecture for your business.`,
   },
   {
     slug: "ai-chatbot-vs-agent-cost",
@@ -3028,7 +3028,7 @@ Buy if you want speed and reliability. Build if you have technical resources and
 
 Don't buy an agent when a chatbot will do. Don't settle for a chatbot when you need an agent. Match the tool to the job, and the investment to the return.
 
-Centurion AI builds both AI chatbots and full-stack AI agents. We'll assess your use case, recommend the right approach, and deploy a system that matches your needs and budget. Book a Strategy Audit and get a clear recommendation — not a sales pitch.`,
+Verdant AI Partners builds both AI chatbots and full-stack AI agents. We'll assess your use case, recommend the right approach, and deploy a system that matches your needs and budget. Book a Strategy Audit and get a clear recommendation — not a sales pitch.`,
   },
   {
     slug: "strategy-audit-vs-implementation",
@@ -3151,7 +3151,7 @@ This gets you building quickly while maintaining strategic direction.
 ## FAQ
 
 **Isn't a Strategy Audit just a sales pitch for more services?**
-It shouldn't be. A good audit gives you a plan you can execute with anyone — or on your own. At Centurion AI, our audits include specific tool recommendations, architecture diagrams, and implementation steps. If you want to take the plan and build it yourself or hire someone else, that's fine. The plan is yours.
+It shouldn't be. A good audit gives you a plan you can execute with anyone — or on your own. At Verdant AI Partners, our audits include specific tool recommendations, architecture diagrams, and implementation steps. If you want to take the plan and build it yourself or hire someone else, that's fine. The plan is yours.
 
 **How long does a Strategy Audit take?**
 2-4 weeks. Week 1-2: assessment and interviews. Week 2-3: analysis and opportunity mapping. Week 3-4: roadmap delivery and walkthrough. You get a finished plan, not a work-in-progress.
@@ -3175,7 +3175,7 @@ The audit costs $1,500. It prevents wrong tool purchases ($2,000-$50,000), ident
 
 The most expensive AI mistake isn't picking the wrong tool — it's starting without knowing what you need. A Strategy Audit gives you clarity, confidence, and a concrete plan. Implementation without strategy is just expensive experimentation.
 
-Centurion AI Strategy Audits start at $1,500. In 2-4 weeks, you'll have a prioritized roadmap, tool recommendations, integration architecture, and ROI projections. Book a Strategy Audit and make your first AI investment the right one.`,
+Verdant AI Partners Strategy Audits start at $1,500. In 2-4 weeks, you'll have a prioritized roadmap, tool recommendations, integration architecture, and ROI projections. Book a Strategy Audit and make your first AI investment the right one.`,
   },
   {
     slug: "n8n-vs-make-vs-zapier-2026",
@@ -3354,7 +3354,7 @@ Yes, but workflows don't transfer directly. You'll rebuild them. The logic trans
 **Is n8n really free?**
 The self-hosted community edition is genuinely free and open source. You pay for hosting infrastructure ($5-$50/month depending on scale). n8n Cloud is the paid hosted version if you don't want to manage servers.
 
-**Which platform do you use at Centurion AI?**
+**Which platform do you use at Verdant AI Partners?**
 We use n8n for most client deployments, especially anything AI-heavy or compliance-sensitive. We use Make for quick marketing automations and Zapier when a client's team needs to maintain simple workflows without technical support.
 
 **Can Make handle AI agent workflows?**
@@ -3373,7 +3373,7 @@ n8n, self-hosted. It's the only option that keeps all data on infrastructure you
 
 Don't pick an automation platform based on blog posts (even this one). Consider your technical capabilities, your compliance requirements, your budget, and the complexity of the workflows you need to build. The best platform is the one that matches your team and your use case.
 
-Centurion AI builds AI automations on all three platforms and can advise on which fits your specific needs. Book a Strategy Audit and we'll evaluate your automation requirements, recommend the right platform, and build the workflows that drive real business results.`,
+Verdant AI Partners builds AI automations on all three platforms and can advise on which fits your specific needs. Book a Strategy Audit and we'll evaluate your automation requirements, recommend the right platform, and build the workflows that drive real business results.`,
   },
   {
     slug: "ai-implementation-mistakes",
@@ -5001,7 +5001,7 @@ Traditional consulting: 3-6 months, $50,000-$200,000, massive slide decks. Strat
 **What if the audit reveals we're not ready for AI?**
 That's valuable information. The roadmap includes prerequisites like process standardization or data cleanup. Better to learn for $1,500 than after spending $20,000 on tools that don't work with messy data.
 
-**Do we have to use Centurion AI for implementation?**
+**Do we have to use Verdant AI Partners for implementation?**
 No. The deliverables work regardless of who implements them. Some clients self-implement, some use other vendors, some work with us.
 
 **Can we do a Strategy Audit ourselves?**
@@ -5014,7 +5014,7 @@ The sweet spot is 5-200 employees. Below 5, a simple conversation usually suffic
 Annually. The AI landscape changes rapidly and new opportunities emerge as you build capabilities.
 
 **What happens after the audit?**
-You can start implementing immediately. If you want Centurion AI for implementation, we typically start within 1-2 weeks.
+You can start implementing immediately. If you want Verdant AI Partners for implementation, we typically start within 1-2 weeks.
 
 ## The First Step Is Always the Same
 
@@ -5440,7 +5440,7 @@ A $75/hour freelancer often costs $120-$150/hour in real terms.
 
 **Mid-size agencies:** 20-100 people, $25K-$150K per project. Good talent, can be rigid.
 
-**Boutique/specialized (like Centurion AI):** 5-20 people, $5K-$50K per project. Faster, flexible, deep niche expertise.
+**Boutique/specialized (like Verdant AI Partners):** 5-20 people, $5K-$50K per project. Faster, flexible, deep niche expertise.
 
 **Dev shops with "AI" added to name:** Verify actual AI project count. "We integrated ChatGPT into a website" doesn't count.
 

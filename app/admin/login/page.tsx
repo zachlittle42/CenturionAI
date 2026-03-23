@@ -34,11 +34,11 @@ export default function AdminLoginPage() {
     <div className="min-h-screen flex items-center justify-center px-4">
       <div className="w-full max-w-md">
         <div className="text-center mb-8">
-          <div className="w-14 h-14 rounded-lg bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center mx-auto mb-4">
-            <span className="text-white font-bold text-2xl">C</span>
+          <div className="w-14 h-14 rounded-lg bg-gradient-to-br from-[#bcf1ae] to-[#a1d494] flex items-center justify-center mx-auto mb-4">
+            <span className="text-black font-bold text-2xl">V</span>
           </div>
           <h1 className="text-2xl font-bold text-white font-display">Admin Access</h1>
-          <p className="text-slate-400 mt-2 text-sm">Centurion AI - Restricted Area</p>
+          <p className="text-slate-400 mt-2 text-sm">Verdant AI Partners - Restricted Area</p>
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-4">
@@ -51,7 +51,7 @@ export default function AdminLoginPage() {
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              className="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-[#bcf1ae] focus:border-transparent"
               placeholder="your@email.com"
               required
             />
@@ -66,7 +66,7 @@ export default function AdminLoginPage() {
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              className="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-[#bcf1ae] focus:border-transparent"
               placeholder="Enter password"
               required
             />
@@ -79,7 +79,7 @@ export default function AdminLoginPage() {
           <button
             type="submit"
             disabled={loading}
-            className="w-full py-3 bg-blue-500 hover:bg-blue-400 disabled:bg-blue-500/50 text-white font-medium rounded-lg transition-colors"
+            className="w-full py-3 bg-[#3b6934] hover:opacity-90 disabled:bg-[#3b6934]/50 text-white font-medium rounded-lg transition-colors"
           >
             {loading ? "Signing in..." : "Sign In"}
           </button>

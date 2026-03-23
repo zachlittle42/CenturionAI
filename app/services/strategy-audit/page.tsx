@@ -21,7 +21,7 @@ import {
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Strategy Audit - Centurion AI",
+  title: "Strategy Audit - Verdant AI Partners",
   description:
     "A focused audit that maps your AI opportunities, estimates ROI, and gives you a concrete implementation plan.",
 }
@@ -68,7 +68,7 @@ const deliverables = [
 const pricingTiers = [
   {
     name: "30-Day Sprint",
-    price: "$1,500",
+    price: "$5,000",
     recommended: false,
     features: [
       "2 stakeholder interviews",
@@ -146,22 +146,22 @@ export default function StrategyAuditPage() {
   return (
     <main className="min-h-screen">
       {/* Hero */}
-      <section className="relative overflow-hidden py-20 md:py-28 px-4" style={{backgroundColor: "#0F172A"}}>
+      <section className="relative overflow-hidden py-20 md:py-28 px-4" style={{backgroundColor: "#121411"}}>
         <div className="absolute inset-0 z-0 dot-grid opacity-[0.03]" />
-        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-400/50 to-transparent" />
-        <div className="absolute -top-40 -right-40 w-96 h-96 bg-blue-500 rounded-full opacity-10 blur-3xl" />
+        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#bcf1ae]/30 to-transparent" />
+        <div className="absolute -top-40 -right-40 w-96 h-96 bg-[#bcf1ae] rounded-full opacity-10 blur-3xl" />
 
         <div className="relative z-10 max-w-4xl mx-auto text-center">
           <Badge
             variant="secondary"
-            className="mb-6 bg-blue-900/50 text-blue-300 border-blue-700/50 px-4 py-1.5 text-sm opacity-0 animate-reveal"
+            className="mb-6 bg-[#0d0f0c]/50 text-[#a1d494] border-[#1a2e1a]/50 px-4 py-1.5 text-sm opacity-0 animate-reveal"
           >
             Entry-point engagement
           </Badge>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-6 font-display text-balance opacity-0 animate-reveal stagger-1">
             Know exactly where AI fits in your business.
           </h1>
-          <p className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed mb-8 opacity-0 animate-reveal stagger-2" style={{color: "#94A3B8"}}>
+          <p className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed mb-8 opacity-0 animate-reveal stagger-2" style={{color: "#c2c9bb"}}>
             A focused audit that maps your AI opportunities, estimates ROI, and
             gives you a concrete implementation plan. Not a 200-slide deck - a
             clear answer.
@@ -169,7 +169,7 @@ export default function StrategyAuditPage() {
           <Button
             asChild
             size="lg"
-            className="bg-blue-500 hover:bg-blue-400 text-white px-8 py-6 text-base opacity-0 animate-reveal stagger-3"
+            className="bg-[#bcf1ae] hover:opacity-90 text-[#0b390a] px-8 py-6 text-base opacity-0 animate-reveal stagger-3"
           >
             <Link href="/get-started">
               Book Your Audit
@@ -180,13 +180,13 @@ export default function StrategyAuditPage() {
       </section>
 
       {/* What You Get */}
-      <section className="py-20 px-4 bg-white">
+      <section className="py-20 px-4 bg-[#1a1c19]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 font-display" style={{color: "#0F172A"}}>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 font-display" style={{color: "#e3e3dd"}}>
               What you get
             </h2>
-            <p className="text-lg max-w-2xl mx-auto" style={{color: "#64748B"}}>
+            <p className="text-lg max-w-2xl mx-auto" style={{color: "#c2c9bb"}}>
               A complete picture of where AI fits, what it costs, and how to get
               there.
             </p>
@@ -196,16 +196,16 @@ export default function StrategyAuditPage() {
             {deliverables.map((item) => (
               <Card
                 key={item.title}
-                className="border-0 shadow-md card-hover bg-white"
+                className="border-0 shadow-md card-hover bg-[#1a1c19]"
               >
                 <CardContent className="p-6">
-                  <div className="w-12 h-12 rounded-lg bg-blue-50 flex items-center justify-center mb-4">
-                    <item.icon className="h-6 w-6 text-blue-600" />
+                  <div className="w-12 h-12 rounded-lg bg-[#292b27] flex items-center justify-center mb-4">
+                    <item.icon className="h-6 w-6 text-[#bcf1ae]" />
                   </div>
-                  <h3 className="text-lg font-bold mb-2" style={{color: "#0F172A"}}>
+                  <h3 className="text-lg font-bold mb-2" style={{color: "#e3e3dd"}}>
                     {item.title}
                   </h3>
-                  <p className="text-sm leading-relaxed" style={{color: "#64748B"}}>
+                  <p className="text-sm leading-relaxed" style={{color: "#c2c9bb"}}>
                     {item.description}
                   </p>
                 </CardContent>
@@ -216,13 +216,13 @@ export default function StrategyAuditPage() {
       </section>
 
       {/* The Process / Pricing */}
-      <section className="py-20 px-4" style={{backgroundColor: "#F8FAFC"}}>
+      <section className="py-20 px-4" style={{backgroundColor: "#1a1c19"}}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 font-display" style={{color: "#0F172A"}}>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 font-display" style={{color: "#e3e3dd"}}>
               The process
             </h2>
-            <p className="text-lg max-w-2xl mx-auto" style={{color: "#64748B"}}>
+            <p className="text-lg max-w-2xl mx-auto" style={{color: "#c2c9bb"}}>
               Three options. Pick the depth that fits your organization.
             </p>
           </div>
@@ -231,32 +231,32 @@ export default function StrategyAuditPage() {
             {pricingTiers.map((tier) => (
               <Card
                 key={tier.name}
-                className={`relative border-0 bg-white overflow-hidden ${
+                className={`relative border-0 bg-[#1a1c19] overflow-hidden ${
                   tier.recommended
-                    ? "ring-2 ring-blue-500 shadow-lg gradient-border"
+                    ? "ring-2 ring-[#bcf1ae] shadow-lg gradient-border"
                     : "shadow-md card-hover"
                 }`}
               >
                 {tier.recommended && (
                   <div className="absolute top-0 left-0 right-0">
-                    <div className="bg-blue-500 text-white text-center text-xs font-semibold py-1.5 uppercase tracking-wide">
+                    <div className="bg-[#bcf1ae] text-white text-center text-xs font-semibold py-1.5 uppercase tracking-wide">
                       Recommended
                     </div>
                   </div>
                 )}
                 <div
-                  className={`h-1 bg-gradient-to-r from-blue-500 to-blue-400 ${
+                  className={`h-1 bg-gradient-to-r from-[#bcf1ae] to-[#a1d494] ${
                     tier.recommended ? "hidden" : ""
                   }`}
                 />
                 <CardHeader
                   className={`text-center ${tier.recommended ? "pt-10" : "pt-6"}`}
                 >
-                  <CardTitle className="text-xl font-bold" style={{color: "#0F172A"}}>
+                  <CardTitle className="text-xl font-bold" style={{color: "#e3e3dd"}}>
                     {tier.name}
                   </CardTitle>
                   <div className="mt-3">
-                    <span className="text-4xl font-bold text-blue-600">
+                    <span className="text-4xl font-bold text-[#bcf1ae]">
                       {tier.price}
                     </span>
                   </div>
@@ -265,13 +265,13 @@ export default function StrategyAuditPage() {
                   <ul className="space-y-3 mb-6">
                     {tier.features.map((feature) => (
                       <li key={feature} className="flex items-start gap-3">
-                        <Check className="h-4 w-4 text-blue-600 mt-0.5 shrink-0" />
-                        <span className="text-sm text-gray-700">{feature}</span>
+                        <Check className="h-4 w-4 text-[#bcf1ae] mt-0.5 shrink-0" />
+                        <span className="text-sm text-[#c2c9bb]">{feature}</span>
                       </li>
                     ))}
                   </ul>
-                  <div className="border-t border-gray-100 pt-4 mb-6">
-                    <p className="text-xs text-gray-500">
+                  <div className="border-t border-[#42493e]/15 pt-4 mb-6">
+                    <p className="text-xs text-[#8c9387]">
                       <span className="font-medium">Best for:</span>{" "}
                       {tier.bestFor}
                     </p>
@@ -280,8 +280,8 @@ export default function StrategyAuditPage() {
                     asChild
                     className={`w-full ${
                       tier.recommended
-                        ? "bg-blue-500 hover:bg-blue-400 text-white"
-                        : "bg-white border border-blue-600 text-blue-600 hover:bg-blue-50"
+                        ? "bg-[#bcf1ae] hover:opacity-90 text-[#0b390a]"
+                        : "bg-[#1a1c19] border border-[#bcf1ae] text-[#bcf1ae] hover:bg-[#292b27]"
                     }`}
                   >
                     <Link href="/get-started">Book Your Audit</Link>
@@ -291,20 +291,20 @@ export default function StrategyAuditPage() {
             ))}
           </div>
 
-          <p className="text-center text-sm text-gray-500 mt-8 max-w-xl mx-auto">
+          <p className="text-center text-sm text-[#8c9387] mt-8 max-w-xl mx-auto">
             The audit is a standalone engagement with no obligation to continue.
           </p>
         </div>
       </section>
 
       {/* What We Assess */}
-      <section className="py-20 px-4 bg-white">
+      <section className="py-20 px-4 bg-[#1a1c19]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 font-display" style={{color: "#0F172A"}}>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 font-display" style={{color: "#e3e3dd"}}>
               What we assess
             </h2>
-            <p className="text-lg max-w-2xl mx-auto" style={{color: "#64748B"}}>
+            <p className="text-lg max-w-2xl mx-auto" style={{color: "#c2c9bb"}}>
               Six areas that determine your AI readiness and biggest
               opportunities.
             </p>
@@ -313,14 +313,14 @@ export default function StrategyAuditPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {assessmentItems.map((item) => (
               <div key={item.title} className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center shrink-0">
-                  <item.icon className="h-5 w-5 text-blue-600" />
+                <div className="w-10 h-10 rounded-lg bg-[#292b27] flex items-center justify-center shrink-0">
+                  <item.icon className="h-5 w-5 text-[#bcf1ae]" />
                 </div>
                 <div>
-                  <h3 className="font-semibold mb-1" style={{color: "#0F172A"}}>
+                  <h3 className="font-semibold mb-1" style={{color: "#e3e3dd"}}>
                     {item.title}
                   </h3>
-                  <p className="text-sm leading-relaxed" style={{color: "#64748B"}}>
+                  <p className="text-sm leading-relaxed" style={{color: "#c2c9bb"}}>
                     {item.description}
                   </p>
                 </div>
@@ -331,23 +331,23 @@ export default function StrategyAuditPage() {
       </section>
 
       {/* CTA Banner */}
-      <section className="py-20 px-4 relative overflow-hidden" style={{backgroundColor: "#0F172A"}}>
+      <section className="py-20 px-4 relative overflow-hidden" style={{backgroundColor: "#121411"}}>
         <div className="absolute inset-0 grain">
-          <div className="absolute top-1/2 left-1/4 w-64 h-64 bg-blue-500 rounded-full opacity-10 blur-3xl" />
-          <div className="absolute bottom-0 right-1/4 w-48 h-48 bg-blue-400 rounded-full opacity-10 blur-3xl" />
+          <div className="absolute top-1/2 left-1/4 w-64 h-64 bg-[#bcf1ae] rounded-full opacity-10 blur-3xl" />
+          <div className="absolute bottom-0 right-1/4 w-48 h-48 bg-[#bcf1ae] rounded-full opacity-10 blur-3xl" />
         </div>
 
         <div className="relative z-10 max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 font-display">
             The audit pays for itself. Usually in the first week.
           </h2>
-          <p className="text-lg mb-8 max-w-xl mx-auto" style={{color: "#94A3B8"}}>
+          <p className="text-lg mb-8 max-w-xl mx-auto" style={{color: "#c2c9bb"}}>
             Stop guessing where AI fits. Get a clear answer and a concrete plan.
           </p>
           <Button
             asChild
             size="lg"
-            className="bg-blue-500 hover:bg-blue-400 text-white px-8 py-6 text-base font-semibold"
+            className="bg-[#bcf1ae] hover:opacity-90 text-[#0b390a] px-8 py-6 text-base font-semibold"
           >
             <Link href="/get-started">
               Book Your Audit
