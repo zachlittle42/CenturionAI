@@ -35,6 +35,12 @@ export default function Footer() {
               <h3 className="text-xl font-bold mb-6 text-white">Services</h3>
               <ul className="space-y-3">
                 <li>
+                  <Link href="/implement" className="text-[#c2c9bb]/60 hover:text-[#bcf1ae] transition-colors flex items-center">
+                    <span className="w-1.5 h-1.5 bg-[#bcf1ae] rounded-full mr-2"></span>
+                    Implement
+                  </Link>
+                </li>
+                <li>
                   <Link href="/fundamentals" className="text-[#c2c9bb]/60 hover:text-[#bcf1ae] transition-colors flex items-center">
                     <span className="w-1.5 h-1.5 bg-[#bcf1ae] rounded-full mr-2"></span>
                     Fundamentals
