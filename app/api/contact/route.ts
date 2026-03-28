@@ -2,7 +2,9 @@ import { NextResponse } from "next/server"
 import { z } from "zod"
 import { Resend } from "resend"
 
-const resend = new Resend(process.env.RESEND_API_KEY)
+function getResend() {
+  return new Resend(process.env.RESEND_API_KEY)
+}
 
 const contactSchema = z.object({
   name: z.string().min(1, "Name is required"),
@@ -21,7 +23,7 @@ export async function POST(request: Request) {
 
     const to = process.env.LEAD_NOTIFICATION_EMAIL || "zach@centurionmovement.com"
 
-    await resend.emails.send({
+    await getResend().emails.send({
       from: "Verdant AI <onboarding@resend.dev>",
       to,
       subject: `New Lead: ${validated.name} — ${validated.company}`,
