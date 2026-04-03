@@ -7,7 +7,9 @@ import { signOut } from "next-auth/react"
 import Link from "next/link"
 import { ArrowLeft, LogOut, FlaskConical } from "lucide-react"
 import WeeklyCoachReview from "@/components/weekly-coach-review"
+import EnergyBalanceCard from "@/components/energy-balance-card"
 import { getLastWeekReviewData } from "@/lib/mock/weekly-review-data"
+import { getEnergyBalanceData } from "@/lib/mock/energy-balance-data"
 
 export default function SettingsPage() {
   const { data: session, status } = useSession()
@@ -30,6 +32,7 @@ export default function SettingsPage() {
   if (status === "unauthenticated") return null
 
   const weeklyData = getLastWeekReviewData()
+  const energyData = getEnergyBalanceData()
 
   return (
     <div className="min-h-screen">
@@ -80,6 +83,7 @@ export default function SettingsPage() {
 
         {/* Cards Grid */}
         <div className="space-y-6">
+          <EnergyBalanceCard data={energyData} />
           <WeeklyCoachReview data={weeklyData} />
         </div>
       </main>
