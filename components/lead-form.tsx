@@ -65,10 +65,10 @@ export default function LeadForm() {
 
       <div className="container relative z-10 mx-auto max-w-xl text-center">
         <h2 className="font-display text-balance text-3xl md:text-4xl font-bold text-white mb-4">
-          Not sure where to start? Tell us about your business.
+          Ready to set up your AI operating system? Tell us about your team.
         </h2>
         <p className="text-lg mb-8 max-w-2xl mx-auto leading-relaxed" style={{ color: "#c2c9bb" }}>
-          We&apos;ll recommend the right path and get back to you within 24 hours.
+          We&apos;ll scope your AI setup and get back to you within 24 hours.
         </p>
 
         <form onSubmit={handleSubmit} className="space-y-4 text-left">

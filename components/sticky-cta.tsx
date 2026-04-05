@@ -22,7 +22,7 @@ export default function StickyCta() {
       <div className="bg-[rgba(18,20,17,0.95)] backdrop-blur-md border-t border-[rgba(66,73,62,0.15)]">
         <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
           <p className="text-sm text-[#8c9387] hidden sm:block">
-            Ready to get started? Let&apos;s find the right path for you.
+            Set up your AI operating system in 2-4 weeks.
           </p>
           <Link
             href="/get-started"

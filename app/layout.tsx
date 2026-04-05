@@ -20,8 +20,8 @@ const epilogue = Epilogue({
   weight: ["400", "600", "700", "800"],
 })
 
-const siteTitle = "Verdant AI Partners — AI Implementation That Actually Works"
-const siteDescription = "We help businesses adopt AI effectively — from tech foundations and team training through custom agents and embedded engineering. Hands-on implementation, not slide decks."
+const siteTitle = "Verdant AI Partners — AI Operating System Setup for Growing Teams"
+const siteDescription = "We set up your AI operating system — platform selection, connectors, workflows, and team training — in 2-4 weeks. From scattered AI usage to a working system."
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://verdantaipartners.com'),
@@ -71,7 +71,7 @@ export default function RootLayout({
               "@type": "Organization",
               name: "Verdant AI Partners",
               url: "https://verdantaipartners.com",
-              description: "AI implementation for modern businesses — strategy, training, transformation, and engineering.",
+              description: "AI Operating System Setup for growing teams — platform selection, connectors, workflows, training, and adoption support.",
               contactPoint: {
                 "@type": "ContactPoint",
                 email: "hello@verdant.ai",

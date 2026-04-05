@@ -5,7 +5,7 @@ import { ArrowRight, Check } from "lucide-react"
 export const metadata = {
   title: "Use Cases | Verdant AI Partners",
   description:
-    "Real problems we solve for real businesses. Healthcare practices, clinics, and service businesses — here's how we help.",
+    "Real problems we solve for real businesses. AI implementation, automation, and training for teams ready to operationalize AI.",
   alternates: {
     canonical: "https://verdantaipartners.com/use-cases",
   },
@@ -13,23 +13,23 @@ export const metadata = {
 
 const useCases = [
   {
-    title: "Automate Patient Follow-Up",
+    title: "Automate Customer Follow-Up",
     problem:
-      "You're losing patients because no one follows up after their visit. Missed calls go unreturned. Appointment reminders don't go out. Reactivation campaigns don't exist.",
+      "You're losing customers because no one follows up. Missed calls go unreturned. Reminders don't go out. Reactivation campaigns don't exist.",
     solution:
-      "We build automated follow-up systems that text patients after visits, send appointment reminders, reactivate dormant patients, and ensure no call goes unanswered.",
+      "We build automated follow-up systems that text customers after interactions, send reminders, reactivate dormant contacts, and ensure no call goes unanswered.",
     bullets: [
       "AI-powered missed-call text-back",
-      "Automated post-visit follow-up sequences",
-      "Patient reactivation campaigns",
-      "Appointment reminder system",
+      "Automated post-interaction follow-up sequences",
+      "Customer reactivation campaigns",
+      "Appointment and task reminder system",
     ],
-    mapsTo: ["Fundamentals", "Transformation"],
+    mapsTo: ["AI Operating System Setup"],
   },
   {
-    title: "Close More In-Person Sales",
+    title: "AI-Powered Sales Support",
     problem:
-      "Your front desk or sales team is leaving money on the table. They don't know which services to recommend, when to follow up, or how to handle objections.",
+      "Your sales team is leaving money on the table. They don't know which services to recommend, when to follow up, or how to handle objections.",
     solution:
       "We deploy AI-guided sales tools that help your team recommend the right services, track conversations, and follow up at the right time.",
     bullets: [
@@ -38,7 +38,7 @@ const useCases = [
       "Follow-up automation and tracking",
       "Sales performance dashboards",
     ],
-    mapsTo: ["Strategy", "Transformation"],
+    mapsTo: ["AI Operating System Setup", "Strategy"],
   },
   {
     title: "Eliminate Manual Data Entry",
@@ -52,7 +52,7 @@ const useCases = [
       "AI-powered document processing",
       "Error reduction and audit trails",
     ],
-    mapsTo: ["Transformation", "Engineering"],
+    mapsTo: ["AI Operating System Setup", "Engineering"],
   },
   {
     title: "Train Your Team on AI",
@@ -66,7 +66,7 @@ const useCases = [
       "Hands-on practice with real workflows",
       "Adoption tracking and follow-up sessions",
     ],
-    mapsTo: ["Strategy", "Transformation"],
+    mapsTo: ["AI Operating System Setup"],
   },
   {
     title: "Build Custom AI Agents",
@@ -83,18 +83,18 @@ const useCases = [
     mapsTo: ["Engineering"],
   },
   {
-    title: "Modernize Your Tech Stack",
+    title: "Connect Your Tools with AI Workflows",
     problem:
-      "You're running your business on 5 disconnected tools — a website builder here, a CRM there, invoicing somewhere else. Nothing talks to each other.",
+      "Your team uses AI for one-off tasks but nothing is connected. AI doesn't see your CRM, your email, or your project management tools.",
     solution:
-      "We consolidate your tech into one integrated platform with a modern website, business phone, CRM, invoicing, and automation — all connected.",
+      "We connect AI to your existing tools via connectors, MCPs, and APIs — so it can actually work with your data instead of sitting in a separate tab.",
     bullets: [
-      "Modern website built to convert",
-      "Business phone with missed-call text-back",
-      "Unified CRM and invoicing",
-      "Automated workflows connecting everything",
+      "Gmail, Slack, and Drive integrations",
+      "CRM and project management connectors",
+      "Scheduled AI workflows that run automatically",
+      "Role-based access and governance",
     ],
-    mapsTo: ["Fundamentals"],
+    mapsTo: ["AI Operating System Setup"],
   },
 ]
 
@@ -123,7 +123,7 @@ export default function UseCasesPage() {
             className="text-xl mb-10 max-w-3xl mx-auto leading-relaxed opacity-0 animate-reveal stagger-1"
             style={{ color: "#c2c9bb" }}
           >
-            Healthcare practices, clinics, and service businesses — here&apos;s how we help.
+            AI implementation, automation, and training for teams ready to operationalize AI.
           </p>
 
           <div className="flex items-center justify-center opacity-0 animate-reveal stagger-2">

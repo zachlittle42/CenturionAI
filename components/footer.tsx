@@ -13,7 +13,7 @@ export default function Footer() {
                 <span className="text-lg font-bold text-[#bcf1ae] font-display tracking-tighter">Verdant AI</span>
               </div>
               <p className="text-[#c2c9bb]/60 mb-6 leading-relaxed">
-                Building technical excellence for the modern digital estate.
+                AI Operating System Setup for growing teams.
               </p>
               <div className="flex space-x-4">
                 <a href="https://twitter.com/verdantai" target="_blank" rel="noopener noreferrer" className="hover-glow text-white hover:text-[#bcf1ae] transition-colors rounded-lg p-1">
@@ -35,15 +35,9 @@ export default function Footer() {
               <h3 className="text-xl font-bold mb-6 text-white">Services</h3>
               <ul className="space-y-3">
                 <li>
-                  <Link href="/implement" className="text-[#c2c9bb]/60 hover:text-[#bcf1ae] transition-colors flex items-center">
+                  <Link href="/" className="text-[#c2c9bb]/60 hover:text-[#bcf1ae] transition-colors flex items-center">
                     <span className="w-1.5 h-1.5 bg-[#bcf1ae] rounded-full mr-2"></span>
-                    Implement
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/fundamentals" className="text-[#c2c9bb]/60 hover:text-[#bcf1ae] transition-colors flex items-center">
-                    <span className="w-1.5 h-1.5 bg-[#bcf1ae] rounded-full mr-2"></span>
-                    Fundamentals
+                    AI Operating System Setup
                   </Link>
                 </li>
                 <li>
@@ -53,15 +47,15 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/transformation" className="text-[#c2c9bb]/60 hover:text-[#bcf1ae] transition-colors flex items-center">
-                    <span className="w-1.5 h-1.5 bg-[#bcf1ae] rounded-full mr-2"></span>
-                    Transformation
-                  </Link>
-                </li>
-                <li>
                   <Link href="/engineering" className="text-[#c2c9bb]/60 hover:text-[#bcf1ae] transition-colors flex items-center">
                     <span className="w-1.5 h-1.5 bg-[#bcf1ae] rounded-full mr-2"></span>
                     Engineering
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/fundamentals" className="text-[#c2c9bb]/60 hover:text-[#bcf1ae] transition-colors flex items-center">
+                    <span className="w-1.5 h-1.5 bg-[#bcf1ae] rounded-full mr-2"></span>
+                    Fundamentals
                   </Link>
                 </li>
                 <li>

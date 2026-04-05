@@ -21,6 +21,18 @@ const nextConfig = {
     parallelServerBuildTraces: true,
     parallelServerCompiles: true,
   },
+  async redirects() {
+    return [
+      { source: '/implement', destination: '/', permanent: true },
+      { source: '/transformation', destination: '/', permanent: true },
+      { source: '/tech-basics', destination: '/fundamentals', permanent: true },
+      { source: '/ai-transformation', destination: '/', permanent: true },
+      { source: '/ai-engineering', destination: '/engineering', permanent: true },
+      { source: '/strategy-audit', destination: '/strategy', permanent: true },
+      { source: '/services/strategy-audit', destination: '/strategy', permanent: true },
+      { source: '/openclaw-ai-agents', destination: '/', permanent: false },
+    ]
+  },
 }
 
 mergeConfig(nextConfig, userConfig)

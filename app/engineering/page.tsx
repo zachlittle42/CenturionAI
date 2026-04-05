@@ -258,7 +258,7 @@ export default function EngineeringPage() {
             <div className="text-center md:text-left">
               <div className="inline-block mb-4 px-4 py-1.5 bg-[#0d0f0c]/50 rounded-full border border-[#1a2e1a]/50">
                 <span className="text-[#a1d494] font-medium text-sm">
-                  Engineering
+                  Already set up? Need custom builds?
                 </span>
               </div>
 
@@ -268,9 +268,9 @@ export default function EngineeringPage() {
               </h1>
 
               <p className="text-xl mb-8 max-w-xl leading-relaxed opacity-0 animate-reveal stagger-2" style={{ color: "#c2c9bb" }}>
-                Our AI-augmented engineering teams deliver working software in
-                biweekly sprints. We use Claude Code, Cursor, and custom agent
-                workflows to build at 3x the speed of traditional agencies.
+                For teams that already have their AI operating system set up and need
+                custom builds. Our AI-augmented engineering teams deliver working software in
+                biweekly sprints at 3x the speed of traditional agencies.
               </p>
 
               <div className="mb-8 opacity-0 animate-reveal stagger-2">
