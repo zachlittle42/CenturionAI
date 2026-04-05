@@ -114,7 +114,7 @@ const pricingTiers = [
       "Advanced workflow automations",
       "Custom reporting dashboard",
       "Weekly strategy call",
-      "First priority for AI Transformation upgrade",
+      "First priority for AI Operating System Setup",
     ],
     popular: false,
   },
@@ -134,7 +134,7 @@ const faqs = [
   {
     question: "What if I outgrow this?",
     answer:
-      "That's the plan. Fundamentals is designed to feed directly into our Transformation services when you're ready.",
+      "That's the plan. Fundamentals is designed to feed directly into our AI Operating System Setup when you're ready.",
   },
   {
     question: "Is there a contract?",
@@ -356,7 +356,7 @@ export default function FundamentalsPage() {
             When the basics are handled, AI becomes easy.
           </h2>
           <p className="text-lg mb-10 max-w-2xl mx-auto leading-relaxed text-[#bcf1ae]/80">
-            Tech Basics clients get first priority for our AI Transformation services.
+            Tech Basics clients get first priority for our AI Operating System Setup.
             Once your systems are connected and your data is flowing, adding AI workflows
             is plug-and-play — not a rebuild.
           </p>

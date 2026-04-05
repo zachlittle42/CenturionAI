@@ -90,7 +90,7 @@ export default function StrategyPage() {
 
         <div className="container relative z-10 mx-auto max-w-5xl px-4 text-center">
           <div className="inline-block mb-4 px-4 py-1.5 bg-[#0d0f0c]/50 rounded-full border border-[#1a2e1a]/50">
-            <span className="text-[#a1d494] font-medium text-sm">Strategy</span>
+            <span className="text-[#a1d494] font-medium text-sm">Not sure where AI fits? Start here.</span>
           </div>
 
           <h1 className="font-display text-balance text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-white opacity-0 animate-reveal">
@@ -217,9 +217,9 @@ export default function StrategyPage() {
             This is where every engagement starts.
           </h2>
           <p className="text-lg mb-10 max-w-2xl mx-auto leading-relaxed text-[#bcf1ae]/80">
-            Whether you end up doing AI Transformation, AI Engineering, or
-            building your own — the strategy gives you clarity. Most clients save
-            the $5,000 in the first month of implementation just by knowing
+            Once you have clarity, most teams move into our AI Operating System Setup —
+            platform selection, connectors, workflows, and training in 2-4 weeks.
+            Most clients save the $5,000 in the first month of implementation just by knowing
             what NOT to buy.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

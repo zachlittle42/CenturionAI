@@ -113,7 +113,7 @@ export default function GetStartedPage() {
             &larr; Back to Verdant AI Partners
           </Link>
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-4 font-display text-balance opacity-0 animate-reveal">
-            Tell us about your business. We&apos;ll recommend the right path.
+            Tell us about your team. We&apos;ll scope your AI setup.
           </h1>
           <p className="text-lg leading-relaxed opacity-0 animate-reveal stagger-1" style={{ color: "#c2c9bb" }}>
             We&apos;ll get back to you within 24 hours with a tailored recommendation.
